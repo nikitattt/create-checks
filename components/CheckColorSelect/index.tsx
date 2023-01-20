@@ -17,7 +17,7 @@ const CheckColorSelect = () => {
   }
 
   return (
-    <div
+    <button
       onClick={newColors}
       className="rounded-full flex flex-row items-center bg-white p-1 gap-1 cursor-pointer text-sm group"
     >
@@ -39,7 +39,7 @@ const CheckColorSelect = () => {
       <div className="h-6 w-6">
         <Check color={yourCheckColor} />
       </div>
-    </div>
+    </button>
   )
 }
 
