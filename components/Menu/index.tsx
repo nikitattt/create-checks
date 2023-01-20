@@ -4,7 +4,7 @@ import SaveButton from '../SaveButton'
 
 const Menu = () => {
   return (
-    <div className="flex flex-col absolute right-2 sm:right-6 top-20 sm:top-1/2 gap-2 items-end">
+    <div className="flex flex-col absolute right-2 sm:right-6 top-[4.5rem] sm:top-1/2 gap-2 items-end">
       <CheckColorSelect />
       <ClearButton />
       <SaveButton />
