@@ -97,9 +97,9 @@ const FriendAISwitch = () => {
 
 const NavBar = () => {
   return (
-    <div className="rounded-full m-4 px-6 pb-px h-12 flex align-center">
+    <div className="rounded-full m-4 px-1 sm:px-6 pb-px h-12 flex align-center">
       <div className="w-full flex flex-row items-center justify-center">
-        <div className="flex-1 hidden sm:flex">
+        <div className="flex-1 flex">
           <div className="h-8 w-8">
             <Check color="#60b1f4" />
           </div>
