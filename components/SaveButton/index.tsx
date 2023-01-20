@@ -15,14 +15,13 @@ const SaveButton = () => {
 
   const saveBoard = () => {
     const image = boardToImage(board)
-    // window.open(`${image}`)
     downloadURL(image, 'Checks')
   }
 
   return (
     <div
       onClick={saveBoard}
-      className="rounded-full bg-white py-1 px-3 cursor-pointer text-sm text-grey w-max"
+      className="rounded-full bg-white py-1 px-3 cursor-pointer text-sm text-grey w-max hover:bg-black hover:text-white"
     >
       Save
     </div>
