@@ -28,8 +28,8 @@ export const boardToImage = (board: string[]): string => {
     const padding = 30
     const checkPadding = 20
 
-    ctx.strokeStyle = '#FAFAFA'
-    ctx.lineWidth = 3
+    ctx.strokeStyle = '#f5f5f5'
+    ctx.lineWidth = 2
 
     for (var y = 0; y < 10; y++) {
       for (var x = 0; x < 8; x++) {
