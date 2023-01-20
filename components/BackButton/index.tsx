@@ -16,10 +16,10 @@ const BackButton = () => {
       onClick={back}
       className={clsx(
         'rounded-full bg-white p-1.5 cursor-pointer text-sm w-max group',
-        'hover:bg-black'
+        'hover:bg-black transition-all duration-300'
       )}
     >
-      <div className="fill-grey group-hover:fill-white group-disabled:fill-grey">
+      <div className="fill-grey group-hover:fill-white group-disabled:fill-grey transition-all duration-300">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"

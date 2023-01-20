@@ -13,7 +13,8 @@ export const ChecksColors = [
   '#9bd9fb',
   '#b5dc61',
   '#4ba391',
-  '#7a5ab4'
+  '#7a5ab4',
+  '#f3322c'
 ]
 
 export const getRandomCheckColor = () => {
