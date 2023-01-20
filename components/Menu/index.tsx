@@ -1,3 +1,4 @@
+import BackButton from '../BackButton'
 import CheckColorSelect from '../CheckColorSelect'
 import ClearButton from '../ClearButton'
 import SaveButton from '../SaveButton'
@@ -8,6 +9,7 @@ const Menu = () => {
       <CheckColorSelect />
       <ClearButton />
       <SaveButton />
+      <BackButton />
     </div>
   )
 }

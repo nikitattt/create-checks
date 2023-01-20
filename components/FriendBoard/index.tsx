@@ -6,16 +6,10 @@ import Check from '../Check'
 const FriendBoard = () => {
   const board = useBoardStore((state) => state.board)
   const yourCheckColor = useGameStore((state) => state.yourCheckColor)
-  const setBoard = useBoardStore((state) => state.setBoard)
-
-  // const [board, setBoard] = useState<Array<string>>(
-  //   new Array(columns * rows).fill('')
-  // )
+  const addCheck = useBoardStore((state) => state.addCheck)
 
   const saveCheckPosition = (index: number) => {
-    const newBoard = [...board]
-    newBoard[index] = yourCheckColor
-    setBoard(newBoard)
+    addCheck(index, yourCheckColor)
   }
 
   const Cell = (key: number) => (
