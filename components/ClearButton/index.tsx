@@ -1,12 +1,18 @@
+import { useBoardStore } from '../../store/board'
+
 const ClearButton = () => {
-  const clearBoard = () => {}
+  const resetBoard = useBoardStore((state) => state.resetBoard)
+
+  const clearBoard = () => {
+    resetBoard()
+  }
 
   return (
     <div
       onClick={clearBoard}
-      className="rounded-full flex flex-row items-center bg-white p-1 cursor-pointer text-sm"
+      className="rounded-full bg-white py-1 px-3 cursor-pointer text-sm text-grey w-max"
     >
-      <div className="ml-2 text-grey">Clear</div>
+      Clear
     </div>
   )
 }

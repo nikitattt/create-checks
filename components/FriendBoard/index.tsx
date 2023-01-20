@@ -1,22 +1,16 @@
-import { useState } from 'react'
+import { useBoardStore } from '../../store/board'
 import { useGameStore } from '../../store/game'
 import { addAlpha } from '../../utils/colors'
 import Check from '../Check'
 
-const columns = 8
-const rows = 10
-
 const FriendBoard = () => {
+  const board = useBoardStore((state) => state.board)
   const yourCheckColor = useGameStore((state) => state.yourCheckColor)
-  const opponentCheckColor = useGameStore((state) => state.opponentCheckColor)
-  const setYourCheckColor = useGameStore((state) => state.setYourCheckColor)
-  const setOpponentCheckColor = useGameStore(
-    (state) => state.setOpponentCheckColor
-  )
+  const setBoard = useBoardStore((state) => state.setBoard)
 
-  const [board, setBoard] = useState<Array<string>>(
-    new Array(columns * rows).fill('')
-  )
+  // const [board, setBoard] = useState<Array<string>>(
+  //   new Array(columns * rows).fill('')
+  // )
 
   const saveCheckPosition = (index: number) => {
     const newBoard = [...board]
