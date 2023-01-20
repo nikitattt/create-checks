@@ -1,16 +1,18 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Link from 'next/link'
 import { useEffect } from 'react'
 import BuildBy from '../components/BuildBy'
-import Check from '../components/Check'
-import CheckColorSelect from '../components/CheckColorSelect'
 import Description from '../components/Description'
-import GameBoard from '../components/GameBoard'
 import Menu from '../components/Menu'
 import NavBar from '../components/NavBar'
 import { useGameStore } from '../store/game'
 import { getRandomCheckColor } from '../utils/colors'
+
+import dynamic from 'next/dynamic'
+
+const GameBoard = dynamic(() => import('../components/GameBoard'), {
+  ssr: false
+})
 
 const Home: NextPage<{ data: string }> = (props) => {
   const { data } = props
