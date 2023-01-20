@@ -49,9 +49,13 @@ export const boardToImage = (board: string[]): string => {
 
     for (var y = 0; y < 10; y++) {
       for (var x = 0; x < 8; x++) {
-        const path = new Path2D(checkPath)
-        ctx.fillStyle = 'black'
-        ctx.fill(path)
+        if (board[y * 8 + x] !== '') {
+          const color = board[y * 8 + x]
+
+          const path = new Path2D(checkPath)
+          ctx.fillStyle = color
+          ctx.fill(path)
+        }
         ctx.translate(boxW, 0)
       }
       ctx.translate(-boxW * 8, boxH)
