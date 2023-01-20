@@ -1,3 +1,4 @@
+import clsx from 'clsx'
 import { useBoardStore } from '../../store/board'
 import { useGameStore } from '../../store/game'
 import { addAlpha } from '../../utils/colors'
@@ -32,8 +33,13 @@ const FriendBoard = () => {
   return (
     <>
       <div className="mt-32 flex flex-col items-center justify-around">
-        <div className="bg-white p-4">
-          <div className="grid grid-cols-8 divide-x-2 divide-y-2 divide-[#fafafa] border-2 border-[#fafafa]">
+        <div className="bg-white dark:bg-black-canvas p-4">
+          <div
+            className={clsx(
+              'grid grid-cols-8 divide-x divide-y border',
+              'divide-border-light dark:divide-border-dark border-border-light dark:border-border-dark'
+            )}
+          >
             {board.map((val, index, arr) => Cell(index))}
           </div>
         </div>

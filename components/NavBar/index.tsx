@@ -114,7 +114,7 @@ const NavBar = () => {
             connect
           </div> */}
           <a href="https://twitter.com/iamng_eth" target="_blank">
-            <div className="w-max ml-auto rounded-full bg-white">
+            <div className="w-max ml-auto rounded-full bg-white dark:bg-black-canvas dark:fill-white">
               <div className="h-8 w-8 p-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
