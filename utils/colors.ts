@@ -1,3 +1,8 @@
+export enum ColorMode {
+  dark,
+  light
+}
+
 export const ChecksColors = [
   '#000000',
   '#60b1f4',

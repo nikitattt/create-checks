@@ -1,5 +1,7 @@
 import clsx from 'clsx'
 import { useBoardStore } from '../../store/board'
+import { useMenuStore } from '../../store/menu'
+import { ColorMode } from '../../utils/colors'
 import { boardToImage } from '../../utils/image'
 
 const downloadURL = (url: string, name: string) => {
@@ -13,9 +15,13 @@ const downloadURL = (url: string, name: string) => {
 
 const SaveButton = () => {
   const board = useBoardStore((state) => state.board)
+  const darkMode = useMenuStore((state) => state.darkMode)
 
   const saveBoard = () => {
-    const image = boardToImage(board)
+    const image = boardToImage(
+      board,
+      darkMode ? ColorMode.dark : ColorMode.light
+    )
     downloadURL(image, 'Checks')
   }
 

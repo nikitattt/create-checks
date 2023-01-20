@@ -36,7 +36,7 @@ const FriendBoard = () => {
         <div className="bg-white dark:bg-black-canvas p-4">
           <div
             className={clsx(
-              'grid grid-cols-8 divide-x-2 divide-y-2 border',
+              'grid grid-cols-8 divide-x divide-y border',
               'divide-border-light dark:divide-border-dark border-border-light dark:border-border-dark'
             )}
           >
