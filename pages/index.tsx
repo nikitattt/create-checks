@@ -35,9 +35,10 @@ const Home: NextPage<{ data: string }> = (props) => {
     setOpponentCheckColor(colorTwo)
   }, [])
 
+  // TODO: remove h-screen when having longer pages
   return (
     <div className={darkMode ? 'dark' : ''}>
-      <div className="font-sans text-black bg-background dark:bg-black dark:text-white flex flex-col">
+      <div className="font-sans text-black bg-background dark:bg-black dark:text-white flex flex-col h-screen">
         <Head>
           <title>Create Checks Art</title>
           <meta
@@ -54,7 +55,7 @@ const Home: NextPage<{ data: string }> = (props) => {
           <Menu />
         </main>
 
-        <footer className="flex mt-20">
+        <footer className="">
           <></>
         </footer>
       </div>
