@@ -1,18 +1,49 @@
-import { useState } from 'react'
+import clsx from 'clsx'
+import { useEffect, useState } from 'react'
 import { useGameStore } from '../../store/game'
+import { useMenuStore } from '../../store/menu'
 import { ChecksColors, getRandomCheckColor } from '../../utils/colors'
 import Check from '../Check'
 
+function isColor(color: string) {
+  return CSS.supports('color', color)
+}
+
 const CustomColor = () => {
-  const yourCheckColor = useGameStore((state) => state.yourCheckColor)
+  const customColor = useMenuStore((state) => state.customColor)
+  const setCustomColor = useMenuStore((state) => state.setCustomColor)
   const setYourCheckColor = useGameStore((state) => state.setYourCheckColor)
+
+  const setColor = () => {
+    if (customColor.length >= 3 && isColor(customColor)) {
+      setYourCheckColor(customColor)
+    }
+  }
+
+  useEffect(() => {
+    setColor()
+  }, [customColor])
 
   return (
     <div className="flex flex-row gap-1 items-center">
-      <div className="w-4 h-4 bg-red rounded-full border-grey-light" />
-      <div className="w-18 bg-white-light rounded-full text-grey px-3 py-0.5 text-sm">
-        {'#fafafa'}
-      </div>
+      <button
+        className="w-4 h-4 hover:scale-125 transition-all duration-300 rounded-full border border-grey-light"
+        style={{ background: customColor }}
+        onClick={setColor}
+      />
+      <input
+        type="text"
+        value={customColor}
+        placeholder="#000000"
+        onChange={(e) => {
+          setCustomColor(e.target.value)
+        }}
+        className={clsx(
+          'w-24 bg-white-light rounded-full px-3 py-0.5 text-sm',
+          'caret-grey text-black focus:outline-none focus:border-none focus:ring-none',
+          'placeholder:text-grey-light'
+        )}
+      />
     </div>
   )
 }
@@ -69,7 +100,7 @@ const CheckColorSelect = () => {
             })}
           </div>
           <div className="mt-2 flex flex-row gap-2 justify-end">
-            {/* <CustomColor /> */}
+            <CustomColor />
             <button
               onClick={newColors}
               className="px-3 py-0.5 text-sm text-grey bg-white-light rounded-full hover:bg-black hover:text-white transition-all duration-300"
