@@ -47,7 +47,7 @@ const CheckColorSelect = () => {
           <div className="ml-2 text-grey">Close</div>
         ) : (
           <div>
-            <div className="flex group-hover:hidden ml-2 text-grey">Checks</div>
+            <div className="flex group-hover:hidden ml-2 text-grey">Colors</div>
             <div className="ml-2 hidden group-hover:flex text-grey">
               {expanded ? 'Close' : 'View All'}
             </div>
