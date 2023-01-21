@@ -1,101 +1,48 @@
-import { Player } from '../../scripts/types'
-import { GameStatus, GameType, useGameStore } from '../../store/game'
-import { getRandomCheckColor } from '../../utils/colors'
-import { playerName } from '../../utils/utils'
 import Check from '../Check'
+import Link from 'next/link'
+import clsx from 'clsx'
 
-const CheckColorSelect = ({ player }: { player: Player }) => {
-  const gameType = useGameStore((state) => state.type)
-  const gameStatus = useGameStore((state) => state.status)
-  const yourCheckColor = useGameStore((state) => state.yourCheckColor)
-  const opponentCheckColor = useGameStore((state) => state.opponentCheckColor)
-  const setYourCheckColor = useGameStore((state) => state.setYourCheckColor)
-  const setOpponentCheckColor = useGameStore(
-    (state) => state.setOpponentCheckColor
-  )
-
-  const color = player === Player.You ? yourCheckColor : opponentCheckColor
-
-  const newColors = () => {
-    if (gameStatus === GameStatus.NotStarted) {
-      const colorOne = getRandomCheckColor()
-      let colorTwo = getRandomCheckColor()
-      while (colorOne === colorTwo) {
-        colorTwo = getRandomCheckColor()
-      }
-
-      setYourCheckColor(colorOne)
-      if (gameType === GameType.AI) {
-        setOpponentCheckColor(colorTwo)
-      }
-    } else {
-      // TODO: show explanation message
-    }
-  }
-
-  return (
-    <div
-      onClick={newColors}
-      className="rounded-full flex flex-row items-center bg-white p-1 gap-1 cursor-pointer text-sm group"
-    >
-      <div className="flex group-hover:hidden ml-2 text-grey">
-        {playerName(player, gameType)}
-      </div>
-      <div className="ml-2 hidden group-hover:flex">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 20 20"
-          fill={gameStatus === GameStatus.NotStarted ? '#7D7D7D' : '#FF1F3D'}
-          className="w-4 h-4"
-        >
-          <path
-            fillRule="evenodd"
-            d="M15.312 11.424a5.5 5.5 0 01-9.201 2.466l-.312-.311h2.433a.75.75 0 000-1.5H3.989a.75.75 0 00-.75.75v4.242a.75.75 0 001.5 0v-2.43l.31.31a7 7 0 0011.712-3.138.75.75 0 00-1.449-.39zm1.23-3.723a.75.75 0 00.219-.53V2.929a.75.75 0 00-1.5 0V5.36l-.31-.31A7 7 0 003.239 8.188a.75.75 0 101.448.389A5.5 5.5 0 0113.89 6.11l.311.31h-2.432a.75.75 0 000 1.5h4.243a.75.75 0 00.53-.219z"
-            clipRule="evenodd"
-          />
-        </svg>
-      </div>
-      <div className="h-6 w-6">
-        <Check color={color} />
-      </div>
-    </div>
-  )
-}
-
-const FriendAISwitch = () => {
-  const gameType = useGameStore((state) => state.type)
-  const setGameType = useGameStore((state) => state.setType)
-
-  const switchType = (type: GameType) => {
-    if (gameType !== type) {
-      setGameType(type)
-    }
-  }
-
-  const selectedStyle = 'bg-black text-white rounded-full px-4 py-[2px]'
+const SectionsSwitch = ({ page }: { page: string }) => {
+  const selectedStyle =
+    'w-20 bg-black dark:bg-white text-white dark:text-black rounded-full py-[2px]'
   const secondaryStyle =
-    'px-3 text-grey rounded-full hover:bg-background py-[2px]'
+    'w-20 text-grey rounded-full hover:bg-border-light py-[2px]'
 
-  const button = (type: GameType) => {
+  const pageToName = (page: string) => {
+    if (page === '/discover') return 'Discover'
+    else return 'Create'
+  }
+
+  const pageToGo = () => {
+    if (page === '/') return '/discover'
+    else return '/'
+  }
+
+  const button = (type: string) => {
     return (
-      <div
-        onClick={() => switchType(type)}
-        className={gameType === type ? selectedStyle : secondaryStyle}
+      <Link
+        href={pageToGo()}
+        className={page === type ? selectedStyle : secondaryStyle}
       >
-        {type}
-      </div>
+        {pageToName(type)}
+      </Link>
     )
   }
 
   return (
-    <div className="rounded-full flex flex-row items-center bg-white p-1 cursor-pointer text-sm gap-px">
-      {button(GameType.AI)}
-      {button(GameType.FRIEND)}
+    <div
+      className={clsx(
+        'rounded-full flex flex-row items-center text-center p-1 cursor-pointer text-sm gap-px',
+        'bg-white dark:bg-black-canvas'
+      )}
+    >
+      {button('/')}
+      {button('/discover')}
     </div>
   )
 }
 
-const NavBar = () => {
+const NavBar = ({ page }: { page: string }) => {
   return (
     <div className="rounded-full m-4 px-1 sm:px-6 pb-px h-12 flex align-center">
       <div className="w-full flex flex-row items-center justify-center">
@@ -105,8 +52,8 @@ const NavBar = () => {
           </div>
         </div>
         <div className="flex flex-row gap-6">
+          <SectionsSwitch page={page} />
           {/* <CheckColorSelect player={Player.You} />
-          <FriendAISwitch />
           <CheckColorSelect player={Player.Opponent} /> */}
         </div>
         <div className="flex-1">

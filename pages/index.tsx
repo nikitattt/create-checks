@@ -19,21 +19,6 @@ const Home: NextPage<{ data: string }> = (props) => {
   const { data } = props
 
   const darkMode = useMenuStore((state) => state.darkMode)
-  const setYourCheckColor = useGameStore((state) => state.setYourCheckColor)
-  const setOpponentCheckColor = useGameStore(
-    (state) => state.setOpponentCheckColor
-  )
-
-  useEffect(() => {
-    const colorOne = getRandomCheckColor()
-    let colorTwo = getRandomCheckColor()
-    while (colorOne === colorTwo) {
-      colorTwo = getRandomCheckColor()
-    }
-
-    setYourCheckColor(colorOne)
-    setOpponentCheckColor(colorTwo)
-  }, [])
 
   // TODO: remove h-screen when having longer pages
   return (
@@ -48,7 +33,7 @@ const Home: NextPage<{ data: string }> = (props) => {
         </Head>
 
         <main className="">
-          <NavBar />
+          <NavBar page="/" />
           <GameBoard />
           <BuildBy />
           <Description />
