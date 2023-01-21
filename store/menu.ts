@@ -26,7 +26,11 @@ const useMenuStore = create<MenuState>()(
       setDirectory: (directory: Directory) => set({ directory: directory })
     }),
     {
-      name: 'menu-storage'
+      name: 'menu-storage',
+      partialize: (state) =>
+        Object.fromEntries(
+          Object.entries(state).filter(([key]) => !['darkMode'].includes(key))
+        )
     }
   )
 )
