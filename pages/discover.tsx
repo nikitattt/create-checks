@@ -94,6 +94,18 @@ export async function getStaticProps() {
           }
         },
         {
+          name: 'Super Check Bros.',
+          type: 'NFT',
+          image:
+            'https://i.seadn.io/gcs/files/1a52555f8f268aa544d3d263f41d80f8.png?auto=format&w=1000',
+          link: 'https://create.zora.co/collections/0x2affe08d05daa8ae7b3fa8c1a23ad64301c271a1',
+          author: {
+            twitter: '',
+            address: '',
+            ens: 'messhup.eth'
+          }
+        },
+        {
           name: 'cc0hecks',
           type: 'NFT',
           image:
