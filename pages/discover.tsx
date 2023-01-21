@@ -10,12 +10,9 @@ import { getRandomCheckColor } from '../utils/colors'
 
 import dynamic from 'next/dynamic'
 import { useMenuStore } from '../store/menu'
+import ArtDisplay from '../components/ArtDisplay'
 
-const GameBoard = dynamic(() => import('../components/GameBoard'), {
-  ssr: false
-})
-
-const Home: NextPage<{ data: string }> = (props) => {
+const Discover: NextPage<{ data: string }> = (props) => {
   const { data } = props
 
   const darkMode = useMenuStore((state) => state.darkMode)
@@ -25,19 +22,17 @@ const Home: NextPage<{ data: string }> = (props) => {
     <div className={darkMode ? 'dark' : ''}>
       <div className="font-sans text-black bg-background dark:bg-black dark:text-white flex flex-col h-screen">
         <Head>
-          <title>Create Checks Art</title>
+          <title>Discover Checks Art</title>
           <meta
             name="description"
-            content="Create Checks Art. Inspired by @jackbutcher's Checks - VV Edition."
+            content="Discover Checks Art and Derivatives"
           />
         </Head>
 
         <main className="">
-          <NavBar page="/" />
-          <GameBoard />
+          <NavBar page="/discover" />
+          <ArtDisplay art={[]} />
           <BuildBy />
-          <Description />
-          <Menu />
         </main>
 
         <footer className="">
@@ -48,4 +43,4 @@ const Home: NextPage<{ data: string }> = (props) => {
   )
 }
 
-export default Home
+export default Discover
