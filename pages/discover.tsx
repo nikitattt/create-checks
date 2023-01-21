@@ -12,7 +12,7 @@ const Discover: NextPage<{ art: any[] }> = (props) => {
 
   return (
     <div className={darkMode ? 'dark' : ''}>
-      <div className="font-sans text-black bg-background dark:bg-black dark:text-white flex flex-col h-screen">
+      <div className="font-sans text-black bg-background dark:bg-black dark:text-white flex flex-col">
         <Head>
           <title>Discover Checks Art</title>
           <meta
@@ -27,7 +27,7 @@ const Discover: NextPage<{ art: any[] }> = (props) => {
           <BuildBy />
         </main>
 
-        <footer className="">
+        <footer className="mb-20">
           <></>
         </footer>
       </div>
@@ -103,6 +103,78 @@ export async function getStaticProps() {
             twitter: '',
             address: '',
             ens: 'ianbydesign.eth'
+          }
+        },
+        {
+          name: 'Checks - Squiggle Edition',
+          type: 'NFT',
+          image:
+            'https://i.seadn.io/gcs/files/af9b7e490a99f60d585716366a705afa.png?auto=format&w=1000',
+          link: 'https://create.zora.co/collections/0x50e9dc61b38854e55900b1bee88dc4183fc24127',
+          author: {
+            twitter: '',
+            address: '',
+            ens: 'venture-punk.eth'
+          }
+        },
+        {
+          name: 'GMs',
+          type: 'NFT',
+          image:
+            'https://i.seadn.io/gcs/files/4aa387072f3f2354d8fd2592989d95ea.png?auto=format&w=3840',
+          link: 'https://create.zora.co/collections/0x816840b298c3a326330236ac1368d3887d27a7cb',
+          author: {
+            twitter: '',
+            address: '',
+            ens: 'scapes.eth'
+          }
+        },
+        {
+          name: 'CC0 is Free',
+          type: 'NFT',
+          image:
+            'https://i.seadn.io/gcs/files/d553c45ea29909e4040c504801e3967d.png?auto=format&w=1000',
+          link: 'https://create.zora.co/collections/0x08488e76f89a42c184db687e38c525bfe6292ef1',
+          author: {
+            twitter: '',
+            address: '',
+            ens: 'lukecannon.eth'
+          }
+        },
+        {
+          name: '100s Edition',
+          type: 'NFT',
+          image:
+            'https://i.seadn.io/gcs/files/4f9c9ae0c8e33175867bd5901e4964fc.png?auto=format&w=3840',
+          link: 'https://create.zora.co/collections/0x4db3ba1de77945fef71bd759474c5bdd4458ff3d',
+          author: {
+            twitter: '',
+            address: '0x48c0903bb3de15eF805EeCbA1182D2102c96BFdb',
+            ens: ''
+          }
+        },
+        {
+          name: 'The First 80',
+          type: 'NFT',
+          image:
+            'https://i.seadn.io/gcs/files/839d7713b69cb5cb94fcc357a020d7be.png?auto=format&w=3840',
+          link: 'https://create.zora.co/collections/0x98425fc60cacdae330477d71407e64f94271bf98',
+          author: {
+            twitter: '',
+            address: '',
+            ens: 'ratlabs.eth'
+          }
+        },
+        {
+          name: 'tiny checks',
+          type: 'NFT',
+          image:
+            'https://i.seadn.io/gcs/files/b248653c5f3dd7ba26dbc1ed5eea3b73.png?auto=format&w=1000',
+          link: 'https://create.zora.co/collections/0xeba2f99d79127a375abc63073db7f919216be646',
+          author: {
+            twitter: '',
+            address: '0xb57fD863535525B880Ff7E23cdF17644A08cb448',
+            ens: ''
           }
         }
       ]
