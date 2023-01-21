@@ -12,7 +12,7 @@ const Discover: NextPage<{ art: any[] }> = (props) => {
 
   return (
     <div className={darkMode ? 'dark' : ''}>
-      <div className="font-sans text-black bg-background dark:bg-black dark:text-white flex flex-col">
+      <div className="font-sans text-black bg-background dark:bg-black dark:text-white flex flex-col h-screen">
         <Head>
           <title>Discover Checks Art</title>
           <meta

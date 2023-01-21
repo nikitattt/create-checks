@@ -5,7 +5,8 @@ import clsx from 'clsx'
 const SectionsSwitch = ({ page }: { page: string }) => {
   const selectedStyle =
     'w-20 bg-black dark:bg-white text-white dark:text-black rounded-full py-[2px]'
-  const secondaryStyle = 'w-20 text-grey rounded-full hover:bg-black py-[2px]'
+  const secondaryStyle =
+    'w-20 text-grey rounded-full hover:bg-border-light py-[2px]'
 
   const pageToName = (page: string) => {
     if (page === '/discover') return 'Discover'
