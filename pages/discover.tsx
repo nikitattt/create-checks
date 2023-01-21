@@ -27,8 +27,14 @@ const Discover: NextPage<{ art: any[] }> = (props) => {
           <BuildBy />
         </main>
 
-        <footer className="mb-20">
-          <></>
+        <footer className="mt-20 mb-16 text-center">
+          <a
+            href="https://twitter.com/iamng_eth/status/1616641888768987139"
+            target="_blank"
+            className="underline text-grey"
+          >
+            Submit artwork
+          </a>
         </footer>
       </div>
     </div>
