@@ -106,6 +106,18 @@ export async function getStaticProps() {
           }
         },
         {
+          name: 'SAMO',
+          type: 'NFT',
+          image:
+            'https://i.seadn.io/gcs/files/6a7cb13f8e303d618aaa90c792e65236.jpg?auto=format&w=1000',
+          link: 'https://create.zora.co/collections/0x8526b570b1d56cbd87123b14222c43561c264386',
+          author: {
+            twitter: '',
+            address: '',
+            ens: 'saintless.eth'
+          }
+        },
+        {
           name: 'cc0hecks',
           type: 'NFT',
           image:
@@ -188,6 +200,122 @@ export async function getStaticProps() {
             address: '0xb57fD863535525B880Ff7E23cdF17644A08cb448',
             ens: ''
           }
+        },
+        {
+          name: 'CHECKS HALLUCINATION',
+          type: 'NFT',
+          image:
+            'https://4g6yls4jbeahh5qxcvpmfifmykmwrwcufdyxzi5eq3fkphn35fza.arweave.net/4b2Fy4kJAHP2FxVewqCswplo2FQo8XyjpIbKp5276XI',
+          link: 'https://app.manifold.xyz/c/checls-hallucination',
+          author: {
+            twitter: '',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'PAINTS',
+          type: 'NFT',
+          image:
+            'https://jixljckwmbgynqa76y7vt5lb72geyh7orz4edtkdhtjhn57hb2xa.arweave.net/Si60iVZgTYbAH_Y_WfVh_oxMH-6OeEHNQzzSdvfnDq4',
+          link: 'https://app.manifold.xyz/c/paints',
+          contractAddress: '0x8034e244de9f4758ca46c1a2802e25b563c12a00',
+          author: {
+            twitter: '',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'Checksboard',
+          type: 'NFT',
+          image:
+            'https://i.seadn.io/gcs/files/dbe86da1afbe9806f706e521f45f9cfe.jpg?auto=format&w=3840',
+          link: 'https://create.zora.co/collections/0xd5ed45076eb09a16bc1e1c03279a36dc1d27a13f',
+          contractAddress: '0xd5ed45076eb09a16bc1e1c03279a36dc1d27a13f',
+          author: {
+            twitter: '',
+            address: '0xFD1439812568e6bB4520e027fcB1F69080eA271E',
+            ens: ''
+          }
+        },
+        {
+          name: '69BURN',
+          type: 'NFT',
+          image:
+            'https://lwaqp3v3us4ticfpubmqfd34vko3y6hhkydzflpz7z3x6ibczlya.arweave.net/XYEH7rukuTQIr6BZAo98qp28eOdWB5Kt-f53fyAiyvA',
+          link: 'https://app.manifold.xyz/c/69burn',
+          contractAddress: '0x23be642733e29a40f22ed20cc6bab12acb9f9c7f',
+          author: {
+            twitter: 'sv3nsei',
+            address: '',
+            ens: 'sv3nsei.eth'
+          }
+        },
+        {
+          name: 'Checks and Balances',
+          type: 'NFT',
+          image:
+            'https://i.seadn.io/gcs/files/b74b77520c328f9e43c10f29f75102fc.gif?auto=format&w=1000',
+          link: 'https://create.zora.co/collections/0xef53e82c1a3d50685d30571f7763fdb7bd06a6e8',
+          contractAddress: '0xef53e82c1a3d50685d30571f7763fdb7bd06a6e8',
+          author: {
+            twitter: '',
+            address: '',
+            ens: 'toadyhawk.eth'
+          }
+        },
+        {
+          name: 'MIC CHECK',
+          type: 'NFT',
+          image:
+            'https://tmk6elu4kbfz4mmazq2xpligywfnu4ukpdvctbe5myvi4rmwyquq.arweave.net/mxXiLpxQS54xgMw1d60GxYracop46imEnWYqjkWWxCk',
+          link: 'https://app.manifold.xyz/c/rugcheck',
+          contractAddress: '0xF1C1E550e0753551008481cF59F4B792BBd9EaD5',
+          author: {
+            twitter: '',
+            address: '',
+            ens: 'rugcommunity.eth'
+          }
+        },
+        {
+          name: 'CHECK SWEEPER',
+          type: 'NFT',
+          image:
+            'https://mgjc3d5uya73nwkvx57jtksr3nkegrwkfbzszppae6tbhr47fj3a.arweave.net/YZItj7TAP7bZVb9-mapR21RDRsoocyy94CemE8efKnY',
+          link: 'https://app.manifold.xyz/c/check-sweeper',
+          contractAddress: '0x637A3Bf83A753cBCd54f2A93Eb9aF593fAfF0EF4',
+          author: {
+            twitter: '0xBunzy',
+            address: '',
+            ens: '0xbunzy.eth'
+          }
+        },
+        {
+          name: 'CHEXCOPY',
+          type: 'NFT',
+          image:
+            'https://i.seadn.io/gcs/files/f530c5add1135686b9c4484ff72ce8c5.gif?auto=format&w=3840',
+          link: 'https://create.zora.co/collections/0x3d8b3b4a4e3cc1655a8aaf842801f72e9f120297',
+          contractAddress: '0x3d8b3b4a4e3cc1655a8aaf842801f72e9f120297',
+          author: {
+            twitter: '',
+            address: '',
+            ens: 'ianbydesign.eth'
+          }
+        },
+        {
+          name: 'UMA Checks the Donuts',
+          type: 'NFT',
+          image:
+            'https://i.seadn.io/gcs/files/1c345a7cad111171f99da7032222618b.png?auto=format&w=1000',
+          link: 'https://create.zora.co/collections/0x8818581ff4e019c58ced4c39a4d401d5469270c8',
+          contractAddress: '0x8818581ff4e019c58ced4c39a4d401d5469270c8',
+          author: {
+            twitter: '',
+            address: '',
+            ens: 'hapsigmi.eth'
+          }
         }
       ]
     }
@@ -200,6 +328,7 @@ export async function getStaticProps() {
 //     image:
 //       '',
 //     link: '',
+//     contractAddress: '',
 //     author: {
 //       twitter: '',
 //       address: '',
