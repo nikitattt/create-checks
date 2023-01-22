@@ -322,6 +322,189 @@ export async function getStaticProps() {
             address: '',
             ens: 'hapsigmi.eth'
           }
+        },
+        // 2 batch
+        {
+          name: 'A re-creation of Nouns',
+          type: 'NFT',
+          image:
+            'https://openseauserdata.com/files/b619474ece369cf24d1eaf1aafd399b8.svg',
+          link: 'https://opensea.io/collection/check-this-noun',
+          contractAddress: '0x5e5f2a4b4a909fbb44044fb52ae94ff313605d43',
+          author: {
+            twitter: 'toadyhawk',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'Genesis Check',
+          type: 'NFT',
+          image:
+            'https://i.seadn.io/gcs/files/78cc6fce6ffe859a4baec2fdcffb9f0b.jpg?auto=format&w=1000',
+          link: 'https://opensea.io/collection/genesis-check',
+          contractAddress: '0x9b5a3990316c3359e3f89c220b936e8ad6a326fc',
+          author: {
+            twitter: 'gillesdc',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'Status Check VV',
+          type: 'NFT',
+          image:
+            'https://i.seadn.io/gcs/files/eaa81bc7479d0b045bf074c6e1d12e17.jpg?auto=format&w=1000',
+          link: 'https://opensea.io/collection/statuscheck',
+          contractAddress: '0xe6262b650f1f550b542801087a475ef6ed057c7a',
+          author: {
+            twitter: 'gillesdc',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'wens',
+          type: 'NFT',
+          image:
+            'https://i.seadn.io/gcs/files/6a09547f5656ca9ccef95685152380c8.gif?auto=format&w=1000',
+          link: 'https://create.zora.co/collections/0x3ef8af57390e095c143f90683a103124d77325c7',
+          contractAddress: '0x3ef8af57390e095c143f90683a103124d77325c7',
+          author: {
+            twitter: '_lukeweaver_',
+            address: '',
+            ens: 'lukeweaver.eth'
+          }
+        },
+        {
+          name: 'PUNKS',
+          type: 'NFT',
+          image:
+            'https://ndpgydvazqstki5q3ltbfwxgrptowbyxn4q4eucjh7qyymszvmra.arweave.net/aN5sDqDMJTUjsNrmEtrmi-brBxdvIcJQST_hjDJZqyI',
+          link: 'https://app.manifold.xyz/c/PUNKs',
+          contractAddress: '0x9ebec37b93df8c9e9823ccbf1d2bb40630eda59b',
+          author: {
+            twitter: '_0ND1',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'PHUNKS',
+          type: 'NFT',
+          image:
+            'https://rievrq6dndmpxghwwo6avfb3itrkw6cxpdlegvp6o66pglw7mkoa.arweave.net/iglYw8No2PuY9rO8CpQ7ROKreFd41kNV_ne88y7fYpw',
+          link: 'https://app.manifold.xyz/br/PHUNKs',
+          contractAddress: '0x9ebec37b93df8c9e9823ccbf1d2bb40630eda59b',
+          author: {
+            twitter: '_0ND1',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'Blank Check',
+          type: 'NFT',
+          image:
+            'https://bafybeifga3aee6jpd6yqudzwipzqg5ojy2juk35f2wv5ranehfaykzyv5m.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0x1be8b499abe06ef26ecd77b9448a1bfe088c8e18',
+          contractAddress: '0x1be8b499abe06ef26ecd77b9448a1bfe088c8e18',
+          author: {
+            twitter: 'Jehoseph',
+            address: '',
+            ens: 'jehoseph.eth'
+          }
+        },
+        {
+          name: 'Natural Checks',
+          type: 'NFT',
+          image:
+            'https://dl.openseauserdata.com/cache/originImage/files/e9094f2af2dcf8b0e4aeab248eaf7abd.png',
+          link: 'https://create.zora.co/collections/0x07bd6f16d05b585803ee21f1aee2a48b96762ae9',
+          contractAddress: '0x07bd6f16d05b585803ee21f1aee2a48b96762ae9',
+          author: {
+            twitter: '',
+            address: '',
+            ens: 'galenom.eth'
+          }
+        },
+        {
+          name: "OK'd",
+          type: 'NFT',
+          image:
+            'https://bafybeie6qbwjligehiw56dbzffgmx53tg7m7ngjeisajk4azcom3mopeui.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0x781fc3524d4d1737a9bd1f9657a61ecfe25af443',
+          contractAddress: '0x781fc3524d4d1737a9bd1f9657a61ecfe25af443',
+          author: {
+            twitter: 'nedimsparrow',
+            address: '',
+            ens: 'nedim.eth'
+          }
+        },
+        {
+          name: '3D Checks',
+          type: 'NFT',
+          image:
+            'https://dl.openseauserdata.com/cache/originImage/files/63e16ff6c812b642115a66bae4a54aba.png',
+          link: 'https://oncyber.io/marketplace?buy=3dchecks',
+          contractAddress: '0x449f661c53ae0611a24c2883a910a563a7e42489',
+          author: {
+            twitter: 'specificobj',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'Check Dots',
+          type: 'NFT',
+          image:
+            'https://bafybeihrheuq3gzqrjtzvmk2c5xilkyltblzmy4i3qlx6nraasnw23uvc4.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0xb47521876eef9bb1c89f0be8078bc6878d0daaef',
+          contractAddress: '0xb47521876eef9bb1c89f0be8078bc6878d0daaef',
+          author: {
+            twitter: 'Neeoverse',
+            address: '0x3A1b54f02a335E83313fa69f04635180a6D6037E',
+            ens: ''
+          }
+        },
+        {
+          name: 'OKPC #3716',
+          type: 'NFT',
+          image:
+            'https://dl.openseauserdata.com/cache/originImage/files/37e735289e384c1f589f77ce68c133a2.svg',
+          link: 'https://okpc.app/network/3716',
+          contractAddress: '0x7183209867489E1047f3A7c23ea1Aed9c4E236E8',
+          author: {
+            twitter: '_midmod_',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: "Don't Check MEME",
+          type: 'NFT',
+          image:
+            'https://bafybeif2xjt73gq7qk6yl3xc45g7vtxdmbhbbxphrch76hzihjxibzkfri.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0x58dd57e8f427fd0baf705242937b5b96557c5ef6',
+          contractAddress: '0x58dd57e8f427fd0baf705242937b5b96557c5ef6',
+          author: {
+            twitter: 'JordanLyall',
+            address: '',
+            ens: 'venture-punk.eth'
+          }
+        },
+        {
+          name: 'Check Invaders',
+          type: 'NFT',
+          image:
+            'https://i.seadn.io/gcs/files/ed7f4a98ae615e1ef044aca008d9d15a.png?auto=format&w=1000',
+          link: 'https://opensea.io/collection/checkinvaders',
+          contractAddress: '0x386eB50346726a15bFC27BE61d415eA7aa0F6B54',
+          author: {
+            twitter: 'JordanLyall',
+            address: '',
+            ens: ''
+          }
         }
       ]
     }
