@@ -505,6 +505,19 @@ export async function getStaticProps() {
             address: '',
             ens: ''
           }
+        },
+        {
+          name: 'Checkmate Chess Set',
+          type: 'NFT',
+          image:
+            'https://bafybeifxx6lve74mobpbvl24ga3foaerjvwttafbdbu3dx4urpi4uzlxxq.ipfs.nftstorage.link/',
+          link: 'https://www.baker.studio/work/checkmate',
+          contractAddress: '0xe4c130b21ec937e86645ac00f31821dd08b711fb',
+          author: {
+            twitter: '',
+            address: '',
+            ens: 'nicholasbaker.eth'
+          }
         }
       ]
     }
