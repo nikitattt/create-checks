@@ -17,3 +17,9 @@
     grid-template-columns: repeat(auto-fill, minmax(max(var(--grid-item--min-width), var(--grid-item--max-width)), 1fr));
     grid-gap: var(--grid-layout-gap);
   }
+
+  @media all and (max-width: 500px) {
+    .grid {
+        --grid-item--min-width: 200px;
+    }
+}

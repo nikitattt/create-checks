@@ -63,7 +63,7 @@ const JPG = (data: any) => {
 
 const ArtDisplay = ({ art }: { art: any[] }) => {
   return (
-    <div className="mx-8 sm:mx-20 flex flex-col">
+    <div className="mx-6 sm:mx-20 flex flex-col">
       <div className="mt-12 mb-20 text-center text-4xl font-semibold text-grey flex flex-row justify-center gap-2">
         <p>Explore</p>
         <div className="h-10 w-10">
