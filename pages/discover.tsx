@@ -333,6 +333,7 @@ export async function getStaticProps() {
           contractAddress: '0x5e5f2a4b4a909fbb44044fb52ae94ff313605d43',
           author: {
             twitter: 'toadyhawk',
+            twitterTwo: 'volkyeth',
             address: '',
             ens: ''
           }
@@ -519,6 +520,7 @@ export async function getStaticProps() {
             ens: 'nicholasbaker.eth'
           }
         }
+        // 3 batch
       ]
     }
   }
