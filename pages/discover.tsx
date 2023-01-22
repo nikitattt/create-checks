@@ -563,7 +563,8 @@ export async function getStaticProps() {
         {
           name: 'LIFE 4/7 : RARE',
           type: 'NFT',
-          image: '',
+          image:
+            'https://bafybeifq4ukzjfythfqoawulb7fwvs4psj4ev3mm3c3wl3rneonq7mtemu.ipfs.nftstorage.link/',
           link: 'https://create.zora.co/collections/0x6c595007366f2d5446809a473fcfc4b0513ad79f',
           contractAddress: '0x6c595007366f2d5446809a473fcfc4b0513ad79f',
           author: {
