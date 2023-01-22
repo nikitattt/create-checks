@@ -1175,217 +1175,261 @@ export async function getStaticProps() {
           }
         },
         {
-          name: '',
-          type: 'NFT',
-          image: '',
-          link: '',
+          name: 'OFF-CHECKS',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/Fmt-atcXgAA9a1T?format=jpg&name=large',
+          link: 'https://twitter.com/theartofwarren/status/1615523896429772800',
           contractAddress: '',
           author: {
-            twitter: '',
+            twitter: 'theartofwarren',
             address: '',
             ens: ''
           }
         },
         {
-          name: '',
-          type: 'NFT',
-          image: '',
-          link: '',
+          name: 'NFTs, explained',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FmuEWp1XgAEt9qK?format=jpg&name=large',
+          link: 'https://twitter.com/0xkwydk/status/1615530421491585027',
           contractAddress: '',
           author: {
-            twitter: '',
+            twitter: '0xkwydk',
             address: '',
             ens: ''
           }
         },
         {
-          name: '',
-          type: 'NFT',
-          image: '',
-          link: '',
+          name: '✓✓✓',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FmtlL0vaMAAr4Ba?format=jpg&name=large',
+          link: 'https://twitter.com/gid3xn/status/1615496487441698820',
           contractAddress: '',
           author: {
-            twitter: '',
+            twitter: 'gid3xn',
             address: '',
             ens: ''
           }
         },
         {
-          name: '',
-          type: 'NFT',
-          image: '',
-          link: '',
+          name: 'check, balance',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/Fm4U4bKaUAA5CAB?format=jpg&name=large',
+          link: 'https://twitter.com/gid3xn/status/1616252421860392963',
           contractAddress: '',
           author: {
-            twitter: '',
+            twitter: 'gid3xn',
             address: '',
             ens: ''
           }
         },
         {
-          name: '',
-          type: 'NFT',
-          image: '',
-          link: '',
+          name: 'Check',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/Fm8-QMRaMAExhnm?format=jpg&name=large',
+          link: 'https://twitter.com/gid3xn/status/1616579310781108225',
           contractAddress: '',
           author: {
-            twitter: '',
+            twitter: 'gid3xn',
             address: '',
             ens: ''
           }
         },
         {
-          name: '',
-          type: 'NFT',
-          image: '',
-          link: '',
+          name: 'Check Rise',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/Fm8-cIEaYAEEg73?format=png&name=900x900',
+          link: 'https://twitter.com/gid3xn/status/1616579581020098561',
           contractAddress: '',
           author: {
-            twitter: '',
+            twitter: 'gid3xn',
             address: '',
             ens: ''
           }
         },
         {
-          name: '',
-          type: 'NFT',
-          image: '',
-          link: '',
+          name: 'a doodles checks',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/Fmunz6TWYAgAwka?format=jpg&name=large',
+          link: 'https://twitter.com/MeltedBears/status/1615570174790221824',
           contractAddress: '',
           author: {
-            twitter: '',
+            twitter: 'MeltedBears',
             address: '',
             ens: ''
           }
         },
         {
-          name: '',
-          type: 'NFT',
-          image: '',
-          link: '',
+          name: 'Checks',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FmueJfFXgAECfCe?format=png&name=small',
+          link: 'https://twitter.com/donatellapomme/status/1615558786747441152',
           contractAddress: '',
           author: {
-            twitter: '',
+            twitter: 'donatellapomme',
             address: '',
             ens: ''
           }
         },
         {
-          name: '',
-          type: 'NFT',
-          image: '',
-          link: '',
+          name: '🍆',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/Fmt54hZXwAQfMx9?format=png&name=900x900',
+          link: 'https://twitter.com/CallMeChenAgain/status/1615519159122526208',
           contractAddress: '',
           author: {
-            twitter: '',
+            twitter: 'CallMeChenAgain',
             address: '',
             ens: ''
           }
         },
         {
-          name: '',
-          type: 'NFT',
-          image: '',
-          link: '',
+          name: '🍑',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/Fmt57uUXEAAyrb7?format=png&name=900x900',
+          link: 'https://twitter.com/CallMeChenAgain/status/1615519159122526208',
           contractAddress: '',
           author: {
-            twitter: '',
+            twitter: 'CallMeChenAgain',
             address: '',
             ens: ''
           }
         },
         {
-          name: '',
-          type: 'NFT',
-          image: '',
-          link: '',
+          name: 'S',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FmuwVnlaMAEEdYm?format=png&name=medium',
+          link: 'https://twitter.com/0xBunzy/status/1615579169152438272',
           contractAddress: '',
           author: {
-            twitter: '',
+            twitter: '0xBunzy',
             address: '',
             ens: ''
           }
         },
         {
-          name: '',
+          name: 'Checky Night',
           type: 'NFT',
-          image: '',
-          link: '',
+          image:
+            'https://bafybeiel7chewisl5judp66k3iattbdcqi2rf2jraravxxyezuw6463oda.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0xccb89d15b3977defda59d30542ed54dc38842c64',
+          contractAddress: '0xccb89d15b3977defda59d30542ed54dc38842c64',
+          author: {
+            twitter: 'visualzare',
+            address: '',
+            ens: 'visualzare.eth'
+          }
+        },
+        {
+          name: 'REKTS - RG EDITION',
+          type: 'NFT',
+          image:
+            'https://n7mz5ihcl6ckvu34leemcbhxfmrt2y7wsilnw2vjh7v6ixrdnwzq.arweave.net/b9meoOJfhKrTfFkIwQT3KyM9Y_aSFttqqT_r5F4jbbM',
+          link: 'https://app.manifold.xyz/c/rekts-RG-Edition',
+          contractAddress: '0xbB5dA6DE3d235a45909D8e91b86069D114C72D5f',
+          author: {
+            twitter: 'pep0tto',
+            address: '0x6abCe6d8F90Cd034e6A1Efa853c61CeD6941Aa7d',
+            ens: ''
+          }
+        },
+        {
+          name: 'nevvsvvorthy',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FmzkLiCXkAAMtfs?format=png&name=large',
+          link: 'https://twitter.com/theartofwarren/status/1615917524587102208',
           contractAddress: '',
           author: {
-            twitter: '',
+            twitter: 'theartofwarren',
             address: '',
             ens: ''
           }
         },
         {
-          name: '',
-          type: 'NFT',
-          image: '',
-          link: '',
+          name: 'BLOCKS.',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FmyqbhPXgAIPAck?format=jpg&name=large',
+          link: 'https://twitter.com/harvmcm/status/1615853762391822338',
           contractAddress: '',
           author: {
-            twitter: '',
+            twitter: 'harvmcm',
             address: '',
             ens: ''
           }
         },
         {
-          name: '',
+          name: 'Pink Checks',
           type: 'NFT',
-          image: '',
-          link: '',
+          image:
+            'https://ipfs.io/ipfs/QmcTt3ChcScYi8CBDFBe1YYeeK5gxoq85nQJKPK2Pczg9G/nft.png',
+          link: 'https://foundation.app/@evantan/evantan/7?ref=0x15F7320adb990020956D29Edb6ba17f3D468001e',
+          contractAddress: '0x61fc7650b9995b91F343a646AAb74D423EdBA4b5',
+          author: {
+            twitter: 'evantan',
+            address: '0x15f7320adb990020956d29edb6ba17f3d468001e',
+            ens: ''
+          }
+        },
+        {
+          name: 'protozoa, medical illustration, detailed, under a microscope, enlarged',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FmxNIXAXkAEsbaN?format=jpg&name=large',
+          link: 'https://twitter.com/lastpunk9999/status/1615751702526988288',
           contractAddress: '',
           author: {
-            twitter: '',
+            twitter: 'lastpunk9999',
             address: '',
             ens: ''
           }
         },
         {
-          name: '',
-          type: 'NFT',
-          image: '',
-          link: '',
+          name: 'new meta adjusted',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FmxnFVHWQAUuxyU?format=jpg&name=large',
+          link: 'https://twitter.com/0xkwydk/status/1615779767889928193',
           contractAddress: '',
           author: {
-            twitter: '',
+            twitter: '0xkwydk',
             address: '',
             ens: ''
           }
         },
         {
-          name: '',
-          type: 'NFT',
-          image: '',
-          link: '',
+          name: 'black hole',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FmxFDwoaEAA6jnS?format=jpg&name=large',
+          link: 'https://twitter.com/AlteFide/status/1615748356470640641',
           contractAddress: '',
           author: {
-            twitter: '',
+            twitter: 'AlteFide',
             address: '',
             ens: ''
           }
         },
         {
-          name: '',
+          name: "Maslow's hierarchy of needs",
           type: 'NFT',
-          image: '',
-          link: '',
+          image:
+            'https://pbs.twimg.com/media/FmxS7X4WABgfwAv?format=jpg&name=large',
+          link: 'https://twitter.com/discopump/status/1615757553584963594',
           contractAddress: '',
           author: {
-            twitter: '',
-            address: '',
-            ens: ''
-          }
-        },
-        {
-          name: '',
-          type: 'NFT',
-          image: '',
-          link: '',
-          contractAddress: '',
-          author: {
-            twitter: '',
+            twitter: 'discopump',
             address: '',
             ens: ''
           }
