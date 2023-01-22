@@ -519,8 +519,211 @@ export async function getStaticProps() {
             address: '',
             ens: 'nicholasbaker.eth'
           }
-        }
+        },
         // 3 batch
+        {
+          name: 'LIFE 1/7 : START',
+          type: 'NFT',
+          image:
+            'https://bafkreihzkb3npfho2nj73de4oohe4qoli4cxzzcy5uznydc5rjeny4ove4.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0xca48ba21370be14cddc53e46c27c68eaebb2961d',
+          contractAddress: '0xca48ba21370be14cddc53e46c27c68eaebb2961d',
+          author: {
+            twitter: 'wutaner',
+            address: '',
+            ens: 'tinyart.eth'
+          }
+        },
+        {
+          name: 'LIFE 2/7 : COMMON',
+          type: 'NFT',
+          image:
+            'https://bafybeiawzu7vf7xuvizu2ljlvehntew6xx76r3mkk3lvub7y2grmpiwlhu.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0x264f8c7572f6fe05058eb908c1fec02efff5be3b',
+          contractAddress: '0x264f8c7572f6fe05058eb908c1fec02efff5be3b',
+          author: {
+            twitter: 'wutaner',
+            address: '',
+            ens: 'tinyart.eth'
+          }
+        },
+        {
+          name: 'LIFE 3/7 : UNCOMMON',
+          type: 'NFT',
+          image:
+            'https://bafybeicu6amrbqmoe3sv6dv4yusdgyew3syxbz7y5eevzaal2kszjtrtm4.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0x800304d8777af6139cbdc96f9f8d7c1beaabc724',
+          contractAddress: '0x800304d8777af6139cbdc96f9f8d7c1beaabc724',
+          author: {
+            twitter: 'wutaner',
+            address: '',
+            ens: 'tinyart.eth'
+          }
+        },
+        {
+          name: 'LIFE 4/7 : RARE',
+          type: 'NFT',
+          image: '',
+          link: 'https://create.zora.co/collections/0x6c595007366f2d5446809a473fcfc4b0513ad79f',
+          contractAddress: '0x6c595007366f2d5446809a473fcfc4b0513ad79f',
+          author: {
+            twitter: 'wutaner',
+            address: '',
+            ens: 'tinyart.eth'
+          }
+        },
+        {
+          name: 'LIFE 5/7 : EPIC',
+          type: 'NFT',
+          image:
+            'https://bafybeicc3uxnt6sw66oz74lgthssryfdro76x3e2ah3dgxvtzhlaygnix4.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0x45a9a431a322bdbda6dc864be2b99033b0ddc5a3',
+          contractAddress: '0x45a9a431a322bdbda6dc864be2b99033b0ddc5a3',
+          author: {
+            twitter: 'wutaner',
+            address: '',
+            ens: 'tinyart.eth'
+          }
+        },
+        {
+          name: 'LIFE 6/7 : LEGENDARY',
+          type: 'NFT',
+          image:
+            'https://bafkreie6zbl7jl4qpa26sbdwabr4fdzlvhzxlaxoxqa4h6rc5irlibqp6a.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0xb76ec9151d2be526f69e2a6478097c136250bcbb',
+          contractAddress: '0xb76ec9151d2be526f69e2a6478097c136250bcbb',
+          author: {
+            twitter: 'wutaner',
+            address: '',
+            ens: 'tinyart.eth'
+          }
+        },
+        {
+          name: 'LIFE 7/7 : ORDINARY',
+          type: 'NFT',
+          image:
+            'https://bafkreiguohg5o7wl4mhmlkxagy56gxmkddmkxffpkjahjgixr5qu5fttxa.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0x83b01d054cf4f304f0bd397bed21f60ddcc33681',
+          contractAddress: '0x83b01d054cf4f304f0bd397bed21f60ddcc33681',
+          author: {
+            twitter: 'wutaner',
+            address: '',
+            ens: 'tinyart.eth'
+          }
+        },
+        {
+          name: 'Hearts',
+          type: 'NFT',
+          image:
+            'https://i.seadn.io/gcs/files/6ed08d9975910f7ebcfcaeff88af106c.png?auto=format&w=1000',
+          link: 'https://www.hearts.studio/',
+          contractAddress: '0x919435518099feed50aec90f12d05a1d6425f133',
+          author: {
+            twitter: 'jensblond',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'Uncheck',
+          type: 'NFT',
+          image:
+            'https://ipfs.io/ipfs/QmTGg2QLWucP8LjktS6qCAajN6sm6q9G4PJBX2iiMLzYDk/nft.svg',
+          link: 'https://foundation.app/@Peimsloot/misc-e6b3/1',
+          contractAddress: '0xBeFDE264D3D61e68b1ab9991D29FF38CCb8eeaDb',
+          author: {
+            twitter: 'peimsloot',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'Checkbeanz',
+          type: 'NFT',
+          image:
+            'https://bafybeid5gcytkkly554i5eym5cxn6tzzovne6haov2uj23bmaxamfw2gea.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0xc841d642eb512b83c481138e36a56fcd7a7c5f14',
+          contractAddress: '0xc841d642eb512b83c481138e36a56fcd7a7c5f14',
+          author: {
+            twitter: 'peimsloot',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'Check this Lil Noun',
+          type: 'NFT',
+          image:
+            'https://bafybeihyfrkro5gx4k3h5ouxwfai733ntvfkttz24rsfme55n23wigisdq.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0xb55281837432e8e93d2f7204a1bd2dcbfbae1076',
+          contractAddress: '0xb55281837432e8e93d2f7204a1bd2dcbfbae1076',
+          author: {
+            ttwitter: 'toadyhawk',
+            twitterTwo: 'volkyeth',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: '',
+          type: 'NFT',
+          image: '',
+          link: '',
+          contractAddress: '',
+          author: {
+            twitter: '',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: '',
+          type: 'NFT',
+          image: '',
+          link: '',
+          contractAddress: '',
+          author: {
+            twitter: '',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: '',
+          type: 'NFT',
+          image: '',
+          link: '',
+          contractAddress: '',
+          author: {
+            twitter: '',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: '',
+          type: 'NFT',
+          image: '',
+          link: '',
+          contractAddress: '',
+          author: {
+            twitter: '',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: '',
+          type: 'NFT',
+          image: '',
+          link: '',
+          contractAddress: '',
+          author: {
+            twitter: '',
+            address: '',
+            ens: ''
+          }
+        }
       ]
     }
   }
