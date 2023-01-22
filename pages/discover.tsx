@@ -514,7 +514,7 @@ export async function getStaticProps() {
           link: 'https://www.baker.studio/work/checkmate',
           contractAddress: '0xe4c130b21ec937e86645ac00f31821dd08b711fb',
           author: {
-            twitter: '',
+            twitter: 'nickpbaker',
             address: '',
             ens: 'nicholasbaker.eth'
           }
