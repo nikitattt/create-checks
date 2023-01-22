@@ -885,6 +885,267 @@ export async function getStaticProps() {
             address: '',
             ens: ''
           }
+        },
+        // 4 batch
+        {
+          name: 'Holder',
+          type: 'NFT',
+          image:
+            'https://bafybeid5s5vob6rcsptzge4qsln6zgfj3t7fqjqzmduxa3pjuxtjrimtfu.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0x4bb3d9e2fadffbefc72d92b52559374cf5722b69',
+          contractAddress: '0x4bb3d9e2fadffbefc72d92b52559374cf5722b69',
+          author: {
+            twitter: 'serifa_eth',
+            address: '',
+            ens: 'serifa.eth'
+          }
+        },
+        {
+          name: 'Cross-Checks',
+          type: 'NFT',
+          image:
+            'https://formfunction.imgix.net/nft-images/tsvDtvwJ7pBmZk0QGj_9b.png?q=100&auto=format&ixlib=react-9.5.4&w=3038',
+          link: 'https://formfunction.xyz/@exile/eq1Z1caWdR4vs6aBJNqD7TU3x48VPH6qURcWoD9oipX?width=2000&height=2000',
+          contractAddress: '',
+          author: {
+            twitter: 'stateofexile_',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'CHECK YOURSELF',
+          type: 'NFT',
+          image:
+            'https://bm5tyvjqr6iypf4gxm4zq2mo6xjibvuxg27ckuxaxxg6r53irxjq.arweave.net/Czs8VTCPkYeXhrs5mGmO9dKA1pc2viVS4L3N6PdojdM',
+          link: 'https://app.manifold.xyz/c/Checkurself',
+          contractAddress: '0x00dAD08dc49a45cEFa4EDc1F2CB000688e3eF1f3',
+          author: {
+            twitter: 'derakmandious',
+            address: '',
+            ens: 'lordofvibes.eth'
+          }
+        },
+        {
+          name: 'KEKS',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FmjRG5FXoAMBGUi?format=jpg&name=large',
+          link: 'https://twitter.com/devonfigures/status/1614770963068903426',
+          contractAddress: '',
+          author: {
+            twitter: 'devonfigures',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'Checkception',
+          type: 'NFT',
+          image:
+            'https://bafybeibr6tk3nknpw43h3szebpaauf3gmailiuwvfvjrib4pu2a4mn52tm.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0xf220468183a183c843e4377679b3d214e187eb2f',
+          contractAddress: '0xf220468183a183c843e4377679b3d214e187eb2f',
+          author: {
+            twitter: 'visualzare',
+            address: '',
+            ens: 'visualzare.eth'
+          }
+        },
+        {
+          name: 'allindots girls',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/Fmm0FvwWYAEOOr1?format=jpg&name=large',
+          link: 'https://twitter.com/allindots/status/1615019966700347394',
+          contractAddress: '',
+          author: {
+            twitter: 'allindots',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'From NotWarren',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FmqAi5yXEAYeVFQ?format=jpg&name=large',
+          link: 'https://twitter.com/notwarrenETH/status/1615244758774865920',
+          contractAddress: '',
+          author: {
+            twitter: 'notwarrenETH',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'verified',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/Fmpmh3KaYAEAuJe?format=jpg&name=large',
+          link: 'https://twitter.com/latteshelby/status/1615216155911933957',
+          contractAddress: '',
+          author: {
+            twitter: 'latteshelby',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'Certified X Copied',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FmsCSFJaEAYpH-v?format=jpg&name=large',
+          link: 'https://twitter.com/CryptoMiyagi_/status/1615387407230341120',
+          contractAddress: '',
+          author: {
+            twitter: 'CryptoMiyagi_',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'CERTIFIED X COPY',
+          type: 'NFT',
+          image:
+            'https://ul7cdhrdkxyg2k5pyfjcjei3jndzsjal5zo2tsu6e7cuvwixodya.arweave.net/ov4hniNV8G0rr8FSJJEbS0eZJAvuXanKnifFStkXcPA',
+          link: 'https://app.manifold.xyz/c/certified-x-copy',
+          contractAddress: '0xCb2263f27DeA3b397bCFe6d3D8EBb0dE61b06636',
+          author: {
+            twitter: '0xBunzy',
+            address: '',
+            ens: '0xbunzy.eth'
+          }
+        },
+        {
+          name: 'SUMMER - JPG EDITION',
+          type: 'NFT',
+          image:
+            'https://ujmrghap3oi7ysrywcjzjthypvfsdsp74ae6oz4xcohtmmikncqa.arweave.net/olkTHA_bkfxKOLCTlMz4fUshyf_gCednlxOPNjEKaKA',
+          link: 'https://app.manifold.xyz/c/summer-jpg-edition',
+          contractAddress: '0x5B5D55DB54eF42f2a6Ae30D8e0dD8a7879593a81',
+          author: {
+            twitter: 'kkostya',
+            address: '',
+            ens: 'kkostya.eth'
+          }
+        },
+        {
+          name: 'CERTIFIED PEPE',
+          type: 'NFT',
+          image:
+            'https://edjk7qhv5nmn6jrazsbznjfdmmq3h7sjw45r3gtow7fl5idwroda.arweave.net/INKvwPXrWN8mIMyDlqSjYyGz_km3Ox2abrfKvqB2i4Y',
+          link: 'https://app.manifold.xyz/c/certified-pepe',
+          contractAddress: '0xe30CF712CcAB13d65c77E02263A68597d17A26B9',
+          author: {
+            twitter: '0xBunzy',
+            address: '',
+            ens: '0xbunzy.eth'
+          }
+        },
+        {
+          name: 'Checks x Zen',
+          type: 'NFT',
+          image:
+            'https://bafybeidd4pnrgbtmcjohi2bhfzi4niy744ccsemubpfclq5aqeyoilgdi4.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0xaf7e846d4b954defe3c9a6b904a6e54de134e52c',
+          contractAddress: '0xaf7e846d4b954defe3c9a6b904a6e54de134e52c',
+          author: {
+            twitter: 'Churrolover2',
+            address: '',
+            ens: 'churrolover.eth'
+          }
+        },
+        {
+          name: 'Keks ft. Checks',
+          type: 'NFT',
+          image:
+            'https://bafkreic7wkzejxgdcvozannv5zulbetphcixcistohtkzxgcaloonzp3vy.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0x8101ec6bb31ffc74fbc8425d68df0eb96bde1b12',
+          contractAddress: '0x8101ec6bb31ffc74fbc8425d68df0eb96bde1b12',
+          author: {
+            twitter: 'Fiddyten',
+            address: '',
+            ens: '8613.eth'
+          }
+        },
+        {
+          name: 'FlysAlpha x Checks',
+          type: 'NFT',
+          image:
+            'https://bafybeifjgsglkbfsvyuotse7753ltaz466cvtzn2j5w25c3swb5wzbm6uu.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0x3a7edd7769ec6f3ca36afd790433884a21f7d4a4',
+          contractAddress: '0x3a7edd7769ec6f3ca36afd790433884a21f7d4a4',
+          author: {
+            twitter: '',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'SOUL CHECKS - DARK',
+          type: 'NFT',
+          image:
+            'https://bafybeiehyjucwkgk5o5yji626gy5qdbydhm2g7scnorcqca7dfclwjv5t4.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0xc512a554cf0601d9fca0f7652cf876c0b928f0ee',
+          contractAddress: '0xc512a554cf0601d9fca0f7652cf876c0b928f0ee',
+          author: {
+            twitter: 'lad1699',
+            address: '',
+            ens: 'gaul.eth'
+          }
+        },
+        {
+          name: 'SOUL CHECKS - LIGHT',
+          type: 'NFT',
+          image:
+            'https://bafybeihtfoeyrnqtcuec6t3fsdux47jmxyl4vvw2ece24rpkoh4keee4zi.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0x25675333725e97358828d21f25ec8a79a9e8a4d7',
+          contractAddress: '0x25675333725e97358828d21f25ec8a79a9e8a4d7',
+          author: {
+            twitter: 'lad1699',
+            address: '',
+            ens: 'gaul.eth'
+          }
+        },
+        {
+          name: 'Moonbirds',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FmroDQTaYAAz9GN?format=jpg&name=4096x4096',
+          link: 'https://twitter.com/_JayJay88/status/1615358894393655296',
+          contractAddress: '',
+          author: {
+            twitter: '_JayJay88',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'Floor Checks',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FmN96MTakAACD-D?format=jpg&name=medium',
+          link: 'https://twitter.com/floor/status/1613326767569223680',
+          contractAddress: '',
+          author: {
+            twitter: 'floor',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'Rarible Checks',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FmsTpDTWQAA_MYw?format=png&name=medium',
+          link: 'https://twitter.com/rarible/status/1615406638868926470',
+          contractAddress: '',
+          author: {
+            twitter: 'rarible',
+            address: '',
+            ens: ''
+          }
         }
       ]
     }
