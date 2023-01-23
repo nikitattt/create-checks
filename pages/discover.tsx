@@ -1677,7 +1677,7 @@ export async function getStaticProps() {
           link: 'https://app.manifold.xyz/c/verifiedpepe',
           contractAddress: '0xd16f199d80b6151cc42b34F4625399B81f4B8aa5',
           author: {
-            twitter: 'NFTBalt',
+            twitter: 'balt1711',
             address: '0xD8d7789453CBd59041AD448767dD374b8888ab66',
             ens: ''
           }
