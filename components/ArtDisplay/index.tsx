@@ -50,14 +50,14 @@ const JPG = (data: any) => {
           )}
         />
         {data.data.author.twitter && (
-          <a
-            href={`https://twitter.com/${data.data.author.twitter}`}
-            target="_blank"
-            className="cursor-pointer"
-          >
-            <div className="absolute top-5 left-5 p-1 opacity-0 group-hover:opacity-100 transition-all duration-300 group">
-              <div className={clsx('')}>{`@${data.data.author.twitter}`}</div>
-              {/* <div className="invisible group-hover:visible">
+          //   <a
+          //     href={`https://twitter.com/${data.data.author.twitter}`}
+          //     target="_blank"
+          //     className="cursor-pointer"
+          //   >
+          <div className="absolute top-5 left-5 p-1 opacity-0 group-hover:opacity-100 transition-all duration-300 group">
+            <div className={clsx('')}>{`@${data.data.author.twitter}`}</div>
+            {/* <div className="invisible group-hover:visible">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
@@ -76,8 +76,8 @@ const JPG = (data: any) => {
                   />
                 </svg>
               </div> */}
-            </div>
-          </a>
+          </div>
+          //   </a>
         )}
         {data.data.name && (
           <div
