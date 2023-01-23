@@ -60,5 +60,7 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require("tailwindcss-scoped-groups"),
+  ],
 }
