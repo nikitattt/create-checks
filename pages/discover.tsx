@@ -1433,6 +1433,358 @@ export async function getStaticProps() {
             address: '',
             ens: ''
           }
+        },
+        // 6 batch
+        {
+          name: 'Heart Checks',
+          type: 'NFT',
+          image:
+            'https://bafkreif7hx4u2oxbe4rqayycqdgj5kghrorwqhrjfhuxpiqs25x4qbttra.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0x93372c15345c9070bd3eb1ad9007f0705cdbd290',
+          contractAddress: '0x93372c15345c9070bd3eb1ad9007f0705cdbd290',
+          author: {
+            twitter: 'nasergivechi',
+            address: '',
+            ens: 'nasergivechi.eth'
+          }
+        },
+        {
+          name: 'SEIZE THE MEMES OF PRODUCTION',
+          type: 'NFT',
+          image:
+            'https://nmd6o65y4j2vn3b64jhmrprjxuioatevv4stivutfd2l7ouhc6ua.arweave.net/awfne7jidVbsPuJOyL4pvRDgTJWvJTRWkyj0v7qHF6g',
+          link: 'https://app.manifold.xyz/c/memesofproduction',
+          contractAddress: '0xa105AD461d126950980E3AbBF64c2005cEA60e9C',
+          author: {
+            twitter: 'minimal_meme_s',
+            address: '0xB90A806fE45Ee016FD0020CBB603e8102Dd91A83',
+            ens: ''
+          }
+        },
+        {
+          name: 'SEIZE THE MEMES OF PRODUCTION',
+          type: 'NFT',
+          image:
+            'https://rdahfarrnejbyjoxfit23jgh4fkl6a4jeh56d3qyx7mdli3sap7a.arweave.net/iMBygjFpEhwl1yonraTH4VS_A4kh--HuGL_YNaNyA_4',
+          link: 'https://foundation.app/@minimal_memes/mmeme/1',
+          contractAddress: '0x915678B29db8C4cF6C43e64DbBbA30c1B57fc251',
+          author: {
+            twitter: 'minimal_meme_s',
+            address: '0xB90A806fE45Ee016FD0020CBB603e8102Dd91A83',
+            ens: ''
+          }
+        },
+        {
+          name: 'Eye Check',
+          type: 'NFT',
+          image:
+            'https://bafkreicuoecibq7r5xwtwjdshctnubgcqdag32ufbentrqyxv6gpfkkzcm.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0x851891457146b25b127550d6a943cf54e2738c09',
+          contractAddress: '0x851891457146b25b127550d6a943cf54e2738c09',
+          author: {
+            twitter: 'cfowlerdesign',
+            address: '0x71122e22f8090027d6bc3082fcd8bb8a27e23729',
+            ens: ''
+          }
+        },
+        {
+          name: 'Sight Check',
+          type: 'NFT',
+          image:
+            'https://bafkreihur54gcucosvremyoz523trpx5zpexdeiv3pbh5yjrpgmnncg47u.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0xbe3bb0f170c97ab75f01bc3b438a56b7851bac21',
+          contractAddress: '0xbe3bb0f170c97ab75f01bc3b438a56b7851bac21',
+          author: {
+            twitter: 'cfowlerdesign',
+            address: '0x71122e22f8090027d6bc3082fcd8bb8a27e23729',
+            ens: ''
+          }
+        },
+        {
+          name: 'Chainchecks - Original',
+          type: 'NFT',
+          image:
+            'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaW5ZTWluIG1lZXQiIHdpZHRoPSI2MDAiIGhlaWdodD0iNjAwIiB2aWV3Qm94PSIwIDAgMzcgMzciIGZpbGw9Im5vbmUiPgo8cmVjdCB3aWR0aD0iMzciIGhlaWdodD0iMzciIGZpbGw9IiNFQkVCRUIiLz4KPHJlY3QgeD0iMTAiIHk9IjgiIHdpZHRoPSIxNyIgaGVpZ2h0PSIyMSIgZmlsbD0id2hpdGUiLz4KPHJlY3QgeD0iMTEiIHk9IjkiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNEQjM5NUUiLz4KPHJlY3QgeD0iMTEiIHk9IjExIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSIjMkU2NjhCIi8+CjxyZWN0IHg9IjExIiB5PSIxMyIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iI0YwQTMzQSIvPgo8cmVjdCB4PSIxMSIgeT0iMTUiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiM1MjVFQTkiLz4KPHJlY3QgeD0iMTEiIHk9IjE3IiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSIjMzM3NThDIi8+CjxyZWN0IHg9IjExIiB5PSIxOSIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iI0VBN0IzMCIvPgo8cmVjdCB4PSIxMSIgeT0iMjEiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiM5Njc5MzEiLz4KPHJlY3QgeD0iMTEiIHk9IjIzIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSIjNDA2OEMwIi8+CjxyZWN0IHg9IjExIiB5PSIyNSIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iI0Y3RDk0QSIvPgo8cmVjdCB4PSIxMSIgeT0iMjciIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiMzMjJGOTAiLz4KPHJlY3QgeD0iMTMiIHk9IjkiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiM2MDIyNjMiLz4KPHJlY3QgeD0iMTMiIHk9IjExIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSIjRjZDQkE2Ii8+CjxyZWN0IHg9IjEzIiB5PSIxMyIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iIzVBQkFEMyIvPgo8cmVjdCB4PSIxMyIgeT0iMTUiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNFQzczNjgiLz4KPHJlY3QgeD0iMTMiIHk9IjE3IiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSIjRjA5ODM3Ii8+CjxyZWN0IHg9IjEzIiB5PSIxOSIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iIzNFOEJBMyIvPgo8cmVjdCB4PSIxMyIgeT0iMjEiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNENTMzMkYiLz4KPHJlY3QgeD0iMTMiIHk9IjIzIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSIjRjlEQTREIi8+CjxyZWN0IHg9IjEzIiB5PSIyNSIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iI0M3RURGMiIvPgo8cmVjdCB4PSIxMyIgeT0iMjciIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNFODQyNEUiLz4KPHJlY3QgeD0iMTUiIHk9IjkiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiM1QzgzQ0IiLz4KPHJlY3QgeD0iMTUiIHk9IjExIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSIjREEzMzIxIi8+CjxyZWN0IHg9IjE1IiB5PSIxMyIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iI0Q2RjRFMSIvPgo8cmVjdCB4PSIxNSIgeT0iMTUiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNGQkVBNUIiLz4KPHJlY3QgeD0iMTUiIHk9IjE3IiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSIjOUFEOUZCIi8+CjxyZWN0IHg9IjE1IiB5PSIxOSIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iI0YwQTBDQSIvPgo8cmVjdCB4PSIxNSIgeT0iMjEiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNFNzNFNTMiLz4KPHJlY3QgeD0iMTUiIHk9IjIzIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSIjNzdEM0RFIi8+CjxyZWN0IHg9IjE1IiB5PSIyNSIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iI0YyQjM0MSIvPgo8cmVjdCB4PSIxNSIgeT0iMjciIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiMyRTQ5ODUiLz4KPHJlY3QgeD0iMTciIHk9IjkiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNCMUVGQzkiLz4KPHJlY3QgeD0iMTciIHk9IjExIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSIjMkQ1MzUyIi8+CjxyZWN0IHg9IjE3IiB5PSIxMyIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iI0QxREY0RiIvPgo8cmVjdCB4PSIxNyIgeT0iMTUiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiM5M0NGOTgiLz4KPHJlY3QgeD0iMTciIHk9IjE3IiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSIjRjdERDlCIi8+CjxyZWN0IHg9IjE3IiB5PSIxOSIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iIzREMzY1OCIvPgo8cmVjdCB4PSIxNyIgeT0iMjEiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiMyRjIyNDMiLz4KPHJlY3QgeD0iMTciIHk9IjIzIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSIjNkE1NTJBIi8+CjxyZWN0IHg9IjE3IiB5PSIyNSIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iI0VBNUIzMyIvPgo8cmVjdCB4PSIxNyIgeT0iMjciIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiM1RkM5QkYiLz4KPHJlY3QgeD0iMTkiIHk9IjkiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiMyNTQzOEMiLz4KPHJlY3QgeD0iMTkiIHk9IjExIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSIjNUZDRDhDIi8+CjxyZWN0IHg9IjE5IiB5PSIxMyIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iI0E0QzhFRSIvPgo8cmVjdCB4PSIxOSIgeT0iMTUiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNFQjVBMkEiLz4KPHJlY3QgeD0iMTkiIHk9IjE3IiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSIjRkFFNjYzIi8+CjxyZWN0IHg9IjE5IiB5PSIxOSIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iIzgxRDFFQyIvPgo8cmVjdCB4PSIxOSIgeT0iMjEiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNEQjRENTgiLz4KPHJlY3QgeD0iMTkiIHk9IjIzIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSIjOEEyMjM1Ii8+CjxyZWN0IHg9IjE5IiB5PSIyNSIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iI0Q5N0QyRSIvPgo8cmVjdCB4PSIxOSIgeT0iMjciIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNGOURCNDkiLz4KPHJlY3QgeD0iMjEiIHk9IjkiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiM3QTI1MjAiLz4KPHJlY3QgeD0iMjEiIHk9IjExIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSIjNDI5MUE4Ii8+CjxyZWN0IHg9IjIxIiB5PSIxMyIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iI0VGODkzMyIvPgo8cmVjdCB4PSIyMSIgeT0iMTUiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNCODJDMzYiLz4KPHJlY3QgeD0iMjEiIHk9IjE3IiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSIjRjRCREJFIi8+CjxyZWN0IHg9IjIxIiB5PSIxOSIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iIzNCMkYzOSIvPgo8cmVjdCB4PSIyMSIgeT0iMjEiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNGMkE5M0MiLz4KPHJlY3QgeD0iMjEiIHk9IjIzIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSIjRkFFMjcyIi8+CjxyZWN0IHg9IjIxIiB5PSIyNSIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iI0FCREQ0NSIvPgo8cmVjdCB4PSIyMSIgeT0iMjciIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiM0QUEzOTIiLz4KPHJlY3QgeD0iMjMiIHk9IjkiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiM4NUMzM0MiLz4KPHJlY3QgeD0iMjMiIHk9IjExIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSIjRUY4QzM3Ii8+CjxyZWN0IHg9IjIzIiB5PSIxMyIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iI0E3RERGOSIvPgo8cmVjdCB4PSIyMyIgeT0iMTUiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNFQTNBMkQiLz4KPHJlY3QgeD0iMjMiIHk9IjE3IiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSIjRjdDQTU3Ii8+CjxyZWN0IHg9IjIzIiB5PSIxOSIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iI0YyQTkzQiIvPgo8cmVjdCB4PSIyMyIgeT0iMjEiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiM1QTlGM0UiLz4KPHJlY3QgeD0iMjMiIHk9IjIzIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSIjRUI0NDI5Ii8+CjxyZWN0IHg9IjIzIiB5PSIyNSIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iI0YyQTg0MCIvPgo8cmVjdCB4PSIyMyIgeT0iMjciIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNERTMyMzciLz4KPHJlY3QgeD0iMjUiIHk9IjkiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNDMjM1MzIiLz4KPHJlY3QgeD0iMjUiIHk9IjExIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSIjNTM1Njg3Ii8+CjxyZWN0IHg9IjI1IiB5PSIxMyIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iIzlERUZCRiIvPgo8cmVjdCB4PSIyNSIgeT0iMTUiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNGNkNCNDUiLz4KPHJlY3QgeD0iMjUiIHk9IjE3IiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSIjRUU4MzdEIi8+CjxyZWN0IHg9IjI1IiB5PSIxOSIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iIzYwQjFGNCIvPgo8cmVjdCB4PSIyNSIgeT0iMjEiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiM2RDJGMjIiLz4KPHJlY3QgeD0iMjUiIHk9IjIzIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSIjRTBDOTYzIi8+CjxyZWN0IHg9IjI1IiB5PSIyNSIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iI0VFODI4RiIvPgo8cmVjdCB4PSIyNSIgeT0iMjciIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiM3QTVBQjQiLz4KPC9zdmc+Cg==',
+          link: 'https://chainchecks.xyz/mint',
+          contractAddress: '0x38b48a7E6FE2574dB72F12fbeC29C499a051D424',
+          author: {
+            twitter: 'parkthomp',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'Chainchecks - Blue Edition',
+          type: 'NFT',
+          image:
+            'data:image/svg+xml,%3Csvg%20width%3D%222000%22%20height%3D%222000%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20clip-path%3D%22url(%23a)%22%3E%3Cpath%20d%3D%22M2000%200H0v2000h2000V0z%22%20fill%3D%22%23EBEBEB%22%2F%3E%3Cpath%20d%3D%22M1448.89%20447.852H551.108V1552.15h897.782V447.852z%22%20fill%3D%22%23fff%22%2F%3E%3Cpath%20fill%3D%22%2360B1F4%22%20d%3D%22M600%20494h57v57h-57zM600%20706h57v57h-57zM600%201130h57v57h-57zM600%20600h57v57h-57zM600%201024h57v57h-57zM600%20812h57v57h-57zM600%201236h57v57h-57zM600%20918h57v57h-57zM600%201342h57v57h-57zM600%201448h57v57h-57zM706%20494h57v57h-57zM706%20706h57v57h-57zM706%201130h57v57h-57zM706%20600h57v57h-57zM706%201024h57v57h-57zM706%20812h57v57h-57zM706%201236h57v57h-57zM706%20918h57v57h-57zM706%201342h57v57h-57zM706%201448h57v57h-57zM812.001%20494h57v57h-57zM812.001%20706h57v57h-57zM812.001%201130h57v57h-57zM812.001%20600h57v57h-57zM812.001%201024h57v57h-57zM812.001%20812h57v57h-57zM812.001%201236h57v57h-57zM812.001%20918h57v57h-57zM812.001%201342h57v57h-57zM812.001%201448h57v57h-57zM918%20494h57v57h-57zM918%20706h57v57h-57zM918%201130h57v57h-57zM918%20600h57v57h-57zM918%201024h57v57h-57zM918%20812h57v57h-57zM918%201236h57v57h-57zM918%20918h57v57h-57zM918%201342h57v57h-57zM918%201448h57v57h-57zM1024%20494h57v57h-57zM1024%20706h57v57h-57zM1024%201130h57v57h-57zM1024%20600h57v57h-57zM1024%201024h57v57h-57zM1024%20812h57v57h-57zM1024%201236h57v57h-57zM1024%20918h57v57h-57zM1024%201342h57v57h-57zM1024%201448h57v57h-57zM1130%20494h57v57h-57zM1130%20706h57v57h-57zM1130%201130h57v57h-57zM1130%20600h57v57h-57zM1130%201024h57v57h-57zM1130%20812h57v57h-57zM1130%201236h57v57h-57zM1130%20918h57v57h-57zM1130%201342h57v57h-57zM1130%201448h57v57h-57zM1236%20494h57v57h-57zM1236%20706h57v57h-57zM1236%201130h57v57h-57zM1236%20600h57v57h-57zM1236%201024h57v57h-57zM1236%20812h57v57h-57zM1236%201236h57v57h-57zM1236%20918h57v57h-57zM1236%201342h57v57h-57zM1236%201448h57v57h-57zM1342%20494h57v57h-57zM1342%20706h57v57h-57zM1342%201130h57v57h-57zM1342%20600h57v57h-57zM1342%201024h57v57h-57zM1342%20812h57v57h-57zM1342%201236h57v57h-57zM1342%20918h57v57h-57zM1342%201342h57v57h-57zM1342%201448h57v57h-57z%22%2F%3E%3C%2Fg%3E%3Cdefs%3E%3CclipPath%20id%3D%22a%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M0%200h2000v2000H0z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3C%2Fsvg%3E',
+          link: 'https://create.zora.co/collections/0xa387e32d2e4d3ff5418fa5694836027d2ecd7923',
+          contractAddress: '0xa387e32d2e4d3ff5418fa5694836027d2ecd7923',
+          author: {
+            twitter: 'parkthomp',
+            address: '0x93da86e4231908179b738e88dd0510f7078a5cac',
+            ens: ''
+          }
+        },
+        {
+          name: 'CHECK YOUR MAIL',
+          type: 'NFT',
+          image:
+            'https://geytzcfqrx4jm7w267zfthsiczs3y772cmfnwbameixe2kmmtpbq.arweave.net/MTE8iLCN-JZ-2vfyWZ5IFmW8f_oTCtsEDCIuTSmMm8M',
+          link: 'https://app.manifold.xyz/c/checkyourmail',
+          contractAddress: '0xA134c292c73Dd99d0d2A545e80B986a695775623',
+          author: {
+            twitter: 'VinnieHager',
+            address: '0xbCcE246EeBe7A39897AbF7A8F51cC60f4f5892f9',
+            ens: ''
+          }
+        },
+        {
+          name: 'CHECK YOUR MAIL DELIVERY',
+          type: 'NFT',
+          image:
+            'https://tlpf4cmie5rdsc2ejpqeef4vavx4ggpzuaclrszu7mngxpjahuva.arweave.net/mt5eCYgnYjkLREvgQheVBW_DGfmgBLjLNPsaa70gPSo',
+          link: 'https://app.manifold.xyz/br/check-your-mail-delivery',
+          contractAddress: '0xA134c292c73Dd99d0d2A545e80B986a695775623',
+          author: {
+            twitter: 'VinnieHager',
+            address: '0xbCcE246EeBe7A39897AbF7A8F51cC60f4f5892f9',
+            ens: ''
+          }
+        },
+        {
+          name: 'Cncptl Prspctv',
+          type: 'NFT',
+          image:
+            'https://pbs.twimg.com/media/FmiuxD_aUAASXZE?format=jpg&name=large',
+          link: 'https://twitter.com/CncptlPrspctv/status/1614732650681602048',
+          contractAddress: '',
+          author: {
+            twitter: 'CncptlPrspctv',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'Pepe Checks',
+          type: 'NFT',
+          image:
+            'https://bafybeihustqi4jb3jt3uk7fzqu3z5o6il7yxp3pm64bunn6sdtdmkkwere.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0x6ecb9652170d3fbaa6741ac53b0c2cd43488728f',
+          contractAddress: '0x6ecb9652170d3fbaa6741ac53b0c2cd43488728f',
+          author: {
+            twitter: 'discopump',
+            address: '',
+            ens: 'discopump.eth'
+          }
+        },
+        {
+          name: '$200 only on CHKRS',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/Fmow1_ZacAAnFdH?format=jpg&name=large',
+          link: 'https://twitter.com/gremplin/status/1615157125692657667',
+          contractAddress: '',
+          author: {
+            twitter: 'gremplin',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'Air Check 23',
+          type: 'NFT',
+          image:
+            'https://bafkreie2apkm6rcb3epyjnaf4ootr3jvedufcchr53t5hnydy45pewurb4.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0x5fe8df1449ae8e2b48b6f85c0f30d73317fcd7f1',
+          contractAddress: '0x5fe8df1449ae8e2b48b6f85c0f30d73317fcd7f1',
+          author: {
+            twitter: 'reshatg23',
+            address: '0x67417c4a1bea040cd82a811456b4b7d76d1f8751',
+            ens: ''
+          }
+        },
+        {
+          name: 'FRAGILE CHECK',
+          type: 'NFT',
+          image:
+            'https://p6fgcogcsa7gg477czakb2cui4dsnd2r2u65lasyipwrwfnis7ma.arweave.net/f4phOMKQPmNz_xZAoOhURwcmj1HVPdWCWEPtGxWol9g',
+          link: 'https://app.manifold.xyz/c/brokencheck',
+          contractAddress: '0xCF1565cD65358c390C56219efF8Fcd4d6A9b8cb4',
+          author: {
+            twitter: 'mantilla_angy',
+            address: '',
+            ens: 'angelamantilla.eth'
+          }
+        },
+        {
+          name: 'Chimps',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/Fmq4ae8XoAAyv9j?format=png&name=large',
+          link: 'https://twitter.com/TimpersHD/status/1615306404729872387',
+          contractAddress: '',
+          author: {
+            twitter: 'TimpersHD',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'Super Status Kart',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FmrQxm-XwAE9MZA?format=jpg&name=large',
+          link: 'https://twitter.com/gillesdc/status/1615333657509756929',
+          contractAddress: '',
+          author: {
+            twitter: 'gillesdc',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'Check the Weather Frens!',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FnLFzCmXwA4n_yP?format=jpg&name=medium',
+          link: 'https://twitter.com/Neeoverse/status/1617572701010538497',
+          contractAddress: '',
+          author: {
+            twitter: 'Neeoverse',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'Check Yourself',
+          type: 'NFT',
+          image:
+            'https://pbs.twimg.com/media/FnJ98MHacAEVp7N?format=jpg&name=large',
+          link: 'https://twitter.com/nasergivechi/status/1617493875702259713',
+          contractAddress: '',
+          author: {
+            twitter: 'nasergivechi',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'VERIFIEDPEPE',
+          type: 'NFT',
+          image:
+            'https://fbtxkwo4nfxzx5v47boihqaul76bmnyujnuqb6qvyj6bwdi3olda.arweave.net/KGd1Wdxpb5v2vPhcg8AUX_wWNxRLaQD6FcJ8Gw0bcsY',
+          link: 'https://app.manifold.xyz/c/verifiedpepe',
+          contractAddress: '0xd16f199d80b6151cc42b34F4625399B81f4B8aa5',
+          author: {
+            twitter: 'NFTBalt',
+            address: '0xD8d7789453CBd59041AD448767dD374b8888ab66',
+            ens: ''
+          }
+        },
+        {
+          name: 'DOS LARVAS OG | CHECK',
+          type: 'NFT',
+          image:
+            'https://j2julxmxgc4ueyp3aes7ua7vvvm6wiihwy7q46kfejkl4ow7jroq.arweave.net/TpNF3ZcwuUJh-wEl-gP1rVnrIQe2Pw55RSJUvjrfTF0',
+          link: 'https://app.manifold.xyz/c/larvas',
+          contractAddress: '0x8EAFF1F8d997C2f772bF03490d8BD190B565A315',
+          author: {
+            twitter: 'doslarvas',
+            address: '',
+            ens: 'doslarvas.eth'
+          }
+        },
+        {
+          name: 'POSITIONS OF FLYZ',
+          type: 'NFT',
+          image:
+            'https://nm363jrqxny6neghxnb3hmyy5gw75a6ba3bppcudrsztv44mybqa.arweave.net/azftpjC7ceaQx7tDs7MY6a3-g8EGwveKg4yzOvOMwGA',
+          link: 'https://app.manifold.xyz/c/PoF95',
+          contractAddress: '0xDe75a10396e79441855f388AcfC7B8f13EC74F11',
+          author: {
+            twitter: 'biterror_eth',
+            address: '',
+            ens: 'biterror.eth'
+          }
+        },
+        {
+          name: 'Left Unchecked',
+          type: 'NFT',
+          image:
+            'https://ipfs.io/ipfs/QmbeLBMLFEzHcATyqBJ7Xi1trJnCwjfMVvhwNjQEfMc5m8/nft.png',
+          link: 'https://foundation.app/@Haps/specopps/8',
+          contractAddress: '0x8c88d3B16270736d2bF7C636770b0759506C6dE7',
+          author: {
+            twitter: 'hapsigmi',
+            address: '0x81772de3466a34901f0a13230869a3ac65f213dd',
+            ens: 'hapsigmi.eth'
+          }
+        },
+        {
+          name: 'Check The Time',
+          type: 'NFT',
+          image:
+            'https://bafybeico6acvafw5tpvjbgszf3giqjaxhnialfrcp3nxcnl6ghxul6uny4.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0x935ff2b476b926d79898dd1c7be060b5a75cccd8',
+          contractAddress: '0x935ff2b476b926d79898dd1c7be060b5a75cccd8',
+          author: {
+            twitter: 'JKalinaOfficial',
+            address: '0x147596f1648fcdd4f6b99e0848f397f356fd4233',
+            ens: ''
+          }
+        },
+        {
+          name: 'CHECKS - DD EDITION: WHITE',
+          type: 'NFT',
+          image:
+            'https://xb62cqblekom64iinf64geta53fac6ukic2xwkx7im2t3qhqyciq.arweave.net/uH2hQCsinM9xCGl9wxJg7soBeopAtXsq_0M1PcDwwJE',
+          link: 'https://app.manifold.xyz/c/Checks-dd-edition-white',
+          contractAddress: '0xD70f16e639E09F90bd7Ee3F3C3BbAD33326D3094',
+          author: {
+            twitter: 'seanbonner',
+            address: '',
+            ens: 'seanbonner.eth'
+          }
+        },
+        {
+          name: 'CHECKS - DD EDITION: BLACK',
+          type: 'NFT',
+          image:
+            'https://assets.manifold.xyz/image/upload/c_limit,q_80,w_1024/v1674244600/5ed17814a7e7964a691c7fdd57f2de6b8b22483fe97e9a2af659de1c7a6d4432.png',
+          link: 'https://app.manifold.xyz/br/Checks-dd-edition-black',
+          contractAddress: '0xD70f16e639E09F90bd7Ee3F3C3BbAD33326D3094',
+          author: {
+            twitter: 'seanbonner',
+            address: '',
+            ens: 'seanbonner.eth'
+          }
+        },
+        {
+          name: 'CHECKS - DD EDITION: BLEU',
+          type: 'NFT',
+          image:
+            'https://assets.manifold.xyz/image/upload/c_limit,q_80,w_1024/v1674247240/2c00edcf11f39847c7878befaf1d344ee4cc4c582a682d23e017893c0d65f6b2.png',
+          link: 'https://app.manifold.xyz/br/Checks-dd-edition-bleu',
+          contractAddress: '0xD70f16e639E09F90bd7Ee3F3C3BbAD33326D3094',
+          author: {
+            twitter: 'seanbonner',
+            address: '',
+            ens: 'seanbonner.eth'
+          }
+        },
+        {
+          name: 'Variant 101',
+          type: 'NFT',
+          image:
+            'https://ipfs.io/ipfs/QmScgM1dVDCEiDqiAhwxLebBPFzMt8kSgFWXsA2GmEAVVi/nft.png',
+          link: 'https://foundation.app/@Haps/variants-by-haps/104',
+          contractAddress: '0xfF095979Fa64637307818c250BF8f964E8184562:104',
+          author: {
+            twitter: 'hapsigmi',
+            address: '0x81772de3466a34901f0a13230869a3ac65f213dd',
+            ens: 'hapsigmi.eth'
+          }
         }
       ]
     }
