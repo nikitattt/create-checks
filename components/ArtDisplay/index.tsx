@@ -38,11 +38,26 @@ const JPG = (data: any) => {
           'text-white'
         )}
       >
-        <img
-          src={data.data.image}
-          alt="Checks inspired artwork"
-          className={clsx('rounded-xl', detailsExpand ? 'rounded-b-none' : '')}
-        />
+        {data.data.type === 'NFT-Video' ? (
+          <video
+            src={data.data.image}
+            autoPlay
+            muted
+            className={clsx(
+              'rounded-xl',
+              detailsExpand ? 'rounded-b-none' : ''
+            )}
+          />
+        ) : (
+          <img
+            src={data.data.image}
+            alt="Checks inspired artwork"
+            className={clsx(
+              'rounded-xl',
+              detailsExpand ? 'rounded-b-none' : ''
+            )}
+          />
+        )}
         <div
           className={clsx(
             'invisible group-hover:visible absolute w-full h-full rounded-xl',
