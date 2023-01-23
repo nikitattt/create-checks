@@ -33,8 +33,9 @@ const JPG = (data: any) => {
     <a href={data.data.link} target="_blank">
       <div
         className={clsx(
-          'rounded-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col',
-          detailsExpand ? 'shadow-2xl' : ''
+          'relative group rounded-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col',
+          detailsExpand ? 'shadow-2xl' : '',
+          'text-white'
         )}
       >
         <img
@@ -42,6 +43,52 @@ const JPG = (data: any) => {
           alt="Checks inspired artwork"
           className={clsx('rounded-xl', detailsExpand ? 'rounded-b-none' : '')}
         />
+        <div
+          className={clsx(
+            'invisible group-hover:visible absolute w-full h-full rounded-xl',
+            ' bg-black/40'
+          )}
+        />
+        {data.data.author.twitter && (
+          //   <a
+          //     href={`https://twitter.com/${data.data.author.twitter}`}
+          //     target="_blank"
+          //     className="cursor-pointer"
+          //   >
+          <div className="absolute top-5 left-5 p-1 opacity-0 group-hover:opacity-100 transition-all duration-300 group">
+            <div className={clsx('')}>{`@${data.data.author.twitter}`}</div>
+            {/* <div className="invisible group-hover:visible">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="w-4 h-4"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5z"
+                    clipRule="evenodd"
+                  />
+                  <path
+                    fillRule="evenodd"
+                    d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div> */}
+          </div>
+          //   </a>
+        )}
+        {data.data.name && (
+          <div
+            className={clsx(
+              'absolute bottom-6 left-6 opacity-0 group-hover:opacity-100 transition-all duration-300 pr-6',
+              'text-3xl'
+            )}
+          >
+            {data.data.name}
+          </div>
+        )}
         {detailsExpand ? (
           <div className="m-3 flex flex-row justify-between items-center">
             <div className="text-xl">{data.data.name}</div>
@@ -63,7 +110,7 @@ const JPG = (data: any) => {
 
 const ArtDisplay = ({ art }: { art: any[] }) => {
   return (
-    <div className="mx-8 sm:mx-20 flex flex-col">
+    <div className="mx-6 sm:mx-20 flex flex-col">
       <div className="mt-12 mb-20 text-center text-4xl font-semibold text-grey flex flex-row justify-center gap-2">
         <p>Explore</p>
         <div className="h-10 w-10">
