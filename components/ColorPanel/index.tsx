@@ -1,5 +1,4 @@
 import clsx from 'clsx'
-import { useEffect } from 'react'
 import { useMenuStore } from '../../store/menu'
 import { ChecksColors, getRandomCheckColor } from '../../utils/colors'
 import Check from '../Check'
