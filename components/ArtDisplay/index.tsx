@@ -124,10 +124,13 @@ const JPG = (data: any) => {
 }
 
 const ArtDisplay = ({ art }: { art: any[] }) => {
+  const numberOfArtworks = art.length
+
   return (
     <div className="mx-6 sm:mx-20 flex flex-col">
-      <div className="mt-12 mb-20 text-center text-4xl font-semibold text-grey flex flex-row justify-center gap-2">
+      <div className="mt-12 mb-20 text-center text-4xl font-semibold text-grey flex flex-row justify-center gap-2 items-center">
         <p>Explore</p>
+        <p>{numberOfArtworks}</p>
         <div className="h-10 w-10">
           <Check color="#7D7D7D" />
         </div>
