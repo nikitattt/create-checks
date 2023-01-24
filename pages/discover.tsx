@@ -2857,37 +2857,27 @@ export async function getStaticProps() {
           }
         },
         {
-          name: '',
+          name: 'Black Squares',
           type: 'NFT',
-          image: '',
-          link: '',
-          contractAddress: '',
+          image:
+            'https://bafkreifpbol7j6pzwov7e2yuxco65uo7bntazpvyahcj2bwl4rfve373ni.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0x1e8e00af51ab2fda07a48156833c7577c3b98d43',
+          contractAddress: '0x1e8e00af51ab2fda07a48156833c7577c3b98d43',
           author: {
             twitter: '',
             address: '',
-            ens: ''
+            ens: 'energy-art.eth'
           }
         },
         {
-          name: '',
+          name: 'What a Notable World',
           type: 'NFT',
-          image: '',
-          link: '',
-          contractAddress: '',
+          image:
+            'https://i.seadn.io/gcs/files/168c1937fa8394c8daec536954e1274e.gif?auto=format&w=1000',
+          link: 'https://opensea.io/collection/what-a-notable-world',
+          contractAddress: '0x0669c91d3efaa2e5402dad1804ccc92c8336297c',
           author: {
-            twitter: '',
-            address: '',
-            ens: ''
-          }
-        },
-        {
-          name: '',
-          type: 'NFT',
-          image: '',
-          link: '',
-          contractAddress: '',
-          author: {
-            twitter: '',
+            twitter: 'venture_punk',
             address: '',
             ens: ''
           }
