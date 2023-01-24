@@ -19,10 +19,6 @@ const CustomColor = () => {
     }
   }
 
-  // useEffect(() => {
-  //   setColor()
-  // }, [customColor])
-
   return (
     <div className="flex flex-row gap-1 items-center">
       <button
