@@ -19,9 +19,9 @@ const CustomColor = () => {
     }
   }
 
-  useEffect(() => {
-    setColor()
-  }, [customColor])
+  // useEffect(() => {
+  //   setColor()
+  // }, [customColor])
 
   return (
     <div className="flex flex-row gap-1 items-center">
@@ -43,6 +43,26 @@ const CustomColor = () => {
           'placeholder:text-grey-dark'
         )}
       />
+      <button
+        className={clsx(
+          'p-1 transition-all duration-300 rounded-full',
+          'bg-white-light hover:bg-black fill-grey hover:fill-white',
+          'dark:bg-black dark:hover:bg-white dark:hover:fill-black'
+        )}
+        onClick={setColor}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          className="w-4 h-4"
+        >
+          <path
+            fillRule="evenodd"
+            d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+            clipRule="evenodd"
+          />
+        </svg>
+      </button>
     </div>
   )
 }
@@ -80,13 +100,13 @@ const ColorPanel = () => {
           )
         })}
       </div>
-      <div className="mt-2 flex flex-row gap-2 justify-end">
+      <div className="mt-2 flex flex-row gap-1 justify-end">
         <CustomColor />
         <button
           onClick={newRandomColor}
           className={clsx(
             'px-3 py-0.5 text-sm rounded-full transition-all duration-300',
-            'bg-white text-grey w-max hover:bg-black hover:text-white',
+            'bg-white border-2 border-white-light text-grey w-max hover:bg-black hover:text-white',
             'dark:bg-black dark:text-grey dark:hover:bg-white dark:hover:text-black'
           )}
         >
