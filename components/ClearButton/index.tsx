@@ -14,7 +14,8 @@ const ClearButton = () => {
       className={clsx(
         'rounded-full py-1 px-3 cursor-pointer text-sm transition-all duration-300',
         'bg-white text-grey w-max hover:bg-black hover:text-white',
-        'dark:bg-black-canvas dark:text-grey dark:hover:bg-white dark:hover:text-black'
+        'dark:bg-black-canvas dark:text-grey dark:hover:bg-white dark:hover:text-black',
+        'shadow-lg sm:shadow-none'
       )}
     >
       Clear

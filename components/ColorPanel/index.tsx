@@ -1,5 +1,5 @@
 import clsx from 'clsx'
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { useGameStore } from '../../store/game'
 import { useMenuStore } from '../../store/menu'
 import { ChecksColors, getRandomCheckColor } from '../../utils/colors'
@@ -67,7 +67,7 @@ const ColorPanel = () => {
   }
 
   return (
-    <div className="bg-white dark:bg-black-canvas rounded-2xl p-2">
+    <div className="bg-white dark:bg-black-canvas rounded-2xl p-2 shadow-lg sm:shadow-none">
       <div className="grid grid-cols-8 gap-1">
         {ChecksColors.map((c) => {
           return (
