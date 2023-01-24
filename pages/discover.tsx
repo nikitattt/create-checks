@@ -2059,6 +2059,280 @@ export async function getStaticProps() {
             address: '',
             ens: ''
           }
+        },
+        // 8 batch
+        {
+          name: 'Checkmates',
+          type: 'NFT',
+          image:
+            'https://bafkreiainvsy2hcwd7fztquwhzwykzvgke6r5awcjzkpc5nhcj3neqhiby.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0x61bfc49f34758536a5369d96bd1d688d4dc5a85a',
+          contractAddress: '0x61bfc49f34758536a5369d96bd1d688d4dc5a85a',
+          author: {
+            twitter: '0xC0DY',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'A Checkwork Orange',
+          type: 'NFT',
+          image:
+            'https://bafybeic7jpnccz7agylnbfokquibopla5irjqddybejmv4wdysfovcjx4m.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0x763a9d8b9615f2299d3dca5ea14af8830a26ff31',
+          contractAddress: '0x763a9d8b9615f2299d3dca5ea14af8830a26ff31',
+          author: {
+            twitter: 'peimsloot',
+            address: '0x1f919740214c7fce32e4ca5060626cc822cda703',
+            ens: ''
+          }
+        },
+        {
+          name: 'IN CHECK WE TRUST',
+          type: 'NFT',
+          image:
+            'https://ipfs.io/ipfs/QmaxE52AXG5z7w2VHeKLzwReCedVwCYN9gRmscRv9RLCva/nft.png',
+          link: 'https://foundation.app/@Bitsapiens/bitmemes/1',
+          contractAddress: '0xD54124B91114cAf80C57C0834e3D360E1D0f5132:1',
+          author: {
+            twitter: 'Bitsapiens_',
+            address: '0xab5d3f7eca3e784eaca50b74cfe5d1114cc78d76',
+            ens: 'bitsapiens.eth'
+          }
+        },
+        {
+          name: 'Freeze Metadata',
+          type: 'NFT',
+          image:
+            'https://ipfs.io/ipfs/QmQC2VPJJQ8rj54WyTFQ2ZeYWr4ixSCgTzKCNv6tB8XrwP/nft.png',
+          link: 'https://foundation.app/@Bitsapiens/bitmemes/2',
+          contractAddress: '0xD54124B91114cAf80C57C0834e3D360E1D0f5132:2',
+          author: {
+            twitter: 'Bitsapiens_',
+            address: '0xab5d3f7eca3e784eaca50b74cfe5d1114cc78d76',
+            ens: 'bitsapiens.eth'
+          }
+        },
+        {
+          name: '',
+          type: 'NFT',
+          image:
+            'https://pbs.twimg.com/media/Fm2m-N7XwAYm_g8?format=png&name=900x900',
+          link: 'https://twitter.com/peimsloot/status/1616131576546611200',
+          contractAddress: '',
+          author: {
+            twitter: 'peimsloot',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: '',
+          type: 'NFT',
+          image:
+            'https://pbs.twimg.com/media/Fm2m-N_XwBgBUU0?format=png&name=small',
+          link: 'https://twitter.com/peimsloot/status/1616131576546611200',
+          contractAddress: '',
+          author: {
+            twitter: 'peimsloot',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'state of mind',
+          type: 'NFT',
+          image:
+            'https://pbs.twimg.com/media/Fm2a86PaAAMDwEm?format=jpg&name=medium',
+          link: 'https://twitter.com/blankspac_e/status/1616118361305538560',
+          contractAddress: '',
+          author: {
+            twitter: 'blankspac_e',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'Vitruvian Checks',
+          type: 'NFT',
+          image:
+            'https://bafkreicruqdfgb57usldirym2rxa44dtup5gy7svf5ttuxjip2gwn3tid4.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0xe65a68a73d633b0f35f063ad9b8de8c478ac5606',
+          contractAddress: '0xe65a68a73d633b0f35f063ad9b8de8c478ac5606',
+          author: {
+            twitter: 'aaraalto',
+            address: '',
+            ens: 'aaraalto.eth'
+          }
+        },
+        {
+          name: 'Checks Chair',
+          type: 'NFT',
+          image:
+            'https://bafybeibu35uy2hvffccatyrjmaqceyx35hfyf6fdte2l2nena5yfn6orbm.ipfs.nftstorage.link/',
+          link: 'https://www.baker.studio/work/checks',
+          contractAddress: '0x291f1915e8ca19ad879060706d51cc8e1edb40bb',
+          author: {
+            twitter: 'nickpbaker',
+            address: '',
+            ens: 'nicholasbaker.eth'
+          }
+        },
+        {
+          name: 'Gm',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FmkappKXgAIKUBR?format=jpg&name=large',
+          link: 'https://twitter.com/espress0eth/status/1614851246912937984',
+          contractAddress: '',
+          author: {
+            twitter: 'espress0eth',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: '🧂✔️',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FmtNkHGaEAATn7Q?format=jpg&name=medium',
+          link: 'https://twitter.com/blankspac_e/status/1615470817592356864',
+          contractAddress: '',
+          author: {
+            twitter: 'blankspac_e',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: '🔥✔️',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/Fmta-z0aEAAGyOP?format=jpg&name=medium',
+          link: 'https://twitter.com/blankspac_e/status/1615485402496008193',
+          contractAddress: '',
+          author: {
+            twitter: 'blankspac_e',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'Checkerniak Edition',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FmtsC6LaEAIII38?format=jpg&name=large',
+          link: 'https://twitter.com/JordanLyall/status/1615504025449005057',
+          contractAddress: '',
+          author: {
+            twitter: 'JordanLyall',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: "☑️checking on mfers O-'",
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FmtttmAXgAQtw9T?format=jpg&name=large',
+          link: 'https://twitter.com/24h_eth/status/1615505996398354432',
+          contractAddress: '',
+          author: {
+            twitter: '24h_eth',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'trade marks',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/Fmt65BhXkAAbeOR?format=png&name=large',
+          link: 'https://twitter.com/jackbutcher/status/1615520085438783489',
+          contractAddress: '',
+          author: {
+            twitter: 'jackbutcher',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'awake?',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FmwZGHcXoAALi3u?format=jpg&name=large',
+          link: 'https://twitter.com/jackbutcher/status/1615694259071459339',
+          contractAddress: '',
+          author: {
+            twitter: 'jackbutcher',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'fixed it for you',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FmwenypX0AE6yE1?format=jpg&name=large',
+          link: 'https://twitter.com/0xRiccardo/status/1615700037786370048',
+          contractAddress: '',
+          author: {
+            twitter: '0xRiccardo',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'Soul Checks',
+          type: 'NFT',
+          image:
+            'https://bafybeib5oyucyejobaahu4dptkac25z23t2ac57jjblpxltebabzwbbfsy.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0xf41dd967582452a29742605af8a19a5ed8c067d5',
+          contractAddress: '0xf41dd967582452a29742605af8a19a5ed8c067d5',
+          author: {
+            twitter: '@lad1699',
+            address: '',
+            ens: 'gaul.eth'
+          }
+        },
+        {
+          name: '',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/Fm1OUPXWIAQY27i?format=jpg&name=large',
+          link: 'https://twitter.com/enjoyoor/status/1616033956717293569',
+          contractAddress: '',
+          author: {
+            twitter: 'enjoyoor',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'wen reveal?',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/Fm1fNthXoAA439q?format=jpg&name=medium',
+          link: 'https://twitter.com/jackbutcher/status/1616052564528857088',
+          contractAddress: '',
+          author: {
+            twitter: 'jackbutcher',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'Checks’n’Masks',
+          type: 'NFT',
+          image:
+            'https://pbs.twimg.com/media/Fm2OzUSaEAE09Eg?format=jpg&name=medium',
+          link: 'https://twitter.com/melba_marat/status/1616105100346523648',
+          contractAddress: '',
+          author: {
+            twitter: 'melba_marat',
+            address: '',
+            ens: ''
+          }
         }
       ]
     }
