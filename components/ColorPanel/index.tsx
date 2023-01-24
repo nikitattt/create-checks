@@ -68,9 +68,13 @@ const ColorPanel = () => {
   return (
     <div className="bg-white dark:bg-black-canvas rounded-2xl p-2 shadow-lg sm:shadow-none">
       <div className="grid grid-cols-8 gap-1">
-        {ChecksColors.map((c) => {
+        {ChecksColors.map((c, i) => {
           return (
-            <button className="h-6 w-6" onClick={() => setColor(c)}>
+            <button
+              key={`color-${i}`}
+              className="h-6 w-6"
+              onClick={() => setColor(c)}
+            >
               <Check color={c} />
             </button>
           )
