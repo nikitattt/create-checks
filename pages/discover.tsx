@@ -2323,13 +2323,52 @@ export async function getStaticProps() {
         },
         {
           name: 'Checks’n’Masks',
-          type: 'NFT',
+          type: 'Image',
           image:
             'https://pbs.twimg.com/media/Fm2OzUSaEAE09Eg?format=jpg&name=medium',
           link: 'https://twitter.com/melba_marat/status/1616105100346523648',
           contractAddress: '',
           author: {
             twitter: 'melba_marat',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'univverse',
+          type: 'NFT',
+          image:
+            'https://bafkreienwsljknlcd6boitotzkymnrzmn2elaftpdr5kwgrfad4rgzfuwi.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0x0339268f8135c4d1f8a5d21e695e301d9cbc1baa',
+          contractAddress: '0x0339268f8135c4d1f8a5d21e695e301d9cbc1baa',
+          author: {
+            twitter: 'purplequantum',
+            address: '0xa168ced6ff013bb1f3b137545d881b96f371cbb9',
+            ens: ''
+          }
+        },
+        {
+          name: 'unitvv',
+          type: 'NFT',
+          image:
+            'https://bafkreiaaaqbiugwoizo2j7x4nkw476ybd4u75ngiabawnd5x2mph2p26ke.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0xb2174047956ef116336d59f698f9afdd35b0ffbf',
+          contractAddress: '0xb2174047956ef116336d59f698f9afdd35b0ffbf',
+          author: {
+            twitter: 'purplequantum',
+            address: '0xa168ced6ff013bb1f3b137545d881b96f371cbb9',
+            ens: ''
+          }
+        },
+        {
+          name: 'Moonbirds Checkfication ',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/Fm2Pn4KaAAAwiV-?format=jpg&name=medium',
+          link: 'https://twitter.com/_JayJay88/status/1616105875281973248',
+          contractAddress: '',
+          author: {
+            twitter: '_JayJay88',
             address: '',
             ens: ''
           }
