@@ -1,10 +1,9 @@
 import clsx from 'clsx'
-import { useGameStore } from '../../store/game'
 import { useMenuStore } from '../../store/menu'
 import Check from '../Check'
 
 const CheckColorSelect = () => {
-  const yourCheckColor = useGameStore((state) => state.yourCheckColor)
+  const checkColor = useMenuStore((state) => state.checkColor)
 
   const showColorPanel = useMenuStore((state) => state.showColorPanel)
   const setShowColorPanel = useMenuStore((state) => state.setShowColorPanel)
@@ -29,7 +28,7 @@ const CheckColorSelect = () => {
         </div>
       )}
       <div className="h-6 w-6">
-        <Check color={yourCheckColor} />
+        <Check color={checkColor} />
       </div>
     </button>
   )

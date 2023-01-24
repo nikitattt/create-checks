@@ -1,6 +1,5 @@
 import clsx from 'clsx'
 import { useEffect } from 'react'
-import { useGameStore } from '../../store/game'
 import { useMenuStore } from '../../store/menu'
 import { ChecksColors, getRandomCheckColor } from '../../utils/colors'
 import Check from '../Check'
@@ -12,11 +11,11 @@ function isColor(color: string) {
 const CustomColor = () => {
   const customColor = useMenuStore((state) => state.customColor)
   const setCustomColor = useMenuStore((state) => state.setCustomColor)
-  const setYourCheckColor = useGameStore((state) => state.setYourCheckColor)
+  const setCheckColor = useMenuStore((state) => state.setCheckColor)
 
   const setColor = () => {
     if (customColor.length >= 3 && isColor(customColor)) {
-      setYourCheckColor(customColor)
+      setCheckColor(customColor)
     }
   }
 
@@ -49,21 +48,21 @@ const CustomColor = () => {
 }
 
 const ColorPanel = () => {
-  const yourCheckColor = useGameStore((state) => state.yourCheckColor)
-  const setYourCheckColor = useGameStore((state) => state.setYourCheckColor)
+  const checkColor = useMenuStore((state) => state.checkColor)
+  const setCheckColor = useMenuStore((state) => state.setCheckColor)
 
   const newRandomColor = () => {
     let colorOne = getRandomCheckColor()
 
-    while (colorOne === yourCheckColor) {
+    while (colorOne === checkColor) {
       colorOne = getRandomCheckColor()
     }
 
-    setYourCheckColor(colorOne)
+    setCheckColor(colorOne)
   }
 
   const setColor = (color: string) => {
-    setYourCheckColor(color)
+    setCheckColor(color)
   }
 
   return (
