@@ -1424,13 +1424,13 @@ export async function getStaticProps() {
           name: "Maslow's hierarchy of needs",
           type: 'NFT',
           image:
-            'https://pbs.twimg.com/media/FmxS7X4WABgfwAv?format=jpg&name=large',
-          link: 'https://twitter.com/discopump/status/1615757553584963594',
-          contractAddress: '',
+            'https://bafybeifgzkgg6spj64vbo3qcqznf2eor7kiv47f7lwwt6neq3fhfv2z6vq.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0x13b3196c4a27eabb2b1b98b7465be145d5df5a85',
+          contractAddress: '0x13b3196c4a27eabb2b1b98b7465be145d5df5a85',
           author: {
             twitter: 'discopump',
             address: '',
-            ens: ''
+            ens: 'discopump.eth'
           }
         },
         // 6 batch
@@ -2878,6 +2878,189 @@ export async function getStaticProps() {
           contractAddress: '0x0669c91d3efaa2e5402dad1804ccc92c8336297c',
           author: {
             twitter: 'venture_punk',
+            address: '',
+            ens: ''
+          }
+        },
+        // 11 batch
+        {
+          name: 'Banksy Checks Light',
+          type: 'NFT',
+          image:
+            'https://i.seadn.io/gcs/files/ca133117c9856d77fad143dc9b41d99b.gif?auto=format&w=1000',
+          link: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/7239764121797284302892501853764783873808252452941131366323466756448560611528',
+          contractAddress: '0x495f947276749ce646f68ac8c248420045cb7b5e',
+          author: {
+            twitter: 'PunksFanatics',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'Banksy Checks Dark',
+          type: 'NFT',
+          image:
+            'https://i.seadn.io/gcs/files/0946381b7c4b142b716f28b3bb957e4a.gif?auto=format&w=1000',
+          link: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/7239764121797284302892501853764783873808252452941131366323466757548072239304',
+          contractAddress: '0x495f947276749ce646f68ac8c248420045cb7b5e',
+          author: {
+            twitter: 'PunksFanatics',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'Checkified Hierarchy',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FnQbhoGaUAIDFah?format=png&name=large',
+          link: 'https://twitter.com/avsinghk/status/1617948435235364865',
+          contractAddress: '',
+          author: {
+            twitter: 'avsinghk',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'Decks',
+          type: 'NFT',
+          image:
+            'https://34h4z5n5l4t5re7iceodqabqqdvl67v754ezdgn4gwdjuf2zseka.arweave.net/3w_M9b1fJ9iT6BEcOAAwgOq_fr_vCZGZvDWGmhdZkRQ',
+          link: 'https://app.manifold.xyz/c/decks',
+          contractAddress: '0x55d1422CD99E98ABFA1A4c13983Aa2765b6EC539',
+          author: {
+            twitter: 'mbstuart',
+            address: '0xA7efbb4a06A680F3B65c5861Ec387408CeafbEc8',
+            ens: ''
+          }
+        },
+        {
+          name: 'CIRCLES',
+          type: 'NFT',
+          image:
+            'https://dni667cumxhkvgkm6lqdhxjeiqc4ulhrnr64isjjndhbu5lyvchq.arweave.net/G1HvfFRlzqqZTPLgM90kRAXKLPFsfcRJKWjOGnV4qI8',
+          link: 'https://app.manifold.xyz/c/circles',
+          contractAddress: '0xf82927abCC8f032822Ed4d1B1Cc98c47FC016F71',
+          author: {
+            twitter: 'joincirclexyz',
+            address: '',
+            ens: 'satviksethi.eth'
+          }
+        },
+        {
+          name: '',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FnPpV70XEAAUeFS?format=jpg&name=large',
+          link: 'https://twitter.com/_JKNFT_/status/1617893260927827969',
+          contractAddress: '',
+          author: {
+            twitter: '_JKNFT_',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'Check Ape Yacht Club',
+          type: 'NFT-Video',
+          image:
+            'https://bafkreifb3e25stfhppyaoma2korbd3tp2bkyuqzvfznypsuly2cylc2bwm.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0x9744145e2da29057da9947601ca49dc3ee3061da',
+          contractAddress: '0x9744145e2da29057da9947601ca49dc3ee3061da',
+          author: {
+            twitter: 'ersguterdinge',
+            address: '',
+            ens: 'bonuslife.eth'
+          }
+        },
+        {
+          name: '',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FnPNYo5WAAAV0V7?format=jpg&name=medium',
+          link: 'https://twitter.com/tomontweet/status/1617862520282435584',
+          contractAddress: '',
+          author: {
+            twitter: 'tomontweet',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: '',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FnO2LTHXoAAcz2-?format=jpg&name=900x900',
+          link: 'https://twitter.com/ianbydesign/status/1617837005471379456',
+          contractAddress: '',
+          author: {
+            twitter: 'ianbydesign',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: '',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FnO2LTIWIAELJxH?format=jpg&name=900x900',
+          link: 'https://twitter.com/ianbydesign/status/1617837005471379456',
+          contractAddress: '',
+          author: {
+            twitter: 'ianbydesign',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: '',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FnOgL15XwAAkg6N?format=png&name=large',
+          link: 'https://twitter.com/wstreetcoffee/status/1617812918606893056',
+          contractAddress: '',
+          author: {
+            twitter: 'wstreetcoffee',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'D I V E R S I T Y',
+          type: 'NFT',
+          image:
+            'https://bafkreicr7m63vbmood4ezq4un6ov5qa4b6bh5qy7sjvt5vo22x3xt232da.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0x9699fe0906c75f64b93d05ee0ad8c6fb686ab0cf',
+          contractAddress: '0x9699fe0906c75f64b93d05ee0ad8c6fb686ab0cf',
+          author: {
+            twitter: 'v4runs',
+            address: '0x21f8a74e187c7d0dc2fa8a777c9fe59c9b92d737',
+            ens: ''
+          }
+        },
+        {
+          name: 'Blue Wavy Circle of Life',
+          type: 'NFT',
+          image:
+            'https://bafybeiayxjbsyvevxf5mdfku4dmsd5rjpqtteeeyacl5kf4kr3ii3bgimy.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0x2556ae62d79b6f4b3a1a21767cd30ccfbb2b0cb2',
+          contractAddress: '0x2556ae62d79b6f4b3a1a21767cd30ccfbb2b0cb2',
+          author: {
+            twitter: 'dannyomo',
+            address: '',
+            ens: 'dannyomo.eth'
+          }
+        },
+        {
+          name: '',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FnQqd6WXoAAjnHh?format=jpg&name=large',
+          link: 'https://twitter.com/itsvrbs/status/1617964864722595840',
+          contractAddress: '',
+          author: {
+            twitter: 'itsvrbs',
             address: '',
             ens: ''
           }
