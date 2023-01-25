@@ -1,16 +1,16 @@
 import clsx from 'clsx'
 import { useBoardStore } from '../../store/board'
-import { useGameStore } from '../../store/game'
+import { useMenuStore } from '../../store/menu'
 import { addAlpha } from '../../utils/colors'
 import Check from '../Check'
 
-const FriendBoard = () => {
+const Board = () => {
   const board = useBoardStore((state) => state.board)
-  const yourCheckColor = useGameStore((state) => state.yourCheckColor)
+  const checkColor = useMenuStore((state) => state.checkColor)
   const addCheck = useBoardStore((state) => state.addCheck)
 
   const saveCheckPosition = (index: number) => {
-    addCheck(index, yourCheckColor)
+    addCheck(index, checkColor)
   }
 
   const Cell = (key: number) => (
@@ -22,7 +22,7 @@ const FriendBoard = () => {
     >
       {board[key] === '' ? (
         <div className="opacity-0 group-hover:opacity-100 transition-all duration-150">
-          <Check color={addAlpha(yourCheckColor, 0.15)} />
+          <Check color={addAlpha(checkColor, 0.15)} />
         </div>
       ) : (
         <Check color={board[key]} />
@@ -52,4 +52,4 @@ const FriendBoard = () => {
   )
 }
 
-export default FriendBoard
+export default Board

@@ -2949,12 +2949,12 @@ export async function getStaticProps() {
           }
         },
         {
-          name: '',
-          type: 'Image',
+          name: 'Chepe',
+          type: 'NFT',
           image:
-            'https://pbs.twimg.com/media/FnPpV70XEAAUeFS?format=jpg&name=large',
-          link: 'https://twitter.com/_JKNFT_/status/1617893260927827969',
-          contractAddress: '',
+            'https://i.seadn.io/gcs/files/78faa23c4069823cada069872bca06f8.png?auto=format&w=1000',
+          link: 'https://opensea.io/assets/ethereum/0x2811ee5cc98fb6323d7ef2c215cd38842c2ed7e8/4',
+          contractAddress: '0x2811ee5cc98fb6323d7ef2c215cd38842c2ed7e8:4',
           author: {
             twitter: '_JKNFT_',
             address: '',

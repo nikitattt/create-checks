@@ -17,7 +17,8 @@ const BackButton = () => {
       className={clsx(
         'rounded-full bg-white p-1.5 cursor-pointer text-sm w-max group',
         'hover:bg-black transition-all duration-300',
-        'dark:bg-black-canvas dark:hover:bg-white'
+        'dark:bg-black-canvas dark:hover:bg-white',
+        'shadow-lg sm:shadow-none'
       )}
     >
       <div

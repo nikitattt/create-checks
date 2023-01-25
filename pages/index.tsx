@@ -1,17 +1,14 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { useEffect } from 'react'
 import BuildBy from '../components/BuildBy'
 import Description from '../components/Description'
 import Menu from '../components/Menu'
 import NavBar from '../components/NavBar'
-import { useGameStore } from '../store/game'
-import { getRandomCheckColor } from '../utils/colors'
 
 import dynamic from 'next/dynamic'
 import { useMenuStore } from '../store/menu'
 
-const GameBoard = dynamic(() => import('../components/GameBoard'), {
+const Board = dynamic(() => import('../components/Board'), {
   ssr: false
 })
 
@@ -34,7 +31,7 @@ const Home: NextPage<{ data: string }> = (props) => {
 
         <main className="">
           <NavBar page="/" />
-          <GameBoard />
+          <Board />
           <BuildBy />
           <Description />
           <Menu />
