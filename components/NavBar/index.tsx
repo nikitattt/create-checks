@@ -10,18 +10,14 @@ const SectionsSwitch = ({ page }: { page: string }) => {
 
   const pageToName = (page: string) => {
     if (page === '/discover') return 'Discover'
+    if (page === '/info') return 'Info'
     else return 'Create'
-  }
-
-  const pageToGo = () => {
-    if (page === '/') return '/discover'
-    else return '/'
   }
 
   const button = (type: string) => {
     return (
       <Link
-        href={pageToGo()}
+        href={type}
         className={page === type ? selectedStyle : secondaryStyle}
       >
         {pageToName(type)}
@@ -38,6 +34,7 @@ const SectionsSwitch = ({ page }: { page: string }) => {
     >
       {button('/')}
       {button('/discover')}
+      {button('/info')}
     </div>
   )
 }
