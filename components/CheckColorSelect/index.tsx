@@ -13,7 +13,8 @@ const CheckColorSelect = () => {
       onClick={() => setShowColorPanel(!showColorPanel)}
       className={clsx(
         'rounded-full flex flex-row items-center p-1 gap-1 cursor-pointer text-sm group',
-        'bg-white dark:bg-black-canvas text-grey',
+        'bg-white hover:bg-black text-grey hover:text-white transition-all duration-300',
+        'dark:bg-black-canvas dark:hover:bg-white dark:hover:text-black',
         'shadow-lg sm:shadow-none'
       )}
     >
