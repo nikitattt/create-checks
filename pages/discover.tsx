@@ -3064,6 +3064,124 @@ export async function getStaticProps() {
             address: '',
             ens: ''
           }
+        },
+        // 12 batch
+        {
+          name: 'CHECKHALLA',
+          type: 'NFT',
+          image:
+            'https://bafybeier5qnrqzgi3fgm7c2gosss6aypgl5hrrd4mwbxrot5fftt27j7om.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0xdad40e1321126198d256be2811a0c56bf00345f1',
+          contractAddress: '0xdad40e1321126198d256be2811a0c56bf00345f1',
+          author: {
+            twitter: 'ivandetta',
+            address: '',
+            ens: 'ivandetta.eth'
+          }
+        },
+        {
+          name: 'Check Connection',
+          type: 'NFT',
+          image:
+            'https://bafybeifmht5ngltxlfyjrqjszevv4xs6rrqyrfzmkf45m2sc6ycbghzgq4.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0xb6a4d51b672fdf1756c94eabec5b936b55a0bb57',
+          contractAddress: '0xb6a4d51b672fdf1756c94eabec5b936b55a0bb57',
+          author: {
+            twitter: 'Jehoseph',
+            address: '',
+            ens: 'jehoseph.eth'
+          }
+        },
+        {
+          name: '',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FnFrWrfWIAE71T0?format=jpg&name=large',
+          link: 'https://twitter.com/BrainEmojis/status/1617193101877022728',
+          contractAddress: '',
+          author: {
+            twitter: 'BrainEmojis',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'CHEQUIGGLE',
+          type: 'NFT',
+          image:
+            'https://dl.openseauserdata.com/cache/originImage/files/ec93723913fd2d738594b1b4c5619dc3.png',
+          link: 'https://app.manifold.xyz/c/chequiggle',
+          contractAddress: '0x0Fe66E38e81DdE40134454D7af433fE6dDB537d9',
+          author: {
+            twitter: 'yonvisuals',
+            address: '',
+            ens: 'yonvisuals.eth'
+          }
+        },
+        {
+          name: '',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FnAAom8XgAIBC7V?format=jpg&name=large',
+          link: 'https://twitter.com/theartofwarren/status/1616792969385746433',
+          contractAddress: '',
+          author: {
+            twitter: '',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'decentralized verification',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FnGxJWQXkAAYNMA?format=jpg&name=large',
+          link: 'https://twitter.com/0xTjo/status/1617268943294455808',
+          contractAddress: '',
+          author: {
+            twitter: '0xTjo',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'Ganrs',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/Fm-YrFSacAIG9rl?format=png&name=large',
+          link: 'https://twitter.com/bossj_eth/status/1616678989736841217',
+          contractAddress: '',
+          author: {
+            twitter: 'bossj_eth',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: '⚔️☑️',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FnSGR55XgAASuww?format=png&name=medium',
+          link: 'https://twitter.com/dr_edje/status/1618066049773236225',
+          contractAddress: '',
+          author: {
+            twitter: 'dr_edje',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: '',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FnR_v1qWAAENQ11?format=jpg&name=large',
+          link: 'https://twitter.com/matthewjgroff/status/1618058629466443778',
+          contractAddress: '',
+          author: {
+            twitter: 'matthewjgroff',
+            address: '',
+            ens: ''
+          }
         }
       ]
     }
