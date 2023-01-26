@@ -1,17 +1,17 @@
 import axios, { AxiosResponse } from 'axios'
 import { useEffect, useState } from 'react'
 
-const url = 'https://api.zora.co/graphql'
-const query = `
+const NumPassesMinted = ({ address }: { address: string }) => {
+  const [mints, setMints] = useState(null)
+
+  const url = 'https://api.zora.co/graphql'
+  const query = `
     query ChecksTacToe {
         aggregateStat {
-            nftCount(where: {collectionAddresses: "0x764d80f0462f5769d30821c0c9352b9af653a5c9"})
+            nftCount(where: {collectionAddresses: "${address}"})
         }
     }
 `
-
-const NumPassesMinted = () => {
-  const [mints, setMints] = useState(null)
 
   const load = async () => {
     let result: AxiosResponse = await axios.post(url, { query: query })
@@ -23,7 +23,11 @@ const NumPassesMinted = () => {
     load()
   })
 
-  return <>{mints ? <div>{mints} minted</div> : <div>Loading...</div>}</>
+  return (
+    <div className="text-grey text-base">
+      {mints ? <div>{mints} minted</div> : <div>Loading...</div>}
+    </div>
+  )
 }
 
 export default NumPassesMinted

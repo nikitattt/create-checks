@@ -1,6 +1,7 @@
 import clsx from 'clsx'
 import { useDiscoverStore } from '../../store/discover'
 import Check from '../Check'
+import MintOfTheDay from '../MintOfTheDay'
 import styles from './ArtDisplay.module.css'
 
 const DetailsSwitch = () => {
@@ -136,6 +137,8 @@ const ArtDisplay = ({ art }: { art: any[] }) => {
         </div>
         <p>Artworks</p>
       </div>
+      <MintOfTheDay />
+      <div className="my-12 w-3/4 border-t-0 border-white self-center"></div>
       {/* <div className="w-max mb-6 items-start">
         <DetailsSwitch />
       </div> */}
