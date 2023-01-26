@@ -3452,6 +3452,46 @@ export async function getStaticProps() {
             address: '',
             ens: 'streetphotography.eth'
           }
+        },
+        {
+          name: "IT'S CHECKS O'CLOCK - WHITE EDITION",
+          type: 'NFT',
+          image:
+            'https://hzu3oxwb2gmtiehy7fhl3ggx5xmzztjhbbrjm45mdfk6cbau6yxq.arweave.net/Pmm3XsHRmTQQ-PlOvZjX7dmczScIYpZzrBlV4QQU9i8',
+          link: 'https://app.manifold.xyz/c/checks-o-clock-white',
+          contractAddress: '0x0df6B1ae51c6D0a85a8c42B90328ce2150066D91',
+          createdOnCreateChecksArt: false,
+          author: {
+            twitter: 'xsficherax',
+            address: '',
+            ens: 'sfichera.eth'
+          }
+        },
+        {
+          name: '',
+          type: 'NFT',
+          image: '',
+          link: '',
+          contractAddress: '',
+          createdOnCreateChecksArt: false,
+          author: {
+            twitter: '',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: '',
+          type: 'NFT',
+          image: '',
+          link: '',
+          contractAddress: '',
+          createdOnCreateChecksArt: false,
+          author: {
+            twitter: '',
+            address: '',
+            ens: ''
+          }
         }
       ]
     }
