@@ -87,7 +87,7 @@ const ColorPanel = () => {
           return (
             <button
               key={`color-${i}`}
-              className="h-6 w-6"
+              className="h-6 w-6 hover:scale-110 transition-all duration-300"
               onClick={() => setColor(c)}
             >
               <Check color={c} />
@@ -102,7 +102,7 @@ const ColorPanel = () => {
           className={clsx(
             'px-3 py-0.5 text-sm rounded-full transition-all duration-300',
             'bg-white border-2 border-white-light text-grey w-max hover:bg-black hover:text-white',
-            'dark:bg-black dark:text-grey dark:hover:bg-white dark:hover:text-black'
+            'dark:bg-black dark:text-grey dark:border-none dark:hover:bg-white dark:hover:text-black'
           )}
         >
           Random
