@@ -3437,6 +3437,21 @@ export async function getStaticProps() {
             address: '',
             ens: 'iamng.eth'
           }
+        },
+        // 13 batch
+        {
+          name: 'Checks and Balances',
+          type: 'NFT',
+          image:
+            'https://bafybeial5oxpzsrgamudyznewpk3cnafqm2nzjg76q6ll47rterq3n35w4.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0xdfe6a151fcae80c5a22e0b54f93ef5018962f186',
+          contractAddress: '0xdfe6a151fcae80c5a22e0b54f93ef5018962f186',
+          createdOnCreateChecksArt: false,
+          author: {
+            twitter: 'streetphoto_eth',
+            address: '',
+            ens: 'streetphotography.eth'
+          }
         }
       ]
     }
