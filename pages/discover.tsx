@@ -3020,6 +3020,7 @@ export async function getStaticProps() {
             'https://pbs.twimg.com/media/FnOgL15XwAAkg6N?format=png&name=large',
           link: 'https://twitter.com/wstreetcoffee/status/1617812918606893056',
           contractAddress: '',
+          createdOnCreateChecksArt: true,
           author: {
             twitter: 'wstreetcoffee',
             address: '',
@@ -3150,6 +3151,7 @@ export async function getStaticProps() {
           image:
             'https://pbs.twimg.com/media/Fm-YrFSacAIG9rl?format=png&name=large',
           link: 'https://twitter.com/bossj_eth/status/1616678989736841217',
+          createdOnCreateChecksArt: true,
           contractAddress: '',
           author: {
             twitter: 'bossj_eth',
@@ -3163,6 +3165,7 @@ export async function getStaticProps() {
           image:
             'https://pbs.twimg.com/media/FnSGR55XgAASuww?format=png&name=medium',
           link: 'https://twitter.com/dr_edje/status/1618066049773236225',
+          createdOnCreateChecksArt: true,
           contractAddress: '',
           author: {
             twitter: 'dr_edje',
@@ -3176,11 +3179,263 @@ export async function getStaticProps() {
           image:
             'https://pbs.twimg.com/media/FnR_v1qWAAENQ11?format=jpg&name=large',
           link: 'https://twitter.com/matthewjgroff/status/1618058629466443778',
+          createdOnCreateChecksArt: true,
           contractAddress: '',
           author: {
             twitter: 'matthewjgroff',
             address: '',
             ens: ''
+          }
+        },
+        {
+          name: 'VERIFIEDWEB3',
+          type: 'NFT',
+          image:
+            'https://ul7kv7ywyi5orynu4uhhp6i5wf5levds5hjwncnmdttfxu6gcrwa.arweave.net/ov6q_xbCOujhtOUOd_kdsXqyVHLp02aJrBzmW9PGFGw',
+          link: 'https://app.manifold.xyz/c/verifiedweb3',
+          contractAddress: '0x10cC133a5A78d3CE8B75B2cf414365c5c6A8218b',
+          mintDeadline: '0',
+          author: {
+            twitter: 'Chucknally',
+            address: '',
+            ens: 'chucknally.eth'
+          }
+        },
+        {
+          name: 'Chase VVhat Matters',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FnVoXsvWQAEZfk6?format=png&name=large',
+          link: 'https://twitter.com/dannyomo/status/1618314670489874432',
+          contractAddress: '',
+          author: {
+            twitter: 'dannyomo',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: "IT'S CHECKS O'CLOCK - BLACK EDITION",
+          type: 'NFT',
+          image:
+            'https://vnpbnjuarpncuiiukbhcr6i7k74vm5fcbro56lwvbb2zigefkypq.arweave.net/q14WpoCL2iohFFBOKPkfV_lWdKIMXd8u1Qh1lBiFVh8',
+          link: 'https://app.manifold.xyz/c/checks-o-clock-black',
+          contractAddress: '0x0df6B1ae51c6D0a85a8c42B90328ce2150066D91',
+          author: {
+            twitter: 'xsficherax',
+            address: '',
+            ens: 'sfichera.eth'
+          }
+        },
+        {
+          name: 'Knowledge is Power',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/Fm9w_HdXwAAa518?format=png&name=small',
+          link: 'https://twitter.com/3a1fcBx0/status/1616635361970761729?s=20',
+          contractAddress: '',
+          author: {
+            twitter: '3a1fcBx0',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'Knowledge is power',
+          type: 'NFT',
+          image:
+            'https://bafkreieeucbi2zmhjjmhmukezt4y7zsfzoitq5tz26zkooveic56najyem.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0x458b1583b8656bfdb9c72bc76a6ae3e4f99df1fa',
+          contractAddress: '0x458b1583b8656bfdb9c72bc76a6ae3e4f99df1fa',
+          author: {
+            twitter: '3a1fcBx0',
+            address: '',
+            ens: '5848.eth'
+          }
+        },
+        {
+          name: 'Processor Checks',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/Fm-jafRWAAAt_0B?format=png&name=small',
+          link: 'https://twitter.com/3a1fcBx0/status/1616690726468812805',
+          contractAddress: '',
+          author: {
+            twitter: '3a1fcBx0',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'Five Nine',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/Fm-Bb3rXwAMqqZd?format=png&name=small',
+          link: 'https://twitter.com/3a1fcBx0/status/1616653669742567424',
+          contractAddress: '',
+          author: {
+            twitter: '3a1fcBx0',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'Privacy Matters',
+          type: 'NFT',
+          image:
+            'https://pbs.twimg.com/media/FnV4b2gWIA0aL3r?format=png&name=small',
+          link: 'https://twitter.com/3a1fcBx0/status/1618332638326185984',
+          contractAddress: '',
+          author: {
+            twitter: '3a1fcBx0',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: '',
+          type: 'NFT',
+          image:
+            'https://pbs.twimg.com/media/FnSZdK-XwAAhgjC?format=jpg&name=large',
+          link: 'https://twitter.com/cw__77__/status/1618086951583879168',
+          contractAddress: '',
+          author: {
+            twitter: 'cw__77__',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'Check Your Vehicle',
+          type: 'NFT-Video',
+          image:
+            'https://bafybeibzsbgkx5ydk5mlscjsyfjrwt7zrsz5dly2zxmzgbtcxpbebbz2h4.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0x7882ff862be755c153bd95675ad7c929ef754e0b',
+          contractAddress: '0x7882ff862be755c153bd95675ad7c929ef754e0b',
+          author: {
+            twitter: 'UniversalRandom',
+            address: '0x770818b04dEd7b79438A97c3836E775dd469d177',
+            ens: ''
+          }
+        },
+        {
+          name: '',
+          type: 'NFT',
+          image:
+            'https://pbs.twimg.com/media/FnUxQf5XgAEpYDx?format=jpg&name=900x900',
+          link: 'https://twitter.com/tomontweet/status/1618253807192018944',
+          contractAddress: '',
+          author: {
+            twitter: 'tomontweet',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'THIS PUNK MAY OR MAY NOT BE NOTABLE',
+          type: 'NFT',
+          image:
+            'https://cltxdyu6amwyri6qtqnjsxfq3tisf4eqtjqnl5dbo5ndsxitxbuq.arweave.net/Eudx4p4DLYij0JwamVyw3NEi8JCaYNX0YXdaOV0TuGk',
+          link: 'https://app.manifold.xyz/c/punk4527',
+          contractAddress: '',
+          author: {
+            twitter: '0xRodo',
+            address: '',
+            ens: '0xrodo.eth'
+          }
+        },
+        {
+          name: 'ChecksBTC',
+          type: 'NFT',
+          image:
+            'https://bafkreihh7ei4es43crlguaryqkctlshbk47rzkaqfzsymvk5b7smob3tvy.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0xf4eaded9c5aba168386aaea45578c990214aa690',
+          contractAddress: '0xf4eaded9c5aba168386aaea45578c990214aa690',
+          createdOnCreateChecksArt: true,
+          author: {
+            twitter: 'ChecksBTC',
+            address: '',
+            ens: 'checksbtc.eth'
+          }
+        },
+        {
+          name: 'Slifer the Sky Dragon',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FnOjn9tXkAE1fKw?format=jpg&name=medium',
+          link: 'https://twitter.com/akisama_eth/status/1617816602417958912',
+          contractAddress: '',
+          author: {
+            twitter: 'akisama_eth',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'Obelisk the Tormentor',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FnOjn9xWIAAqvda?format=jpg&name=medium',
+          link: 'https://twitter.com/akisama_eth/status/1617816602417958912',
+          contractAddress: '',
+          author: {
+            twitter: 'akisama_eth',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'The Winged Dragon of Ra',
+          type: 'Image',
+          image:
+            'https://pbs.twimg.com/media/FnOjn9uWYAU4OUm?format=jpg&name=medium',
+          link: 'https://twitter.com/akisama_eth/status/1617816602417958912',
+          contractAddress: '',
+          author: {
+            twitter: 'akisama_eth',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'CALLADITA CHECKS',
+          type: 'NFT',
+          image:
+            'https://5eckz7qwvj67abp3ycslm3ejgrlmggke3qxkibqr2uuxerlelgsq.arweave.net/6QSs_haqffAF-8CktmyJNFbDGUTcLqQGEdUpckVkWaU',
+          link: 'https://app.manifold.xyz/c/calladitachecks',
+          contractAddress: '0x27F64629B505524B06270D3D0A034390FA375F1c',
+          author: {
+            twitter: 'miguelfaus',
+            address: '',
+            ens: 'faus.eth'
+          }
+        },
+        {
+          name: '',
+          type: 'NFT',
+          image:
+            'https://pbs.twimg.com/media/FnRYAlmWAAA1q6c?format=jpg&name=large',
+          link: 'https://twitter.com/itsvrbs/status/1618014938685124610',
+          contractAddress: '',
+          createdOnCreateChecksArt: false,
+          author: {
+            twitter: 'itsvrbs',
+            address: '',
+            ens: ''
+          }
+        },
+        {
+          name: 'GM',
+          type: 'NFT',
+          image:
+            'https://bafkreibguecdjhl34uebuyea7qdculgm4odbqwcwvc4gpmcdow3v3x6l34.ipfs.nftstorage.link/',
+          link: 'https://create.zora.co/collections/0x812d8759201f803beecae875aad71e7dcaafa6f7',
+          contractAddress: '0x812d8759201f803beecae875aad71e7dcaafa6f7',
+          createdOnCreateChecksArt: true,
+          author: {
+            twitter: 'iamng_eth',
+            address: '',
+            ens: 'iamng.eth'
           }
         }
       ]
@@ -3195,6 +3450,7 @@ export async function getStaticProps() {
 //       '',
 //     link: '',
 //     contractAddress: '',
+//     createdOnCreateChecksArt: false,
 //     author: {
 //       twitter: '',
 //       address: '',
