@@ -6,11 +6,12 @@ import Check from '../Check'
 import NumPassesMinted from '../NumPassedMinted'
 
 const MintCountdown = dynamic(() => import('../MintCountdown'), {
+  ssr: false,
   loading: () => <>Loading...</>
 })
 
 const MintOfTheDay = () => {
-  const [expanded, setExpanded] = useState(false)
+  const [expanded, setExpanded] = useState(Math.random() < 0.35)
 
   const data = {
     name: 'FOMO',

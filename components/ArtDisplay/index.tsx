@@ -1,8 +1,13 @@
 import clsx from 'clsx'
+import dynamic from 'next/dynamic'
 import { useDiscoverStore } from '../../store/discover'
 import Check from '../Check'
-import MintOfTheDay from '../MintOfTheDay'
 import styles from './ArtDisplay.module.css'
+
+const MintOfTheDay = dynamic(() => import('../MintOfTheDay'), {
+  ssr: false,
+  loading: () => <>Loading...</>
+})
 
 const DetailsSwitch = () => {
   const detailsExpand = useDiscoverStore((state) => state.detailsExpand)
