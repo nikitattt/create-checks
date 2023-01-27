@@ -1,3 +1,4 @@
+import clsx from 'clsx'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
@@ -8,7 +9,7 @@ import { useMenuStore } from '../store/menu'
 import { ColorMode } from '../utils/colors'
 import { boardToImage } from '../utils/image'
 
-const prices = ['0.0069', '0.005', '0.0042', '0.01', '0.033']
+const prices = [0.0069, 0.005, 0.01, 0.033]
 
 const Mint: NextPage<{ data: string }> = (props) => {
   const { data } = props
@@ -18,28 +19,44 @@ const Mint: NextPage<{ data: string }> = (props) => {
 
   const [buttonClicked, setButtonClicked] = useState(false)
   const [image, setImage] = useState<string | undefined>(undefined)
-  const [price, setPrice] = useState<string | undefined>(prices[3])
+  const [price, setPrice] = useState(prices[3])
+  const [twitterHandle, setTwitterHandle] = useState('')
+  const [twitterRecorder, setTwitterRecorder] = useState<boolean | undefined>(
+    undefined
+  )
+
+  const mint = (number: number) => {
+    setButtonClicked(!buttonClicked)
+    saEvent('ab01_mint_button_clicked', { price: price, number: number })
+  }
+
+  const goBack = () => {
+    saEvent('ab01_mint_page_exit', { price: price })
+  }
+
+  const notifyMe = () => {
+    if (twitterHandle.length >= 2) {
+      saEvent('ab01_mint_notify_me', { twitter: twitterHandle })
+      setTwitterRecorder(true)
+    } else {
+      setTwitterRecorder(false)
+    }
+  }
 
   useMemo(() => {
     setPrice(prices[Math.floor(Math.random() * prices.length)])
   }, [setPrice])
 
-  const mint = (number: number) => {
-    setButtonClicked(!buttonClicked)
-    saEvent('mint_button_clicked', { price: price, number: number })
-    console.log('send event ' + price)
-  }
-
   useEffect(() => {
     const img = boardToImage(board, darkMode ? ColorMode.dark : ColorMode.light)
     setImage(img)
-    // saEvent('mint_page_open')
   }, [board, setImage])
 
   useEffect(() => {
-    // console.log('send event')
-    // saEvent('mint_page_open')
-  })
+    if (board && image && price) {
+      saEvent('ab01_mint_page_open', { price: price })
+    }
+  }, [board, image, price])
 
   if (!board || !image || !price) {
     return <div></div>
@@ -58,24 +75,55 @@ const Mint: NextPage<{ data: string }> = (props) => {
             <div className="px-8 sm:px-20 flex flex-col text-center items-center mx-auto max-w-2xl justify-center h-screen">
               <p className="text-4xl">Thank you for the interest!</p>
               <p className="mt-6 text-2xl text-grey-dark">
-                We are working to finally make it a reality!
+                This feature is not live yet, but we are working like 🐝 to
+                finally make it a reality!
               </p>
-              <a
+              {/* <a
                 href="https://twitter.com/iamng_eth"
                 target="_blank"
                 className="mt-8 bg-black text-white dark:bg-white dark:text-black py-3 px-6 rounded-xl"
               >
                 Follow
-              </a>
-              <p className="mt-2 leading-4 text-grey-dark">
-                to hear first
+              </a> */}
+              <p className="mt-12 leading-4 text-grey-dark">
+                Leave your Twitter handle and we'll
                 <br />
-                when it's live!
+                drop you a message when it's ready✨
               </p>
+              <input
+                type="text"
+                value={twitterHandle}
+                placeholder="twitter_handle"
+                onChange={(e) => {
+                  setTwitterHandle(e.target.value)
+                }}
+                className={clsx(
+                  'mt-4 w-56 bg-white-light dark:bg-black rounded-xl px-3 py-1.5 text-lg border-2 border-black',
+                  'caret-grey dark:caret-grey-dark text-black dark:text-white focus:outline-none focus:ring-none',
+                  'placeholder:text-grey-dark'
+                )}
+              />
+              {twitterRecorder === undefined ? (
+                <button
+                  onClick={notifyMe}
+                  className="mt-2 w-56 bg-black text-white dark:bg-white dark:text-black py-3 px-6 rounded-xl"
+                >
+                  Notify Me
+                </button>
+              ) : twitterRecorder ? (
+                <p className="mt-2 text-green leading-4 max-w-xs">
+                  You are in!
+                </p>
+              ) : (
+                <p className="mt-2 text-red leading-4 max-w-xs">
+                  We were not able to save your handle. Maybe it's too short or
+                  something happened along the way. Please try again.
+                </p>
+              )}
 
               <Link
                 href="/"
-                className="mt-8 border-2 border-black text-black dark:border-white dark:text-white py-3 px-6 rounded-xl font-semibold"
+                className="mt-16 border-2 border-black text-black dark:border-white dark:text-white py-3 px-6 rounded-xl font-semibold"
               >
                 Go back to main page
               </Link>
@@ -110,7 +158,7 @@ const Mint: NextPage<{ data: string }> = (props) => {
               >
                 <div className="flex flex-row justify-between">
                   <p>Mint 20</p>
-                  <p>{`${Number(price) * 20} Ξ`}</p>
+                  <p>{`${price * 20} Ξ`}</p>
                 </div>
               </button>
               <button
@@ -119,7 +167,7 @@ const Mint: NextPage<{ data: string }> = (props) => {
               >
                 <div className="flex flex-row justify-between">
                   <p>Mint 10</p>
-                  <p>{`${Number(price) * 10} Ξ`}</p>
+                  <p>{`${price * 10} Ξ`}</p>
                 </div>
               </button>
               <button
@@ -128,11 +176,12 @@ const Mint: NextPage<{ data: string }> = (props) => {
               >
                 <div className="flex flex-row justify-between">
                   <p>Mint 5</p>
-                  <p>{`${Number(price) * 5} Ξ`}</p>
+                  <p>{`${price * 5} Ξ`}</p>
                 </div>
               </button>
               <Link
                 href="/"
+                onClick={goBack}
                 className="mt-20 mb-20 bg-black text-white dark:bg-white dark:text-black py-3 px-6 rounded-xl w-full text-lg"
               >
                 Go back, I don't want to mint
