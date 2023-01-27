@@ -1,4 +1,5 @@
 import clsx from 'clsx'
+import { saEvent } from '../../scripts/events'
 import { useBoardStore } from '../../store/board'
 import { useMenuStore } from '../../store/menu'
 import { ColorMode } from '../../utils/colors'
@@ -23,6 +24,7 @@ const SaveButton = () => {
       darkMode ? ColorMode.dark : ColorMode.light
     )
     downloadURL(image, 'Checks')
+    saEvent('save_image', { mode: darkMode ? 'dark' : 'light' })
   }
 
   return (
