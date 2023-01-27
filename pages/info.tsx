@@ -132,17 +132,14 @@ const Info: NextPage<{ data: string }> = (props) => {
             <ExternalLink
               link="https://twitter.com/i/spaces/1yNGaNnZPMgJj"
               name="Jack on Zora"
-              className="mt-4"
             />
             <ExternalLink
               link="https://twitter.com/i/spaces/1vAxRAzvwrDJl?s=20"
               name="Checks VV - Community Space"
-              className="mt-4"
             />
             <ExternalLink
               link="https://twitter.com/i/spaces/1DXxyvLLEOWKM?s=20"
               name="Checks Community Space Ep2"
-              className="mt-4"
             />
 
             <p className="mt-20 text-center text-xl text-grey tracking-tight">
