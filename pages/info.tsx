@@ -115,18 +115,28 @@ const Info: NextPage<{ data: string }> = (props) => {
             <SectionTitle index={3} name="Podcasts" />
             <ExternalLink
               link="https://podcasts.proof.xyz/artist-profile-jack-butcher-subverts-twitter-verification-with-checks-vv-edition/#play"
-              name="Proof"
+              name="Jack on Proof"
               className="mt-4"
             />
             <ExternalLink
               link="https://podcasts.apple.com/us/podcast/gm-web3-on-rug-radio-ft-jack-butcher/id1623389858?i=1000595818382"
-              name="GM Web3"
+              name="Jack on GM Web3"
             />
 
             <SectionTitle index={4} name="Spaces" />
             <ExternalLink
               link="https://twitter.com/i/spaces/1yNGaNnZPMgJj"
-              name="Zora"
+              name="Jack on Zora"
+              className="mt-4"
+            />
+            <ExternalLink
+              link="https://twitter.com/i/spaces/1vAxRAzvwrDJl?s=20"
+              name="Checks VV - Community Space"
+              className="mt-4"
+            />
+            <ExternalLink
+              link="https://twitter.com/i/spaces/1DXxyvLLEOWKM?s=20"
+              name="Checks Community Space Ep2"
               className="mt-4"
             />
 
