@@ -66,7 +66,9 @@ const Mint: NextPage<{ data: string }> = (props) => {
               <br />
               Currently we can only feature Timed Editions in the "Minting Now"
               section. If your mint is not limited in time it will be added only
-              to the "Discover" section.
+              to the "Discover" section. If you have a work that is currently
+              minting, but it's an edition of limited works without any time
+              limit, submit to just "Discover" section.
             </p>
             <p className="mt-6 italic">
               Being added to the "Minting Now" section means the automatic
