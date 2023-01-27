@@ -6,8 +6,8 @@ import { useMenuStore } from '../store/menu'
 import ArtDisplay from '../components/ArtDisplay'
 import Link from 'next/link'
 
-const Discover: NextPage<{ art: any[] }> = (props) => {
-  const { art } = props
+const Discover: NextPage<{ art: any[]; mintingNow: any[] }> = (props) => {
+  const { art, mintingNow } = props
 
   const darkMode = useMenuStore((state) => state.darkMode)
 
@@ -24,7 +24,7 @@ const Discover: NextPage<{ art: any[] }> = (props) => {
 
         <main className="">
           <NavBar page="/discover" />
-          <ArtDisplay art={art} />
+          <ArtDisplay art={art} mintingNow={mintingNow} />
           <BuildBy />
         </main>
 
@@ -41,6 +41,21 @@ const Discover: NextPage<{ art: any[] }> = (props) => {
 export async function getStaticProps() {
   return {
     props: {
+      mintingNow: [
+        {
+          name: 'FOMO',
+          url: 'https://create.zora.co/collections/0xe32922ce092e1d0677b90b4f271c51a711767e9f',
+          image:
+            'https://bafkreidkha3uwxofd3v2zz6paicu7oplld7s6q4kwpudr7dfckpkirrvxy.ipfs.nftstorage.link/',
+          address: '0xe32922ce092e1d0677b90b4f271c51a711767e9f',
+          cost: '0.005',
+          platform: 'Zora',
+          endTime: '2023-01-27T20:00:00.000Z',
+          author: {
+            twitter: 'iamng_eth'
+          }
+        }
+      ],
       art: [
         {
           name: 'Checks',

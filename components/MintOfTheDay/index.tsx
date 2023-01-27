@@ -10,22 +10,10 @@ const MintCountdown = dynamic(() => import('../MintCountdown'), {
   loading: () => <>Loading...</>
 })
 
-const MintOfTheDay = () => {
+const MintOfTheDay = ({ data }: { data: any[] }) => {
   const [expanded, setExpanded] = useState(Math.random() < 0.35)
 
-  const data = {
-    name: 'FOMO',
-    url: 'https://create.zora.co/collections/0xe32922ce092e1d0677b90b4f271c51a711767e9f',
-    image:
-      'https://bafkreidkha3uwxofd3v2zz6paicu7oplld7s6q4kwpudr7dfckpkirrvxy.ipfs.nftstorage.link/',
-    address: '0xe32922ce092e1d0677b90b4f271c51a711767e9f',
-    cost: '0.005',
-    platform: 'Zora',
-    endTime: '2023-01-27T20:00:00.000Z',
-    author: {
-      twitter: 'iamng_eth'
-    }
-  }
+  const displayPiece = data[Math.floor(Math.random() * data.length)]
 
   return (
     <div className="mt-6 flex flex-col items-center bg-white rounded-xl p-4">
@@ -60,24 +48,24 @@ const MintOfTheDay = () => {
       </button>
       {expanded ? (
         <div className="mt-4 flex flex-col md:flex-row justify-start items-start md:items-center w-full">
-          <a className="cursor-pointer" href={data.url} target="_blank">
+          <a className="cursor-pointer" href={displayPiece.url} target="_blank">
             <div className="w-full md:w-[19rem]">
               <img
                 className="rounded-lg shadow-grey-light"
-                src={data.image}
+                src={displayPiece.image}
                 alt=""
               />
             </div>
           </a>
           <div className="pl-0 mt-4 md:pl-4 md:mt-0 font-medium text-xl flex flex-col justify-start text-start">
-            <div className="text-4xl max-w-xs">{data.name}</div>
-            <div className="text-base">{`by @${data.author.twitter}`}</div>
-            <div className="mt-0 text-grey text-lg">{`${data.cost} Ξ`}</div>
+            <div className="text-4xl max-w-xs">{displayPiece.name}</div>
+            <div className="text-base">{`by @${displayPiece.author.twitter}`}</div>
+            <div className="mt-0 text-grey text-lg">{`${displayPiece.cost} Ξ`}</div>
             <div className="h-4" />
-            <MintCountdown endTime={data.endTime} />
-            <NumPassesMinted address={data.address} />
+            <MintCountdown endTime={displayPiece.endTime} />
+            <NumPassesMinted address={displayPiece.address} />
             <a
-              href={data.url}
+              href={displayPiece.url}
               target="_blank"
               className={clsx(
                 'mt-4 rounded-full w-max py-1 px-6',

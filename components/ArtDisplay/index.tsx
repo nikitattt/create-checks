@@ -129,7 +129,7 @@ const JPG = (data: any) => {
   )
 }
 
-const ArtDisplay = ({ art }: { art: any[] }) => {
+const ArtDisplay = ({ art, mintingNow }: { art: any[]; mintingNow: any[] }) => {
   const numberOfArtworks = art.length
 
   return (
@@ -142,7 +142,7 @@ const ArtDisplay = ({ art }: { art: any[] }) => {
         </div>
         <p>Artworks</p>
       </div>
-      <MintOfTheDay />
+      <MintOfTheDay data={mintingNow} />
       <div className="my-4 w-3/4 border-t-0 border-white self-center"></div>
       {/* <div className="w-max mb-6 items-start">
         <DetailsSwitch />
