@@ -104,6 +104,10 @@ const Info: NextPage<{ data: string }> = (props) => {
               name="Checks website"
               className="mt-4"
             />
+            <ExternalLink
+              link="https://checks.art/intro"
+              name="Jack's transparency thread"
+            />
 
             <SectionTitle index={2} name="Checks 101 by Luke" />
             <ExternalLink
@@ -140,6 +144,13 @@ const Info: NextPage<{ data: string }> = (props) => {
             <ExternalLink
               link="https://twitter.com/i/spaces/1DXxyvLLEOWKM?s=20"
               name="Checks Community Space Ep2"
+            />
+
+            <SectionTitle index={5} name="News Outlets" />
+            <ExternalLink
+              link="https://nftnow.com/features/how-jack-butchers-checks-challenges-the-way-people-view-nfts/"
+              name="nft now"
+              className="mt-4"
             />
 
             <p className="mt-20 text-center text-xl text-grey tracking-tight">
