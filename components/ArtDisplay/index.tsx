@@ -138,7 +138,7 @@ const ArtDisplay = ({ art }: { art: any[] }) => {
         <p>Artworks</p>
       </div>
       <MintOfTheDay />
-      <div className="my-12 w-3/4 border-t-0 border-white self-center"></div>
+      <div className="my-4 w-3/4 border-t-0 border-white self-center"></div>
       {/* <div className="w-max mb-6 items-start">
         <DetailsSwitch />
       </div> */}
