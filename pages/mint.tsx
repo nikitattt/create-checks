@@ -27,11 +27,14 @@ const Mint: NextPage<{ data: string }> = (props) => {
 
   const mint = (number: number) => {
     setButtonClicked(!buttonClicked)
-    saEvent('ab01_mint_button_clicked', { price: price, number: number })
+    saEvent('ab01_mint_button_clicked', {
+      price: price.toString(),
+      number: number
+    })
   }
 
   const goBack = () => {
-    saEvent('ab01_mint_page_exit', { price: price })
+    saEvent('ab01_mint_page_exit', { price: price.toString() })
   }
 
   const notifyMe = () => {
@@ -54,7 +57,7 @@ const Mint: NextPage<{ data: string }> = (props) => {
 
   useEffect(() => {
     if (board && image && price) {
-      saEvent('ab01_mint_page_open', { price: price })
+      saEvent('ab01_mint_page_open', { price: price.toString() })
     }
   }, [board, image, price])
 
