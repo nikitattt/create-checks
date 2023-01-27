@@ -125,6 +125,11 @@ const Info: NextPage<{ data: string }> = (props) => {
 
             <SectionTitle index={4} name="Spaces" />
             <ExternalLink
+              link="https://twitter.com/i/spaces/1MnGnpyPrlkxO?s=20"
+              name="Check In by Jack"
+              className="mt-4"
+            />
+            <ExternalLink
               link="https://twitter.com/i/spaces/1yNGaNnZPMgJj"
               name="Jack on Zora"
               className="mt-4"
