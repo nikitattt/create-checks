@@ -5,6 +5,7 @@ import ColorPanel from '../ColorPanel'
 import ClearButton from '../ClearButton'
 import DarkModeSwitch from '../DarkModeSwitch'
 import SaveButton from '../SaveButton'
+import MintButton from '../MintButton'
 
 const Menu = () => {
   const showColorPanel = useMenuStore((state) => state.showColorPanel)
@@ -20,7 +21,10 @@ const Menu = () => {
         <BackButton />
         <ClearButton />
       </div>
-      <SaveButton />
+      <div className="flex flex-row gap-2">
+        <MintButton />
+        <SaveButton />
+      </div>
     </div>
   )
 }
