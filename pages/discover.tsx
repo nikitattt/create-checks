@@ -4,6 +4,7 @@ import BuildBy from '../components/BuildBy'
 import NavBar from '../components/NavBar'
 import { useMenuStore } from '../store/menu'
 import ArtDisplay from '../components/ArtDisplay'
+import Link from 'next/link'
 
 const Discover: NextPage<{ art: any[] }> = (props) => {
   const { art } = props
@@ -28,13 +29,9 @@ const Discover: NextPage<{ art: any[] }> = (props) => {
         </main>
 
         <footer className="mt-20 mb-16 text-center">
-          <a
-            href="https://twitter.com/iamng_eth/status/1616641888768987139"
-            target="_blank"
-            className="underline text-grey"
-          >
+          <Link href="/submit" className="underline text-grey">
             Submit artwork
-          </a>
+          </Link>
         </footer>
       </div>
     </div>

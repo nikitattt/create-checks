@@ -1,6 +1,7 @@
 import clsx from 'clsx'
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Link from 'next/link'
 import BuildBy from '../components/BuildBy'
 import Check from '../components/Check'
 import NavBar from '../components/NavBar'
@@ -175,8 +176,12 @@ const Info: NextPage<{ data: string }> = (props) => {
           <BuildBy />
         </main>
 
-        <footer className="mb-20">
-          <></>
+        <footer className="mt-16 mb-20 text-center">
+          <>
+            <Link href="/submit" className="underline text-grey">
+              Submit your artwork
+            </Link>
+          </>
         </footer>
       </div>
     </div>
