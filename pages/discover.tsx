@@ -42,17 +42,122 @@ export async function getStaticProps() {
   return {
     props: {
       mintingNow: [
+        // {
+        //   name: '',
+        //   link: '',
+        //   image: '',
+        //   type: 'NFT',
+        //   contractAddress: '',
+        //   createdOnCreateChecksArt: false,
+        //   cost: '',
+        //   platform: '',
+        //   endTime: '',
+        //   author: {
+        //     twitter: '',
+        //     address: '',
+        //     ens: ''
+        //   }
+        // }
         {
-          name: 'FOMO',
-          url: 'https://create.zora.co/collections/0xe32922ce092e1d0677b90b4f271c51a711767e9f',
+          name: 'Omakasea Check',
+          link: 'https://app.manifold.xyz/c/omakasea-check',
           image:
-            'https://bafkreidkha3uwxofd3v2zz6paicu7oplld7s6q4kwpudr7dfckpkirrvxy.ipfs.nftstorage.link/',
-          address: '0xe32922ce092e1d0677b90b4f271c51a711767e9f',
+            'https://4uoftuu3s4a4tqoiunum6gjnowa2ldfxjrveqklgpccgxg7lnbka.arweave.net/5RxZ0puXAcnByKNozxktdYGljLdMakgpZniEa5vraFQ',
+          type: 'NFT',
+          contractAddress: '0x2381bBD7869bA3ED9635298ae9Be89AF2EC20ED2',
+          cost: '0.00069',
+          platform: 'Manifold',
+          endTime: '2023-01-31T23:30:00-06:00',
+          createdOnCreateChecksArt: false,
+          author: {
+            twitter: 'sarcastic_songs',
+            address: '0xBb4aEe67138E890ed8E097AE1271471dC46fE0a2',
+            ens: 'Draigon.eth'
+          }
+        },
+        {
+          name: 'ChecksGM',
+          link: 'https://create.zora.co/collections/0x131511a996db6d35f91f0a327b41832185bdb765',
+          image:
+            'https://bafkreiebk3dp2wst3jdhsrav3lv6dustnopv26cuy2hyt2sezahlxqmufe.ipfs.nftstorage.link/',
+          type: 'NFT',
+          contractAddress: '0x131511A996dB6D35f91f0A327B41832185bdb765',
+          createdOnCreateChecksArt: true,
+          cost: '0',
+          platform: 'Zora',
+          endTime: '2023-01-31T00:00:00+03:00',
+          author: {
+            twitter: 'iravlana',
+            address: '0xee65f1E2A897Cb57482BB62ea0c452AD75FDDC0C',
+            ens: 'iravlana.eth'
+          }
+        },
+        {
+          name: 'Rotten Copy',
+          link: 'https://app.manifold.xyz/c/rottencopy',
+          image:
+            'https://icq5gtsss4d64whhgbj2mdbcm6c5xknugfhhgl533hffjzc5r2qa.arweave.net/QKHTTlKXB-5Y5zBTpgwiZ4XbqbQxTnMvu9nKVORdjqA',
+          type: 'NFT',
+          contractAddress: '0xcca034c322de5c374928711541917866cf6c967e',
+          createdOnCreateChecksArt: false,
+          cost: '0',
+          platform: 'Manifold',
+          endTime: '2023-01-30T19:00:00-05:00',
+          author: {
+            twitter: '@rottencoffeewtf',
+            address: '0x5e82e5c125dc0696a9412f740b39463a7b9cc193',
+            ens: 'rottencoffee.eth'
+          }
+        },
+        {
+          name: 'Before Checks - The New B.C.',
+          link: 'https://create.zora.co/collections/0x498ce8c477d3cd0be6be280ec839e8f1d383b3f0',
+          image:
+            'https://bafkreiagju2vi6csg4zc6gvjqyfjzhtkxn5ymbwwfgnnsopwqfehwrxtgm.ipfs.nftstorage.link/',
+          type: 'NFT',
+          contractAddress: '0x498ce8c477d3cd0be6be280ec839e8f1d383b3f0',
+          createdOnCreateChecksArt: false,
           cost: '0.005',
           platform: 'Zora',
-          endTime: '2023-01-27T20:00:00.000Z',
+          endTime: '2023-01-31T05:00:00.000Z',
           author: {
-            twitter: 'iamng_eth'
+            twitter: 'artofnext',
+            address: '0x64E1Dd2405066335C38C38806e8E793c4ff932B2',
+            ens: 'robeee.eth'
+          }
+        },
+        {
+          name: 'Cokes',
+          link: 'https://app.manifold.xyz/c/cokes',
+          image:
+            'https://tmh3ur6pyhywrjlqzjx2kdapw7vq7vuzyg4d5dh6om335csivgdq.arweave.net/mw-6R8_B8WilcMpvpQwPt-sP1pnBuD6M_nM3vopIqYc',
+          type: 'NFT',
+          contractAddress: '0x060Ed1CA45c19fcd32af61694946c8A96956010a',
+          createdOnCreateChecksArt: false,
+          cost: '0.00069',
+          platform: 'Manifold',
+          endTime: '2023-01-31T00:00:00+10:00',
+          author: {
+            twitter: 'MisterPineappl9',
+            address: '0xb2a0731F8Ff95229e23ac0359C85e017Ae60aA7c',
+            ens: 'literallyshaking.eth'
+          }
+        },
+        {
+          name: 'This Noun is notable',
+          link: 'https://create.zora.co/collections/0xda113ad593bf6fee4a7345c97c10a32867f7fea4',
+          image:
+            'https://bafkreifns7ol7a67hpi7jcwhxte2j22gd2m7fep4nep4qzwnhrqdfrpnny.ipfs.nftstorage.link',
+          type: 'NFT',
+          contractAddress: '0xdA113AD593bF6FeE4a7345C97C10A32867F7FEA4',
+          createdOnCreateChecksArt: false,
+          cost: '0.00141',
+          platform: 'Zora',
+          endTime: '2023-01-28T19:15:00-08:00',
+          author: {
+            twitter: 'lilpizza_eth',
+            address: '0xB60c947bfCc9767E94ba36fD2DeC7AA11356c84f',
+            ens: 'lilpizza.eth'
           }
         }
       ],

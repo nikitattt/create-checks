@@ -48,7 +48,11 @@ const MintOfTheDay = ({ data }: { data: any[] }) => {
       </button>
       {expanded ? (
         <div className="mt-4 flex flex-col md:flex-row justify-start items-start md:items-center w-full">
-          <a className="cursor-pointer" href={displayPiece.url} target="_blank">
+          <a
+            className="cursor-pointer"
+            href={displayPiece.link}
+            target="_blank"
+          >
             <div className="w-full md:w-[19rem]">
               <img
                 className="rounded-lg shadow-grey-light"
@@ -60,12 +64,14 @@ const MintOfTheDay = ({ data }: { data: any[] }) => {
           <div className="pl-0 mt-4 md:pl-4 md:mt-0 font-medium text-xl flex flex-col justify-start text-start">
             <div className="text-4xl max-w-xs">{displayPiece.name}</div>
             <div className="text-base">{`by @${displayPiece.author.twitter}`}</div>
-            <div className="mt-0 text-grey text-lg">{`${displayPiece.cost} Ξ`}</div>
+            <div className="mt-0 text-grey text-lg">
+              {displayPiece.cost === '0' ? 'Free' : `${displayPiece.cost} Ξ`}
+            </div>
             <div className="h-4" />
             <MintCountdown endTime={displayPiece.endTime} />
-            <NumPassesMinted address={displayPiece.address} />
+            <NumPassesMinted address={displayPiece.contractAddress} />
             <a
-              href={displayPiece.url}
+              href={displayPiece.link}
               target="_blank"
               className={clsx(
                 'mt-4 rounded-full w-max py-1 px-6',
