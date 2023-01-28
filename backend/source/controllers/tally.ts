@@ -29,9 +29,11 @@ const receiveData = async (req: Request, res: Response, next: NextFunction) => {
       ) {
         artData.name = field.value
       }
+
       if (['question_3x14Zo'].includes(field.key)) {
         artData.platform = field.value
       }
+
       if (
         ['question_w7z466', 'question_mO986A', 'question_31yGaO'].includes(
           field.key
@@ -39,6 +41,7 @@ const receiveData = async (req: Request, res: Response, next: NextFunction) => {
       ) {
         artData.link = field.value === null ? '' : field.value
       }
+
       if (
         ['question_wbyNb0', 'question_wAGWEN', 'question_nPe8JQ'].includes(
           field.key
@@ -50,6 +53,7 @@ const receiveData = async (req: Request, res: Response, next: NextFunction) => {
           artData.image = field.value
         }
       }
+
       if (['question_wAGW1o', 'question_mKZ8XK'].includes(field.key)) {
         if (
           [
@@ -62,21 +66,27 @@ const receiveData = async (req: Request, res: Response, next: NextFunction) => {
           artData.type = 'NFT-Video'
         }
       }
+
       if (['question_nPe8ax'].includes(field.key)) {
         artData.endTime = field.value
       }
+
       if (['question_3EE842'].includes(field.key)) {
         artData.cost = field.value
       }
+
       if (['question_mBl8P4', 'question_mJx8y7'].includes(field.key)) {
         artData.contractAddress = field.value
       }
+
       if (['question_wk1OVd', 'question_wLN5Rz'].includes(field.key)) {
         author.ens = field.value === null ? '' : field.value
       }
+
       if (['question_wv1qQX', 'question_mJx85z'].includes(field.key)) {
         author.address = field.value
       }
+
       if (
         ['question_mKZ8qz', 'question_w2yOpA', 'question_3EE87o'].includes(
           field.key
@@ -84,6 +94,7 @@ const receiveData = async (req: Request, res: Response, next: NextFunction) => {
       ) {
         author.twitter = field.value.replace('@', '')
       }
+
       if (
         ['question_wLN5Qz', 'question_mRa8AP', 'question_mYvV66'].includes(
           field.key
@@ -114,7 +125,11 @@ const receiveData = async (req: Request, res: Response, next: NextFunction) => {
         embeds: [
           {
             title: title,
-            description: 'Code to add: ```' + JSON.stringify(artData) + '```',
+            description:
+              'Code to add: ```' +
+              JSON.stringify(artData) +
+              '```' +
+              ` [Link for a check](${artData.link})`,
             thumbnail: {
               url: artData.image
             }
