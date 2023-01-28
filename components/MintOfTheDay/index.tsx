@@ -132,13 +132,11 @@ const MintOfTheDay = ({ data }: { data: any[] }) => {
               href={displayPiece.link}
               target="_blank"
             >
-              <div className="w-full md:w-[19rem] h-max md:h-[19rem]">
-                <img
-                  className="rounded-lg shadow-grey-light"
-                  src={displayPiece.image}
-                  alt=""
-                />
-              </div>
+              <img
+                className="rounded-lg shadow-grey-light h-[19rem] w-auto"
+                src={displayPiece.image}
+                alt="Image with Check based artwork"
+              />
             </a>
             <div className="pl-0 mt-4 md:pl-4 md:mt-0 font-medium text-xl flex flex-col justify-start text-start">
               <div className="text-4xl max-w-xs">{displayPiece.name}</div>
@@ -157,7 +155,6 @@ const MintOfTheDay = ({ data }: { data: any[] }) => {
                   'border-2 border-black text-black hover:bg-black hover:text-white'
                 )}
               >
-                {/* {data.platform} */}
                 Mint
               </a>
             </div>
@@ -179,21 +176,41 @@ const MintOfTheDay = ({ data }: { data: any[] }) => {
             </div>
             <div
               ref={listRef}
-              className="flex flex-row gap-4 overflow-scroll no-scrollbar rounded-xl"
+              className="flex flex-row gap-4 overflow-scroll no-scrollbar rounded-lg"
             >
               {pieces.map(function (piece, place) {
                 if (place === 0) return
 
                 return (
-                  <div key={place}>
-                    <button onClick={() => selectArtwork(place)}>
-                      <div className="h-[19rem] w-[19rem]">
-                        <img
-                          className="rounded-lg shadow-grey-light object-contain"
-                          src={piece.image}
-                          alt=""
-                        />
-                      </div>
+                  <div
+                    key={place}
+                    className={clsx('text-white transition-all duration-300')}
+                  >
+                    <button
+                      onClick={() => selectArtwork(place)}
+                      className="relative group flex flex-col"
+                    >
+                      <img
+                        className="rounded-lg h-[19rem] max-w-none"
+                        src={piece.image}
+                        alt="Image with Check based artwork"
+                      />
+                      <div
+                        className={clsx(
+                          'invisible group-hover:visible absolute w-full h-full rounded-xl',
+                          ' bg-black/40'
+                        )}
+                      />
+                      {piece.name && (
+                        <div
+                          className={clsx(
+                            'absolute bottom-6 left-6 opacity-0 group-hover:opacity-100 transition-all duration-300 pr-6',
+                            'text-xl'
+                          )}
+                        >
+                          {piece.name}
+                        </div>
+                      )}
                     </button>
                   </div>
                 )
