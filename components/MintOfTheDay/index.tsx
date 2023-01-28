@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 import dynamic from 'next/dynamic'
-import { useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { shuffle } from '../../utils/arrays'
 import NumPassesMinted from '../NumPassedMinted'
 
@@ -67,15 +67,31 @@ const ScrollButton = ({
 
 const MintOfTheDay = ({ data }: { data: any[] }) => {
   const [expanded, setExpanded] = useState(Math.random() < 0.35)
+  const [pieces, setPieces] = useState<any[] | undefined>(undefined)
+
   const listRef = useRef<HTMLDivElement>(null)
 
-  const indexToDisplay = Math.floor(Math.random() * data.length)
-  const shuffledPieces = [...data]
-  shuffledPieces.splice(indexToDisplay, 1)
-  shuffle(shuffledPieces)
+  useEffect(() => {
+    const indexToDisplay = Math.floor(Math.random() * data.length)
+    const shuffledPieces = [...data]
+    shuffledPieces.splice(indexToDisplay, 1)
+    shuffle(shuffledPieces)
 
-  const pieces = [data[indexToDisplay], ...shuffledPieces]
+    setPieces([data[indexToDisplay], ...shuffledPieces])
+  }, [])
+
+  if (!pieces) {
+    return <></>
+  }
+
   const displayPiece = pieces[0]
+
+  const selectArtwork = (index: number) => {
+    const noIndexArr = [...pieces]
+    noIndexArr.splice(index, 1)
+
+    setPieces([pieces[index], ...noIndexArr])
+  }
 
   return (
     <div className="mt-6 flex flex-col items-center bg-white rounded-xl p-4">
@@ -170,18 +186,15 @@ const MintOfTheDay = ({ data }: { data: any[] }) => {
 
                 return (
                   <div key={place}>
-                    <div className="h-[19rem] w-[19rem]">
-                      <img
-                        className="rounded-lg shadow-grey-light object-contain"
-                        src={piece.image}
-                        alt=""
-                      />
-                    </div>
-                    {/* <div className="mt-2 w-10/12 mx-auto">
-                    <div className="text-center text-grey text-sm">
-                      {animation.name}
-                    </div>
-                  </div> */}
+                    <button onClick={() => selectArtwork(place)}>
+                      <div className="h-[19rem] w-[19rem]">
+                        <img
+                          className="rounded-lg shadow-grey-light object-contain"
+                          src={piece.image}
+                          alt=""
+                        />
+                      </div>
+                    </button>
                   </div>
                 )
               })}
