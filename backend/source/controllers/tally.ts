@@ -16,23 +16,39 @@ const receiveData = async (req: Request, res: Response, next: NextFunction) => {
     title = 'Mint and Discover section'
   } else if (data.formId === 'nGeP9o') {
     title = 'Minted work on Discover section'
-  } else if (true) {
+  } else if (data.formId === 'wo9jee') {
     title = 'Not minted work on Discover section'
   }
 
-  if (['3q5lD7', 'nGeP9o'].includes(data.formId)) {
+  if (['3q5lD7', 'nGeP9o', 'wo9jee'].includes(data.formId)) {
     for (const field of data.fields) {
-      if (['question_m6yrao', 'question_w4yPMB'].includes(field.key)) {
+      if (
+        ['question_m6yrao', 'question_w4yPMB', 'question_mVAoOa'].includes(
+          field.key
+        )
+      ) {
         artData.name = field.value
       }
       if (['question_3x14Zo'].includes(field.key)) {
         artData.platform = field.value
       }
-      if (['question_w7z466', 'question_mO986A'].includes(field.key)) {
-        artData.link = field.value
+      if (
+        ['question_w7z466', 'question_mO986A', 'question_31yGaO'].includes(
+          field.key
+        )
+      ) {
+        artData.link = field.value === null ? '' : field.value
       }
-      if (['question_wbyNb0', 'question_wAGWEN'].includes(field.key)) {
-        artData.image = field.value
+      if (
+        ['question_wbyNb0', 'question_wAGWEN', 'question_nPe8JQ'].includes(
+          field.key
+        )
+      ) {
+        if (data.formId === 'wo9jee') {
+          artData.image = field.value[0].url
+        } else {
+          artData.image = field.value
+        }
       }
       if (['question_wAGW1o', 'question_mKZ8XK'].includes(field.key)) {
         if (
@@ -61,14 +77,23 @@ const receiveData = async (req: Request, res: Response, next: NextFunction) => {
       if (['question_wv1qQX', 'question_mJx85z'].includes(field.key)) {
         author.address = field.value
       }
-      if (['question_mKZ8qz', 'question_w2yOpA'].includes(field.key)) {
+      if (
+        ['question_mKZ8qz', 'question_w2yOpA', 'question_3EE87o'].includes(
+          field.key
+        )
+      ) {
         author.twitter = field.value.replace('@', '')
       }
-      if (['question_wLN5Qz', 'question_mRa8AP'].includes(field.key)) {
+      if (
+        ['question_wLN5Qz', 'question_mRa8AP', 'question_mYvV66'].includes(
+          field.key
+        )
+      ) {
         if (
           [
             '0041f15e-7820-47f9-961b-ace3ba0568fa',
-            '074549c9-4acd-4c42-b0f2-18773f58513f'
+            '074549c9-4acd-4c42-b0f2-18773f58513f',
+            'f4e48f11-6714-4940-a21c-3e84d49e49e5'
           ].includes(field.value)
         ) {
           artData.createdOnCreateChecksArt = true
