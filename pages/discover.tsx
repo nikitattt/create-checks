@@ -5,7 +5,7 @@ import NavBar from '../components/NavBar'
 import { useMenuStore } from '../store/menu'
 import ArtDisplay from '../components/ArtDisplay'
 import Link from 'next/link'
-import dayjs from 'dayjs'
+import { mintingNow } from '../utils/dates'
 
 const Discover: NextPage<{ art: any[]; mintingNow: any[] }> = (props) => {
   const { art, mintingNow } = props
@@ -3553,14 +3553,11 @@ export async function getStaticProps() {
     }
   ]
 
-  const mintingNow = art.filter(
-    (e) =>
-      e.endTime && e.endTime.length > 6 && dayjs().isBefore(dayjs(e.endTime))
-  )
+  const mintingNowArt = art.filter((e) => e.endTime && mintingNow(e.endTime))
 
   return {
     props: {
-      mintingNow: mintingNow,
+      mintingNow: mintingNowArt,
       art: art
     }
   }
