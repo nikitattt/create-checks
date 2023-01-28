@@ -1,8 +1,7 @@
 import clsx from 'clsx'
 import dynamic from 'next/dynamic'
-import Image from 'next/image'
-import { useState } from 'react'
-import Check from '../Check'
+import { useRef, useState } from 'react'
+import { shuffle } from '../../utils/arrays'
 import NumPassesMinted from '../NumPassedMinted'
 
 const MintCountdown = dynamic(() => import('../MintCountdown'), {
@@ -10,10 +9,73 @@ const MintCountdown = dynamic(() => import('../MintCountdown'), {
   loading: () => <>Loading...</>
 })
 
+enum ScrollButtonDirection {
+  left,
+  right
+}
+
+type ScrollButtonProps = {
+  onClick: () => void
+  direction: ScrollButtonDirection
+  disabled?: boolean
+}
+
+const ScrollButton = ({
+  onClick,
+  direction,
+  disabled = false
+}: ScrollButtonProps) => {
+  return (
+    <button
+      onClick={onClick}
+      disabled={disabled}
+      className={clsx(
+        'rounded-full p-1',
+        'transition ease-in-out duration-150',
+        !disabled && 'bg-background fill-grey hover:bg-black hover:fill-white',
+        disabled ? 'fill-grey-light' : 'fill-grey'
+      )}
+    >
+      {direction == ScrollButtonDirection.left ? (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          className="w-5 h-5"
+        >
+          <path
+            fillRule="evenodd"
+            d="M17 10a.75.75 0 01-.75.75H5.612l4.158 3.96a.75.75 0 11-1.04 1.08l-5.5-5.25a.75.75 0 010-1.08l5.5-5.25a.75.75 0 111.04 1.08L5.612 9.25H16.25A.75.75 0 0117 10z"
+            clipRule="evenodd"
+          />
+        </svg>
+      ) : (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          className="w-5 h-5"
+        >
+          <path
+            fillRule="evenodd"
+            d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
+            clipRule="evenodd"
+          />
+        </svg>
+      )}
+    </button>
+  )
+}
+
 const MintOfTheDay = ({ data }: { data: any[] }) => {
   const [expanded, setExpanded] = useState(Math.random() < 0.35)
+  const listRef = useRef<HTMLDivElement>(null)
 
-  const displayPiece = data[Math.floor(Math.random() * data.length)]
+  const indexToDisplay = Math.floor(Math.random() * data.length)
+  const shuffledPieces = [...data]
+  shuffledPieces.splice(indexToDisplay, 1)
+  shuffle(shuffledPieces)
+
+  const pieces = [data[indexToDisplay], ...shuffledPieces]
+  const displayPiece = pieces[0]
 
   return (
     <div className="mt-6 flex flex-col items-center bg-white rounded-xl p-4">
@@ -47,40 +109,83 @@ const MintOfTheDay = ({ data }: { data: any[] }) => {
         </div>
       </button>
       {expanded ? (
-        <div className="mt-4 flex flex-col md:flex-row justify-start items-start md:items-center w-full">
-          <a
-            className="cursor-pointer"
-            href={displayPiece.link}
-            target="_blank"
-          >
-            <div className="w-full md:w-[19rem]">
-              <img
-                className="rounded-lg shadow-grey-light"
-                src={displayPiece.image}
-                alt=""
-              />
-            </div>
-          </a>
-          <div className="pl-0 mt-4 md:pl-4 md:mt-0 font-medium text-xl flex flex-col justify-start text-start">
-            <div className="text-4xl max-w-xs">{displayPiece.name}</div>
-            <div className="text-base">{`by @${displayPiece.author.twitter}`}</div>
-            <div className="mt-0 text-grey text-lg">
-              {displayPiece.cost === '0' ? 'Free' : `${displayPiece.cost} Ξ`}
-            </div>
-            <div className="h-4" />
-            <MintCountdown endTime={displayPiece.endTime} />
-            <NumPassesMinted address={displayPiece.contractAddress} />
+        <div className="mt-4 flex flex-col md:flex-row justify-between items-start md:items-center w-full">
+          <div className="flex flex-col md:flex-row justify-start items-start md:items-center">
             <a
+              className="cursor-pointer"
               href={displayPiece.link}
               target="_blank"
-              className={clsx(
-                'mt-4 rounded-full w-max py-1 px-6',
-                'border-2 border-black text-black hover:bg-black hover:text-white'
-              )}
             >
-              {/* {data.platform} */}
-              Mint
+              <div className="w-full md:w-[19rem] h-max md:h-[19rem]">
+                <img
+                  className="rounded-lg shadow-grey-light"
+                  src={displayPiece.image}
+                  alt=""
+                />
+              </div>
             </a>
+            <div className="pl-0 mt-4 md:pl-4 md:mt-0 font-medium text-xl flex flex-col justify-start text-start">
+              <div className="text-4xl max-w-xs">{displayPiece.name}</div>
+              <div className="text-base">{`by @${displayPiece.author.twitter}`}</div>
+              <div className="mt-0 text-grey text-lg">
+                {displayPiece.cost === '0' ? 'Free' : `${displayPiece.cost} Ξ`}
+              </div>
+              <div className="h-4" />
+              <MintCountdown endTime={displayPiece.endTime} />
+              <NumPassesMinted address={displayPiece.contractAddress} />
+              <a
+                href={displayPiece.link}
+                target="_blank"
+                className={clsx(
+                  'mt-4 rounded-full w-max py-1 px-6',
+                  'border-2 border-black text-black hover:bg-black hover:text-white'
+                )}
+              >
+                {/* {data.platform} */}
+                Mint
+              </a>
+            </div>
+          </div>
+          <div className="flex flex-col md:flex-row w-1/2">
+            <div className="mt-2 mr-2 flex flex-col items-start justify-start gap-2">
+              <ScrollButton
+                onClick={() => {
+                  if (!!listRef.current) listRef.current.scrollLeft += 250
+                }}
+                direction={ScrollButtonDirection.right}
+              />
+              <ScrollButton
+                onClick={() => {
+                  if (!!listRef.current) listRef.current.scrollLeft -= 250
+                }}
+                direction={ScrollButtonDirection.left}
+              />
+            </div>
+            <div
+              ref={listRef}
+              className="flex flex-row gap-4 overflow-scroll no-scrollbar rounded-xl"
+            >
+              {pieces.map(function (piece, place) {
+                if (place === 0) return
+
+                return (
+                  <div key={place}>
+                    <div className="h-[19rem] w-[19rem]">
+                      <img
+                        className="rounded-lg shadow-grey-light object-contain"
+                        src={piece.image}
+                        alt=""
+                      />
+                    </div>
+                    {/* <div className="mt-2 w-10/12 mx-auto">
+                    <div className="text-center text-grey text-sm">
+                      {animation.name}
+                    </div>
+                  </div> */}
+                  </div>
+                )
+              })}
+            </div>
           </div>
         </div>
       ) : (

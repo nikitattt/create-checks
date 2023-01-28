@@ -58,6 +58,7 @@ const JPG = (data: any) => {
           <img
             src={data.data.image}
             alt="Checks inspired artwork"
+            loading="lazy"
             className={clsx(
               'rounded-xl',
               detailsExpand ? 'rounded-b-none' : ''
