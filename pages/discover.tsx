@@ -3078,15 +3078,19 @@ export async function getStaticProps() {
     },
     {
       name: 'Check Connection',
-      type: 'NFT',
+      platform: 'Zora',
+      link: 'https://create.zora.co/collections/0xb6a4d51b672fdf1756c94eabec5b936b55a0bb57',
       image:
         'https://bafybeifmht5ngltxlfyjrqjszevv4xs6rrqyrfzmkf45m2sc6ycbghzgq4.ipfs.nftstorage.link/',
-      link: 'https://create.zora.co/collections/0xb6a4d51b672fdf1756c94eabec5b936b55a0bb57',
-      contractAddress: '0xb6a4d51b672fdf1756c94eabec5b936b55a0bb57',
+      type: 'NFT',
+      endTime: '2023-02-01T07:40:00.000Z',
+      cost: 0.00444,
+      contractAddress: '0xB6A4d51B672fDf1756c94EaBec5B936b55A0bB57',
+      createdOnCreateChecksArt: false,
       author: {
-        twitter: 'Jehoseph',
-        address: '',
-        ens: 'jehoseph.eth'
+        ens: 'jehoseph.eth',
+        address: '0x88Fe56808AAc806336A0Eb28682D10033c73826a',
+        twitter: 'Jehoseph'
       }
     },
     {
