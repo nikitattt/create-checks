@@ -66,7 +66,8 @@ const ScrollButton = ({
 }
 
 const MintOfTheDay = ({ data }: { data: any[] }) => {
-  const [expanded, setExpanded] = useState(Math.random() < 0.35)
+  const expand = window.innerWidth > 1280 ? Math.random() < 0.55 : false
+  const [expanded, setExpanded] = useState(expand)
   const [pieces, setPieces] = useState<any[] | undefined>(undefined)
 
   const listRef = useRef<HTMLDivElement>(null)
