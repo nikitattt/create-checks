@@ -125,7 +125,7 @@ const MintOfTheDay = ({ data }: { data: any[] }) => {
         </div>
       </button>
       {expanded ? (
-        <div className="mt-4 flex flex-col md:flex-row justify-between items-start md:items-center w-full">
+        <div className="mt-4 flex flex-col xl:flex-row gap-4 xl:gap-1 justify-between items-start w-full">
           <div className="flex flex-col md:flex-row justify-start items-start md:items-center">
             <a
               className="cursor-pointer"
@@ -159,8 +159,8 @@ const MintOfTheDay = ({ data }: { data: any[] }) => {
               </a>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row w-1/2">
-            <div className="mt-2 mr-2 flex flex-col items-start justify-start gap-2">
+          <div className="flex flex-col xl:flex-row w-full xl:w-1/2">
+            <div className="mt-0 xl:mt-2 mb-2 mr-2 flex flex-row-reverse xl:flex-col items-start justify-end xl:justify-start gap-2">
               <ScrollButton
                 onClick={() => {
                   if (!!listRef.current) listRef.current.scrollLeft += 250
