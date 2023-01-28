@@ -16,7 +16,7 @@ const Button = ({
   href?: string
 }) => {
   const style =
-    'w-60 bg-black text-white py-2 rounded-xl dark:bg-white dark:text-black'
+    'bg-black text-white py-2 px-10 rounded-xl dark:bg-white dark:text-black'
   if (href) {
     return (
       <a href={href} target="_blank" className={style}>
@@ -38,6 +38,13 @@ const Mint: NextPage<{ data: string }> = (props) => {
 
   const darkMode = useMenuStore((state) => state.darkMode)
 
+  // const questionText = () => {}
+  const questionText =
+    (type === '' && 'Have you minted your artwork?') ||
+    (type === 'minted' &&
+      'Is it an Open Edition with a time limit?\ni.e. people can mint an unlimited amount of NFTs but only for a limited time.') ||
+    ''
+
   return (
     <div className={darkMode ? 'dark' : ''}>
       <div className="font-sans text-black bg-background dark:bg-black dark:text-white flex flex-col">
@@ -51,53 +58,31 @@ const Mint: NextPage<{ data: string }> = (props) => {
           <div className="mt-20 px-8 sm:px-20 flex flex-col text-center items-center mx-auto max-w-3xl justify-center">
             <h1 className="text-3xl">Submit Artwork</h1>
             <p className="mt-6">
-              Submit your artwork to be featured on "Discover" and "Mint Now"
-              sections.
+              Submit your artwork to be featured on Discover page of
+              CreateChecks.Art
             </p>
             <Image
-              src="/img/discover-sections.png"
+              src="/img/discover-page.png"
               alt="Sections of discover page"
               width={1000}
               height={1000}
-              className="mt-6 rounded-xl"
+              className="mt-6 rounded-xl shadow-xl"
             />
-            <p className="mt-6 text-red font-bold">
-              IMPORTANT:
+            <p className="mt-6 font-semibold text-grey">
+              Please,
               <br />
-              Currently we can only feature Timed Editions in the "Minting Now"
-              section. If your mint is not limited in time it will be added only
-              to the "Discover" section. If you have a work that is currently
-              minting, but it's an edition of limited works without any time
-              limit, submit to just "Discover" section.
+              First check your piece haven't already been included already!
             </p>
-            <p className="mt-6 italic">
-              Being added to the "Minting Now" section means the automatic
-              addition of the work to the "Discover" section.
+            <p className="mt-12 tracking-tight leading-4 whitespace-pre-line text-lg">
+              {questionText}
             </p>
-            <p className="mt-6 font-semibold">
-              PLEASE
-              <br />
-              First check your piece haven't already been included!
-            </p>
-            {type === '' ? (
-              <p className="mt-12 text-grey tracking-tight leading-4">
-                Where do you want to add your work?
-              </p>
-            ) : (
-              <p className="mt-12 text-grey tracking-tight leading-4">
-                Have you minted your artwork?
-              </p>
-            )}
             {type === '' ? (
               <div className="mt-6 flex flex-col gap-2">
+                <Button onClick={() => setType('minted')} text={`Yes`} />
                 <Button
                   onClick={() => {}}
-                  text={`"Mint Now" & "Discover"`}
-                  href="https://tally.so/r/3q5lD7"
-                />
-                <Button
-                  onClick={() => setType('discover')}
-                  text={`Just "Discover"`}
+                  text={`No`}
+                  href="https://tally.so/r/wo9jee"
                 />
               </div>
             ) : (
@@ -105,12 +90,12 @@ const Mint: NextPage<{ data: string }> = (props) => {
                 <Button
                   onClick={() => {}}
                   text={`Yes`}
-                  href="https://tally.so/r/nGeP9o"
+                  href="https://tally.so/r/3q5lD7"
                 />
                 <Button
                   onClick={() => {}}
                   text={`No`}
-                  href="https://tally.so/r/wo9jee"
+                  href="https://tally.so/r/nGeP9o"
                 />
               </div>
             )}
