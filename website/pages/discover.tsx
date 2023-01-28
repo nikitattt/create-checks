@@ -3554,6 +3554,118 @@ export async function getStaticProps() {
         address: '0xB60c947bfCc9767E94ba36fD2DeC7AA11356c84f',
         ens: 'lilpizza.eth'
       }
+    },
+    {
+      name: "IT'S CHECKS O'CLOCK - WHITE EDITION",
+      type: 'NFT',
+      image:
+        'https://kci6tpn4nvfda2k37id2fqt3tapik46adcqgqpkgzgicfre5t7ba.arweave.net/UJHpvbxtSjBpW_oHosJ7mB6Fc8AYoGg9RsmQIsSdn8I',
+      link: 'https://app.manifold.xyz/c/checks-o-clock-white',
+      contractAddress: '0x0df6B1ae51c6D0a85a8c42B90328ce2150066D91',
+      createdOnCreateChecksArt: false,
+      author: {
+        twitter: 'xsficherax',
+        address: '',
+        ens: 'sfichera.eth'
+      }
+    },
+    {
+      name: 'ETH',
+      link: 'https://create.zora.co/collections/0xa6e0c670dbe1de68a226c95f07b02b0e2ddfc0c3',
+      image:
+        'https://bafkreiftjrdunn4flyqopwnd3tqo5fj4h7p24brw2g4h6a2vfd5iic7r3e.ipfs.nftstorage.link/',
+      type: 'NFT',
+      contractAddress: '0xa6e0c670dbe1de68a226c95f07b02b0e2ddfc0c3',
+      endTime: '2023-01-30T07:00:00+02:00',
+      platform: 'Zora',
+      createdOnCreateChecksArt: false,
+      author: {
+        ens: '',
+        address: '0x44CBC890Ba06FC409cFB4DEDCBC220b7A538B0FA',
+        twitter: 'zeromata_eth'
+      }
+    },
+    {
+      name: 'SEIZE THE PRINTER AT FED',
+      platform: 'Manifold',
+      link: 'https://app.manifold.xyz/c/checkcoin',
+      image:
+        'https://46t6lfcwaenrro4cxstozry6bl7f7dc76qmteekxgkecgxwbiugq.arweave.net/56fllFYBGxi7grym7MceCv5fjF_0GTIRVzKII17BRQ0',
+      type: 'NFT',
+      cost: 0,
+      contractAddress: '0xecda64c170BE3a700177EbbD13e6a2e6486133B0',
+      createdOnCreateChecksArt: false,
+      author: {
+        ens: 'bitssapiens.eth',
+        address: '0xab5D3f7eca3E784EACA50B74cfe5d1114cC78d76',
+        twitter: 'bitsapiens_'
+      }
+    },
+    {
+      name: "p32f3c7 119h75 4119nm3n7, d0n'7 y0u 7h1nk?",
+      platform: 'Zora',
+      link: 'https://create.zora.co/collections/0xcbd0f9f9a53d80cc3980ce33552d1e33681b6f01',
+      image:
+        'https://bafybeiapqjkttflhrp5ykcxsmcf3wz5ujffreoldgfnxtrscmt7zyykdku.ipfs.nftstorage.link/',
+      type: 'NFT',
+      endTime: '2023-02-28T00:00:00+01:00',
+      cost: 0.0049,
+      contractAddress: '0xCbd0f9F9a53d80cC3980Ce33552D1E33681B6F01',
+      createdOnCreateChecksArt: false,
+      author: {
+        ens: '',
+        address: '0xb84b866a8159Ae58A665fD847BE3d98ba6bcb5fC',
+        twitter: 'FortKnoxCrypto'
+      }
+    },
+    {
+      name: 'Checks 6969 - "The Art of Degeneracy"',
+      platform: 'Manifold',
+      link: 'https://app.manifold.xyz/br/Checks6969',
+      image:
+        'https://assets.manifold.xyz/image/upload/v1674747412/2ece45f9344e91ed356b9b7bbb169bfe61d347dbcd903d68593c3527099b9380.png',
+      type: 'NFT',
+      endTime: '2023-01-30T02:00:00+11:00',
+      cost: 0,
+      contractAddress: '0x8C8Ba64b3A26Edc95B67A573c786A425a5F1E56C',
+      createdOnCreateChecksArt: false,
+      author: {
+        ens: '',
+        address: '0x6b502366FF12dd2Eb9de62007b8F326b8c9098A6',
+        twitter: 'NFTEINSTEIN'
+      }
+    },
+    {
+      name: 'Check Perspective',
+      platform: 'Zora',
+      link: 'https://create.zora.co/collections/0x2c9618536086aa8e05832939d688190e6534be7f',
+      image:
+        'https://bafkreiceefv5gleo45whw6xbw5tlqwmcqafiejppjppajyb4c24nv6gepq.ipfs.nftstorage.link/',
+      type: 'NFT',
+      endTime: '2023-02-01T13:30:00-08:00',
+      cost: 0.002,
+      contractAddress: '0x2C9618536086AA8E05832939d688190E6534Be7f',
+      createdOnCreateChecksArt: false,
+      author: {
+        ens: 'jehoseph.eth',
+        address: '0x88Fe56808AAc806336A0Eb28682D10033c73826a',
+        twitter: 'Jehoseph'
+      }
+    },
+    {
+      name: 'FOMO',
+      platform: 'Zora',
+      link: 'https://create.zora.co/collections/0xe32922ce092e1d0677b90b4f271c51a711767e9f',
+      image:
+        'https://bafkreidkha3uwxofd3v2zz6paicu7oplld7s6q4kwpudr7dfckpkirrvxy.ipfs.nftstorage.link/',
+      type: 'NFT',
+      contractAddress: '0xe32922ce092e1d0677b90b4f271c51a711767e9f',
+      createdOnCreateChecksArt: false,
+      author: {
+        ens: 'iamng.eth',
+        address: '',
+        twitter: 'iamng_eth'
+      }
     }
   ]
 
