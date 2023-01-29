@@ -3346,16 +3346,18 @@ export async function getStaticProps() {
     },
     {
       name: 'ChecksBTC',
-      type: 'NFT',
-      image:
-        'https://bafkreihh7ei4es43crlguaryqkctlshbk47rzkaqfzsymvk5b7smob3tvy.ipfs.nftstorage.link/',
       link: 'https://create.zora.co/collections/0xf4eaded9c5aba168386aaea45578c990214aa690',
-      contractAddress: '0xf4eaded9c5aba168386aaea45578c990214aa690',
+      image:
+        'https://nftstorage.link/ipfs/bafkreihh7ei4es43crlguaryqkctlshbk47rzkaqfzsymvk5b7smob3tvy',
+      type: 'NFT',
+      aspectRatio: 'square',
+      contractAddress: '0xF4eaDEd9C5aBA168386aAEA45578c990214aA690',
       createdOnCreateChecksArt: true,
+      dateSubmitted: '2023-01-29T02:48:11.225Z',
       author: {
-        twitter: 'ChecksBTC',
-        address: '',
-        ens: 'checksbtc.eth'
+        ens: 'checksbtc.eth',
+        address: '0xa0b1f96dc831BF0a1E3d6137a3B49D547273fBC9',
+        twitter: 'ChecksBTC'
       }
     },
     {
