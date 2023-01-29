@@ -3781,6 +3781,35 @@ export async function getStaticProps() {
       createdOnCreateChecksArt: true,
       dateSubmitted: '2023-01-29T06:51:04.266Z',
       author: { twitter: 'amiraphist' }
+    },
+    {
+      name: 'Vibe Check',
+      platform: 'Manifold',
+      link: 'https://app.manifold.xyz/c/vibecheck',
+      image:
+        'https://osxki4sogfu6nxobkk7h7sjppkp7u27csnuaswmkkzrhp2gkde2a.arweave.net/dK6kck4xaebdwVK-f8kvep_6a-KTaAlZilZid-jKGTQ',
+      type: 'NFT',
+      aspectRatio: 'vertical',
+      endTime: '2023-02-02T06:50:00+08:00',
+      cost: 0.0001,
+      contractAddress: '0x3eF24e2C3CD259a771a35ecF0bb64e53C2D464F5',
+      createdOnCreateChecksArt: false,
+      dateSubmitted: '2023-01-29T16:59:30.866Z',
+      author: {
+        ens: 'kardon.eth',
+        address: '0xB692704d590e224C67Fa96830C4b2526fcCAF3a3',
+        twitter: 'kardon_y'
+      }
+    },
+    {
+      name: 'Just Check It.',
+      image:
+        'https://storage.googleapis.com/tally-response-assets/BMxE11/08a9658e-166f-4bef-ad72-891d7dad1493/Just-Check-It.png',
+      aspectRatio: 'square',
+      link: 'https://twitter.com/Neeoverse/status/1619712589222780928',
+      createdOnCreateChecksArt: false,
+      dateSubmitted: '2023-01-29T21:37:26.995Z',
+      author: { twitter: 'Neeoverse' }
     }
   ]
 
