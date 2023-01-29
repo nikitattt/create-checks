@@ -1,5 +1,6 @@
 import { Request, Response, NextFunction } from 'express'
 import axios from 'axios'
+import dayjs from 'dayjs'
 
 require('dotenv').config()
 
@@ -141,6 +142,7 @@ const receiveData = async (req: Request, res: Response, next: NextFunction) => {
     }
   }
 
+  artData.dateSubmitted = dayjs().toISOString()
   artData.author = author
 
   if (discordHook) {
