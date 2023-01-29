@@ -5,6 +5,16 @@ import { useMenuStore } from '../../store/menu'
 import { ColorMode } from '../../utils/colors'
 import { boardToImage } from '../../utils/image'
 
+const getGreen = () => {
+  const colors = ['#5b9f3e', '#01ef03', '#1CC500']
+  return colors[Math.floor(Math.random() * colors.length)]
+}
+
+const getRed = () => {
+  const colors = ['#e73d53', '#ea3a2d', '#f3322c', '#FF1F3D']
+  return colors[Math.floor(Math.random() * colors.length)]
+}
+
 const RandomButton = () => {
   const board = useBoardStore((state) => state.board)
   const darkMode = useMenuStore((state) => state.darkMode)
@@ -16,6 +26,8 @@ const RandomButton = () => {
     resetBoard()
     const upperBound = 0
     const lowerBound = 9
+    // const red = getRed()
+    // const green = getGreen()
     // Returns a random integer from 0 to 9:
 
     let moves: any[] = []
@@ -28,6 +40,9 @@ const RandomButton = () => {
       if (y === lowerBound) up = true
       else if (y === upperBound) up = false
       // console.log(up)
+
+      const red = getRed()
+      const green = getGreen()
 
       let move = Math.floor(Math.random() * (up ? y : lowerBound - y))
       if (move === 0) move = 1
@@ -49,7 +64,7 @@ const RandomButton = () => {
 
       // console.log(`- top - i: ${i}, y: ${y}, p: ${p}, move: ${move}, up: ${up}`)
 
-      addCheck(p, up ? '#01ef03' : '#f3322c')
+      addCheck(p, up ? green : red)
       // console.log(`y: ${y}, p: ${p}, move: ${move}, up: ${up}`)
 
       // console.log('- start move')
@@ -61,7 +76,7 @@ const RandomButton = () => {
         }
 
         p = 8 * y + i
-        addCheck(p, up ? '#01ef03' : '#f3322c')
+        addCheck(p, up ? green : red)
         console
           .log
           // `i: ${i}, j: ${j}, y: ${y}, p: ${p}, move: ${move}, up: ${up}`
