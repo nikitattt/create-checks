@@ -1,21 +1,22 @@
 import clsx from 'clsx'
-import { saEvent } from '../../scripts/events'
 import { useBoardStore } from '../../store/board'
 import { useMenuStore } from '../../store/menu'
-import { ColorMode } from '../../utils/colors'
-import { boardToImage } from '../../utils/image'
 
 const BoardSizeSelect = () => {
-  const board = useBoardStore((state) => state.board)
-  const darkMode = useMenuStore((state) => state.darkMode)
+  const rows = useBoardStore((state) => state.rows)
+  const columns = useBoardStore((state) => state.columns)
+  const showBoardSizePanel = useMenuStore((state) => state.showBoardSizePanel)
+  const setShowBoardSizePanel = useMenuStore(
+    (state) => state.setShowBoardSizePanel
+  )
 
-  const saveBoard = () => {
-    // saEvent('save_image', { mode: darkMode ? 'dark' : 'light' })
+  const toggle = () => {
+    setShowBoardSizePanel(!showBoardSizePanel)
   }
 
   return (
     <button
-      onClick={saveBoard}
+      onClick={toggle}
       className={clsx(
         'rounded-full py-1 px-3 cursor-pointer text-sm transition-all duration-300',
         'bg-white text-grey w-max hover:bg-black hover:text-white',
@@ -23,7 +24,7 @@ const BoardSizeSelect = () => {
         'shadow-lg sm:shadow-none'
       )}
     >
-      8 x 10
+      {columns + ' x ' + rows}
     </button>
   )
 }

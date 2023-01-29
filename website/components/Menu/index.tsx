@@ -7,9 +7,11 @@ import DarkModeSwitch from '../DarkModeSwitch'
 import SaveButton from '../SaveButton'
 import MintButton from '../MintButton'
 import BoardSizeSelect from '../BoardSizeSelect'
+import BoardSizePanel from '../BoardSizePannel'
 
 const Menu = () => {
   const showColorPanel = useMenuStore((state) => state.showColorPanel)
+  const showBoardSizePanel = useMenuStore((state) => state.showBoardSizePanel)
 
   return (
     <div className="flex flex-col absolute right-2 sm:right-6 top-[4.5rem] sm:top-1/2 gap-2 items-end -mt-0 sm:-mt-20">
@@ -18,6 +20,7 @@ const Menu = () => {
         <BoardSizeSelect />
         <CheckColorSelect />
       </div>
+      {showBoardSizePanel && <BoardSizePanel />}
       {showColorPanel && <ColorPanel />}
       <div className="flex flex-row gap-2">
         <BackButton />

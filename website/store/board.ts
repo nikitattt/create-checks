@@ -1,10 +1,9 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 
-const columns = 8
-const rows = 10
-
 interface BoardState {
+  rows: number
+  columns: number
   board: Array<string>
   history: Array<number>
   addCheck: (position: number, color: string) => void
@@ -16,7 +15,9 @@ interface BoardState {
 const useBoardStore = create<BoardState>()(
   persist(
     (set, get) => ({
-      board: new Array(columns * rows).fill(''),
+      rows: 10,
+      columns: 8,
+      board: new Array(10 * 8).fill(''),
       history: [],
       addCheck: (position: number, color: string) => {
         const newBoard = [...get().board]
@@ -26,7 +27,12 @@ const useBoardStore = create<BoardState>()(
         set({ board: newBoard, history: newHistory })
       },
       setBoard: (board: Array<string>) => set({ board: board }),
-      resetBoard: () => set({ board: new Array(columns * rows).fill('') }),
+      resetBoard: () => {
+        const cols = get().columns
+        const rows = get().rows
+
+        set({ board: new Array(cols * rows).fill('') })
+      },
       backOneCheck: () => {
         const history = get().history
 

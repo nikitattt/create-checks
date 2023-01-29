@@ -12,10 +12,12 @@ interface MenuState {
   darkMode: boolean
   customColor: string
   showColorPanel: boolean
+  showBoardSizePanel: boolean
   setCustomColor: (color: string) => void
   switchDarkMode: () => void
   setDirectory: (directory: Directory) => void
   setShowColorPanel: (value: boolean) => void
+  setShowBoardSizePanel: (value: boolean) => void
   setCheckColor: (color: string) => void
 }
 
@@ -27,10 +29,13 @@ const useMenuStore = create<MenuState>()(
       darkMode: false,
       customColor: '',
       showColorPanel: false,
+      showBoardSizePanel: false,
       setCustomColor: (color: string) => set({ customColor: color }),
       switchDarkMode: () => set({ darkMode: !get().darkMode }),
       setDirectory: (directory: Directory) => set({ directory: directory }),
       setShowColorPanel: (value: boolean) => set({ showColorPanel: value }),
+      setShowBoardSizePanel: (value: boolean) =>
+        set({ showBoardSizePanel: value }),
       setCheckColor: (color: string) => set({ checkColor: color })
     }),
     {
@@ -38,7 +43,10 @@ const useMenuStore = create<MenuState>()(
       partialize: (state) =>
         Object.fromEntries(
           Object.entries(state).filter(
-            ([key]) => !['darkMode', 'showColorPanel'].includes(key)
+            ([key]) =>
+              !['darkMode', 'showColorPanel', 'showBoardSizePanel'].includes(
+                key
+              )
           )
         )
     }
