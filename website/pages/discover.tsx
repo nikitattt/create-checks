@@ -3701,6 +3701,22 @@ export async function getStaticProps() {
         address: '0xa754f8c4eb77c6e05107c2c723ca0c8efaa86a87',
         twitter: 'wutaner'
       }
+    },
+    {
+      name: "The Check of Man (Le check de l'homme)",
+      link: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/58134094112823718572633330630551399190555186268431755318138645531874358722581/',
+      image:
+        'https://dl.openseauserdata.com/cache/originImage/files/c3e962893a29848aaada93caf6b395fe.jpg',
+      type: 'NFT',
+      aspectRatio: 'vertical',
+      contractAddress: '0x495f947276749ce646f68ac8c248420045cb7b5e',
+      createdOnCreateChecksArt: false,
+      dateSubmitted: '2023-01-29T02:53:22.955Z',
+      author: {
+        ens: '',
+        address: '0x8086bB327aB1898886969DB466d2d0A3f8fC72d2',
+        twitter: 'keendisregard'
+      }
     }
   ]
 
