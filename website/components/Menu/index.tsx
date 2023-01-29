@@ -6,6 +6,7 @@ import ClearButton from '../ClearButton'
 import DarkModeSwitch from '../DarkModeSwitch'
 import SaveButton from '../SaveButton'
 import MintButton from '../MintButton'
+import RandomButton from '../RandomButton'
 
 const Menu = () => {
   const showColorPanel = useMenuStore((state) => state.showColorPanel)
@@ -25,6 +26,7 @@ const Menu = () => {
         <MintButton />
         <SaveButton />
       </div>
+      <RandomButton />
     </div>
   )
 }
