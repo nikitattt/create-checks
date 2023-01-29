@@ -42,7 +42,7 @@ const Mint: NextPage<{ data: string }> = (props) => {
   const questionText =
     (type === '' && 'Have you minted your artwork?') ||
     (type === 'minted' &&
-      'Is it an Open Edition with a time limit?\ni.e. people can mint an unlimited amount of NFTs but only for a limited time.') ||
+      'Is it an Open Edition with a time limit? And still minting?\ni.e. people can mint an unlimited amount of NFTs but only for a limited time.') ||
     ''
 
   return (
@@ -76,7 +76,7 @@ const Mint: NextPage<{ data: string }> = (props) => {
               <br />
               First check your piece haven't already been included already!
             </p>
-            <p className="mt-12 tracking-tight leading-4 whitespace-pre-line text-lg">
+            <p className="mt-12 tracking-tight leading-5 whitespace-pre-line text-lg">
               {questionText}
             </p>
             {type === '' ? (
