@@ -3771,6 +3771,16 @@ export async function getStaticProps() {
         address: '0x682b453b0922e3648e7ad016668ee579233ff7be',
         twitter: 'gid3xn'
       }
+    },
+    {
+      name: 'Frogify',
+      image:
+        'https://storage.googleapis.com/tally-response-assets/BMxE11/f61d050a-6560-48d6-90b7-619f067807b4/F5DAF2B2-9EE4-4247-A869-A44C5A3EC910.jpeg',
+      aspectRatio: 'square',
+      link: '',
+      createdOnCreateChecksArt: true,
+      dateSubmitted: '2023-01-29T06:51:04.266Z',
+      author: { twitter: 'amiraphist' }
     }
   ]
 
