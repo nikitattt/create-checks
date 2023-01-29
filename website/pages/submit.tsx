@@ -4,6 +4,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
+import { saEvent } from '../scripts/events'
 import { useMenuStore } from '../store/menu'
 
 const Button = ({
@@ -83,7 +84,9 @@ const Mint: NextPage<{ data: string }> = (props) => {
               <div className="mt-6 flex flex-col gap-2">
                 <Button onClick={() => setType('minted')} text={`Yes`} />
                 <Button
-                  onClick={() => {}}
+                  onClick={() => {
+                    saEvent('open_art_submit_form', { form_id: 'wo9jee' })
+                  }}
                   text={`No`}
                   href="https://tally.so/r/wo9jee"
                 />
@@ -91,12 +94,16 @@ const Mint: NextPage<{ data: string }> = (props) => {
             ) : (
               <div className="mt-6 flex flex-col gap-2">
                 <Button
-                  onClick={() => {}}
+                  onClick={() => {
+                    saEvent('open_art_submit_form', { form_id: '3q5lD7' })
+                  }}
                   text={`Yes`}
                   href="https://tally.so/r/3q5lD7"
                 />
                 <Button
-                  onClick={() => {}}
+                  onClick={() => {
+                    saEvent('open_art_submit_form', { form_id: 'nGeP9o' })
+                  }}
                   text={`No`}
                   href="https://tally.so/r/nGeP9o"
                 />
