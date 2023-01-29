@@ -18,6 +18,8 @@ const RandomButton = () => {
     const lowerBound = 9
     // Returns a random integer from 0 to 9:
 
+    let moves: any[] = []
+
     let y = Math.floor(Math.random() * 10)
     let p = 8 * y
 
@@ -30,14 +32,27 @@ const RandomButton = () => {
       let move = Math.floor(Math.random() * (up ? y : lowerBound - y))
       if (move === 0) move = 1
 
-      p = 8 * y + i
+      moves.push({ move: move, up: up })
 
-      console.log(`- top - i: ${i}, y: ${y}, p: ${p}, move: ${move}, up: ${up}`)
+      /*
+       * chart var 1
+       */
+      p = 8 * y + i
+      /*
+       * chart var 2
+       */
+      // if (up) {
+      //   p = 8 * y + i - 8
+      // } else {
+      //   p = 8 * y + i + 8
+      // }
+
+      // console.log(`- top - i: ${i}, y: ${y}, p: ${p}, move: ${move}, up: ${up}`)
 
       addCheck(p, up ? '#01ef03' : '#f3322c')
       // console.log(`y: ${y}, p: ${p}, move: ${move}, up: ${up}`)
 
-      console.log('- start move')
+      // console.log('- start move')
       for (let j = 0; j < move; j++) {
         if (up) {
           y -= 1
@@ -47,14 +62,16 @@ const RandomButton = () => {
 
         p = 8 * y + i
         addCheck(p, up ? '#01ef03' : '#f3322c')
-        console.log(
-          `i: ${i}, j: ${j}, y: ${y}, p: ${p}, move: ${move}, up: ${up}`
-        )
+        console
+          .log
+          // `i: ${i}, j: ${j}, y: ${y}, p: ${p}, move: ${move}, up: ${up}`
+          ()
       }
-      console.log('- end move')
-      console.log('')
+      // console.log('- end move')
+      // console.log('')
     }
-    // downloadURL(image, 'Checks')
+    console.log(moves)
+
     // saEvent('save_image', { mode: darkMode ? 'dark' : 'light' })
   }
 
