@@ -3717,6 +3717,21 @@ export async function getStaticProps() {
         address: '0x8086bB327aB1898886969DB466d2d0A3f8fC72d2',
         twitter: 'keendisregard'
       }
+    },
+    {
+      name: 'CHECKS by sodas',
+      link: 'https://app.manifold.xyz/c/checks-by-sodas',
+      image: 'https://arweave.net/hG8ygV7bFvMvs__2lghkP3jgDNz4IwajfZ72qZ248wk',
+      type: 'NFT',
+      aspectRatio: 'square',
+      contractAddress: '0xbE332dEcab7b3A861a2fdc4982e78853bF2a0044',
+      createdOnCreateChecksArt: false,
+      dateSubmitted: '2023-01-29T03:00:00.961Z',
+      author: {
+        ens: 'Sodas.eth',
+        address: '0x61fae2d53ce42d87a089753c55c2d26309f0a89f',
+        twitter: 'Sodasnft'
+      }
     }
   ]
 
