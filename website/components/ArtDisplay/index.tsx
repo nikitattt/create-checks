@@ -5,7 +5,7 @@ import { mintingNow } from '../../utils/dates'
 import Check from '../Check'
 import styles from './ArtDisplay.module.css'
 
-const MintOfTheDay = dynamic(() => import('../MintOfTheDay'), {
+const MintingNow = dynamic(() => import('../MintingNow'), {
   ssr: false,
   loading: () => <>Loading...</>
 })
@@ -150,7 +150,7 @@ const ArtDisplay = ({ art, mintingNow }: { art: any[]; mintingNow: any[] }) => {
         </div>
         <p>Artworks</p>
       </div>
-      <MintOfTheDay data={mintingNow} />
+      <MintingNow data={mintingNow} />
       <div className="my-4 w-3/4 border-t-0 border-white self-center"></div>
       {/* <div className="w-max mb-6 items-start">
         <DetailsSwitch />

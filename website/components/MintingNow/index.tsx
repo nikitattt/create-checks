@@ -65,7 +65,7 @@ const ScrollButton = ({
   )
 }
 
-const MintOfTheDay = ({ data }: { data: any[] }) => {
+const MintingNow = ({ data }: { data: any[] }) => {
   const expand = window.innerWidth > 1280 ? Math.random() < 0.55 : false
   const [expanded, setExpanded] = useState(expand)
   const [pieces, setPieces] = useState<any[] | undefined>(undefined)
@@ -226,4 +226,4 @@ const MintOfTheDay = ({ data }: { data: any[] }) => {
   )
 }
 
-export default MintOfTheDay
+export default MintingNow
