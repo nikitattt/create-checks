@@ -3753,6 +3753,24 @@ export async function getStaticProps() {
         address: '0xAf89B858626d3bd9fDA1647d3BBA6bb85E236Cf5',
         twitter: 'nasergivechi'
       }
+    },
+    {
+      name: 'checkloop',
+      link: 'https://create.zora.co/collections/0x160046066ff2097708dd113fd62b42821ee8319f',
+      image:
+        'https://bafybeid5n2xux7gbrboeusfkygku7ln26yeuveih56v22745esqdbfr4na.ipfs.nftstorage.link',
+      type: 'NFT',
+      aspectRatio: 'horizontal',
+      contractAddress: '0x160046066ff2097708dd113fd62b42821ee8319f',
+      createdOnCreateChecksArt: false,
+      dateSubmitted: '2023-01-29T04:58:14.572Z',
+      endTime: '2023-02-01T09:00:00+02:00',
+      cost: 0.008,
+      author: {
+        ens: 'justsys.eth',
+        address: '0x682b453b0922e3648e7ad016668ee579233ff7be',
+        twitter: 'gid3xn'
+      }
     }
   ]
 
