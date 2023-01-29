@@ -3734,6 +3734,25 @@ export async function getStaticProps() {
         address: '0x61fae2d53ce42d87a089753c55c2d26309f0a89f',
         twitter: 'Sodasnft'
       }
+    },
+    {
+      name: 'Connecting the Dots',
+      platform: 'Zora',
+      link: 'https://create.zora.co/collections/0x78aaa896824538c95f5e0b0a56aa244c3dac2d22',
+      image:
+        'https://bafkreidnw2n5dmiqftvhuh2whf7bqr4j4hagarb6gxc3spdglxpcphehgy.ipfs.nftstorage.link/',
+      type: 'NFT',
+      aspectRatio: 'square',
+      endTime: '2023-01-31T00:00:00+11:00',
+      cost: 0.00333,
+      contractAddress: '0x78aaa896824538c95f5e0b0a56aa244c3dac2d22',
+      createdOnCreateChecksArt: false,
+      dateSubmitted: '2023-01-29T03:43:06.105Z',
+      author: {
+        ens: 'nasergivechi.eth',
+        address: '0xAf89B858626d3bd9fDA1647d3BBA6bb85E236Cf5',
+        twitter: 'nasergivechi'
+      }
     }
   ]
 
