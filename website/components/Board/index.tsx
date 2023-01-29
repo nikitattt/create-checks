@@ -1,4 +1,6 @@
 import clsx from 'clsx'
+import { useState } from 'react'
+import { saEvent } from '../../scripts/events'
 import { useBoardStore } from '../../store/board'
 import { useMenuStore } from '../../store/menu'
 import { addAlpha } from '../../utils/colors'
@@ -8,9 +10,25 @@ const Board = () => {
   const board = useBoardStore((state) => state.board)
   const checkColor = useMenuStore((state) => state.checkColor)
   const addCheck = useBoardStore((state) => state.addCheck)
+  const darkMode = useMenuStore((state) => state.darkMode)
+
+  const [clicksDone, setClicksDone] = useState(0)
 
   const saveCheckPosition = (index: number) => {
     addCheck(index, checkColor)
+    if (
+      clicksDone === 2 ||
+      clicksDone === 10 ||
+      clicksDone === 50 ||
+      clicksDone === 200 ||
+      clicksDone === 500
+    ) {
+      saEvent('added_checks_to_board', {
+        number: clicksDone + 1,
+        mode: darkMode ? 'dark' : 'light'
+      })
+    }
+    setClicksDone(clicksDone + 1)
   }
 
   const Cell = (key: number) => (
