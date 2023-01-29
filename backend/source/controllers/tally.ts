@@ -13,7 +13,7 @@ const receiveData = async (req: Request, res: Response, next: NextFunction) => {
   let title = ''
 
   if (data.formId === '3q5lD7') {
-    title = 'Mint and Discover section'
+    title = 'Mint Now and Discover sections'
   } else if (data.formId === 'nGeP9o') {
     title = 'Minted work on Discover section'
   } else if (data.formId === 'wo9jee') {
@@ -112,6 +112,32 @@ const receiveData = async (req: Request, res: Response, next: NextFunction) => {
           artData.createdOnCreateChecksArt = false
         }
       }
+
+      if (
+        ['question_3jYE2Y', 'question_mO9Vyk', 'question_mVAxyN'].includes(
+          field.key
+        )
+      ) {
+        if (
+          [
+            '7217825d-47db-4663-b376-628d086eeb78',
+            '488d9dd1-5567-4b67-b46e-18637a0ab894',
+            '646facb6-a4b5-4453-9204-7f2ab949a011'
+          ].includes(field.value)
+        ) {
+          artData.aspectRatio = 'vertical'
+        } else if (
+          [
+            '53ab8425-0614-4b10-8a8d-42fa9120a480',
+            '2fb96d0a-f68a-4bc9-a9f6-5401e65b25a4',
+            'b40158af-8129-4a63-9e77-7c44904dcc2e'
+          ].includes(field.value)
+        ) {
+          artData.aspectRatio = 'horizontal'
+        } else {
+          artData.aspectRatio = 'square'
+        }
+      }
     }
   }
 
@@ -129,7 +155,9 @@ const receiveData = async (req: Request, res: Response, next: NextFunction) => {
               'Code to add: ```' +
               JSON.stringify(artData) +
               '```' +
-              ` [Link for a check](${artData.link})`,
+              `
+              
+              **[Link to artwork page](${artData.link})**`,
             thumbnail: {
               url: artData.image
             }
