@@ -26,7 +26,9 @@ const Discover: NextPage<{ art: any[]; mintingNow: any[] }> = (props) => {
         <main className="">
           <NavBar page="/discover" />
           <ArtDisplay art={art} mintingNow={mintingNow} />
-          <BuildBy />
+          <div className="hidden lg:block">
+            <BuildBy />
+          </div>
         </main>
 
         <footer className="mt-20 mb-16 text-center">

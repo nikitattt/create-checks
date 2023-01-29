@@ -50,13 +50,8 @@ const NavBar = ({ page }: { page: string }) => {
         </div>
         <div className="flex flex-row gap-6">
           <SectionsSwitch page={page} />
-          {/* <CheckColorSelect player={Player.You} />
-          <CheckColorSelect player={Player.Opponent} /> */}
         </div>
-        <div className="flex-1">
-          {/* <div className="w-max ml-auto px-4 py-1 rounded-full bg-white">
-            connect
-          </div> */}
+        <div className="flex-none sm:flex-1">
           <div className="hidden sm:block">
             <a href="https://twitter.com/iamng_eth" target="_blank">
               <div className="w-max ml-auto rounded-full bg-white dark:bg-black-canvas dark:fill-white">
