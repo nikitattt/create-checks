@@ -3689,7 +3689,7 @@ export async function getStaticProps() {
       image:
         'https://bafkreicnzn77biys6go4drtinjqza7pxajzss7a6svyckifn64mn7q7iqm.ipfs.nftstorage.link/',
       type: 'NFT',
-      endTime: '2023-01-31T12:00:00',
+      endTime: '2024-01-27T17:30:00+02:00',
       dateSubmitted: '2023-01-29T03:05:06+02:00',
       cost: 0.001,
       contractAddress: '0x4bb5cde896363240546bfff9854f64bf2f883bcb',
