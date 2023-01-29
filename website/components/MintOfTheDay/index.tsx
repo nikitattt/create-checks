@@ -143,7 +143,7 @@ const MintOfTheDay = ({ data }: { data: any[] }) => {
               <div className="text-4xl max-w-xs">{displayPiece.name}</div>
               <div className="text-base">{`by @${displayPiece.author.twitter}`}</div>
               <div className="mt-0 text-grey text-lg">
-                {displayPiece.cost === '0' ? 'Free' : `${displayPiece.cost} Ξ`}
+                {displayPiece.cost === 0 ? 'Free' : `${displayPiece.cost} Ξ`}
               </div>
               <div className="h-4" />
               <MintCountdown endTime={displayPiece.endTime} />
