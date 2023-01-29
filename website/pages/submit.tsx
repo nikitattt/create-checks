@@ -49,8 +49,11 @@ const Mint: NextPage<{ data: string }> = (props) => {
     <div className={darkMode ? 'dark' : ''}>
       <div className="font-sans text-black bg-background dark:bg-black dark:text-white flex flex-col">
         <Head>
-          <title>Mint</title>
-          <meta name="description" content="" />
+          <title>Submit Artwork</title>
+          <meta
+            name="description"
+            content="Submit your Checks based artwork to the collection of art displayed on the Discover page on CreateChecks.Art"
+          />
           <script async src="https://tally.so/widgets/embed.js"></script>
         </Head>
 
