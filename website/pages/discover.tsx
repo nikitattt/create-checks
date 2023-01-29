@@ -3447,7 +3447,7 @@ export async function getStaticProps() {
       link: 'https://create.zora.co/collections/0xdfe6a151fcae80c5a22e0b54f93ef5018962f186',
       contractAddress: '0xdfe6a151fcae80c5a22e0b54f93ef5018962f186',
       createdOnCreateChecksArt: false,
-      dateAdded: '2023-01-29T03:05:06+02:00',
+      dateSubmitted: '2023-01-29T03:05:06+02:00',
       author: {
         twitter: 'streetphoto_eth',
         address: '',
@@ -3464,7 +3464,7 @@ export async function getStaticProps() {
       cost: '0.00069',
       platform: 'Manifold',
       endTime: '2023-01-31T23:30:00-06:00',
-      dateAdded: '2023-01-29T03:05:06+02:00',
+      dateSubmitted: '2023-01-29T03:05:06+02:00',
       createdOnCreateChecksArt: false,
       author: {
         twitter: 'sarcastic_songs',
@@ -3483,7 +3483,7 @@ export async function getStaticProps() {
       cost: '0',
       platform: 'Zora',
       endTime: '2023-01-31T00:00:00+03:00',
-      dateAdded: '2023-01-29T03:05:06+02:00',
+      dateSubmitted: '2023-01-29T03:05:06+02:00',
       author: {
         twitter: 'iravlana',
         address: '0xee65f1E2A897Cb57482BB62ea0c452AD75FDDC0C',
@@ -3501,7 +3501,7 @@ export async function getStaticProps() {
       cost: '0',
       platform: 'Manifold',
       endTime: '2023-01-30T19:00:00-05:00',
-      dateAdded: '2023-01-29T03:05:06+02:00',
+      dateSubmitted: '2023-01-29T03:05:06+02:00',
       author: {
         twitter: '@rottencoffeewtf',
         address: '0x5e82e5c125dc0696a9412f740b39463a7b9cc193',
@@ -3519,7 +3519,7 @@ export async function getStaticProps() {
       cost: '0.005',
       platform: 'Zora',
       endTime: '2023-01-31T05:00:00.000Z',
-      dateAdded: '2023-01-29T03:05:06+02:00',
+      dateSubmitted: '2023-01-29T03:05:06+02:00',
       author: {
         twitter: 'artofnext',
         address: '0x64E1Dd2405066335C38C38806e8E793c4ff932B2',
@@ -3537,7 +3537,7 @@ export async function getStaticProps() {
       cost: '0.00069',
       platform: 'Manifold',
       endTime: '2023-01-31T00:00:00+10:00',
-      dateAdded: '2023-01-29T03:05:06+02:00',
+      dateSubmitted: '2023-01-29T03:05:06+02:00',
       author: {
         twitter: 'MisterPineappl9',
         address: '0xb2a0731F8Ff95229e23ac0359C85e017Ae60aA7c',
@@ -3555,7 +3555,7 @@ export async function getStaticProps() {
       cost: '0.00141',
       platform: 'Zora',
       endTime: '2023-01-28T19:15:00-08:00',
-      dateAdded: '2023-01-29T03:05:06+02:00',
+      dateSubmitted: '2023-01-29T03:05:06+02:00',
       author: {
         twitter: 'lilpizza_eth',
         address: '0xB60c947bfCc9767E94ba36fD2DeC7AA11356c84f',
@@ -3570,7 +3570,7 @@ export async function getStaticProps() {
       link: 'https://app.manifold.xyz/c/checks-o-clock-white',
       contractAddress: '0x0df6B1ae51c6D0a85a8c42B90328ce2150066D91',
       createdOnCreateChecksArt: false,
-      dateAdded: '2023-01-29T03:05:06+02:00',
+      dateSubmitted: '2023-01-29T03:05:06+02:00',
       author: {
         twitter: 'xsficherax',
         address: '',
@@ -3585,7 +3585,7 @@ export async function getStaticProps() {
       type: 'NFT',
       contractAddress: '0xa6e0c670dbe1de68a226c95f07b02b0e2ddfc0c3',
       endTime: '2023-01-30T07:00:00+02:00',
-      dateAdded: '2023-01-29T03:05:06+02:00',
+      dateSubmitted: '2023-01-29T03:05:06+02:00',
       platform: 'Zora',
       createdOnCreateChecksArt: false,
       author: {
@@ -3601,7 +3601,7 @@ export async function getStaticProps() {
       image:
         'https://46t6lfcwaenrro4cxstozry6bl7f7dc76qmteekxgkecgxwbiugq.arweave.net/56fllFYBGxi7grym7MceCv5fjF_0GTIRVzKII17BRQ0',
       type: 'NFT',
-      dateAdded: '2023-01-29T03:05:06+02:00',
+      dateSubmitted: '2023-01-29T03:05:06+02:00',
       endTime: '2024-01-27T17:30:00+02:00',
       cost: 0,
       contractAddress: '0xecda64c170BE3a700177EbbD13e6a2e6486133B0',
@@ -3620,7 +3620,7 @@ export async function getStaticProps() {
         'https://bafybeiapqjkttflhrp5ykcxsmcf3wz5ujffreoldgfnxtrscmt7zyykdku.ipfs.nftstorage.link/',
       type: 'NFT',
       endTime: '2023-02-28T00:00:00+01:00',
-      dateAdded: '2023-01-29T03:05:06+02:00',
+      dateSubmitted: '2023-01-29T03:05:06+02:00',
       cost: 0.0049,
       contractAddress: '0xCbd0f9F9a53d80cC3980Ce33552D1E33681B6F01',
       createdOnCreateChecksArt: false,
@@ -3638,7 +3638,7 @@ export async function getStaticProps() {
         'https://assets.manifold.xyz/image/upload/v1674747412/2ece45f9344e91ed356b9b7bbb169bfe61d347dbcd903d68593c3527099b9380.png',
       type: 'NFT',
       endTime: '2023-01-30T02:00:00+11:00',
-      dateAdded: '2023-01-29T03:05:06+02:00',
+      dateSubmitted: '2023-01-29T03:05:06+02:00',
       cost: 0,
       contractAddress: '0x8C8Ba64b3A26Edc95B67A573c786A425a5F1E56C',
       createdOnCreateChecksArt: false,
@@ -3656,7 +3656,7 @@ export async function getStaticProps() {
         'https://bafkreiceefv5gleo45whw6xbw5tlqwmcqafiejppjppajyb4c24nv6gepq.ipfs.nftstorage.link/',
       type: 'NFT',
       endTime: '2023-02-01T13:30:00-08:00',
-      dateAdded: '2023-01-29T03:05:06+02:00',
+      dateSubmitted: '2023-01-29T03:05:06+02:00',
       cost: 0.002,
       contractAddress: '0x2C9618536086AA8E05832939d688190E6534Be7f',
       createdOnCreateChecksArt: false,
@@ -3673,7 +3673,7 @@ export async function getStaticProps() {
       image:
         'https://bafkreidkha3uwxofd3v2zz6paicu7oplld7s6q4kwpudr7dfckpkirrvxy.ipfs.nftstorage.link/',
       type: 'NFT',
-      dateAdded: '2023-01-29T03:05:06+02:00',
+      dateSubmitted: '2023-01-29T03:05:06+02:00',
       contractAddress: '0xe32922ce092e1d0677b90b4f271c51a711767e9f',
       createdOnCreateChecksArt: false,
       author: {
@@ -3690,7 +3690,7 @@ export async function getStaticProps() {
         'https://bafkreicnzn77biys6go4drtinjqza7pxajzss7a6svyckifn64mn7q7iqm.ipfs.nftstorage.link/',
       type: 'NFT',
       endTime: '2023-01-31T12:00:00',
-      dateAdded: '2023-01-29T03:05:06+02:00',
+      dateSubmitted: '2023-01-29T03:05:06+02:00',
       cost: '0.001',
       contractAddress: '0x4bb5cde896363240546bfff9854f64bf2f883bcb',
       createdOnCreateChecksArt: false,
