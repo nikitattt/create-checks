@@ -6,6 +6,7 @@ import { useMenuStore } from '../store/menu'
 import ArtDisplay from '../components/ArtDisplay'
 import Link from 'next/link'
 import { mintingNow } from '../utils/dates'
+import { shuffle } from '../utils/arrays'
 
 const Discover: NextPage<{ art: any[]; mintingNow: any[] }> = (props) => {
   const { art, mintingNow } = props
@@ -3885,6 +3886,8 @@ export async function getStaticProps() {
   ]
 
   const mintingNowArt = art.filter((e) => e.endTime && mintingNow(e.endTime))
+
+  shuffle(art)
 
   return {
     props: {
