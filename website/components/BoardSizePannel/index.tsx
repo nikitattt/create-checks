@@ -33,13 +33,6 @@ const PredefinedSize = ({
 }
 
 const BoardSizePanel = () => {
-  // const board = useBoardStore((state) => state.board)
-  // const darkMode = useMenuStore((state) => state.darkMode)
-
-  const saveBoard = () => {
-    // saEvent('save_image', { mode: darkMode ? 'dark' : 'light' })
-  }
-
   return (
     <div
       className={clsx(
@@ -52,9 +45,26 @@ const BoardSizePanel = () => {
         Larger boards are currently only available on desktop
       </p>
       <div className="mt-1 hidden lg:flex flex-col">
+        <p className="mt-0.5 text-xs">Vertical</p>
         <div className="flex flex-row gap-1">
           <PredefinedSize rows={10} columns={8} />
           <PredefinedSize rows={12} columns={10} />
+          <PredefinedSize rows={14} columns={10} />
+        </div>
+        <div className="mt-1 flex flex-row gap-1">
+          <PredefinedSize rows={16} columns={12} />
+          <PredefinedSize rows={20} columns={16} />
+        </div>
+        <p className="mt-0.5 text-xs">Horizontal</p>
+        <div className="flex flex-row gap-1">
+          <PredefinedSize rows={8} columns={12} />
+          <PredefinedSize rows={10} columns={16} />
+          <PredefinedSize rows={16} columns={20} />
+        </div>
+        <p className="mt-0.5 text-xs">Square</p>
+        <div className="flex flex-row gap-1">
+          <PredefinedSize rows={10} columns={10} />
+          <PredefinedSize rows={12} columns={12} />
           <PredefinedSize rows={14} columns={14} />
         </div>
         <div className="mt-1 flex flex-row gap-1">
