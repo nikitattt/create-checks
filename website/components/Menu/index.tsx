@@ -23,7 +23,7 @@ const Menu = () => {
   const showBoardSizePanel = useMenuStore((state) => state.showBoardSizePanel)
 
   return (
-    <div className="flex flex-col absolute right-2 sm:right-6 top-[4.5rem] sm:top-1/2 gap-2 items-end -mt-0 sm:-mt-20">
+    <div className="flex flex-col absolute right-2 sm:right-6 top-[4.5rem] sm:top-[35%] gap-2 items-end">
       <div className="flex flex-row gap-2 items-center">
         <DarkModeSwitch />
         <BoardSizeSelect />
