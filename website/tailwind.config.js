@@ -58,7 +58,12 @@ module.exports = {
         discord: '#5865F2'
       }
     },
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        // Complex site-specific column configuration
+        'discover': '200px minmax(900px, 1fr) 100px',
+      }
+    },
   },
   plugins: [],
 }

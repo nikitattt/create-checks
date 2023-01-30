@@ -1,13 +1,22 @@
 import { useMenuStore } from '../../store/menu'
 import BackButton from '../BackButton'
-import CheckColorSelect from '../CheckColorSelect'
 import ColorPanel from '../ColorPanel'
 import ClearButton from '../ClearButton'
 import DarkModeSwitch from '../DarkModeSwitch'
 import SaveButton from '../SaveButton'
 import MintButton from '../MintButton'
-import BoardSizeSelect from '../BoardSizeSelect'
 import BoardSizePanel from '../BoardSizePannel'
+import dynamic from 'next/dynamic'
+
+const BoardSizeSelect = dynamic(() => import('../BoardSizeSelect'), {
+  ssr: false,
+  loading: () => <>Loading...</>
+})
+
+const CheckColorSelect = dynamic(() => import('../CheckColorSelect'), {
+  ssr: false,
+  loading: () => <>Loading...</>
+})
 
 const Menu = () => {
   const showColorPanel = useMenuStore((state) => state.showColorPanel)

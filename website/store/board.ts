@@ -53,12 +53,20 @@ const useBoardStore = create<BoardState>()(
       setRows: (rows: number) => {
         const columns = get().columns
 
-        set({ rows: rows, board: new Array(rows * columns).fill('') })
+        set({
+          rows: rows,
+          columns: columns,
+          board: new Array(rows * columns).fill('')
+        })
       },
       setColumns: (columns: number) => {
         const rows = get().rows
 
-        set({ columns: columns, board: new Array(rows * columns).fill('') })
+        set({
+          rows: rows,
+          columns: columns,
+          board: new Array(rows * columns).fill('')
+        })
       }
     }),
     {

@@ -58,13 +58,19 @@ const BoardSizePanel = () => {
       )}
     >
       <p className="text-grey text-sm">Select Board Size</p>
-      <div className="mt-1 flex flex-row gap-1">
-        <PredefinedSize rows={10} columns={8} />
-        <PredefinedSize rows={12} columns={10} />
-        <PredefinedSize rows={16} columns={16} />
-      </div>
-      <div className="mt-1 flex flex-row gap-1">
-        <PredefinedSize rows={20} columns={20} />
+      <p className="mt-0.5 flex lg:hidden w-56 leading-5">
+        Larger boards are currently only available on desktop
+      </p>
+      <div className="mt-1 hidden lg:flex flex-col">
+        <div className="flex flex-row gap-1">
+          <PredefinedSize rows={10} columns={8} />
+          <PredefinedSize rows={12} columns={10} />
+          <PredefinedSize rows={14} columns={14} />
+        </div>
+        <div className="mt-1 flex flex-row gap-1">
+          <PredefinedSize rows={16} columns={16} />
+          <PredefinedSize rows={20} columns={20} />
+        </div>
       </div>
     </div>
     // <button
