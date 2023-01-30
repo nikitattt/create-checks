@@ -3882,6 +3882,54 @@ export async function getStaticProps() {
       createdOnCreateChecksArt: false,
       dateSubmitted: '2023-01-30T01:53:40.811Z',
       author: { twitter: 'nasergivechi' }
+    },
+    {
+      name: 'PACHECKS',
+      image:
+        'https://storage.googleapis.com/tally-response-assets/BMxE11/4cd42574-3a59-4ae2-baf1-5edf1e17cd09/Checks.png',
+      aspectRatio: 'square',
+      link: 'https://twitter.com/wstreetcoffee/status/1618546314987601921?s=20&t=hz5miLJKmCA05YJ_t6OmIA',
+      createdOnCreateChecksArt: true,
+      dateSubmitted: '2023-01-30T09:44:14.445Z',
+      author: { twitter: 'wstreetcoffee' }
+    },
+    {
+      name: 'Freedom Check',
+      platform: 'Zora',
+      link: 'https://create.zora.co/collections/0x45b32a3b49ece3ac0c03bb3e74d0e71c5d0db735',
+      image:
+        'https://bafkreicnymez4ilzaf4s3igfkh2kbotmje6ajmhkpczimnu7747kyrm73q.ipfs.nftstorage.link/',
+      type: 'NFT',
+      aspectRatio: 'square',
+      endTime: '2023-02-01T13:00:00.000Z',
+      cost: 0.005,
+      contractAddress: '0x45B32A3B49ECE3ac0c03bb3E74d0e71c5d0Db735',
+      createdOnCreateChecksArt: true,
+      dateSubmitted: '2023-01-30T14:39:22.122Z',
+      author: {
+        ens: '',
+        address: '0x82e841cfe9d8bbaf6108f5581929738114ef4bd1',
+        twitter: 'defip87'
+      }
+    },
+    {
+      name: '0ART',
+      platform: 'Zora',
+      link: 'https://create.zora.co/collections/0x1b7e4b0b1063064b1567c1c3b537132dbf628843',
+      image:
+        'https://bafkreidcd6hu3uikoy7wjfhhdubqfcqteef3s4wexr5o2fvzcmrrr3mgdm.ipfs.nftstorage.link/',
+      type: 'NFT',
+      aspectRatio: 'square',
+      endTime: '2023-02-01T00:00:00+02:00',
+      cost: 0,
+      contractAddress: '0x1b7e4b0b1063064b1567c1c3b537132dbf628843',
+      createdOnCreateChecksArt: true,
+      dateSubmitted: '2023-01-31T01:35:41+02:00',
+      author: {
+        ens: 'iamng.eth',
+        address: '0x2E004b20330dD2B6925d94070A989e045f33b953',
+        twitter: 'iamng_eth'
+      }
     }
   ]
 
