@@ -8,6 +8,8 @@ interface BoardState {
   history: Array<number>
   addCheck: (position: number, color: string) => void
   setBoard: (board: Array<string>) => void
+  setRows: (rows: number) => void
+  setColumns: (columns: number) => void
   resetBoard: () => void
   backOneCheck: () => void
 }
@@ -47,6 +49,16 @@ const useBoardStore = create<BoardState>()(
             set({ board: newBoard, history: newHistory })
           }
         }
+      },
+      setRows: (rows: number) => {
+        const columns = get().columns
+
+        set({ rows: rows, board: new Array(rows * columns).fill('') })
+      },
+      setColumns: (columns: number) => {
+        const rows = get().rows
+
+        set({ columns: columns, board: new Array(rows * columns).fill('') })
       }
     }),
     {
