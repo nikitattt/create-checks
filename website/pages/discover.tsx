@@ -3810,6 +3810,77 @@ export async function getStaticProps() {
       createdOnCreateChecksArt: false,
       dateSubmitted: '2023-01-29T21:37:26.995Z',
       author: { twitter: 'Neeoverse' }
+    },
+    {
+      name: 'The Blue CheckSlime',
+      link: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/98456148804085810657840335602319075266603569562982792692637417536397464567809',
+      image:
+        'https://dl.openseauserdata.com/cache/originImage/files/6e595602f48ac97174240c0af71ed87f.png',
+      type: 'NFT',
+      aspectRatio: 'square',
+      contractAddress: '0x495f947276749ce646f68ac8c248420045cb7b5e',
+      createdOnCreateChecksArt: false,
+      dateSubmitted: '2023-01-29T23:07:59.468Z',
+      author: {
+        ens: 'akisama.eth',
+        address: '0xD9Ac34972bCDED948C3fB7E3429BB3AfB659d884',
+        twitter: 'akisama_eth'
+      }
+    },
+    {
+      name: 'Slime Check Sheet',
+      image:
+        'https://storage.googleapis.com/tally-response-assets/BMxE11/bd0373e7-1538-4415-9ede-d03feb83c84f/Checksslime-8x10.png',
+      aspectRatio: 'square',
+      link: 'https://twitter.com/akisama_eth/status/1616489324312399872?s=20&t=lssLJhco9QB7Ys5D3V8IiA',
+      createdOnCreateChecksArt: false,
+      dateSubmitted: '2023-01-29T23:09:16.073Z',
+      author: { twitter: 'akisama_eth' }
+    },
+    {
+      name: 'Figures of Speech',
+      platform: 'Zora',
+      link: 'https://create.zora.co/collections/0x3dff429ebb4ec22074fb2312319ad3d58e5f5233',
+      image:
+        'https://bafkreibg5l2m3feecrsxpbld3okrxpnlr7sb75i4u4xynk4qugitttzaxq.ipfs.nftstorage.link/',
+      type: 'NFT',
+      aspectRatio: 'square',
+      endTime: '2023-01-31T08:30:00+11:00',
+      cost: 0.00444,
+      contractAddress: '0x3dFf429EBB4eC22074fB2312319aD3d58e5F5233',
+      createdOnCreateChecksArt: false,
+      dateSubmitted: '2023-01-29T23:51:05.269Z',
+      author: {
+        ens: 'nasergivechi.eth',
+        address: '0xAf89B858626d3bd9fDA1647d3BBA6bb85E236Cf5',
+        twitter: 'nasergivechi'
+      }
+    },
+    {
+      name: 'Check My Flag',
+      link: 'https://checkmyflag.art',
+      image:
+        'https://cloudflare-ipfs.com/ipfs/bafkreid7r2toefofkv6p2ogmelxtwgeax3h7nsaovtm5eu7pxz6yebocba',
+      type: 'NFT',
+      aspectRatio: 'square',
+      contractAddress: '0x1EeBa0bF51FC26D09EEAb137f2cd135dA67ED297',
+      createdOnCreateChecksArt: false,
+      dateSubmitted: '2023-01-30T01:17:13.139Z',
+      author: {
+        ens: 'sfichera.eth',
+        address: '0x0886A3B935DE1A05dd5067821d5a753656a607A2',
+        twitter: 'xsficherax'
+      }
+    },
+    {
+      name: 'Checked out',
+      image:
+        'https://storage.googleapis.com/tally-response-assets/BMxE11/c3440304-9fb7-4ee6-b9c6-d82a728f010f/20230123-checked-out-2.1.png',
+      aspectRatio: 'square',
+      link: 'https://twitter.com/nasergivechi/status/1617403922259537923?s=20',
+      createdOnCreateChecksArt: false,
+      dateSubmitted: '2023-01-30T01:53:40.811Z',
+      author: { twitter: 'nasergivechi' }
     }
   ]
 
