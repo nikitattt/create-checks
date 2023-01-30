@@ -16,12 +16,16 @@ const downloadURL = (url: string, name: string) => {
 
 const SaveButton = () => {
   const board = useBoardStore((state) => state.board)
+  const rows = useBoardStore((state) => state.rows)
+  const columns = useBoardStore((state) => state.columns)
   const darkMode = useMenuStore((state) => state.darkMode)
 
   const saveBoard = () => {
     const image = boardToImage(
       board,
-      darkMode ? ColorMode.dark : ColorMode.light
+      darkMode ? ColorMode.dark : ColorMode.light,
+      rows,
+      columns
     )
     downloadURL(image, 'Checks')
     saEvent('save_image', { mode: darkMode ? 'dark' : 'light' })

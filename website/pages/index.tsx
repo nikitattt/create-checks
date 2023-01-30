@@ -17,10 +17,9 @@ const Home: NextPage<{ data: string }> = (props) => {
 
   const darkMode = useMenuStore((state) => state.darkMode)
 
-  // TODO: remove h-screen when having longer pages
   return (
     <div className={darkMode ? 'dark' : ''}>
-      <div className="font-sans text-black bg-background dark:bg-black dark:text-white flex flex-col h-screen">
+      <div className="font-sans text-black bg-background dark:bg-black dark:text-white flex flex-col">
         <Head>
           <title>Create Checks Art</title>
           <meta

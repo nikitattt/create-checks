@@ -16,6 +16,8 @@ const Mint: NextPage<{ data: string }> = (props) => {
 
   const darkMode = useMenuStore((state) => state.darkMode)
   const board = useBoardStore((state) => state.board)
+  const rows = useBoardStore((state) => state.rows)
+  const columns = useBoardStore((state) => state.columns)
 
   const [buttonClicked, setButtonClicked] = useState(false)
   const [image, setImage] = useState<string | undefined>(undefined)
@@ -51,7 +53,12 @@ const Mint: NextPage<{ data: string }> = (props) => {
   }, [setPrice])
 
   useEffect(() => {
-    const img = boardToImage(board, darkMode ? ColorMode.dark : ColorMode.light)
+    const img = boardToImage(
+      board,
+      darkMode ? ColorMode.dark : ColorMode.light,
+      rows,
+      columns
+    )
     setImage(img)
   }, [board, setImage])
 

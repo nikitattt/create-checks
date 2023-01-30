@@ -8,6 +8,7 @@ import Check from '../Check'
 
 const Board = () => {
   const board = useBoardStore((state) => state.board)
+  const columns = useBoardStore((state) => state.columns)
   const checkColor = useMenuStore((state) => state.checkColor)
   const addCheck = useBoardStore((state) => state.addCheck)
   const darkMode = useMenuStore((state) => state.darkMode)
@@ -54,14 +55,17 @@ const Board = () => {
         <div className="bg-white dark:bg-black-canvas p-4">
           <div
             className={clsx(
-              'grid grid-cols-8 divide-x divide-y border',
+              `grid divide-x divide-y border`,
               'divide-border-light dark:divide-border-dark border-border-light dark:border-border-dark'
             )}
+            style={{
+              gridTemplateColumns: `repeat(${columns}, minmax(0, 1fr))`
+            }}
           >
             {board.map((val, index, arr) => Cell(index))}
           </div>
         </div>
-        <div className="mt-12 text-center">
+        <div className="mt-12 mb-32 text-center">
           <div className="text-3xl">Create Art</div>
           {/* <div className="mt-6 text-lg">Play with a friend</div> */}
         </div>
