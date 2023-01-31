@@ -97,6 +97,7 @@ const MintingNow = ({ data }: { data: any[] }) => {
     noIndexArr.splice(index, 1)
 
     setPieces([pieces[index], ...noIndexArr])
+    saEvent('minting_now_select_artwork')
   }
 
   return (
