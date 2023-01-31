@@ -1,6 +1,7 @@
 import clsx from 'clsx'
 import dynamic from 'next/dynamic'
 import { useEffect, useMemo, useRef, useState } from 'react'
+import { saEvent } from '../../scripts/events'
 import { shuffle } from '../../utils/arrays'
 import NumPassesMinted from '../NumPassedMinted'
 
@@ -153,6 +154,9 @@ const MintingNow = ({ data }: { data: any[] }) => {
               <MintCountdown endTime={displayPiece.endTime} />
               <NumPassesMinted address={displayPiece.contractAddress} />
               <a
+                onClick={() => {
+                  saEvent('minting_now_open_mint_page')
+                }}
                 href={displayPiece.link}
                 target="_blank"
                 className={clsx(
