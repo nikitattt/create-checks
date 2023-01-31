@@ -76,7 +76,7 @@ const MintingNow = ({ data }: { data: any[] }) => {
   useEffect(() => {
     const prefIndex = data.findIndex((e) => e.name === '0ART')
     const indexToDisplay =
-      prefIndex === -1 || Math.random() > 0.35
+      prefIndex === -1 || Math.random() > 0.45
         ? Math.floor(Math.random() * data.length)
         : prefIndex
     const shuffledPieces = [...data]
