@@ -66,14 +66,18 @@ const ScrollButton = ({
 }
 
 const MintingNow = ({ data }: { data: any[] }) => {
-  const expand = window.innerWidth > 1280 ? Math.random() < 0.55 : false
+  const expand = window.innerWidth > 1280 ? Math.random() < 0.9 : false
   const [expanded, setExpanded] = useState(expand)
   const [pieces, setPieces] = useState<any[] | undefined>(undefined)
 
   const listRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    const indexToDisplay = Math.floor(Math.random() * data.length)
+    const prefIndex = data.findIndex((e) => e.name === '0ART')
+    const indexToDisplay =
+      prefIndex === -1 || Math.random() > 0.35
+        ? Math.floor(Math.random() * data.length)
+        : prefIndex
     const shuffledPieces = [...data]
     shuffledPieces.splice(indexToDisplay, 1)
     shuffle(shuffledPieces)
