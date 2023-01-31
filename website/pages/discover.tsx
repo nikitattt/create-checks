@@ -4085,6 +4085,25 @@ export async function getStaticProps() {
         address: '0xB491e21ADcb27743b8e6291b457699B131b65F61',
         twitter: 'Neeoverse'
       }
+    },
+    {
+      name: 'web3',
+      platform: 'manifold.xyz',
+      link: 'https://app.manifold.xyz/c/web3',
+      image:
+        'https://xyypbohynjwlxbs2jcj2gvl2uqhh4kkraftvi4sadzcitlyw2c5q.arweave.net/vjDwuPhqbLuGWkiTo1V6pA5-KVEBZ1RyQB5Eia8W0Ls',
+      type: 'NFT',
+      aspectRatio: 'square',
+      endTime: '2023-02-06T22:30:00.000Z',
+      cost: 0.004,
+      contractAddress: '0xa105ad461d126950980e3abbf64c2005cea60e9c',
+      createdOnCreateChecksArt: false,
+      dateSubmitted: '2023-01-31T22:16:17.058Z',
+      author: {
+        ens: '',
+        address: '0xB90A806fE45Ee016FD0020CBB603e8102Dd91A83',
+        twitter: 'minimal_meme_s'
+      }
     }
   ]
 
