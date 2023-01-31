@@ -61,7 +61,7 @@ const JPG = (data: any) => {
           'text-white'
         )}
       >
-        {data.data.type === 'NFT-Video' ? (
+        {['NFT-Video', 'Video'].includes(data.data.type) ? (
           <video
             src={data.data.image}
             autoPlay

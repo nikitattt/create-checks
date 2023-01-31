@@ -3930,6 +3930,161 @@ export async function getStaticProps() {
         address: '0x2E004b20330dD2B6925d94070A989e045f33b953',
         twitter: 'iamng_eth'
       }
+    },
+    {
+      name: 'Check on me',
+      image:
+        'https://storage.googleapis.com/tally-response-assets/BMxE11/e954b057-d20e-4cae-953a-29c598b1d5e7/00558114-02E4-4708-8D8A-AE8282330FC3.png',
+      aspectRatio: 'square',
+      link: '',
+      createdOnCreateChecksArt: true,
+      dateSubmitted: '2023-01-31T05:30:20.468Z',
+      author: { twitter: 'Cryptokidxo' }
+    },
+    {
+      name: 'CHΞCKΞRS',
+      platform: 'MANIFOLD',
+      link: 'https://app.manifold.xyz/c/checkers',
+      image:
+        'https://zp6unk5iuocuc2uchyvarb3qvqsmjui4mrvrydf3ateklx5jzuba.arweave.net/y_1Gq6ijhUFqgj4qCIdwrCTE0RxkaxwMuwTIpd-pzQI',
+      type: 'NFT',
+      aspectRatio: 'square',
+      endTime: '2023-02-02T17:00:00-06:00',
+      cost: 0,
+      contractAddress: '0xF6987fd11009E74907C8FE548B6ddc0E6b7b33c7',
+      createdOnCreateChecksArt: false,
+      dateSubmitted: '2023-01-31T06:15:08.838Z',
+      author: {
+        ens: '',
+        address: '0x305F211a9B31f68296937e3f582C903c3D6601dD',
+        twitter: '0xMrBoba'
+      }
+    },
+    {
+      name: 'CheckETH',
+      link: 'https://create.zora.co/collections/0xef252caed505e36aafdcb816d3cff9d25ffed2d1',
+      image:
+        'https://ipfs.zora.co/ipfs/bafkreiflwxs2wjphasnv7k3pof6sdbptpdeq5cpz4upvz45vs2xxqznrtm',
+      type: 'NFT',
+      aspectRatio: 'square',
+      contractAddress: '0xef252caed505e36aafdcb816d3cff9d25ffed2d1',
+      createdOnCreateChecksArt: true,
+      dateSubmitted: '2023-01-31T08:42:11.975Z',
+      author: {
+        ens: 'checkscrypto.eth',
+        address: '0xa0b1f96dc831BF0a1E3d6137a3B49D547273fBC9',
+        twitter: 'Checks_Ethereum'
+      }
+    },
+    {
+      name: 'Kintsugi Check',
+      image:
+        'https://storage.googleapis.com/tally-response-assets/BMxE11/ae6cbefb-ce68-4ed0-9a4c-e8a56184b0fa/46089200-5E38-4669-BC6F-57996B7A9C93.png',
+      aspectRatio: 'square',
+      link: '',
+      createdOnCreateChecksArt: false,
+      dateSubmitted: '2023-01-31T16:02:49.491Z',
+      author: { twitter: 'kaleidoscope_hq' }
+    },
+    {
+      name: 'Yin Yang Check',
+      image:
+        'https://storage.googleapis.com/tally-response-assets/BMxE11/c88fc06c-354a-437b-aefb-7e76fe773d9c/Yin-Yang-Checks-03-03.png',
+      aspectRatio: 'square',
+      link: '',
+      createdOnCreateChecksArt: false,
+      dateSubmitted: '2023-01-31T16:06:29.928Z',
+      author: { twitter: 'kaleidoscope_hq' }
+    },
+    {
+      name: "Whistler's Mother's Checks",
+      image:
+        'https://storage.googleapis.com/tally-response-assets/BMxE11/3b06d0d3-4d5c-471d-8888-de9ff0578fb5/whistler-s-mother.png',
+      aspectRatio: 'square',
+      link: '',
+      createdOnCreateChecksArt: false,
+      dateSubmitted: '2023-01-31T16:08:47.927Z',
+      author: { twitter: 'kaleidoscope_hq' }
+    },
+    {
+      name: 'Flight Check In',
+      image:
+        'https://storage.googleapis.com/tally-response-assets/BMxE11/08838005-704c-45a9-9cf6-1e507cac8cb5/FC70DAD1-5AE2-46BB-A965-B8FBF74B54B7.jpeg',
+      aspectRatio: 'square',
+      link: '',
+      createdOnCreateChecksArt: false,
+      dateSubmitted: '2023-01-31T16:12:24.601Z',
+      author: { twitter: 'kaleidoscope_hq' }
+    },
+    {
+      name: 'Donate blood. Save lives',
+      type: 'Video',
+      image:
+        'https://storage.googleapis.com/tally-response-assets/BMxE11/00990866-75ce-428d-9414-f8ca58459d8f/trim.98905541-9248-4CE1-B6E3-9F30313D8E77.MOV',
+      aspectRatio: 'square',
+      link: '',
+      createdOnCreateChecksArt: false,
+      dateSubmitted: '2023-01-31T16:15:01.396Z',
+      author: { twitter: 'kaleidoscope_hq' }
+    },
+    {
+      name: 'Roll the Check',
+      image:
+        'https://storage.googleapis.com/tally-response-assets/BMxE11/3bf0819f-773d-42fd-b495-b33e546151f8/Geometric-ChecksDice.png',
+      aspectRatio: 'vertical',
+      link: '',
+      createdOnCreateChecksArt: false,
+      dateSubmitted: '2023-01-31T16:17:10.916Z',
+      author: { twitter: 'kaleidoscope_hq' }
+    },
+    {
+      name: 'The Fall of VVerification',
+      platform: 'Zora',
+      link: 'https://create.zora.co/collections/0x78056f66a54ad17817df92563b15dcdd8ae6c20e',
+      image:
+        'https://ipfs.zora.co/ipfs/bafybeifkndi4xw3hfobm4gec77e3t7hnl7o3xqrx7ptrd64kopbabuwnca',
+      type: 'NFT',
+      aspectRatio: 'horizontal',
+      endTime: '2023-02-03T10:00:00-06:00',
+      cost: 0.005,
+      contractAddress:
+        'https://etherscan.io/token/0x78056f66a54ad17817df92563b15dcdd8ae6c20e',
+      createdOnCreateChecksArt: false,
+      dateSubmitted: '2023-01-31T16:28:24.547Z',
+      author: {
+        ens: 'dannyomo.eth',
+        address: '0xF1382ab34126B206A49DECEf703a511fA215E19B',
+        twitter: 'dannyomo'
+      }
+    },
+    {
+      name: 'Revolution',
+      image:
+        'https://storage.googleapis.com/tally-response-assets/BMxE11/c6d316cd-319f-4853-8fa8-8ed3cac593a2/Spiral_Checks_1.gif',
+      aspectRatio: 'square',
+      link: '',
+      createdOnCreateChecksArt: false,
+      dateSubmitted: '2023-01-31T16:34:39.056Z',
+      author: { twitter: 'kaleidoscope_hq' }
+    },
+    {
+      name: 'Checks and Stripes',
+      platform: 'Zora',
+      link: 'https://create.zora.co/collections/0xb491e21adcb27743b8e6291b457699b131b65f61',
+      image:
+        'https://ipfs.zora.co/ipfs/bafkreiga2rgz4v7ecjzy7ngj3zy7vo6byhi7o7ic6a34gkqcpwl3ujzau4',
+      type: 'NFT',
+      aspectRatio: 'square',
+      endTime: '2023-02-14T23:45:00.000Z',
+      cost: 0.005,
+      contractAddress: '0xB491e21ADcb27743b8e6291b457699B131b65F61',
+      createdOnCreateChecksArt: false,
+      dateSubmitted: '2023-01-31T17:27:12.085Z',
+      author: {
+        ens: '',
+        address: '0xB491e21ADcb27743b8e6291b457699B131b65F61',
+        twitter: 'Neeoverse'
+      }
     }
   ]
 
