@@ -17,6 +17,8 @@ const getRed = () => {
 
 const RandomButton = () => {
   const board = useBoardStore((state) => state.board)
+  const rows = useBoardStore((state) => state.rows)
+  const columns = useBoardStore((state) => state.columns)
   const darkMode = useMenuStore((state) => state.darkMode)
   const addCheck = useBoardStore((state) => state.addCheck)
   const resetBoard = useBoardStore((state) => state.resetBoard)
@@ -25,24 +27,24 @@ const RandomButton = () => {
     console.log('\n- - running algo - -\n')
     resetBoard()
     const upperBound = 0
-    const lowerBound = 9
-    // const red = getRed()
-    // const green = getGreen()
+    const lowerBound = rows - 1
+    const red = getRed()
+    const green = getGreen()
     // Returns a random integer from 0 to 9:
 
     let moves: any[] = []
 
     let y = Math.floor(Math.random() * 10)
-    let p = 8 * y
+    let p = columns * y
 
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < columns; i++) {
       let up = Math.random() < 0.5
       if (y === lowerBound) up = true
       else if (y === upperBound) up = false
       // console.log(up)
 
-      const red = getRed()
-      const green = getGreen()
+      // const red = getRed()
+      // const green = getGreen()
 
       let move = Math.floor(Math.random() * (up ? y : lowerBound - y))
       if (move === 0) move = 1
@@ -52,15 +54,15 @@ const RandomButton = () => {
       /*
        * chart var 1
        */
-      p = 8 * y + i
+      // p = columns * y + i
       /*
        * chart var 2
        */
-      // if (up) {
-      //   p = 8 * y + i - 8
-      // } else {
-      //   p = 8 * y + i + 8
-      // }
+      if (up) {
+        p = columns * y + i - columns
+      } else {
+        p = columns * y + i + columns
+      }
 
       // console.log(`- top - i: ${i}, y: ${y}, p: ${p}, move: ${move}, up: ${up}`)
 
@@ -75,7 +77,7 @@ const RandomButton = () => {
           y += 1
         }
 
-        p = 8 * y + i
+        p = columns * y + i
         addCheck(p, up ? green : red)
         console
           .log
