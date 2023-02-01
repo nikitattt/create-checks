@@ -1,6 +1,7 @@
 import clsx from 'clsx'
 import dynamic from 'next/dynamic'
 import { useEffect, useMemo, useRef, useState } from 'react'
+import { saEvent } from '../../scripts/events'
 import { shuffle } from '../../utils/arrays'
 import NumPassesMinted from '../NumPassedMinted'
 
@@ -66,14 +67,18 @@ const ScrollButton = ({
 }
 
 const MintingNow = ({ data }: { data: any[] }) => {
-  const expand = window.innerWidth > 1280 ? Math.random() < 0.55 : false
+  const expand = window.innerWidth > 1280 ? Math.random() < 0.9 : false
   const [expanded, setExpanded] = useState(expand)
   const [pieces, setPieces] = useState<any[] | undefined>(undefined)
 
   const listRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    const indexToDisplay = Math.floor(Math.random() * data.length)
+    const prefIndex = data.findIndex((e) => e.name === '0ART')
+    const indexToDisplay =
+      prefIndex === -1 || Math.random() > 0.45
+        ? Math.floor(Math.random() * data.length)
+        : prefIndex
     const shuffledPieces = [...data]
     shuffledPieces.splice(indexToDisplay, 1)
     shuffle(shuffledPieces)
@@ -92,6 +97,7 @@ const MintingNow = ({ data }: { data: any[] }) => {
     noIndexArr.splice(index, 1)
 
     setPieces([pieces[index], ...noIndexArr])
+    saEvent('minting_now_select_artwork')
   }
 
   return (
@@ -149,6 +155,9 @@ const MintingNow = ({ data }: { data: any[] }) => {
               <MintCountdown endTime={displayPiece.endTime} />
               <NumPassesMinted address={displayPiece.contractAddress} />
               <a
+                onClick={() => {
+                  saEvent('minting_now_open_mint_page')
+                }}
                 href={displayPiece.link}
                 target="_blank"
                 className={clsx(

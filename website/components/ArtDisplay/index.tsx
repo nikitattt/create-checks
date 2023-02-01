@@ -33,6 +33,22 @@ const DetailsSwitch = () => {
   )
 }
 
+const LinkButton = ({ href, text }: { href: string; text: string }) => {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      className={clsx(
+        'rounded-full flex flex-row items-center py-1 px-4 cursor-pointer text-sm',
+        'bg-white text-grey hover:bg-black hover:text-white',
+        'dark:bg-grey-max dark:hover:bg-white dark:hover:text-black'
+      )}
+    >
+      {text}
+    </a>
+  )
+}
+
 const JPG = (data: any) => {
   const detailsExpand = useDiscoverStore((state) => state.detailsExpand)
 
@@ -45,7 +61,7 @@ const JPG = (data: any) => {
           'text-white'
         )}
       >
-        {data.data.type === 'NFT-Video' ? (
+        {['NFT-Video', 'Video'].includes(data.data.type) ? (
           <video
             src={data.data.image}
             autoPlay
@@ -151,10 +167,13 @@ const ArtDisplay = ({ art, mintingNow }: { art: any[]; mintingNow: any[] }) => {
         <p>Artworks</p>
       </div>
       <MintingNow data={mintingNow} />
-      <div className="my-4 w-3/4 border-t-0 border-white self-center"></div>
-      {/* <div className="w-max mb-6 items-start">
-        <DetailsSwitch />
-      </div> */}
+      <div className="mt-4 mb-2 flex flex-row justify-end items-center gap-2">
+        <LinkButton
+          href="https://oncyber.io/spaces/hlc4dbyphjkHl9xH68fe"
+          text="OnCyber Gallery"
+        />
+        <LinkButton href="/submit" text="Submit Artwork" />
+      </div>
       <div className={clsx('gap-6', styles.grid)}>
         {art.map((jpg, index) => {
           return (
