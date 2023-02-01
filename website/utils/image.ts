@@ -40,6 +40,9 @@ export const boardToImage = (
   const height = artCanvasH + artCanvasY * 2
   const width = artCanvasW + artCanvasX * 2
 
+  console.log(height)
+  console.log(width)
+
   const canvas = document.createElement('canvas')
   canvas.width = width
   canvas.height = height

@@ -4143,6 +4143,60 @@ export async function getStaticProps() {
         address: '0xAf89B858626d3bd9fDA1647d3BBA6bb85E236Cf5',
         twitter: 'nasergivechi'
       }
+    },
+    {
+      name: 'Check The Nouns',
+      link: 'https://create.zora.co/collections/0xa5874343ae20549bd398d129afbc2f6362944b48',
+      image:
+        'https://ipfs.zora.co/ipfs/bafkreifip3kuooffxdmq4easp56sl4gghh4o7h34xixjgriyufnfrmdieu',
+      type: 'NFT',
+      aspectRatio: 'vertical',
+      contractAddress: '0xa5874343ae20549bD398d129Afbc2F6362944B48',
+      createdOnCreateChecksArt: false,
+      dateSubmitted: '2023-02-01T15:07:06.596Z',
+      author: {
+        ens: '',
+        address: '0xb2333d61ff847148fe89901f34f7d9201cec25cb',
+        twitter: 'nounsing'
+      }
+    },
+    {
+      name: 'UnChecks',
+      platform: 'Manifold',
+      link: 'https://app.manifold.xyz/c/unchecks',
+      image:
+        'https://qi7drr7jqe3wpqym32nc7t5yc2rfunia6lllcve6k4nzxna7qw4a.arweave.net/gj44x-mBN2fDDN6aL8-4FqJaNQDy1rFUnlcbm7Qfhbg',
+      type: 'NFT',
+      aspectRatio: 'vertical',
+      endTime: '2023-02-14T23:30:00+08:00',
+      cost: 0.004,
+      contractAddress: '0x6DD077351331637b125c2dBd4ce44c2ABd36a60a',
+      createdOnCreateChecksArt: false,
+      dateSubmitted: '2023-02-01T16:29:11.967Z',
+      author: {
+        ens: 'broqlee.eth',
+        address: '0xD362DF6652fEf760AC8aD3DD6318ba7df57906B1',
+        twitter: 'BroqLee'
+      }
+    },
+    {
+      name: '8 of Checks',
+      platform: 'Zora',
+      link: 'https://create.zora.co/collections/0xce363e83fa68c7cce95c503804b7076c6f067fa1',
+      image:
+        'https://bafybeihtocogvubfuj4qjruv3twtxyktlcty5brbnfu4fgerjkbflg6nsy.ipfs.nftstorage.link/',
+      type: 'NFT',
+      aspectRatio: 'square',
+      endTime: '2023-02-01T17:00:00-06:00',
+      cost: 0.0008,
+      contractAddress: '0xce363e83fa68c7cce95c503804b7076c6f067fa1',
+      createdOnCreateChecksArt: false,
+      dateSubmitted: '2023-02-01T23:00:32.632Z',
+      author: {
+        ens: 'brennonx.eth',
+        address: '0x93496b34944acd0c9716ca0448125bc46a1bdf4d',
+        twitter: 'brennondenny'
+      }
     }
   ]
 
