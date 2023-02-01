@@ -13,12 +13,14 @@ interface MenuState {
   customColor: string
   showColorPanel: boolean
   showBoardSizePanel: boolean
+  addedColors: Array<string>
   setCustomColor: (color: string) => void
   switchDarkMode: () => void
   setDirectory: (directory: Directory) => void
   setShowColorPanel: (value: boolean) => void
   setShowBoardSizePanel: (value: boolean) => void
   setCheckColor: (color: string) => void
+  addColor: (color: string) => void
 }
 
 const useMenuStore = create<MenuState>()(
@@ -30,13 +32,18 @@ const useMenuStore = create<MenuState>()(
       customColor: '',
       showColorPanel: false,
       showBoardSizePanel: false,
+      addedColors: [],
       setCustomColor: (color: string) => set({ customColor: color }),
       switchDarkMode: () => set({ darkMode: !get().darkMode }),
       setDirectory: (directory: Directory) => set({ directory: directory }),
       setShowColorPanel: (value: boolean) => set({ showColorPanel: value }),
       setShowBoardSizePanel: (value: boolean) =>
         set({ showBoardSizePanel: value }),
-      setCheckColor: (color: string) => set({ checkColor: color })
+      setCheckColor: (color: string) => set({ checkColor: color }),
+      addColor: (color: string) =>
+        set({
+          addedColors: [...get().addedColors, color]
+        })
     }),
     {
       name: 'menu-storage',

@@ -11,10 +11,12 @@ const CustomColor = () => {
   const customColor = useMenuStore((state) => state.customColor)
   const setCustomColor = useMenuStore((state) => state.setCustomColor)
   const setCheckColor = useMenuStore((state) => state.setCheckColor)
+  const addColor = useMenuStore((state) => state.addColor)
 
   const setColor = () => {
     if (customColor.length >= 3 && isColor(customColor)) {
       setCheckColor(customColor)
+      addColor(customColor)
     }
   }
 
@@ -64,6 +66,7 @@ const CustomColor = () => {
 
 const ColorPanel = () => {
   const checkColor = useMenuStore((state) => state.checkColor)
+  const addedColors = useMenuStore((state) => state.addedColors)
   const setCheckColor = useMenuStore((state) => state.setCheckColor)
 
   const newRandomColor = () => {
@@ -80,10 +83,12 @@ const ColorPanel = () => {
     setCheckColor(color)
   }
 
+  const colors = [...ChecksColors, ...addedColors]
+
   return (
     <div className="bg-white dark:bg-black-canvas rounded-2xl p-2 shadow-lg sm:shadow-none">
       <div className="grid grid-cols-8 gap-1">
-        {ChecksColors.map((c, i) => {
+        {colors.map((c, i) => {
           return (
             <button
               key={`color-${i}`}
