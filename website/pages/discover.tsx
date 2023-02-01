@@ -4104,6 +4104,45 @@ export async function getStaticProps() {
         address: '0xB90A806fE45Ee016FD0020CBB603e8102Dd91A83',
         twitter: 'minimal_meme_s'
       }
+    },
+    {
+      name: 'The Scream',
+      platform: 'Opensea',
+      link: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/100109133542759789666119785798643266546138050518702689036391265472289456523109',
+      image:
+        'https://dl.openseauserdata.com/cache/originImage/files/2cd7e472272f82cc9a2dfb451f7dfd64.png',
+      type: 'NFT',
+      aspectRatio: 'square',
+      endTime: '2023-03-01T02:00:00+03:30',
+      cost: 0.0019,
+      contractAddress: '0x495f947276749ce646f68ac8c248420045cb7b5e',
+      createdOnCreateChecksArt: true,
+      dateSubmitted: '2023-02-01T06:42:30.747Z',
+      author: {
+        ens: '',
+        address: '0xdD53c2Fac49719663A75f58110A642e7CFee8514',
+        twitter: 'amiraphist'
+      }
+    },
+    {
+      name: 'Checks Mandala',
+      platform: 'Zora',
+      link: 'https://create.zora.co/collections/0x187ef4d7c2dc0e6b41322097231365535307d38f',
+      image:
+        'https://ipfs.zora.co/ipfs/bafybeidb75pelvf5pja6wii4jd4lfn2woz3koabdvzaimba4x2e2x4fxvu',
+      type: 'NFT',
+      aspectRatio: 'square',
+      endTime: '2023-02-03T19:30:00+11:00',
+      cost: 0.0111,
+      contractAddress:
+        'https://etherscan.io/token/0x187ef4d7c2dc0e6b41322097231365535307d38f',
+      createdOnCreateChecksArt: false,
+      dateSubmitted: '2023-02-01T12:10:30.881Z',
+      author: {
+        ens: 'nasergivechi.eth',
+        address: '0xAf89B858626d3bd9fDA1647d3BBA6bb85E236Cf5',
+        twitter: 'nasergivechi'
+      }
     }
   ]
 
