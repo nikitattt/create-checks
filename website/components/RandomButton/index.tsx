@@ -34,11 +34,12 @@ const RandomButton = () => {
 
     let moves: any[] = []
 
-    let y = Math.floor(Math.random() * 10)
+    // let y = Math.floor(Math.random() * rows)
+    let y = 13
     let p = columns * y
 
     for (let i = 0; i < columns; i++) {
-      let up = Math.random() < 0.5
+      let up = Math.random() < 0.75
       if (y === lowerBound) up = true
       else if (y === upperBound) up = false
       // console.log(up)
@@ -46,7 +47,7 @@ const RandomButton = () => {
       // const red = getRed()
       // const green = getGreen()
 
-      let move = Math.floor(Math.random() * (up ? y : lowerBound - y))
+      let move = Math.floor(Math.random() * (up ? y : lowerBound - y - 4))
       if (move === 0) move = 1
 
       moves.push({ move: move, up: up })
