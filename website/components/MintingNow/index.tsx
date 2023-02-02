@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { saEvent } from '../../scripts/events'
 import { shuffle } from '../../utils/arrays'
 import NumPassesMinted from '../NumPassedMinted'
+import styles from './MintingNow.module.css'
 
 const MintCountdown = dynamic(() => import('../MintCountdown'), {
   ssr: false,
@@ -133,7 +134,12 @@ const MintingNow = ({ data }: { data: any[] }) => {
         </div>
       </button>
       {expanded ? (
-        <div className="mt-4 flex flex-col xl:flex-row gap-4 xl:gap-1 justify-between items-start w-full">
+        <div
+          className={clsx(
+            'mt-4 flex justify-between items-start w-full',
+            viewAll ? 'flex-col gap-4' : 'flex-col xl:flex-row gap-4 xl:gap-1'
+          )}
+        >
           <div className="flex flex-col md:flex-row justify-start items-start md:items-center">
             <a
               className="cursor-pointer"
@@ -170,34 +176,50 @@ const MintingNow = ({ data }: { data: any[] }) => {
               </a>
             </div>
           </div>
-          <div className="flex flex-col w-full xl:w-1/2">
+          <div
+            className={clsx(
+              'flex flex-col',
+              viewAll ? 'w-full' : 'w-full xl:w-1/2'
+            )}
+          >
             <div className="mb-2 mr-2 flex flex-row items-start gap-2">
-              <ScrollButton
-                onClick={() => {
-                  if (!!listRef.current) listRef.current.scrollLeft -= 250
-                }}
-                direction={ScrollButtonDirection.left}
-              />
-              <ScrollButton
-                onClick={() => {
-                  if (!!listRef.current) listRef.current.scrollLeft += 250
-                }}
-                direction={ScrollButtonDirection.right}
-              />
+              <div
+                className={clsx(
+                  viewAll ? 'hidden' : 'flex flex-row items-start gap-2'
+                )}
+              >
+                <ScrollButton
+                  onClick={() => {
+                    if (!!listRef.current) listRef.current.scrollLeft -= 250
+                  }}
+                  direction={ScrollButtonDirection.left}
+                />
+                <ScrollButton
+                  onClick={() => {
+                    if (!!listRef.current) listRef.current.scrollLeft += 250
+                  }}
+                  direction={ScrollButtonDirection.right}
+                />
+              </div>
               <button
-                onClick={() => {}}
+                onClick={() => setViewAll(!viewAll)}
                 className={clsx(
                   'rounded-full py-0.5 px-3',
                   'transition ease-in-out duration-150',
                   'bg-background text-grey hover:bg-black hover:text-white'
                 )}
               >
-                {pieces.length + ' • View All'}
+                {viewAll ? 'Close' : `${pieces.length} • View All`}
               </button>
             </div>
             <div
               ref={listRef}
-              className="flex flex-row gap-4 overflow-scroll no-scrollbar rounded-lg"
+              className={clsx(
+                'rounded-lg w-full',
+                viewAll
+                  ? styles.grid
+                  : 'flex flex-row gap-4 overflow-scroll no-scrollbar'
+              )}
             >
               {pieces.map(function (piece, place) {
                 if (place === 0) return
@@ -212,7 +234,10 @@ const MintingNow = ({ data }: { data: any[] }) => {
                       className="relative group flex flex-col"
                     >
                       <img
-                        className="rounded-lg h-[16rem] max-w-none"
+                        className={clsx(
+                          'rounded-lg',
+                          viewAll ? '' : 'h-[16rem] max-w-none'
+                        )}
                         src={piece.image}
                         alt="Image with Check based artwork"
                       />
