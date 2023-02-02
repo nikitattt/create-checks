@@ -4116,5 +4116,23 @@
       "address": "0x93496b34944acd0c9716ca0448125bc46a1bdf4d",
       "twitter": "brennondenny"
     }
+  },
+  {
+    "name": "JPGs INTERCONNECTED",
+    "platform": "Zora",
+    "link": "https://create.zora.co/collections/0x34241478b411139fee2b9f15c9957113b943cc88",
+    "image": "https://ipfs.zora.co/ipfs/bafybeiaxmnloqgu4rcbd7ndrbt4kjdrlm4r5hoeqqkiwkjwdgvptm4g4bm",
+    "type": "NFT",
+    "aspectRatio": "square",
+    "endTime": "2023-02-04T03:00:00+02:00",
+    "cost": 0.00142,
+    "contractAddress": "0x34241478b411139fee2b9f15c9957113b943cc88",
+    "createdOnCreateChecksArt": true,
+    "dateSubmitted": "2023-02-02T07:13:22+02:00",
+    "author": {
+      "ens": "iamng.eth",
+      "address": "0x2E004b20330dD2B6925d94070A989e045f33b953",
+      "twitter": "iamng_eth"
+    }
   }
 ]
