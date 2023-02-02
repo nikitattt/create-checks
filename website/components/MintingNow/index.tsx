@@ -78,7 +78,7 @@ const MintingNow = ({ data }: { data: any[] }) => {
   useEffect(() => {
     const prefIndex = data.findIndex((e) => e.name === 'JPGs INTERCONNECTED')
     const indexToDisplay =
-      prefIndex === -1 || Math.random() > 0.45
+      prefIndex === -1 || Math.random() < 0.7
         ? Math.floor(Math.random() * data.length)
         : prefIndex
     const shuffledPieces = [...data]
