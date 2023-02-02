@@ -69,6 +69,7 @@ const ScrollButton = ({
 const MintingNow = ({ data }: { data: any[] }) => {
   const expand = window.innerWidth > 1280 ? Math.random() < 0.9 : false
   const [expanded, setExpanded] = useState(expand)
+  const [viewAll, setViewAll] = useState(false)
   const [pieces, setPieces] = useState<any[] | undefined>(undefined)
 
   const listRef = useRef<HTMLDivElement>(null)
@@ -169,20 +170,30 @@ const MintingNow = ({ data }: { data: any[] }) => {
               </a>
             </div>
           </div>
-          <div className="flex flex-col xl:flex-row w-full xl:w-1/2">
-            <div className="mt-0 xl:mt-2 mb-2 mr-2 flex flex-row-reverse xl:flex-col items-start justify-end xl:justify-start gap-2">
-              <ScrollButton
-                onClick={() => {
-                  if (!!listRef.current) listRef.current.scrollLeft += 250
-                }}
-                direction={ScrollButtonDirection.right}
-              />
+          <div className="flex flex-col w-full xl:w-1/2">
+            <div className="mb-2 mr-2 flex flex-row items-start gap-2">
               <ScrollButton
                 onClick={() => {
                   if (!!listRef.current) listRef.current.scrollLeft -= 250
                 }}
                 direction={ScrollButtonDirection.left}
               />
+              <ScrollButton
+                onClick={() => {
+                  if (!!listRef.current) listRef.current.scrollLeft += 250
+                }}
+                direction={ScrollButtonDirection.right}
+              />
+              <button
+                onClick={() => {}}
+                className={clsx(
+                  'rounded-full py-0.5 px-3',
+                  'transition ease-in-out duration-150',
+                  'bg-background text-grey hover:bg-black hover:text-white'
+                )}
+              >
+                {pieces.length + ' • View All'}
+              </button>
             </div>
             <div
               ref={listRef}
@@ -201,7 +212,7 @@ const MintingNow = ({ data }: { data: any[] }) => {
                       className="relative group flex flex-col"
                     >
                       <img
-                        className="rounded-lg h-[19rem] max-w-none"
+                        className="rounded-lg h-[16rem] max-w-none"
                         src={piece.image}
                         alt="Image with Check based artwork"
                       />
