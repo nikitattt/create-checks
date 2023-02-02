@@ -3974,7 +3974,7 @@
     "aspectRatio": "horizontal",
     "endTime": "2023-02-03T10:00:00-06:00",
     "cost": 0.005,
-    "contractAddress": "https://etherscan.io/token/0x78056f66a54ad17817df92563b15dcdd8ae6c20e",
+    "contractAddress": "0x78056f66a54ad17817df92563b15dcdd8ae6c20e",
     "createdOnCreateChecksArt": false,
     "dateSubmitted": "2023-01-31T16:28:24.547Z",
     "author": {
@@ -4057,7 +4057,7 @@
     "aspectRatio": "square",
     "endTime": "2023-02-03T19:30:00+11:00",
     "cost": 0.0111,
-    "contractAddress": "https://etherscan.io/token/0x187ef4d7c2dc0e6b41322097231365535307d38f",
+    "contractAddress": "0x187ef4d7c2dc0e6b41322097231365535307d38f",
     "createdOnCreateChecksArt": false,
     "dateSubmitted": "2023-02-01T12:10:30.881Z",
     "author": {

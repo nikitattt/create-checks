@@ -1,6 +1,8 @@
 import clsx from 'clsx'
 import dynamic from 'next/dynamic'
+import { useState } from 'react'
 import { useDiscoverStore } from '../../store/discover'
+import { shuffle, sortByDateSubmitted } from '../../utils/arrays'
 import { mintingNow } from '../../utils/dates'
 import Check from '../Check'
 import styles from './ArtDisplay.module.css'
@@ -34,6 +36,22 @@ const DetailsSwitch = () => {
 }
 
 const LinkButton = ({ href, text }: { href: string; text: string }) => {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      className={clsx(
+        'rounded-full flex flex-row items-center py-1 px-4 cursor-pointer text-sm',
+        'bg-white text-grey hover:bg-black hover:text-white',
+        'dark:bg-grey-max dark:hover:bg-white dark:hover:text-black'
+      )}
+    >
+      {text}
+    </a>
+  )
+}
+
+const SortButton = ({ href, text }: { href: string; text: string }) => {
   return (
     <a
       href={href}
@@ -154,7 +172,22 @@ const JPG = (data: any) => {
 }
 
 const ArtDisplay = ({ art, mintingNow }: { art: any[]; mintingNow: any[] }) => {
+  const [sorting, setSorting] = useState('Last Added')
   const numberOfArtworks = art.length
+
+  art = sortByDateSubmitted(art, 'asc')
+
+  const sortArt = (event: any) => {
+    const type = event.target.value
+    if (type === 'Last Added') {
+      art = sortByDateSubmitted(art, 'asc')
+    } else if (type === 'First Added') {
+      art = sortByDateSubmitted(art, 'desc')
+    } else {
+      shuffle(art)
+    }
+    setSorting(type)
+  }
 
   return (
     <div className="mx-6 sm:mx-20 flex flex-col">
@@ -167,12 +200,27 @@ const ArtDisplay = ({ art, mintingNow }: { art: any[]; mintingNow: any[] }) => {
         <p>Artworks</p>
       </div>
       <MintingNow data={mintingNow} />
-      <div className="mt-4 mb-2 flex flex-row justify-end items-center gap-2">
-        <LinkButton
-          href="https://oncyber.io/spaces/hlc4dbyphjkHl9xH68fe"
-          text="OnCyber Gallery"
-        />
-        <LinkButton href="/submit" text="Submit Artwork" />
+      <div className="mt-6 mb-2 flex flex-row justify-between items-center">
+        <select
+          onChange={sortArt}
+          value={sorting}
+          className={clsx(
+            'appearance-none rounded-full flex flex-row items-center py-1 px-4 cursor-pointer text-sm',
+            'bg-white text-grey hover:bg-black hover:text-white',
+            'dark:bg-grey-max dark:hover:bg-white dark:hover:text-black'
+          )}
+        >
+          <option value="Last Added">{`Last Added`}</option>
+          <option value="First Added">{`First Added`}</option>
+          <option value="Random">{`Random`}</option>
+        </select>
+        <div className="flex flex-row gap-2">
+          <LinkButton
+            href="https://oncyber.io/spaces/hlc4dbyphjkHl9xH68fe"
+            text="OnCyber Gallery"
+          />
+          <LinkButton href="/submit" text="Submit Artwork" />
+        </div>
       </div>
       <div className={clsx('gap-6', styles.grid)}>
         {art.map((jpg, index) => {
