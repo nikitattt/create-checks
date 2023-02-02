@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 import dynamic from 'next/dynamic'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useDiscoverStore } from '../../store/discover'
 import { shuffle, sortByDateSubmitted } from '../../utils/arrays'
 import { mintingNow } from '../../utils/dates'
@@ -36,22 +36,6 @@ const DetailsSwitch = () => {
 }
 
 const LinkButton = ({ href, text }: { href: string; text: string }) => {
-  return (
-    <a
-      href={href}
-      target="_blank"
-      className={clsx(
-        'rounded-full flex flex-row items-center py-1 px-4 cursor-pointer text-sm',
-        'bg-white text-grey hover:bg-black hover:text-white',
-        'dark:bg-grey-max dark:hover:bg-white dark:hover:text-black'
-      )}
-    >
-      {text}
-    </a>
-  )
-}
-
-const SortButton = ({ href, text }: { href: string; text: string }) => {
   return (
     <a
       href={href}
@@ -172,19 +156,22 @@ const JPG = (data: any) => {
 }
 
 const ArtDisplay = ({ art, mintingNow }: { art: any[]; mintingNow: any[] }) => {
-  const [sorting, setSorting] = useState('Last Added')
+  const [sorting, setSorting] = useState('Random')
+  const [artworks, setArtworks] = useState(art)
   const numberOfArtworks = art.length
 
-  art = sortByDateSubmitted(art, 'asc')
+  useEffect(() => {
+    // setArtworks(sortByDateSubmitted(art, 'd'))
+  }, [])
 
   const sortArt = (event: any) => {
     const type = event.target.value
     if (type === 'Last Added') {
-      art = sortByDateSubmitted(art, 'asc')
+      setArtworks(sortByDateSubmitted(art, 'asc'))
     } else if (type === 'First Added') {
-      art = sortByDateSubmitted(art, 'desc')
+      setArtworks(sortByDateSubmitted(art, 'desc'))
     } else {
-      shuffle(art)
+      setArtworks(shuffle(art))
     }
     setSorting(type)
   }
@@ -205,7 +192,7 @@ const ArtDisplay = ({ art, mintingNow }: { art: any[]; mintingNow: any[] }) => {
           onChange={sortArt}
           value={sorting}
           className={clsx(
-            'appearance-none rounded-full flex flex-row items-center py-1 px-4 cursor-pointer text-sm',
+            'appearance-none rounded-full py-1 px-4 cursor-pointer text-sm text-center',
             'bg-white text-grey hover:bg-black hover:text-white',
             'dark:bg-grey-max dark:hover:bg-white dark:hover:text-black'
           )}
@@ -223,7 +210,7 @@ const ArtDisplay = ({ art, mintingNow }: { art: any[]; mintingNow: any[] }) => {
         </div>
       </div>
       <div className={clsx('gap-6', styles.grid)}>
-        {art.map((jpg, index) => {
+        {artworks.map((jpg, index) => {
           return (
             <div key={`art-${index}`}>
               <JPG data={jpg} />
