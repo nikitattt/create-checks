@@ -4125,7 +4125,7 @@
     "type": "NFT",
     "aspectRatio": "square",
     "endTime": "2023-02-04T03:00:00+02:00",
-    "cost": 0.00142,
+    "cost": 0.005,
     "contractAddress": "0x34241478b411139fee2b9f15c9957113b943cc88",
     "createdOnCreateChecksArt": true,
     "dateSubmitted": "2023-02-02T07:13:22+02:00",
