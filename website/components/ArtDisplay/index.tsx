@@ -41,12 +41,28 @@ const LinkButton = ({ href, text }: { href: string; text: string }) => {
       href={href}
       target="_blank"
       className={clsx(
-        'rounded-full flex flex-row items-center py-1 px-4 cursor-pointer text-sm',
+        'rounded-full flex flex-row items-center py-1 px-2.5 cursor-pointer',
         'bg-white text-grey hover:bg-black hover:text-white',
         'dark:bg-grey-max dark:hover:bg-white dark:hover:text-black'
       )}
     >
-      {text}
+      <div className="flex flex-row gap-0.5 items-center">
+        <p>{text}</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={2.5}
+          stroke="currentColor"
+          className="w-3.5 h-3.5 pb-px"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+          />
+        </svg>
+      </div>
     </a>
   )
 }
@@ -187,12 +203,12 @@ const ArtDisplay = ({ art, mintingNow }: { art: any[]; mintingNow: any[] }) => {
         <p>Artworks</p>
       </div>
       <MintingNow data={mintingNow} />
-      <div className="mt-6 mb-2 flex flex-row justify-between items-center">
+      <div className="mt-6 mb-2 flex flex-col-reverse md:flex-row justify-between items:start md:items-center gap-2">
         <select
           onChange={sortArt}
           value={sorting}
           className={clsx(
-            'appearance-none rounded-full py-1 px-4 cursor-pointer text-sm text-center',
+            'rounded-full py-1 px-1.5 cursor-pointer text-center w-max',
             'bg-white text-grey hover:bg-black hover:text-white',
             'dark:bg-grey-max dark:hover:bg-white dark:hover:text-black'
           )}

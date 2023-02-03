@@ -67,6 +67,38 @@ const ScrollButton = ({
   )
 }
 
+const LinkButton = ({ href, text }: { href: string; text: string }) => {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      className={clsx(
+        'rounded-full flex flex-row items-center px-2.5 cursor-pointer border-2',
+        'border-border-light text-grey hover:bg-black hover:text-white',
+        'dark:bg-grey-max dark:hover:bg-white dark:hover:text-black'
+      )}
+    >
+      <div className="flex flex-row gap-0.5 items-center">
+        <p>{text}</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={2.5}
+          stroke="currentColor"
+          className="w-3.5 h-3.5 pb-px"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+          />
+        </svg>
+      </div>
+    </a>
+  )
+}
+
 const MintingNow = ({ data }: { data: any[] }) => {
   const expand = window.innerWidth > 1280 ? Math.random() < 0.9 : false
   const [expanded, setExpanded] = useState(expand)
@@ -211,6 +243,7 @@ const MintingNow = ({ data }: { data: any[] }) => {
               >
                 {viewAll ? 'Close' : `${pieces.length} • View All`}
               </button>
+              <LinkButton href="/submit" text="Submit" />
             </div>
             <div
               ref={listRef}
