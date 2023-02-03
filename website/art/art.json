@@ -4436,5 +4436,23 @@
     "createdOnCreateChecksArt": false,
     "dateSubmitted": "2023-02-03T07:15:50+02:00",
     "author": { "twitter": "beeple" }
+  },
+  {
+    "name": "proof of work",
+    "platform": "Zora",
+    "link": "https://create.zora.co/collections/0xfbf170984ccb1e980acb53023d7502d15f6e14ff",
+    "image": "https://ipfs.zora.co/ipfs/bafkreifckzraekemtavlck3dybr3cazvga2v6ded5knoo3mf62qwbkdsuq",
+    "type": "NFT",
+    "aspectRatio": "square",
+    "endTime": "2023-02-05T15:33:00-05:00",
+    "cost": 0.0033,
+    "contractAddress": "0xfbf170984ccb1e980acb53023d7502d15f6e14ff",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-03T05:37:09.189Z",
+    "author": {
+      "ens": "wizardpoet.eth",
+      "address": "0x73f2e04F047931E85b62E4f2652B156199000E14",
+      "twitter": "wizardpoet_"
+    }
   }
 ]
