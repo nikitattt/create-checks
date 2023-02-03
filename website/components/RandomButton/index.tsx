@@ -6,12 +6,14 @@ import { ColorMode } from '../../utils/colors'
 import { boardToImage } from '../../utils/image'
 
 const getGreen = () => {
-  const colors = ['#5b9f3e', '#01ef03', '#1CC500']
+  // const colors = ['#5b9f3e', '#01ef03', '#1CC500']
+  const colors = ['#01ef03']
   return colors[Math.floor(Math.random() * colors.length)]
 }
 
 const getRed = () => {
-  const colors = ['#e73d53', '#ea3a2d', '#f3322c', '#FF1F3D']
+  // const colors = ['#e73d53', '#ea3a2d', '#f3322c', '#FF1F3D']
+  const colors = ['#FF1F3D']
   return colors[Math.floor(Math.random() * colors.length)]
 }
 
@@ -35,11 +37,11 @@ const RandomButton = () => {
     let moves: any[] = []
 
     // let y = Math.floor(Math.random() * rows)
-    let y = 13
+    let y = Math.round(rows / 2)
     let p = columns * y
 
     for (let i = 0; i < columns; i++) {
-      let up = Math.random() < 0.75
+      let up = Math.random() < 0.5
       if (y === lowerBound) up = true
       else if (y === upperBound) up = false
       // console.log(up)
