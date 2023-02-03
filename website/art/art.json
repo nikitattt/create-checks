@@ -4391,5 +4391,32 @@
       "address": "0xDE2cE1e9F01AC8E09bf71A837206f86413Eaa0D1",
       "twitter": "get_rowdy_"
     }
+  },
+  {
+    "name": "Keep Checking",
+    "image": "https://storage.googleapis.com/tally-response-assets/BMxE11/f3c9168a-c168-4eea-b12e-36d41fecd53b/Checks-copy.png",
+    "aspectRatio": "square",
+    "link": "https://twitter.com/kazukiborges/status/1621318019795374080?s=61&t=ZupTB4lGx-zwNrZCwta4ng",
+    "createdOnCreateChecksArt": true,
+    "dateSubmitted": "2023-02-03T01:27:36.144Z",
+    "author": { "twitter": "KazukiBorges" }
+  },
+  {
+    "name": "Gotta Check 'Em All",
+    "platform": "Zora",
+    "link": "https://create.zora.co/collections/0x88d7dcf92528ca65ca4e32f583fa6938c33731a4",
+    "image": "https://ipfs.zora.co/ipfs/bafybeig6pwkj6eyhgedj5m3umdkzvtlvbkbbtypw7khct65yjtgwetjg6q",
+    "type": "NFT",
+    "aspectRatio": "square",
+    "endTime": "2023-02-05T19:00:00-06:00",
+    "cost": 0.0069,
+    "contractAddress": "0xF74B146ce44CC162b601deC3BE331784DB111DC1",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-03T01:28:02.640Z",
+    "author": {
+      "ens": "mrboba.eth",
+      "address": "0x5c99635956ecF52ea47c39a136bAA405aCaD0B16",
+      "twitter": "0xmrboba"
+    }
   }
 ]
