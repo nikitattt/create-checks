@@ -216,36 +216,38 @@ const MintingNow = ({ data }: { data: any[] }) => {
               viewAll ? 'w-full' : 'w-full xl:w-1/2'
             )}
           >
-            <div className="mb-2 mr-2 flex flex-row items-start gap-2">
-              <div
-                className={clsx(
-                  viewAll ? 'hidden' : 'flex flex-row items-start gap-2'
-                )}
-              >
-                <ScrollButton
-                  onClick={() => {
-                    if (!!listRef.current) listRef.current.scrollLeft -= 250
-                  }}
-                  direction={ScrollButtonDirection.left}
-                />
-                <ScrollButton
-                  onClick={() => {
-                    if (!!listRef.current) listRef.current.scrollLeft += 250
-                  }}
-                  direction={ScrollButtonDirection.right}
-                />
+            <div className="mb-2 mr-2 flex flex-row items-start justify-between">
+              <div className="flex flex-row items-start gap-2">
+                <div
+                  className={clsx(
+                    viewAll ? 'hidden' : 'flex flex-row items-start gap-2'
+                  )}
+                >
+                  <ScrollButton
+                    onClick={() => {
+                      if (!!listRef.current) listRef.current.scrollLeft -= 250
+                    }}
+                    direction={ScrollButtonDirection.left}
+                  />
+                  <ScrollButton
+                    onClick={() => {
+                      if (!!listRef.current) listRef.current.scrollLeft += 250
+                    }}
+                    direction={ScrollButtonDirection.right}
+                  />
+                </div>
+                <button
+                  onClick={() => setViewAll(!viewAll)}
+                  className={clsx(
+                    'rounded-full py-0.5 px-3',
+                    'transition ease-in-out duration-150',
+                    'bg-background text-grey hover:bg-black hover:text-white',
+                    'dark:border-black dark:bg-black dark:hover:bg-white dark:hover:text-black'
+                  )}
+                >
+                  {viewAll ? 'Close' : `${pieces.length} • View All`}
+                </button>
               </div>
-              <button
-                onClick={() => setViewAll(!viewAll)}
-                className={clsx(
-                  'rounded-full py-0.5 px-3',
-                  'transition ease-in-out duration-150',
-                  'bg-background text-grey hover:bg-black hover:text-white',
-                  'dark:border-black dark:bg-black dark:hover:bg-white dark:hover:text-black'
-                )}
-              >
-                {viewAll ? 'Close' : `${pieces.length} • View All`}
-              </button>
               <LinkButton href="/submit" text="Submit" />
             </div>
             <div
