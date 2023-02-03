@@ -4418,5 +4418,23 @@
       "address": "0x5c99635956ecF52ea47c39a136bAA405aCaD0B16",
       "twitter": "0xmrboba"
     }
+  },
+  {
+    "name": "how big is your checkmark?",
+    "image": "https://pbs.twimg.com/media/FoBFe0hXwAAJIfQ?format=jpg&name=large",
+    "aspectRatio": "vertical",
+    "link": "https://twitter.com/beeple/status/1621372265945305097",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-03T07:15:50+01:00",
+    "author": { "twitter": "beeple" }
+  },
+  {
+    "name": "how big is your checkmark? (night mode)",
+    "image": "https://pbs.twimg.com/media/FoBHwTKXoAA0Rec?format=jpg&name=large",
+    "aspectRatio": "vertical",
+    "link": "https://twitter.com/beeple/status/1621374764819292160",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-03T07:15:50+02:00",
+    "author": { "twitter": "beeple" }
   }
 ]
