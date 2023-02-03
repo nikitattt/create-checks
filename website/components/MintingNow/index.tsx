@@ -35,7 +35,8 @@ const ScrollButton = ({
         'rounded-full p-1',
         'transition ease-in-out duration-150',
         !disabled && 'bg-background fill-grey hover:bg-black hover:fill-white',
-        disabled ? 'fill-grey-light' : 'fill-grey'
+        disabled ? 'fill-grey-light' : 'fill-grey',
+        'dark:bg-black dark:hover:bg-white dark:hover:text-black dark:hover:fill-black'
       )}
     >
       {direction == ScrollButtonDirection.left ? (
@@ -75,7 +76,7 @@ const LinkButton = ({ href, text }: { href: string; text: string }) => {
       className={clsx(
         'rounded-full flex flex-row items-center px-2.5 cursor-pointer border-2',
         'border-border-light text-grey hover:bg-black hover:text-white',
-        'dark:bg-grey-max dark:hover:bg-white dark:hover:text-black'
+        'dark:border-black dark:bg-black dark:hover:bg-white dark:hover:text-black'
       )}
     >
       <div className="flex flex-row gap-0.5 items-center">
@@ -135,7 +136,7 @@ const MintingNow = ({ data }: { data: any[] }) => {
   }
 
   return (
-    <div className="mt-6 flex flex-col items-center bg-white rounded-xl p-4">
+    <div className="mt-6 flex flex-col items-center bg-white dark:bg-grey-max rounded-xl p-4">
       <button
         onClick={() => setExpanded(!expanded)}
         className="flex flex-row justify-between items-center text-grey-light w-full"
@@ -201,7 +202,8 @@ const MintingNow = ({ data }: { data: any[] }) => {
                 target="_blank"
                 className={clsx(
                   'mt-4 rounded-full w-max py-1 px-6',
-                  'border-2 border-black text-black hover:bg-black hover:text-white'
+                  'border-2 border-black text-black hover:bg-black hover:text-white',
+                  'dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-black'
                 )}
               >
                 Mint
@@ -238,7 +240,8 @@ const MintingNow = ({ data }: { data: any[] }) => {
                 className={clsx(
                   'rounded-full py-0.5 px-3',
                   'transition ease-in-out duration-150',
-                  'bg-background text-grey hover:bg-black hover:text-white'
+                  'bg-background text-grey hover:bg-black hover:text-white',
+                  'dark:border-black dark:bg-black dark:hover:bg-white dark:hover:text-black'
                 )}
               >
                 {viewAll ? 'Close' : `${pieces.length} • View All`}
