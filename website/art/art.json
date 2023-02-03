@@ -4454,5 +4454,41 @@
       "address": "0x73f2e04F047931E85b62E4f2652B156199000E14",
       "twitter": "wizardpoet_"
     }
+  },
+  {
+    "name": "Check, Checks.",
+    "platform": "Zora",
+    "link": "https://create.zora.co/collections/0xe254ebcf2b4c5f30360c2288a45d26cdabda7e25",
+    "image": "https://ipfs.zora.co/ipfs/bafybeia3wrupy56gs343fgsj6f4i6lqryrvbrmxrthyhf3ofi4y54iotgy",
+    "type": "NFT-Video",
+    "aspectRatio": "square",
+    "endTime": "2023-02-05T00:08:00+07:00",
+    "cost": 0.0008,
+    "contractAddress": "0xe254eBcF2B4c5f30360c2288A45d26CdAbdA7e25",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-03T12:54:23.155Z",
+    "author": {
+      "ens": "0xtab.eth",
+      "address": "0x026477A2cC99fC0e76aea3b9B2654dCc980C68C0",
+      "twitter": "0xtab"
+    }
+  },
+  {
+    "name": "Dialectics 1",
+    "platform": "Zora",
+    "link": "https://create.zora.co/collections/0x7302927a900a04d296ac0768a88fad5c037b9c7c",
+    "image": "https://ipfs.zora.co/ipfs/bafybeiduwsjsy3eb6dmmetcfztvaa676csonqrozaphwdublokwa43rrfi",
+    "type": "NFT",
+    "aspectRatio": "square",
+    "endTime": "2023-02-11T00:00:00-05:00",
+    "cost": 0.0069,
+    "contractAddress": "0x7302927a900A04d296AC0768a88fAD5c037b9C7c",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-03T18:52:01.610Z",
+    "author": {
+      "ens": "specificobj.eth",
+      "address": "0xd65C62324baB3613fEB93aEe9bc56140C3B447cc",
+      "twitter": "specificobj"
+    }
   }
 ]
