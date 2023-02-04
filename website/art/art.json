@@ -4661,5 +4661,23 @@
     "createdOnCreateChecksArt": false,
     "dateSubmitted": "2023-02-04T20:25:16.772Z",
     "author": { "twitter": "_james_owen_" }
+  },
+  {
+    "name": "Checks in Heaven",
+    "platform": "Zora",
+    "link": "https://create.zora.co/collections/0xa65386426c920d92672b6aa8678240e005e9eee2",
+    "image": "https://ipfs.zora.co/ipfs/bafybeibe6l57t3mbebdgatrqjfutnzxv7cjc6xadbn4sgjek6tndyqjjkq",
+    "type": "NFT",
+    "aspectRatio": "square",
+    "endTime": "2023-02-12T08:15:00+11:00",
+    "cost": 0.00777,
+    "contractAddress": "0xa65386426c920d92672b6aa8678240e005e9eee2",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-04T22:49:15.786Z",
+    "author": {
+      "ens": "nasergivechi.eth",
+      "address": "0xAf89B858626d3bd9fDA1647d3BBA6bb85E236Cf5",
+      "twitter": "nasergivechi"
+    }
   }
 ]
