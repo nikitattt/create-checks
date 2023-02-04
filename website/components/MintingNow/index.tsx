@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { saEvent } from '../../scripts/events'
 import { shuffle } from '../../utils/arrays'
 import NumPassesMinted from '../NumPassedMinted'
+import styles from './MintingNow.module.css'
 
 const MintCountdown = dynamic(() => import('../MintCountdown'), {
   ssr: false,
@@ -34,7 +35,8 @@ const ScrollButton = ({
         'rounded-full p-1',
         'transition ease-in-out duration-150',
         !disabled && 'bg-background fill-grey hover:bg-black hover:fill-white',
-        disabled ? 'fill-grey-light' : 'fill-grey'
+        disabled ? 'fill-grey-light' : 'fill-grey',
+        'dark:bg-black dark:hover:bg-white dark:hover:text-black dark:hover:fill-black'
       )}
     >
       {direction == ScrollButtonDirection.left ? (
@@ -66,17 +68,50 @@ const ScrollButton = ({
   )
 }
 
+const LinkButton = ({ href, text }: { href: string; text: string }) => {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      className={clsx(
+        'rounded-full flex flex-row items-center px-2.5 cursor-pointer border-2',
+        'border-border-light text-grey hover:bg-black hover:text-white',
+        'dark:border-black dark:bg-black dark:hover:bg-white dark:hover:text-black'
+      )}
+    >
+      <div className="flex flex-row gap-0.5 items-center">
+        <p>{text}</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={2.5}
+          stroke="currentColor"
+          className="w-3.5 h-3.5 pb-px"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+          />
+        </svg>
+      </div>
+    </a>
+  )
+}
+
 const MintingNow = ({ data }: { data: any[] }) => {
   const expand = window.innerWidth > 1280 ? Math.random() < 0.9 : false
   const [expanded, setExpanded] = useState(expand)
+  const [viewAll, setViewAll] = useState(false)
   const [pieces, setPieces] = useState<any[] | undefined>(undefined)
 
   const listRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    const prefIndex = data.findIndex((e) => e.name === '0ART')
+    const prefIndex = data.findIndex((e) => e.name === 'JPGs INTERCONNECTED')
     const indexToDisplay =
-      prefIndex === -1 || Math.random() > 0.45
+      prefIndex === -1 || Math.random() < 0.7
         ? Math.floor(Math.random() * data.length)
         : prefIndex
     const shuffledPieces = [...data]
@@ -101,7 +136,7 @@ const MintingNow = ({ data }: { data: any[] }) => {
   }
 
   return (
-    <div className="mt-6 flex flex-col items-center bg-white rounded-xl p-4">
+    <div className="mt-6 flex flex-col items-center bg-white dark:bg-grey-max rounded-xl p-4">
       <button
         onClick={() => setExpanded(!expanded)}
         className="flex flex-row justify-between items-center text-grey-light w-full"
@@ -132,7 +167,12 @@ const MintingNow = ({ data }: { data: any[] }) => {
         </div>
       </button>
       {expanded ? (
-        <div className="mt-4 flex flex-col xl:flex-row gap-4 xl:gap-1 justify-between items-start w-full">
+        <div
+          className={clsx(
+            'mt-4 flex justify-between items-start w-full',
+            viewAll ? 'flex-col gap-4' : 'flex-col xl:flex-row gap-4 xl:gap-1'
+          )}
+        >
           <div className="flex flex-col md:flex-row justify-start items-start md:items-center">
             <a
               className="cursor-pointer"
@@ -162,31 +202,62 @@ const MintingNow = ({ data }: { data: any[] }) => {
                 target="_blank"
                 className={clsx(
                   'mt-4 rounded-full w-max py-1 px-6',
-                  'border-2 border-black text-black hover:bg-black hover:text-white'
+                  'border-2 border-black text-black hover:bg-black hover:text-white',
+                  'dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-black'
                 )}
               >
                 Mint
               </a>
             </div>
           </div>
-          <div className="flex flex-col xl:flex-row w-full xl:w-1/2">
-            <div className="mt-0 xl:mt-2 mb-2 mr-2 flex flex-row-reverse xl:flex-col items-start justify-end xl:justify-start gap-2">
-              <ScrollButton
-                onClick={() => {
-                  if (!!listRef.current) listRef.current.scrollLeft += 250
-                }}
-                direction={ScrollButtonDirection.right}
-              />
-              <ScrollButton
-                onClick={() => {
-                  if (!!listRef.current) listRef.current.scrollLeft -= 250
-                }}
-                direction={ScrollButtonDirection.left}
-              />
+          <div
+            className={clsx(
+              'flex flex-col',
+              viewAll ? 'w-full' : 'w-full xl:w-1/2'
+            )}
+          >
+            <div className="mb-2 mr-2 flex flex-row items-start justify-between">
+              <div className="flex flex-row items-start gap-2">
+                <div
+                  className={clsx(
+                    viewAll ? 'hidden' : 'flex flex-row items-start gap-2'
+                  )}
+                >
+                  <ScrollButton
+                    onClick={() => {
+                      if (!!listRef.current) listRef.current.scrollLeft -= 250
+                    }}
+                    direction={ScrollButtonDirection.left}
+                  />
+                  <ScrollButton
+                    onClick={() => {
+                      if (!!listRef.current) listRef.current.scrollLeft += 250
+                    }}
+                    direction={ScrollButtonDirection.right}
+                  />
+                </div>
+                <button
+                  onClick={() => setViewAll(!viewAll)}
+                  className={clsx(
+                    'rounded-full py-0.5 px-3',
+                    'transition ease-in-out duration-150',
+                    'bg-background text-grey hover:bg-black hover:text-white',
+                    'dark:border-black dark:bg-black dark:hover:bg-white dark:hover:text-black'
+                  )}
+                >
+                  {viewAll ? 'Close' : `${pieces.length} • View All`}
+                </button>
+              </div>
+              <LinkButton href="/submit" text="Submit" />
             </div>
             <div
               ref={listRef}
-              className="flex flex-row gap-4 overflow-scroll no-scrollbar rounded-lg"
+              className={clsx(
+                'rounded-lg w-full',
+                viewAll
+                  ? styles.grid
+                  : 'flex flex-row gap-4 overflow-scroll no-scrollbar'
+              )}
             >
               {pieces.map(function (piece, place) {
                 if (place === 0) return
@@ -201,7 +272,10 @@ const MintingNow = ({ data }: { data: any[] }) => {
                       className="relative group flex flex-col"
                     >
                       <img
-                        className="rounded-lg h-[19rem] max-w-none"
+                        className={clsx(
+                          'rounded-lg',
+                          viewAll ? '' : 'h-[16rem] max-w-none'
+                        )}
                         src={piece.image}
                         alt="Image with Check based artwork"
                       />

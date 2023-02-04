@@ -32,6 +32,79 @@ const PredefinedSize = ({
   )
 }
 
+const CustomSize = () => {
+  const rows = useBoardStore((state) => state.rows)
+  const columns = useBoardStore((state) => state.columns)
+  const setRows = useBoardStore((state) => state.setRows)
+  const setColumns = useBoardStore((state) => state.setColumns)
+
+  const updateRows = (event: any) => {
+    setRows(event.target.value)
+    saEvent('set_board_size', { size: `${rows}r x ${columns}c` })
+  }
+
+  const updateColumns = (event: any) => {
+    setColumns(event.target.value)
+    saEvent('set_board_size', { size: `${rows}r x ${columns}c` })
+  }
+
+  let values: number[] = []
+  for (let i = 8; i < 31; i++) {
+    values.push(i)
+  }
+
+  return (
+    <div className={clsx('flex flex-row gap-4 items-center')}>
+      <div className="flex flex-row gap-1 items-center">
+        <select
+          id="rows"
+          name="rows"
+          onChange={updateRows}
+          className={clsx(
+            'text-grey rounded-full transition-all duration-300 pl-1.5 py-0.5 text-center',
+            'bg-white border-2 border-white-light text-grey w-max hover:bg-black hover:text-white',
+            'dark:bg-black dark:text-grey dark:border-none dark:hover:bg-white dark:hover:text-black'
+          )}
+        >
+          {values.map((e, i) => {
+            if (e === rows) {
+              return (
+                <option value={e} selected>
+                  {e}
+                </option>
+              )
+            } else return <option value={e}>{e}</option>
+          })}
+        </select>
+        <p className="text-xs text-grey">Rows</p>
+      </div>
+      <div className="flex flex-row gap-1 items-center">
+        <select
+          id="columns"
+          name="columns"
+          onChange={updateColumns}
+          className={clsx(
+            'text-grey rounded-full transition-all duration-300 pl-1.5 py-0.5 text-center',
+            'bg-white border-2 border-white-light text-grey w-max hover:bg-black hover:text-white',
+            'dark:bg-black dark:text-grey dark:border-none dark:hover:bg-white dark:hover:text-black'
+          )}
+        >
+          {values.map((e, i) => {
+            if (e === columns) {
+              return (
+                <option value={e} selected>
+                  {e}
+                </option>
+              )
+            } else return <option value={e}>{e}</option>
+          })}
+        </select>
+        <p className="text-xs text-grey">Columns</p>
+      </div>
+    </div>
+  )
+}
+
 const BoardSizePanel = () => {
   return (
     <div
@@ -71,6 +144,9 @@ const BoardSizePanel = () => {
           <PredefinedSize rows={16} columns={16} />
           <PredefinedSize rows={20} columns={20} />
         </div>
+        <p className="mt-0.5 text-xs">Custom</p>
+        {/* <div className="mt-2" /> */}
+        <CustomSize />
       </div>
     </div>
   )

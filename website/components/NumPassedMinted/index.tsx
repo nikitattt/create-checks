@@ -16,6 +16,7 @@ const NumPassesMinted = ({ address }: { address: string }) => {
   const load = async () => {
     let result: AxiosResponse = await axios.post(url, { query: query })
     const data = result.data.data
+    console.log(result)
     setMints(data.aggregateStat.nftCount)
   }
 

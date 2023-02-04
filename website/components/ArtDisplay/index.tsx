@@ -1,6 +1,8 @@
 import clsx from 'clsx'
 import dynamic from 'next/dynamic'
+import { useEffect, useState } from 'react'
 import { useDiscoverStore } from '../../store/discover'
+import { shuffle, sortByDateSubmitted } from '../../utils/arrays'
 import { mintingNow } from '../../utils/dates'
 import Check from '../Check'
 import styles from './ArtDisplay.module.css'
@@ -39,12 +41,28 @@ const LinkButton = ({ href, text }: { href: string; text: string }) => {
       href={href}
       target="_blank"
       className={clsx(
-        'rounded-full flex flex-row items-center py-1 px-4 cursor-pointer text-sm',
+        'rounded-full flex flex-row items-center py-1 px-2.5 cursor-pointer',
         'bg-white text-grey hover:bg-black hover:text-white',
         'dark:bg-grey-max dark:hover:bg-white dark:hover:text-black'
       )}
     >
-      {text}
+      <div className="flex flex-row gap-0.5 items-center">
+        <p>{text}</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={2.5}
+          stroke="currentColor"
+          className="w-3.5 h-3.5 pb-px"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+          />
+        </svg>
+      </div>
     </a>
   )
 }
@@ -129,9 +147,9 @@ const JPG = (data: any) => {
           </div>
         )}
         {data.data.endTime && mintingNow(data.data.endTime) && (
-          <span className="absolute top-4 right-4 flex h-2 w-2">
+          <span className="absolute top-5 right-5 flex h-3 w-3">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green opacity-60"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-green/80"></span>
+            <span className="relative inline-flex rounded-full h-3 w-3 bg-green/80"></span>
           </span>
         )}
         {detailsExpand ? (
@@ -154,7 +172,25 @@ const JPG = (data: any) => {
 }
 
 const ArtDisplay = ({ art, mintingNow }: { art: any[]; mintingNow: any[] }) => {
+  const [sorting, setSorting] = useState('Random')
+  const [artworks, setArtworks] = useState(art)
   const numberOfArtworks = art.length
+
+  useEffect(() => {
+    // setArtworks(sortByDateSubmitted(art, 'd'))
+  }, [])
+
+  const sortArt = (event: any) => {
+    const type = event.target.value
+    if (type === 'Last Added') {
+      setArtworks(sortByDateSubmitted(art, 'asc'))
+    } else if (type === 'First Added') {
+      setArtworks(sortByDateSubmitted(art, 'desc'))
+    } else {
+      setArtworks(shuffle(art))
+    }
+    setSorting(type)
+  }
 
   return (
     <div className="mx-6 sm:mx-20 flex flex-col">
@@ -167,15 +203,30 @@ const ArtDisplay = ({ art, mintingNow }: { art: any[]; mintingNow: any[] }) => {
         <p>Artworks</p>
       </div>
       <MintingNow data={mintingNow} />
-      <div className="mt-4 mb-2 flex flex-row justify-end items-center gap-2">
-        <LinkButton
-          href="https://oncyber.io/spaces/hlc4dbyphjkHl9xH68fe"
-          text="OnCyber Gallery"
-        />
-        <LinkButton href="/submit" text="Submit Artwork" />
+      <div className="mt-6 mb-2 flex flex-col-reverse md:flex-row justify-between items:start md:items-center gap-2">
+        <select
+          onChange={sortArt}
+          value={sorting}
+          className={clsx(
+            'rounded-full py-1 px-1.5 cursor-pointer text-center w-max',
+            'bg-white text-grey hover:bg-black hover:text-white',
+            'dark:bg-grey-max dark:hover:bg-white dark:hover:text-black'
+          )}
+        >
+          <option value="Last Added">{`Last Added`}</option>
+          <option value="First Added">{`First Added`}</option>
+          <option value="Random">{`Random`}</option>
+        </select>
+        <div className="flex flex-row gap-2">
+          <LinkButton
+            href="https://oncyber.io/spaces/hlc4dbyphjkHl9xH68fe"
+            text="OnCyber Gallery"
+          />
+          <LinkButton href="/submit" text="Submit Artwork" />
+        </div>
       </div>
       <div className={clsx('gap-6', styles.grid)}>
-        {art.map((jpg, index) => {
+        {artworks.map((jpg, index) => {
           return (
             <div key={`art-${index}`}>
               <JPG data={jpg} />
