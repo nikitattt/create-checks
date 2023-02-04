@@ -179,11 +179,21 @@ const MintingNow = ({ data }: { data: any[] }) => {
               href={displayPiece.link}
               target="_blank"
             >
-              <img
-                className="rounded-lg shadow-grey-light h-[19rem] w-auto"
-                src={displayPiece.image}
-                alt="Image with Check based artwork"
-              />
+              {['NFT-Video', 'Video'].includes(displayPiece.type) ? (
+                <video
+                  src={displayPiece.image}
+                  autoPlay
+                  muted
+                  className="rounded-lg shadow-grey-light h-[19rem] w-auto"
+                />
+              ) : (
+                <img
+                  src={displayPiece.image}
+                  alt="Checks inspired artwork"
+                  loading="lazy"
+                  className="rounded-lg shadow-grey-light h-[19rem] w-auto"
+                />
+              )}
             </a>
             <div className="pl-0 mt-4 md:pl-4 md:mt-0 font-medium text-xl flex flex-col justify-start text-start">
               <div className="text-4xl max-w-xs">{displayPiece.name}</div>
@@ -271,14 +281,27 @@ const MintingNow = ({ data }: { data: any[] }) => {
                       onClick={() => selectArtwork(place)}
                       className="relative group flex flex-col"
                     >
-                      <img
-                        className={clsx(
-                          'rounded-lg',
-                          viewAll ? '' : 'h-[16rem] max-w-none'
-                        )}
-                        src={piece.image}
-                        alt="Image with Check based artwork"
-                      />
+                      {['NFT-Video', 'Video'].includes(piece.type) ? (
+                        <video
+                          src={piece.image}
+                          autoPlay
+                          muted
+                          className={clsx(
+                            'rounded-lg',
+                            viewAll ? '' : 'h-[16rem] max-w-none'
+                          )}
+                        />
+                      ) : (
+                        <img
+                          src={piece.image}
+                          alt="Checks inspired artwork"
+                          loading="lazy"
+                          className={clsx(
+                            'rounded-lg',
+                            viewAll ? '' : 'h-[16rem] max-w-none'
+                          )}
+                        />
+                      )}
                       <div
                         className={clsx(
                           'invisible group-hover:visible absolute w-full h-full rounded-xl',
