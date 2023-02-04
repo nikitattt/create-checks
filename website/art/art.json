@@ -4460,7 +4460,7 @@
     "platform": "Zora",
     "link": "https://create.zora.co/collections/0xe254ebcf2b4c5f30360c2288a45d26cdabda7e25",
     "image": "https://ipfs.zora.co/ipfs/bafybeia3wrupy56gs343fgsj6f4i6lqryrvbrmxrthyhf3ofi4y54iotgy",
-    "type": "NFT-Video",
+    "type": "NFT",
     "aspectRatio": "square",
     "endTime": "2023-02-05T00:08:00+07:00",
     "cost": 0.0008,
@@ -4490,5 +4490,86 @@
       "address": "0xd65C62324baB3613fEB93aEe9bc56140C3B447cc",
       "twitter": "specificobj"
     }
+  },
+  {
+    "name": "31 Flavors of Checks",
+    "platform": "Zora",
+    "link": "https://create.zora.co/collections/0x529e11992a0ee6c44c565afaff23d5a123302291",
+    "image": "https://ipfs.zora.co/ipfs/bafybeifo7rvzy4shetydmsqkajntv5coc455ih5pbebdwtbbrmdsjxqqze",
+    "type": "NFT",
+    "aspectRatio": "square",
+    "endTime": "2023-02-04T12:00:00-06:00",
+    "cost": 0.002,
+    "contractAddress": "0x529e11992A0eE6C44c565aFAFF23D5a123302291",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-03T20:50:20.148Z",
+    "author": {
+      "ens": "logonaut.eth",
+      "address": "0xB0CCf43adA6CBaA26dcf4907117b496d49f74242",
+      "twitter": "logonaut"
+    }
+  },
+  {
+    "name": "Locks",
+    "platform": "Zora",
+    "link": "https://create.zora.co/collections/0x0750c02168210174f6b7c531d6122e3e5c26d53e",
+    "image": "https://ipfs.zora.co/ipfs/bafkreiankmgyimikz2ij5rna5es52i6tgxuknk4kovfp52f3cytgipvwmm",
+    "type": "NFT",
+    "aspectRatio": "square",
+    "endTime": "2023-02-05T04:20:00-06:00",
+    "cost": 0.003,
+    "contractAddress": "0x0750c02168210174F6b7c531D6122E3e5C26d53e",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-03T20:58:30.565Z",
+    "author": {
+      "ens": "logonaut.eth",
+      "address": "0xB0CCf43adA6CBaA26dcf4907117b496d49f74242",
+      "twitter": "logonaut"
+    }
+  },
+  {
+    "name": "Tabs by Ellis Day",
+    "platform": "Manifold",
+    "link": "https://app.manifold.xyz/c/tabs",
+    "image": "https://u7qdxrloubvvnr3qd3u7neeexmcq2ykt2i5xenfl5znorvlrkd7a.arweave.net/p-A7xW6ga1bHcB7p9pCEuwUNYVPSO3I0q-5a6NVxUP4",
+    "type": "NFT",
+    "aspectRatio": "square",
+    "endTime": "2023-02-06T00:00:00-07:00",
+    "cost": 0.0069,
+    "contractAddress": "0x40c8809BbCbe5315d5e7658042f301218C1DBc07",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-04T01:10:37.683Z",
+    "author": {
+      "ens": "",
+      "address": "0x5B519A0334A6F78993D9B45181Ac02AB5B709530",
+      "twitter": "udontatme"
+    }
+  },
+  {
+    "name": "Left Hand Green",
+    "image": "https://storage.googleapis.com/tally-response-assets/BMxE11/849329c0-01f7-430c-abb4-eb81cc814e3d/twister.jpg",
+    "aspectRatio": "square",
+    "link": "https://twitter.com/jhekub/status/1621701619820777473?s=20&t=utwO8VIl0y6Esda_b-M4tA",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-04T02:50:07.944Z",
+    "author": { "twitter": "jhekub" }
+  },
+  {
+    "name": "Check Haus",
+    "image": "https://storage.googleapis.com/tally-response-assets/BMxE11/2d4e584a-fc5f-4716-b163-790e7957b122/blue-check_1.jpg",
+    "aspectRatio": "square",
+    "link": "https://twitter.com/jhekub/status/1621352663119020034?s=20&t=utwO8VIl0y6Esda_b-M4tA",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-04T02:51:37.468Z",
+    "author": { "twitter": "jhekub" }
+  },
+  {
+    "name": "Target Checkout",
+    "image": "https://storage.googleapis.com/tally-response-assets/BMxE11/a8271880-2a35-455e-b808-2ad33e89f78e/Target-Checkout.jpg",
+    "aspectRatio": "square",
+    "link": "https://twitter.com/jhekub/status/1621692544215031808?s=20&t=utwO8VIl0y6Esda_b-M4tA",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-04T02:52:44.887Z",
+    "author": { "twitter": "jhekub" }
   }
 ]
