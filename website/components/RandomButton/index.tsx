@@ -22,14 +22,17 @@ const RandomButton = () => {
   const rows = useBoardStore((state) => state.rows)
   const columns = useBoardStore((state) => state.columns)
   const darkMode = useMenuStore((state) => state.darkMode)
-  const addCheck = useBoardStore((state) => state.addCheck)
+  // const addCheck = useBoardStore((state) => state.addCheck)
+  const setBoard = useBoardStore((state) => state.setBoard)
   const resetBoard = useBoardStore((state) => state.resetBoard)
 
   const saveBoard = () => {
     console.log('\n- - running algo - -\n')
-    resetBoard()
+    // resetBoard()
+    let chartBoard = new Array(columns * rows).fill('')
+    console.log(chartBoard.length)
     const upperBound = 0
-    const lowerBound = rows - 1
+    const lowerBound = rows - 1 - 6
     const red = getRed()
     const green = getGreen()
     // Returns a random integer from 0 to 9:
@@ -49,7 +52,14 @@ const RandomButton = () => {
       // const red = getRed()
       // const green = getGreen()
 
-      let move = Math.floor(Math.random() * (up ? y : lowerBound - y - 4))
+      let move
+      if (Math.random() > 0.8) {
+        // Can do big move
+        move = Math.floor(Math.random() * (up ? y : lowerBound - y))
+      } else {
+        // Do smaller moves
+        move = Math.floor(Math.random() * (up ? y / 3 : (lowerBound - y) / 3))
+      }
       if (move === 0) move = 1
 
       moves.push({ move: move, up: up })
@@ -69,7 +79,7 @@ const RandomButton = () => {
 
       // console.log(`- top - i: ${i}, y: ${y}, p: ${p}, move: ${move}, up: ${up}`)
 
-      addCheck(p, up ? green : red)
+      // chartBoard[p] = up ? green : red
       // console.log(`y: ${y}, p: ${p}, move: ${move}, up: ${up}`)
 
       // console.log('- start move')
@@ -81,16 +91,20 @@ const RandomButton = () => {
         }
 
         p = columns * y + i
-        addCheck(p, up ? green : red)
-        console
-          .log
-          // `i: ${i}, j: ${j}, y: ${y}, p: ${p}, move: ${move}, up: ${up}`
-          ()
+        chartBoard[p] = up ? green : red
+        // console.log(
+        //   `i: ${i}, j: ${j}, y: ${y}, p: ${p}, move: ${move}, up: ${up}`
+        // )
       }
       // console.log('- end move')
       // console.log('')
+      // console.log(chartBoard.length)
     }
     console.log(moves)
+
+    setBoard(chartBoard)
+    // console.log(chartBoard.length)
+    // console.log(chartBoard)
 
     // saEvent('save_image', { mode: darkMode ? 'dark' : 'light' })
   }
