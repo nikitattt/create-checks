@@ -4748,5 +4748,41 @@
       "address": "0xaE9C0BA3Cc69B78BD89bebFe8dea79a01BaAc900",
       "twitter": "metasabers_"
     }
+  },
+  {
+    "name": "The Burning Check",
+    "platform": "Zora",
+    "link": "https://create.zora.co/collections/0x6fdaee06528a9f536f7db2f9306dcda59799a277",
+    "image": "https://ipfs.zora.co/ipfs/bafybeiho5bhvfvy2jsgjnppw2vnvsnvi3nqiwng4pdouqo7hqhfo2v3pdi",
+    "type": "NFT",
+    "aspectRatio": "square",
+    "endTime": "2023-02-12T12:15:00.000Z",
+    "cost": 0.0066,
+    "contractAddress": "0x6fdaee06528a9f536f7db2f9306dcda59799a277",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-05T12:18:34.567Z",
+    "author": {
+      "ens": "jehoseph.eth",
+      "address": "0x88Fe56808AAc806336A0Eb28682D10033c73826a",
+      "twitter": "Jehoseph"
+    }
+  },
+  {
+    "name": "Day Of The Burn",
+    "platform": "Zora",
+    "link": "https://create.zora.co/collections/0x742be501c7764834f75b27173c82a23c156acafc",
+    "image": "https://ipfs.zora.co/ipfs/bafkreihjdtnd36wegdmhrdm3tl2yaqwrmzox6ybccsh5dw6lfp3p4w7mou",
+    "type": "NFT",
+    "aspectRatio": "vertical",
+    "endTime": "2023-02-12T12:15:00.000Z",
+    "cost": 0.0066,
+    "contractAddress": "0x742be501c7764834f75b27173c82a23c156acafc",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-05T12:20:32.342Z",
+    "author": {
+      "ens": "jehoseph.eth",
+      "address": "0x88Fe56808AAc806336A0Eb28682D10033c73826a",
+      "twitter": "Jehoseph"
+    }
   }
 ]
