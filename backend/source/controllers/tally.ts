@@ -77,10 +77,9 @@ const receiveData = async (req: Request, res: Response, next: NextFunction) => {
       }
 
       if (['question_mBl8P4', 'question_mJx8y7'].includes(field.key)) {
-        artData.contractAddress = field.value.replace(
-          'https://etherscan.io/token/',
-          ''
-        )
+        artData.contractAddress = field.value
+          .replace('https://etherscan.io/token/', '')
+          .replace('https://etherscan.io/address/', '')
       }
 
       if (['question_wk1OVd', 'question_wLN5Rz'].includes(field.key)) {

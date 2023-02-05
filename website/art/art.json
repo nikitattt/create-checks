@@ -4679,5 +4679,74 @@
       "address": "0xAf89B858626d3bd9fDA1647d3BBA6bb85E236Cf5",
       "twitter": "nasergivechi"
     }
+  },
+  {
+    "name": "Meow",
+    "platform": "Manifold",
+    "link": "https://app.manifold.xyz/c/LamamalsPapers-Meow",
+    "image": "https://cnavebarzyho6afimcghfs2dqm4p4o47yzzydnqzvgq7ndorfa7a.arweave.net/E0FSBBHODu8AqGCMcstDgzj-O5_Gc4G2Gamh9o3RKD4",
+    "type": "NFT",
+    "aspectRatio": "square",
+    "endTime": "2023-02-08T22:30:00+05:30",
+    "cost": 0.0069,
+    "contractAddress": "0x715681013069d47d04f867813b1c5fafd277fa1e",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-05T00:20:22.299Z",
+    "author": {
+      "ens": "",
+      "address": "0xdad148546841885b78d52e36C5a26A71292B5a75",
+      "twitter": "lamamals "
+    }
+  },
+  {
+    "name": "Noun Checks",
+    "platform": "Zora",
+    "link": "https://create.zora.co/collections/0x4b7ebd6aa4b06cc850c88050eddefedff445b80e",
+    "image": "https://ipfs.filebase.io/ipfs/QmfZj3LDCV1aCwerTj42wgbaPk4iY6aUe6MgYvM3Sayq8u",
+    "type": "NFT",
+    "aspectRatio": "square",
+    "endTime": "2023-02-10T22:00:00-08:00",
+    "cost": 0.0066,
+    "contractAddress": "0x4b7ebd6aa4b06cc850c88050eddefedff445b80e",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-05T02:01:53.531Z",
+    "author": {
+      "ens": "ripe0x.eth",
+      "address": "0xCB43078C32423F5348Cab5885911C3B5faE217F9",
+      "twitter": "ripe0x"
+    }
+  },
+  {
+    "name": "verified",
+    "link": "https://create.zora.co/collections/0x533c0eb82eb0b432ad03988003ae9a6021882fb6",
+    "image": "https://ipfs.zora.co/ipfs/bafybeiby2h32pv6zfufq4frrcjbp5e63kck2nbf3p3rmyxnvn2mv22zlsa",
+    "type": "NFT",
+    "aspectRatio": "vertical",
+    "contractAddress": "0x533C0eb82Eb0B432aD03988003aE9A6021882FB6",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-05T04:51:04.870Z",
+    "author": {
+      "ens": "0xfaux.eth",
+      "address": "0x6a0D1A4C09DdDC4d8BA96D2394Ff05485e44355A",
+      "twitter": "0x_faux"
+    }
+  },
+  {
+    "name": "LIGHTCHECK",
+    "platform": "Manifold",
+    "link": "https://app.manifold.xyz/c/lightcheck",
+    "image": "https://2h7ztlwlj2fpsiipc7k42yk46ulrqjrvthhnloeomxrqljwl462a.arweave.net/0f-ZrstOivkhDxfVzWFc9RcYJjWZztW4jmXjBabL57Q",
+    "type": "NFT",
+    "aspectRatio": "vertical",
+    "endTime": "2023-02-07T00:00:00-08:00",
+    "cost": 0,
+    "contractAddress": "0x7e7dac70ef98A21F12058348C3bA84334e67dDaE",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-05T06:10:51.772Z",
+    "author": {
+      "ens": "metasabers.eth",
+      "address": "0xaE9C0BA3Cc69B78BD89bebFe8dea79a01BaAc900",
+      "twitter": "metasabers_"
+    }
   }
 ]
