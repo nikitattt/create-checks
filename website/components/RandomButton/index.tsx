@@ -2,18 +2,18 @@ import clsx from 'clsx'
 import { saEvent } from '../../scripts/events'
 import { useBoardStore } from '../../store/board'
 import { useMenuStore } from '../../store/menu'
-import { ColorMode } from '../../utils/colors'
+import { ChecksColors, ColorMode } from '../../utils/colors'
 import { boardToImage } from '../../utils/image'
 
 const getGreen = () => {
   // const colors = ['#5b9f3e', '#01ef03', '#1CC500']
-  const colors = ['#01ef03']
+  const colors = ['#01ef03', '#f7ec70']
   return colors[Math.floor(Math.random() * colors.length)]
 }
 
 const getRed = () => {
   // const colors = ['#e73d53', '#ea3a2d', '#f3322c', '#FF1F3D']
-  const colors = ['#FF1F3D']
+  const colors = ['#FF1F3D', '#60b1f4']
   return colors[Math.floor(Math.random() * colors.length)]
 }
 
@@ -26,7 +26,7 @@ const RandomButton = () => {
   const setBoard = useBoardStore((state) => state.setBoard)
   const resetBoard = useBoardStore((state) => state.resetBoard)
 
-  const saveBoard = () => {
+  const chart = () => {
     console.log('\n- - running algo - -\n')
     // resetBoard()
     let chartBoard = new Array(columns * rows).fill('')
@@ -106,6 +106,37 @@ const RandomButton = () => {
     // console.log(chartBoard)
 
     // saEvent('save_image', { mode: darkMode ? 'dark' : 'light' })
+  }
+
+  const randomFill = () => {
+    let chartBoard = new Array(columns * rows).fill('')
+    for (let i = 0; i < chartBoard.length; i++) {
+      const color =
+        ChecksColors[Math.floor(Math.random() * ChecksColors.length)]
+      chartBoard[i] = color
+    }
+    setBoard(chartBoard)
+  }
+
+  const horizontalFill = () => {
+    let chartBoard = new Array(columns * rows).fill('')
+    for (let i = 0; i < rows; i++) {
+      const color =
+        ChecksColors[Math.floor(Math.random() * ChecksColors.length)]
+      for (let j = 0; j < columns; j++) {
+        const p = columns * i + j
+        // if (p % 8) {
+        chartBoard[columns * i + j] = color
+        // }
+      }
+    }
+    setBoard(chartBoard)
+  }
+
+  const saveBoard = () => {
+    // chart()
+    // randomFill()
+    horizontalFill()
   }
 
   return (

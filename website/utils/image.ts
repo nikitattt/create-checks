@@ -37,7 +37,7 @@ export const boardToImage = (
   // const artCanvasX = 870 - ratioSpacerX
   // const artCanvasY = 870 - ratioSpacerY
   const artCanvasX = 150
-  const artCanvasY = 300
+  const artCanvasY = 180
 
   const height = artCanvasH + artCanvasY * 2
   const width = artCanvasW + artCanvasX * 2
