@@ -49,7 +49,7 @@ const CustomSize = () => {
   }
 
   let values: number[] = []
-  for (let i = 8; i < 31; i++) {
+  for (let i = 8; i < 40; i++) {
     values.push(i)
   }
 

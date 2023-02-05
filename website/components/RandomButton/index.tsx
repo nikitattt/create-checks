@@ -32,7 +32,7 @@ const RandomButton = () => {
     let chartBoard = new Array(columns * rows).fill('')
     console.log(chartBoard.length)
     const upperBound = 0
-    const lowerBound = rows - 1 - 6
+    const lowerBound = rows - 1
     const red = getRed()
     const green = getGreen()
     // Returns a random integer from 0 to 9:
@@ -58,7 +58,7 @@ const RandomButton = () => {
         move = Math.floor(Math.random() * (up ? y : lowerBound - y))
       } else {
         // Do smaller moves
-        move = Math.floor(Math.random() * (up ? y / 3 : (lowerBound - y) / 3))
+        move = Math.floor(Math.random() * (up ? y / 2 : (lowerBound - y) / 2))
       }
       if (move === 0) move = 1
 
@@ -68,6 +68,7 @@ const RandomButton = () => {
        * chart var 1
        */
       // p = columns * y + i
+      // chartBoard[p] = up ? green : red
       /*
        * chart var 2
        */
@@ -78,8 +79,6 @@ const RandomButton = () => {
       }
 
       // console.log(`- top - i: ${i}, y: ${y}, p: ${p}, move: ${move}, up: ${up}`)
-
-      // chartBoard[p] = up ? green : red
       // console.log(`y: ${y}, p: ${p}, move: ${move}, up: ${up}`)
 
       // console.log('- start move')
