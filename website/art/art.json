@@ -4784,5 +4784,105 @@
       "address": "0x88Fe56808AAc806336A0Eb28682D10033c73826a",
       "twitter": "Jehoseph"
     }
+  },
+  {
+    "name": "Rasta Checks",
+    "platform": "Manifold",
+    "link": "https://app.manifold.xyz/c/rastachecks",
+    "image": "https://5pwlc7gtkgo7pt4t2mwfzv44tdbsr4xmgpcdc7mfbzvnhed3vcyq.arweave.net/6-yxfNNRnffPk9MsXNecmMMo8uwzxDF9hQ5q05B7qLE",
+    "type": "NFT",
+    "aspectRatio": "vertical",
+    "endTime": "2023-10-02T23:59:00-03:00",
+    "cost": 0.0042,
+    "contractAddress": "0x08DA939De349c4732c3dDc8dF00DF9924Ac5fa3D",
+    "createdOnCreateChecksArt": true,
+    "dateSubmitted": "2023-02-05T16:14:33.568Z",
+    "author": {
+      "ens": "cryptorastas.eth",
+      "address": "0x144e1547AD7be53ED5F751406a661540B860D522",
+      "twitter": "cryptorastas"
+    }
+  },
+  {
+    "name": "Checkolate (Milk)",
+    "platform": "Manifold",
+    "link": "https://app.manifold.xyz/c/checkolate-milk",
+    "image": "https://arweave.net/iKvdVNokuLDFAEwIc2OwBbgyK9ZM19v9CCZrNdZB1SE",
+    "type": "NFT",
+    "aspectRatio": "square",
+    "endTime": "2023-02-06T19:30:00+01:00",
+    "cost": 0.005,
+    "contractAddress": "0xb31587054ef5ccb0d9fd72e7150588d6983bda80",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-05T18:44:43.310Z",
+    "author": {
+      "ens": "dudly.eth",
+      "address": "0xD7E683C992855b5E8EDCA21807fB03D4321D4f12",
+      "twitter": "dudly_art"
+    }
+  },
+  {
+    "name": "CHECKS - Pretty Pepe Edition",
+    "platform": "Zora",
+    "link": "https://create.zora.co/collections/0xf7b872261bb0a2008623cf65bbaccf448453b90c",
+    "image": "https://ipfs.zora.co/ipfs/bafkreihiv3donuh7eal6qljp2byqlqaiz5fetwfjhckpuin2gnocowa3ke",
+    "type": "NFT",
+    "aspectRatio": "vertical",
+    "endTime": "2023-02-06T23:45:00+01:00",
+    "cost": 0.0033,
+    "contractAddress": "0xF7B872261Bb0A2008623cf65BBACcf448453b90C",
+    "createdOnCreateChecksArt": true,
+    "dateSubmitted": "2023-02-05T20:08:31.152Z",
+    "author": {
+      "ens": "0x4eb173b2A73875921FaCbf9e048C4B71Ec8C8818",
+      "address": "0x4eb173b2A73875921FaCbf9e048C4B71Ec8C8818",
+      "twitter": "FortKnoxCrypto"
+    }
+  },
+  {
+    "name": "active check",
+    "image": "https://storage.googleapis.com/tally-response-assets/BMxE11/82e294b8-7a86-41c4-9b5d-9fbcd09e68f1/20230205-1800011_EHiVs73Z-online-video-cutter.com-.mp4",
+    "type": "Video",
+    "aspectRatio": "square",
+    "link": "https://twitter.com/Archerion_/status/1622341848067973121?t=0Z6uff2Y2KdLa_tHODwRtw&s=19",
+    "createdOnCreateChecksArt": true,
+    "dateSubmitted": "2023-02-05T21:18:11.530Z",
+    "author": { "twitter": "Archerion_" }
+  },
+  {
+    "name": "Coming soon to a museum near you",
+    "platform": "manifold",
+    "link": "https://app.manifold.xyz/c/checksinamuseum",
+    "image": "https://rr6plscsjwgmoevlovll65bpponhjunyur47q7ygdcbec34qmryq.arweave.net/jHz1yFJNjMcSq3VWv3Qve5p00bikefh_BhiCQW-QZHE",
+    "type": "NFT",
+    "aspectRatio": "vertical",
+    "endTime": "2023-07-02T23:30:00+01:00",
+    "cost": 0.004,
+    "contractAddress": "0xCF1565cD65358c390C56219efF8Fcd4d6A9b8cb4",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-05T21:51:09.608Z",
+    "author": {
+      "ens": "angelamantilla.eth",
+      "address": "0x83F80B5E2D5f8d00d5d935DdC6dCa022aC61eE7f",
+      "twitter": "mantilla_angy"
+    }
+  },
+  {
+    "name": "Tic Tac Check",
+    "platform": "Zora",
+    "link": "https://create.zora.co/collections/0xa50e3dd882b10df95f393a47b583ccf6fe7003ae",
+    "image": "https://ipfs.zora.co/ipfs/bafkreihjxti5hay5krlv3hkiuids2rxqwi2uulcra3bg6fs2wivsvfn244",
+    "type": "NFT",
+    "aspectRatio": "square",
+    "endTime": "2023-02-06T23:49:00-08:00",
+    "cost": 0.003,
+    "contractAddress": "0xa50e3dd882b10df95f393a47b583ccf6fe7003ae",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-05T23:18:38.921Z",
+    "author": {
+      "ens": "robeee.eth",
+      "address": "0x64E1Dd2405066335C38C38806e8E793c4ff932B2",
+      "twitter": "artofnext"
+    }
   }
 ]
