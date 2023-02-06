@@ -5417,5 +5417,23 @@
     "createdOnCreateChecksArt": false,
     "dateSubmitted": "2023-02-06T14:54:57+02:00",
     "author": { "twitter": "hafftka" }
+  },
+  {
+    "name": "THE WORLD IS YOURS",
+    "platform": "Manifold",
+    "link": "https://app.manifold.xyz/c/VincentVanDough",
+    "image": "https://kn7ybupk4zeqwygghnggrdgg7fnnwkglvlfgcki4mj53kld7asfq.arweave.net/U3-A0ermSQtgxjtMaIzG-VrbKMuqymEpHGJ7tSx_BIs",
+    "type": "NFT",
+    "aspectRatio": "vertical",
+    "endTime": "2023-02-14T20:00:00+02:00",
+    "cost": 0.0044,
+    "contractAddress": "0xf7ee81833F624EFdd9c926509ab405Eb436fF089",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-06T15:00:57+02:00",
+    "author": {
+      "ens": "truecamellia.eth",
+      "address": "",
+      "twitter": "truecamellia"
+    }
   }
 ]
