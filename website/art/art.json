@@ -4902,5 +4902,23 @@
       "address": "0xab5D3f7eca3E784EACA50B74cfe5d1114cC78d76",
       "twitter": "bitsapiens_"
     }
+  },
+  {
+    "name": "Kek Tac Toe",
+    "platform": "Zora",
+    "link": "https://zora.co/create/collections/0xc10033a32bde101c878ccf6d4f7473db25c6ba74",
+    "image": "https://ipfs.zora.co/ipfs/bafkreibjiwla4s3obrbjf7fom6wdql2uclccwtnm7iamzekpb4u7h5vxqq",
+    "type": "NFT",
+    "aspectRatio": "square",
+    "endTime": "2023-02-07T12:00:00-08:00",
+    "cost": 0.003,
+    "contractAddress": "0xc10033a32bde101c878ccf6d4f7473db25c6ba74",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-06T04:37:56.516Z",
+    "author": {
+      "ens": "robeee.eth",
+      "address": "0x64E1Dd2405066335C38C38806e8E793c4ff932B2",
+      "twitter": "artofnext"
+    }
   }
 ]
