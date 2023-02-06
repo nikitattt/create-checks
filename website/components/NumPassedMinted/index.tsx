@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react'
 const NumPassesMinted = ({ address }: { address: string }) => {
   const [mints, setMints] = useState(null)
 
+  address = address.split(':')[0]
+
   const url = 'https://api.zora.co/graphql'
   const query = `
     query ChecksTacToe {

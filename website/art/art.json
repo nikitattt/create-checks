@@ -4920,5 +4920,38 @@
       "address": "0x64E1Dd2405066335C38C38806e8E793c4ff932B2",
       "twitter": "artofnext"
     }
+  },
+  {
+    "name": "“Date Checked”",
+    "link": "https://zora.co/collections/0x87a0d66afa03f70cf6693ad2facfe55478176fc9",
+    "image": "https://ipfs.zora.co/ipfs/bafkreigwvlrl4ln5kijekdfo4tfe3kesi3tdi3wciunggctjkrmyq7swli",
+    "type": "NFT",
+    "aspectRatio": "square",
+    "contractAddress": "0x87a0d66afa03f70cf6693ad2facfe55478176fc9",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-06T04:55:03.485Z",
+    "author": {
+      "ens": "tunnckocore.eth",
+      "address": "0xA20C07F94A127fD76E61fbeA1019cCe759225002",
+      "twitter": "3a1fcBx0"
+    }
+  },
+  {
+    "name": "Checks - mfers edition 80",
+    "platform": "Manifold",
+    "link": "https://app.manifold.xyz/c/checks-mfers",
+    "image": "https://zvfpx5qniyhtwrlv4xs4cinriex2wltyueur6hwxs65vhpdqhmba.arweave.net/zUr79g1GDztFdeXlwSGxQS-rLnihKR8e15e7U7xwOwI",
+    "type": "NFT",
+    "aspectRatio": "square",
+    "endTime": "2023-02-12T19:00:00+02:00",
+    "cost": 0.00123,
+    "contractAddress": "0xa349C22bEC60efc642F37B8FA4f6510163db970E",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-06T06:36:36.964Z",
+    "author": {
+      "ens": "basewtf.th",
+      "address": "0xE5F6AE79926378B5543f2881bD3E062667aFBc1C",
+      "twitter": "basewtf"
+    }
   }
 ]
