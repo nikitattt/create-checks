@@ -4884,5 +4884,23 @@
       "address": "0x64E1Dd2405066335C38C38806e8E793c4ff932B2",
       "twitter": "artofnext"
     }
+  },
+  {
+    "name": "META META PEPE",
+    "platform": "Manifold",
+    "link": "https://app.manifold.xyz/c/metapepe",
+    "image": "https://htt2oudd3bi64jo32p6jiefqmfrm4clq2pkglvf67gljobwkqkka.arweave.net/POenUGPYUe4l29P8lBCwYWLOCXDT1GXUvvmWlwbKgpQ",
+    "type": "NFT",
+    "aspectRatio": "square",
+    "endTime": "2023-07-07T07:00:00+02:00",
+    "cost": 0.015,
+    "contractAddress": "0xecda64c170BE3a700177EbbD13e6a2e6486133B0",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-06T03:19:06.655Z",
+    "author": {
+      "ens": "bitsapiens.eth",
+      "address": "0xab5D3f7eca3E784EACA50B74cfe5d1114cC78d76",
+      "twitter": "bitsapiens_"
+    }
   }
 ]
