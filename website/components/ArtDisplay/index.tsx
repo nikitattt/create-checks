@@ -1,7 +1,6 @@
 import clsx from 'clsx'
 import dynamic from 'next/dynamic'
-import { useEffect, useState } from 'react'
-import { useDiscoverStore } from '../../store/discover'
+import { useState } from 'react'
 import { shuffle, sortByDateSubmitted } from '../../utils/arrays'
 import { mintingNow } from '../../utils/dates'
 import Check from '../Check'
@@ -11,29 +10,6 @@ const MintingNow = dynamic(() => import('../MintingNow'), {
   ssr: false,
   loading: () => <>Loading...</>
 })
-
-const DetailsSwitch = () => {
-  const detailsExpand = useDiscoverStore((state) => state.detailsExpand)
-  const switchDetailsExpand = useDiscoverStore(
-    (state) => state.switchDetailsExpand
-  )
-
-  const switchValue = () => {
-    switchDetailsExpand()
-  }
-
-  return (
-    <button
-      onClick={switchValue}
-      className="rounded-full flex flex-row items-center bg-white p-1 pl-2 gap-1 cursor-pointer text-sm group"
-    >
-      <div className="text-grey">Details</div>
-      <div className="h-6 w-6">
-        <Check color={detailsExpand ? '#000000' : '#7D7D7D'} />
-      </div>
-    </button>
-  )
-}
 
 const LinkButton = ({ href, text }: { href: string; text: string }) => {
   return (
@@ -68,36 +44,24 @@ const LinkButton = ({ href, text }: { href: string; text: string }) => {
 }
 
 const JPG = (data: any) => {
-  const detailsExpand = useDiscoverStore((state) => state.detailsExpand)
+  // const detailsExpand = useDiscoverStore((state) => state.detailsExpand)
 
   return (
     <a href={data.data.link} target="_blank">
       <div
         className={clsx(
           'relative group rounded-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col',
-          detailsExpand ? 'shadow-2xl' : '',
           'text-white'
         )}
       >
         {['NFT-Video', 'Video'].includes(data.data.type) ? (
-          <video
-            src={data.data.image}
-            autoPlay
-            muted
-            className={clsx(
-              'rounded-xl',
-              detailsExpand ? 'rounded-b-none' : ''
-            )}
-          />
+          <video src={data.data.image} autoPlay muted className="rounded-xl" />
         ) : (
           <img
             src={data.data.image}
             alt="Checks inspired artwork"
             loading="lazy"
-            className={clsx(
-              'rounded-xl',
-              detailsExpand ? 'rounded-b-none' : ''
-            )}
+            className="rounded-xl"
           />
         )}
         <div
@@ -152,33 +116,14 @@ const JPG = (data: any) => {
             <span className="relative inline-flex rounded-full h-3 w-3 bg-green/80"></span>
           </span>
         )}
-        {detailsExpand ? (
-          <div className="m-3 flex flex-row justify-between items-center">
-            <div className="text-xl">{data.data.name}</div>
-            <a
-              href={`https://twitter.com/${data.data.author.twitter}`}
-              target="_blank"
-              className="py-px px-1 hover:border border-grey-light rounded-lg"
-            >
-              <div className="text-grey">{`@${data.data.author.twitter}`}</div>
-            </a>
-          </div>
-        ) : (
-          <></>
-        )}
       </div>
     </a>
   )
 }
 
 const ArtDisplay = ({ art, mintingNow }: { art: any[]; mintingNow: any[] }) => {
-  const [sorting, setSorting] = useState('Random')
+  const [sorting, setSorting] = useState('Last Added')
   const [artworks, setArtworks] = useState(art)
-  const numberOfArtworks = art.length
-
-  useEffect(() => {
-    // setArtworks(sortByDateSubmitted(art, 'd'))
-  }, [])
 
   const sortArt = (event: any) => {
     const type = event.target.value
@@ -191,6 +136,8 @@ const ArtDisplay = ({ art, mintingNow }: { art: any[]; mintingNow: any[] }) => {
     }
     setSorting(type)
   }
+
+  const numberOfArtworks = art.length
 
   return (
     <div className="mx-6 sm:mx-20 flex flex-col">

@@ -6,7 +6,7 @@ import { useMenuStore } from '../store/menu'
 import ArtDisplay from '../components/ArtDisplay'
 import Link from 'next/link'
 import { mintingNow } from '../utils/dates'
-import { shuffle } from '../utils/arrays'
+import { shuffle, sortByDateSubmitted } from '../utils/arrays'
 
 import art from '../art/art.json'
 
@@ -46,13 +46,12 @@ const Discover: NextPage<{ art: any[]; mintingNow: any[] }> = (props) => {
 
 export async function getStaticProps() {
   const mintingNowArt = art.filter((e) => e.endTime && mintingNow(e.endTime))
-
-  shuffle(art)
+  const sortedArt = sortByDateSubmitted(art, 'asc')
 
   return {
     props: {
       mintingNow: mintingNowArt,
-      art: art
+      art: sortedArt
     }
   }
 }
