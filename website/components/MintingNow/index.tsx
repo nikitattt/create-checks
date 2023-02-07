@@ -109,7 +109,7 @@ const MintingNow = ({ data }: { data: any[] }) => {
   const listRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    const prefIndex = data.findIndex((e) => e.name === 'JPGs INTERCONNECTED')
+    const prefIndex = data.findIndex((e) => e.name === 'Checkpepen')
     const indexToDisplay =
       prefIndex === -1 || Math.random() < 0.7
         ? Math.floor(Math.random() * data.length)

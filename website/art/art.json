@@ -5647,57 +5647,48 @@
     "author": { "twitter": "0xBunzy" }
   },
   {
-    "name": "",
-    "platform": "",
-    "link": "",
-    "image": "",
+    "name": "Pepe My Ride",
+    "image": "https://pbs.twimg.com/media/FoS5KqhXgAIWb09?format=jpg&name=large",
+    "aspectRatio": "square",
+    "link": "https://twitter.com/mbsjq/status/1622625854609129473",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-06T18:21:17+02:00",
+    "author": { "twitter": "mbsjq" }
+  },
+  {
+    "name": "CHECKED OUT",
+    "platform": "Manifold",
+    "link": "https://app.manifold.xyz/c/checked-out",
+    "image": "https://ryknldokrbwowwjbod7bk4wjfgn6lv3pvaopt7hamriobknfyzba.arweave.net/jhTVjcqIbOtZIXD-FXLJKZvl12-oHPn84GRQ4KmlxkI",
     "type": "NFT",
     "aspectRatio": "square",
-    "endTime": "",
-    "cost": 0,
-    "contractAddress": "",
+    "endTime": "2023-02-02T15:00:00+02:00",
+    "cost": 0.0042,
+    "contractAddress": "0x0c50419106e7Cd18022b4BaA813BbfFFbf6f4eCE",
     "createdOnCreateChecksArt": false,
-    "dateSubmitted": "",
+    "dateSubmitted": "2023-02-06T18:25:09+02:00",
     "author": {
-      "ens": "",
+      "ens": "nonfungiblemotion.eth",
       "address": "",
-      "twitter": ""
+      "twitter": "nfungiblemotion"
     }
   },
   {
-    "name": "",
-    "platform": "",
-    "link": "",
-    "image": "",
+    "name": "Checkpepen",
+    "platform": "Zora",
+    "link": "https://zora.co/create/collections/0xae45015c9a6c2fe3dfec37308c89877fc0ddf7fc",
+    "image": "https://storage.googleapis.com/tally-response-assets/BMxE11/6f120b5c-5be9-4633-a294-8b3d408f42c1/site-image.png",
     "type": "NFT",
     "aspectRatio": "square",
-    "endTime": "",
-    "cost": 0,
-    "contractAddress": "",
+    "endTime": "2023-02-07T06:00:00+02:00",
+    "cost": 0.0042,
+    "contractAddress": "0xae45015c9a6c2fe3dfec37308c89877fc0ddf7fc",
     "createdOnCreateChecksArt": false,
-    "dateSubmitted": "",
+    "dateSubmitted": "2023-02-06T18:31:17+02:00",
     "author": {
-      "ens": "",
+      "ens": "iamng.eth",
       "address": "",
-      "twitter": ""
-    }
-  },
-  {
-    "name": "",
-    "platform": "",
-    "link": "",
-    "image": "",
-    "type": "NFT",
-    "aspectRatio": "square",
-    "endTime": "",
-    "cost": 0,
-    "contractAddress": "",
-    "createdOnCreateChecksArt": false,
-    "dateSubmitted": "",
-    "author": {
-      "ens": "",
-      "address": "",
-      "twitter": ""
+      "twitter": "iamng_eth"
     }
   }
 ]
