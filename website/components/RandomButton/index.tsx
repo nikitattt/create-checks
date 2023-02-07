@@ -100,6 +100,10 @@ const getRed = () => {
   return `#${colors[Math.floor(Math.random() * colors.length)]}`
 }
 
+const getColor = () => {
+  return `#${colors[Math.floor(Math.random() * colors.length)]}`
+}
+
 const RandomButton = () => {
   const board = useBoardStore((state) => state.board)
   const rows = useBoardStore((state) => state.rows)
@@ -191,6 +195,46 @@ const RandomButton = () => {
     // saEvent('save_image', { mode: darkMode ? 'dark' : 'light' })
   }
 
+  const filledOneColorChart = () => {
+    let chartBoard = new Array(columns * rows).fill('')
+
+    const upperBound = 0
+    const lowerBound = rows - 1
+    let color = getColor()
+    let colorTwo = getColor()
+
+    // let y = Math.floor(Math.random() * rows)
+    let y = Math.round(rows / 2)
+    let p = columns * y
+
+    for (let i = 0; i < columns; i++) {
+      let up = Math.random() < 0.5
+      if (y === lowerBound || y === lowerBound - 1) up = true
+      else if (y === upperBound) up = false
+
+      let move = 1
+
+      if (up) {
+        y = y - move
+      } else {
+        y = y + move
+      }
+
+      // color = getColor()
+      chartBoard[p] = color
+
+      for (let j = y; j <= lowerBound; j++) {
+        // color = getColor()
+        p = j * columns + i
+        chartBoard[p] = j === y ? colorTwo : color
+        // chartBoard[p] = j === y || j === y + 1 ? colorTwo : color
+        // chartBoard[p] = j === y || j === y + 1 ? colorTwo : getColor()
+      }
+    }
+
+    setBoard(chartBoard)
+  }
+
   const randomFill = () => {
     let chartBoard = new Array(columns * rows).fill('')
     for (let i = 0; i < chartBoard.length; i++) {
@@ -200,26 +244,71 @@ const RandomButton = () => {
     setBoard(chartBoard)
   }
 
-  const horizontalFill = () => {
+  const horizontalOrnamentFill = () => {
     let chartBoard = new Array(columns * rows).fill('')
     for (let i = 0; i < rows; i++) {
       // const color = colors[Math.floor(Math.random() * colors.length)]
       for (let j = 0; j < columns; j++) {
         const p = columns * i + j
-        // if (p % 3) {
-        // if ((p + i) % 2 === 0) {
-        const color = colors[Math.floor(Math.random() * colors.length)]
-        chartBoard[columns * i + j] = `#${color}`
-        // }
+        if (p % 3) {
+          // if ((p + i) % 2 === 0) {
+          const color = colors[Math.floor(Math.random() * colors.length)]
+          chartBoard[p] = `#${color}`
+        }
+      }
+    }
+    setBoard(chartBoard)
+  }
+
+  const horizontalEvenFill = () => {
+    let chartBoard = new Array(columns * rows).fill('')
+    for (let i = 0; i < rows; i++) {
+      const color = colors[Math.floor(Math.random() * colors.length)]
+      for (let j = 0; j < columns; j++) {
+        const p = columns * i + j
+        chartBoard[p] = `#${color}`
+      }
+    }
+    setBoard(chartBoard)
+  }
+
+  const verticalEvenFill = () => {
+    let chartBoard = new Array(columns * rows).fill('')
+    for (let i = 0; i < columns; i++) {
+      const color = colors[Math.floor(Math.random() * colors.length)]
+      for (let j = 0; j < rows; j++) {
+        const p = j * columns + i
+        chartBoard[p] = `#${color}`
+      }
+    }
+    setBoard(chartBoard)
+  }
+
+  const verticalOrnamentFill = () => {
+    let chartBoard = new Array(columns * rows).fill('')
+    for (let i = 0; i < columns; i++) {
+      const color = colors[Math.floor(Math.random() * colors.length)]
+      for (let j = 0; j < rows; j++) {
+        const p = j * columns + i
+        if (p % 11) {
+          // (p % x): 10, 11
+          // if ((p + j) % 2 === 0) {
+          // const color = colors[Math.floor(Math.random() * colors.length)]
+          chartBoard[p] = `#${color}`
+        }
       }
     }
     setBoard(chartBoard)
   }
 
   const saveBoard = () => {
-    chart()
+    // chart()
+    filledOneColorChart()
     // randomFill()
-    // horizontalFill()
+    // horizontalOrnamentFill()
+    // horizontalEvenFill()
+    // verticalEvenFill() // not good
+    // verticalOrnamentFill()
   }
 
   return (
