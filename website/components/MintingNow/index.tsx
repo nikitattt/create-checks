@@ -203,7 +203,9 @@ const MintingNow = ({ data }: { data: any[] }) => {
               </div>
               <div className="h-4" />
               <MintCountdown endTime={displayPiece.endTime} />
-              <NumPassesMinted address={displayPiece.contractAddress} />
+              {displayPiece.platform === 'Zora' && (
+                <NumPassesMinted address={displayPiece.contractAddress} />
+              )}
               <a
                 onClick={() => {
                   saEvent('minting_now_open_mint_page')
