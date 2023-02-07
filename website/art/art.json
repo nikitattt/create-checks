@@ -5903,5 +5903,23 @@
     "createdOnCreateChecksArt": false,
     "dateSubmitted": "2023-02-07T23:39:24+02:00",
     "author": { "twitter": "enjoyoor" }
+  },
+  {
+    "name": "Check Turtz",
+    "platform": "Own dApp",
+    "link": "https://tinywingedturtlez.com/check-turtz",
+    "image": "https://openseauserdata.com/files/085b543ea078724120e257632bd5018e.svg",
+    "type": "NFT",
+    "aspectRatio": "square",
+    "endTime": "2023-02-10T16:00:00.000Z",
+    "cost": 0,
+    "contractAddress": "0xa769FA308Db9eAF53dB36EAf1fbcBa4A57E387b9",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-07T21:53:59.524Z",
+    "author": {
+      "ens": "tomhirst.eth",
+      "address": "0x2C6B8C19dd7174F6e0cc56424210F19EeFe62f94",
+      "twitter": "tom_hirst"
+    }
   }
 ]
