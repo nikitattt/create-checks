@@ -6113,5 +6113,14 @@
     "createdOnCreateChecksArt": true,
     "dateSubmitted": "2023-02-09T09:12:19.249Z",
     "author": { "twitter": "wstreetcoffee" }
+  },
+  {
+    "name": "Notable",
+    "image": "https://storage.googleapis.com/tally-response-assets/BMxE11/bddfccc9-01db-406c-a617-d0a0681abba1/checks.gif",
+    "aspectRatio": "square",
+    "link": "https://twitter.com/sidbachmann/status/1623056461655060481?s=46&t=XxK0MgJRorihGeH7tLPv2w",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-09T13:33:36.223Z",
+    "author": { "twitter": "unchecked" }
   }
 ]
