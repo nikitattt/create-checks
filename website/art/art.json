@@ -6122,5 +6122,38 @@
     "createdOnCreateChecksArt": false,
     "dateSubmitted": "2023-02-09T13:33:36.223Z",
     "author": { "twitter": "unchecked" }
+  },
+  {
+    "name": "A Girl's Best Friend",
+    "link": "https://twitter.com/dannyomo/status/1623707944754847744?s=20&t=BGDFYBztKj-8a6ooehJZGw",
+    "image": "https://ipfs.zora.co/ipfs/bafybeib4hjambyxtexdpk7ldssxtsng6m45mfx75nf5vrzqtggap33lmse",
+    "type": "NFT",
+    "aspectRatio": "square",
+    "contractAddress": "0xcc49d20a318fa1b5dcb252086f2f7c8baaf7e8f4",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-09T15:43:27.351Z",
+    "author": {
+      "ens": "dannyomo.eth",
+      "address": "0xF1382ab34126B206A49DECEf703a511fA215E19B",
+      "twitter": "dannyomo"
+    }
+  },
+  {
+    "name": "The Verification Of Man",
+    "platform": "Zora",
+    "link": "https://zora.co/collections/0xb2dce8186b4000c2186d4b57115f3c2c0c7998d8",
+    "image": "https://ipfs.zora.co/ipfs/bafybeibo2gjr4jkxlunuls6jd36rx4qxi4fzigpoo7hhfj2xwvdedspdru",
+    "type": "NFT",
+    "aspectRatio": "square",
+    "endTime": "2023-02-09T23:30:00+01:00",
+    "cost": 0,
+    "contractAddress": "0xB2dCe8186b4000c2186D4B57115f3c2c0C7998D8",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-09T16:00:26.005Z",
+    "author": {
+      "ens": "gillesdc.eth",
+      "address": "",
+      "twitter": "gillesdc"
+    }
   }
 ]
