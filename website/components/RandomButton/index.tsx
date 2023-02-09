@@ -251,14 +251,30 @@ const RandomButton = () => {
 
   const horizontalOrnamentFill = () => {
     let chartBoard = new Array(columns * rows).fill('')
+    const randomColors = Math.random() < 0.5
+    const tO = Math.random() < 0.5
+
+    const vts = [2, 4, 5, 6]
+    const pts = [3, 5, 6]
+
+    const vt = vts[Math.floor(Math.random() * vts.length)]
+    const pt = pts[Math.floor(Math.random() * pts.length)]
+
     for (let i = 0; i < rows; i++) {
-      // const color = colors[Math.floor(Math.random() * colors.length)]
+      var color = colors[Math.floor(Math.random() * colors.length)]
       for (let j = 0; j < columns; j++) {
         const p = columns * i + j
-        if (p % 3) {
-          // if ((p + i) % 2 === 0) {
-          const color = colors[Math.floor(Math.random() * colors.length)]
-          chartBoard[p] = `#${color}`
+        if (tO) {
+          if (p % pt) {
+            chartBoard[p] = `#${color}`
+          }
+        } else {
+          if ((p + i) % vt === 0) {
+            if (randomColors)
+              color = colors[Math.floor(Math.random() * colors.length)]
+
+            chartBoard[p] = `#${color}`
+          }
         }
       }
     }
@@ -279,14 +295,34 @@ const RandomButton = () => {
 
   const horizontalGradientEvenFill = () => {
     let chartBoard = new Array(columns * rows).fill('')
-    const color = colors[Math.floor(Math.random() * colors.length)]
     const up = Math.random() < 0.5
     const op = up ? [...opacity].reverse() : [...opacity]
+
+    let color = colors[Math.floor(Math.random() * colors.length)]
 
     for (let i = 0; i < rows; i++) {
       for (let j = 0; j < columns; j++) {
         const p = columns * i + j
         chartBoard[p] = `#${color}${op[i]}`
+      }
+    }
+
+    setBoard(chartBoard)
+  }
+
+  const horizontalGradientFill = () => {
+    let chartBoard = new Array(columns * rows).fill('')
+    const changeColor = Math.random() < 0.25
+    const up = Math.random() < 0.5
+    const op = up ? [...opacity].reverse() : [...opacity]
+
+    let color = colors[Math.floor(Math.random() * colors.length)]
+
+    for (let i = 0; i < columns; i++) {
+      if (changeColor) color = colors[Math.floor(Math.random() * colors.length)]
+      for (let j = 0; j < rows; j++) {
+        const p = columns * j + i
+        chartBoard[p] = `#${color}${op[i % rows]}`
       }
     }
 
@@ -307,14 +343,13 @@ const RandomButton = () => {
 
   const verticalOrnamentFill = () => {
     let chartBoard = new Array(columns * rows).fill('')
+    const vts = [3, 5, 6]
+    const vt = vts[Math.floor(Math.random() * vts.length)]
     for (let i = 0; i < columns; i++) {
       const color = colors[Math.floor(Math.random() * colors.length)]
       for (let j = 0; j < rows; j++) {
         const p = j * columns + i
-        if (p % 11) {
-          // (p % x): 10, 11
-          // if ((p + j) % 2 === 0) {
-          // const color = colors[Math.floor(Math.random() * colors.length)]
+        if (p % vt) {
           chartBoard[p] = `#${color}`
         }
       }
@@ -323,12 +358,24 @@ const RandomButton = () => {
   }
 
   const saveBoard = () => {
+    const algos = [
+      chart,
+      filledOneColorChart,
+      randomFill,
+      horizontalOrnamentFill,
+      horizontalGradientEvenFill,
+      horizontalEvenFill,
+      verticalOrnamentFill,
+      horizontalGradientFill
+    ]
+
+    algos[Math.floor(Math.random() * algos.length)]()
     // chart()
     // filledOneColorChart()
     // randomFill()
     // horizontalOrnamentFill()
     // horizontalEvenFill()
-    horizontalGradientEvenFill()
+    // horizontalGradientEvenFill()
     // verticalEvenFill() // not good
     // verticalOrnamentFill()
   }
