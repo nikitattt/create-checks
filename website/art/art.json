@@ -6012,11 +6012,11 @@
   {
     "name": "verified (interactive)",
     "platform": "Manifold",
-    "link": "https://createchecks.art/",
+    "link": "https://app.manifold.xyz/c/verifiedinteraction",
     "image": "https://oaxxqhsdo2ew3nvjqc6h7zozqagmrapqdvmio3cnowol3tlnmiza.arweave.net/cC94HkN2iW22qYC8f-XZgAzIgfAdWIdsTXWcvc1tYjI",
     "type": "NFT",
     "aspectRatio": "square",
-    "endTime": "2024-02-02T00:00:00+01:00",
+    "endTime": "2023-02-14T00:00:00+01:00",
     "cost": 0.0069,
     "contractAddress": "0xa65fd4e1b7c90ad4cf90cd01011257dcf55adbcd",
     "createdOnCreateChecksArt": false,
