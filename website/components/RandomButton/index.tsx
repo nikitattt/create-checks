@@ -88,6 +88,9 @@ const colors = [
   '6C31D7'
 ]
 
+// 100% 90% 80% 70% 60% 50% 40% 30%
+const opacity = ['FF', 'E6', 'CC', 'B3', '99', '80', '66', '4D']
+
 const getGreen = () => {
   // const colors = ['#5b9f3e', '#01ef03', '#1CC500']
   // const colors = ['#01ef03', '#f7ec70']
@@ -202,6 +205,8 @@ const RandomButton = () => {
     const lowerBound = rows - 1
     let color = getColor()
     let colorTwo = getColor()
+    // let color = '#00bed7'
+    // let colorTwo = '#ff91ae'
 
     // let y = Math.floor(Math.random() * rows)
     let y = Math.round(rows / 2)
@@ -272,6 +277,22 @@ const RandomButton = () => {
     setBoard(chartBoard)
   }
 
+  const horizontalGradientEvenFill = () => {
+    let chartBoard = new Array(columns * rows).fill('')
+    const color = colors[Math.floor(Math.random() * colors.length)]
+    const up = Math.random() < 0.5
+    const op = up ? [...opacity].reverse() : [...opacity]
+
+    for (let i = 0; i < rows; i++) {
+      for (let j = 0; j < columns; j++) {
+        const p = columns * i + j
+        chartBoard[p] = `#${color}${op[i]}`
+      }
+    }
+
+    setBoard(chartBoard)
+  }
+
   const verticalEvenFill = () => {
     let chartBoard = new Array(columns * rows).fill('')
     for (let i = 0; i < columns; i++) {
@@ -303,10 +324,11 @@ const RandomButton = () => {
 
   const saveBoard = () => {
     // chart()
-    filledOneColorChart()
+    // filledOneColorChart()
     // randomFill()
     // horizontalOrnamentFill()
     // horizontalEvenFill()
+    horizontalGradientEvenFill()
     // verticalEvenFill() // not good
     // verticalOrnamentFill()
   }
