@@ -147,6 +147,10 @@ const receiveData = async (req: Request, res: Response, next: NextFunction) => {
   artData.dateSubmitted = dayjs().toISOString()
   artData.author = author
 
+  if (String(artData.link).includes('zora')) {
+  } else if (String(artData.link).includes('manifold')) {
+  }
+
   if (discordHook) {
     axios
       .post(discordHook, {
