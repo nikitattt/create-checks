@@ -6155,5 +6155,59 @@
       "address": "",
       "twitter": "gillesdc"
     }
+  },
+  {
+    "name": "VERIFIED CULT",
+    "platform": "Manifold",
+    "link": "https://app.manifold.xyz/c/pepecult",
+    "image": "https://tqtsnwh52xwqj73kn73rhahge7ud5ho5e7ptd7cuo6hglnmftojq.arweave.net/nCcm2P3V7QT_am_3E4DmJ-g-nd0n3zH8VHeOZbWFm5M",
+    "type": "NFT",
+    "aspectRatio": "vertical",
+    "endTime": "2023-02-11T18:50:29+02:00",
+    "cost": 0.004269,
+    "contractAddress": "0x43502Ba12bb9B025f409A05235Fa6f13B48CFC82",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-09T16:24:07.383Z",
+    "author": {
+      "ens": "sn1pefx.eth",
+      "address": "0x233d4F3308955ad397cDB9c8f0A22216DBA77E80",
+      "twitter": "sn1pefx"
+    }
+  },
+  {
+    "name": "NFN8 GAME",
+    "platform": "OpenSea",
+    "link": "https://opensea.io/collection/nfn8-game",
+    "image": "https://openseauserdata.com/files/e427f7d1aa631ccc92a585ee0e0c5921.svg",
+    "type": "NFT",
+    "aspectRatio": "square",
+    "endTime": "2023-02-11T16:00:00-06:00",
+    "cost": 0.0008,
+    "contractAddress": "0x2953399124F0cBB46d2CbACD8A89cF0599974963",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-10T00:08:41.926Z",
+    "author": {
+      "ens": "logonaut.eth",
+      "address": "0xB0CCf43adA6CBaA26dcf4907117b496d49f74242",
+      "twitter": "logonaut"
+    }
+  },
+  {
+    "name": "CHECKS - SOLITAIRE EDITIONS",
+    "platform": "Manifold",
+    "link": "https://app.manifold.xyz/c/Checks-Solitaire-Edition",
+    "image": "https://5p4ba44tdunqcooqylsl6fncnwkyyeimfwa6am7xtytb5sd6peaq.arweave.net/6_gQc5MdGwE50MLkvxWibZWMEQwtgeAz954mHsh-eQE",
+    "type": "NFT-Video",
+    "aspectRatio": "square",
+    "endTime": "2023-02-12T00:30:00+01:00",
+    "cost": 0,
+    "contractAddress": "0xCec73A5E9E65733a2c65B711C04081B72a945751 ",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-10T00:17:49.770Z",
+    "author": {
+      "ens": "",
+      "address": "0x6012757F61D04B95c601D80e4eBA30ecb7f14B60",
+      "twitter": "Kino_NFA"
+    }
   }
 ]
