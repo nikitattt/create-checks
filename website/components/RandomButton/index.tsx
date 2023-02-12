@@ -255,17 +255,15 @@ const RandomButton = () => {
     const tO = Math.random() < 0.5
 
     const vts = [2, 4, 5, 6]
-    const pts = [3, 5, 6]
 
     const vt = vts[Math.floor(Math.random() * vts.length)]
-    const pt = pts[Math.floor(Math.random() * pts.length)]
 
     for (let i = 0; i < rows; i++) {
       var color = colors[Math.floor(Math.random() * colors.length)]
       for (let j = 0; j < columns; j++) {
         const p = columns * i + j
         if (tO) {
-          if (p % pt) {
+          if (p % 3) {
             chartBoard[p] = `#${color}`
           }
         } else {
@@ -283,8 +281,9 @@ const RandomButton = () => {
 
   const horizontalEvenFill = () => {
     let chartBoard = new Array(columns * rows).fill('')
+    let colorIndex = Math.floor(Math.random() * (colors.length - rows))
     for (let i = 0; i < rows; i++) {
-      const color = colors[Math.floor(Math.random() * colors.length)]
+      const color = colors[colorIndex + i]
       for (let j = 0; j < columns; j++) {
         const p = columns * i + j
         chartBoard[p] = `#${color}`
@@ -329,21 +328,24 @@ const RandomButton = () => {
     setBoard(chartBoard)
   }
 
-  const verticalEvenFill = () => {
-    let chartBoard = new Array(columns * rows).fill('')
-    for (let i = 0; i < columns; i++) {
-      const color = colors[Math.floor(Math.random() * colors.length)]
-      for (let j = 0; j < rows; j++) {
-        const p = j * columns + i
-        chartBoard[p] = `#${color}`
-      }
-    }
-    setBoard(chartBoard)
-  }
+  // const verticalEvenFill = () => {
+  //   let chartBoard = new Array(columns * rows).fill('')
+  //   for (let i = 0; i < columns; i++) {
+  //     const color = colors[Math.floor(Math.random() * colors.length)]
+  //     for (let j = 0; j < rows; j++) {
+  //       const p = j * columns + i
+  //       chartBoard[p] = `#${color}`
+  //     }
+  //   }
+  //   setBoard(chartBoard)
+  // }
 
   const verticalOrnamentFill = () => {
     let chartBoard = new Array(columns * rows).fill('')
-    const vts = [3, 5, 6]
+    const vts = [
+      3
+      // 5, 6
+    ]
     const vt = vts[Math.floor(Math.random() * vts.length)]
     for (let i = 0; i < columns; i++) {
       const color = colors[Math.floor(Math.random() * colors.length)]
@@ -359,8 +361,9 @@ const RandomButton = () => {
 
   const saveBoard = () => {
     const algos = [
-      chart,
-      filledOneColorChart,
+      // chart,
+      // filledOneColorChart,
+
       randomFill,
       horizontalOrnamentFill,
       horizontalGradientEvenFill,
