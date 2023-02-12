@@ -6419,5 +6419,14 @@
     "createdOnCreateChecksArt": false,
     "dateSubmitted": "2023-02-12T07:53:17+02:00",
     "author": { "twitter": "chirp_xyz" }
+  },
+  {
+    "name": "Edward elric (fullmetal alchemist) edition",
+    "image": "https://storage.googleapis.com/tally-response-assets/BMxE11/fec93619-3112-4f14-80a2-2a76f47cfa05/output-1-.png",
+    "aspectRatio": "square",
+    "link": "",
+    "createdOnCreateChecksArt": true,
+    "dateSubmitted": "2023-02-12T06:19:56.617Z",
+    "author": { "twitter": "bitcuddle" }
   }
 ]
