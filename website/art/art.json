@@ -6533,5 +6533,32 @@
     "createdOnCreateChecksArt": false,
     "dateSubmitted": "2023-02-13T20:51:59.676Z",
     "author": { "twitter": "TheWhoove" }
+  },
+  {
+    "name": "Love Checks",
+    "platform": "Manifold",
+    "link": "https://app.manifold.xyz/c/love-checks",
+    "image": "https://b4f7e6khkfx7oo3zssx37dmknvatioyw5pgszumjrumka7562e6q.arweave.net/DwvyeUdRb_c7eZSvv42KbUE0OxbrzSzRiY0YoH--0T0",
+    "type": "NFT",
+    "aspectRatio": "vertical",
+    "endTime": "2023-02-28T14:18:00.000Z",
+    "cost": 0.0014,
+    "contractAddress": "0xe703CF17D06f3942d26F1b247d29350257fF922B",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-14T14:20:56.060Z",
+    "author": {
+      "ens": "",
+      "address": "0xC50387B022a053190d0E8667352e03fe6340EB5E",
+      "twitter": "AceOfAfrica"
+    }
+  },
+  {
+    "name": "Heart Check: Circles of Love",
+    "image": "https://storage.googleapis.com/tally-response-assets/BMxE11/49137a61-ae66-4b0a-9f05-745b7e8a6e15/heartCheckCirclesOfLove.jpg",
+    "aspectRatio": "square",
+    "link": "https://twitter.com/TheWhoove/status/1625512743649308673?s=20&t=JSpjP2v4Y6oSCf0nhgpZBQ",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-14T15:20:19.176Z",
+    "author": { "twitter": "TheWhoove" }
   }
 ]
