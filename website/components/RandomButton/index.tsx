@@ -4,92 +4,99 @@ import { useBoardStore } from '../../store/board'
 import { useMenuStore } from '../../store/menu'
 import { ChecksColors, ColorMode } from '../../utils/colors'
 import { boardToImage } from '../../utils/image'
+import { colors } from './colors'
 
-const colors = [
-  'E84AA9',
-  'F2399D',
-  'DB2F96',
-  'E73E85',
-  'FF7F8E',
-  'FA5B67',
-  'E8424E',
-  'D5332F',
-  'C23532',
-  'F2281C',
-  'D41515',
-  '9D262F',
-  'DE3237',
-  'DA3321',
-  'EA3A2D',
-  'EB4429',
-  'EC7368',
-  'FF8079',
-  'FF9193',
-  'EA5B33',
-  'EB5A2A',
-  'ED7C30',
-  'EF9933',
-  'EF8C37',
-  'F18930',
-  'F09837',
-  'F9A45C',
-  'F2A43A',
-  'F2A840',
-  'F2A93C',
-  'FFB340',
-  'F2B341',
-  'FAD064',
-  'F7CA57',
-  'F6CB45',
-  'FFAB00',
-  'F4C44A',
-  'FCDE5B',
-  'F9DA4D',
-  'F9DA4A',
-  'FAE272',
-  'F9DB49',
-  'FAE663',
-  'FBEA5B',
-  'E2F24A',
-  'B5F13B',
-  '94E337',
-  '63C23C',
-  '86E48E',
-  '77E39F',
-  '83F1AE',
-  '5FCD8C',
-  '9DEFBF',
-  '2E9D9A',
-  '3EB8A1',
-  '5FC9BF',
-  '77D3DE',
-  '6AD1DE',
-  '5ABAD3',
-  '4291A8',
-  '45B2D3',
-  '81D1EC',
-  '33758D',
-  'A7DDF9',
-  '9AD9FB',
-  '2480BD',
-  '60B1F4',
-  'A4C8EE',
-  '4576D0',
-  '2E4985',
-  '3263D0',
-  '25438C',
-  '525EAA',
-  '3D43B3',
-  '322F92',
-  '4A2387',
-  '371471',
-  '3B088C',
-  '9741DA',
-  '6C31D7'
-]
+// const colors = [
+//   'E84AA9',
+//   'F2399D',
+//   'DB2F96',
+//   'E73E85',
+//   'FF7F8E',
+//   'FA5B67',
+//   'E8424E',
+//   'D5332F',
+//   'C23532',
+//   'F2281C',
+//   'D41515',
+//   '9D262F',
+//   'DE3237',
+//   'DA3321',
+//   'EA3A2D',
+//   'EB4429',
+//   'EC7368',
+//   'FF8079',
+//   'FF9193',
+//   'EA5B33',
+//   'EB5A2A',
+//   'ED7C30',
+//   'EF9933',
+//   'EF8C37',
+//   'F18930',
+//   'F09837',
+//   'F9A45C',
+//   'F2A43A',
+//   'F2A840',
+//   'F2A93C',
+//   'FFB340',
+//   'F2B341',
+//   'FAD064',
+//   'F7CA57',
+//   'F6CB45',
+//   'FFAB00',
+//   'F4C44A',
+//   'FCDE5B',
+//   'F9DA4D',
+//   'F9DA4A',
+//   'FAE272',
+//   'F9DB49',
+//   'FAE663',
+//   'FBEA5B',
+//   'E2F24A',
+//   'B5F13B',
+//   '94E337',
+//   '63C23C',
+//   '86E48E',
+//   '77E39F',
+//   '83F1AE',
+//   '5FCD8C',
+//   '9DEFBF',
+//   '2E9D9A',
+//   '3EB8A1',
+//   '5FC9BF',
+//   '77D3DE',
+//   '6AD1DE',
+//   '5ABAD3',
+//   '4291A8',
+//   '45B2D3',
+//   '81D1EC',
+//   '33758D',
+//   'A7DDF9',
+//   '9AD9FB',
+//   '2480BD',
+//   '60B1F4',
+//   'A4C8EE',
+//   '4576D0',
+//   '2E4985',
+//   '3263D0',
+//   '25438C',
+//   '525EAA',
+//   '3D43B3',
+//   '322F92',
+//   '4A2387',
+//   '371471',
+//   '3B088C',
+//   '9741DA',
+//   '6C31D7'
+// ]
 
 // 100% 90% 80% 70% 60% 50% 40% 30%
 const opacity = ['FF', 'E6', 'CC', 'B3', '99', '80', '66', '4D']
+
+// solid color,
+// two different colors
+//
+// const colorBands = [72, 36, 18, 9, 5, 4, 1]
+const colorBands = [72, 54, 36, 18, 9, 4, 1]
 
 const getGreen = () => {
   // const colors = ['#5b9f3e', '#01ef03', '#1CC500']
@@ -118,262 +125,262 @@ const RandomButton = () => {
 
   const setArray = () => {
     const board = [
-      '#2E4985',
-      '#5FC9BF',
-      '#77E39F',
-      '#DA3321',
-      '#C23532',
-      '#6AD1DE',
       '#F2A93C',
-      '#F2A93C',
-      '#FA5B67',
-      '#EA3A2D',
-      '#9DEFBF',
-      '#EB5A2A',
       '#F9DA4D',
-      '#3EB8A1',
-      '#371471',
-      '#6C31D7',
-      '#2E9D9A',
-      '#B5F13B',
-      '#FFAB00',
-      '#FA5B67',
+      '#FFB340',
+      '#F2A43A',
+      '#F2A43A',
+      '#F2A43A',
+      '#EF9933',
+      '#F2A93C',
+      '#F6CB45',
+      '#F4C44A',
+      '#F9DA4A',
+      '#F2A93C',
+      '#F6CB45',
+      '#FAE272',
+      '#F2A93C',
+      '#F2A840',
       '#FBEA5B',
+      '#F7CA57',
+      '#F7CA57',
+      '#F2A93C',
+      '#F2A93C',
+      '#FAE663',
+      '#F2A43A',
+      '#F2A43A',
+      '#F2A43A',
+      '#F9DA4A',
+      '#EF9933',
+      '#F2A93C',
+      '#F9DA4D',
       '#FBEA5B',
+      '#FFB340',
+      '#FAD064',
+      '#F9DA4D',
+      '#FFB340',
+      '#F2A43A',
+      '#F2A43A',
+      '#F2A43A',
+      '#EF9933',
+      '#F2A93C',
+      '#F6CB45',
+      '#F4C44A',
+      '#F9DA4A',
+      '#F2A93C',
+      '#F6CB45',
+      '#FAE272',
+      '#F2A93C',
+      '#F2A840',
+      '#FBEA5B',
+      '#F7CA57',
+      '#F7CA57',
+      '#F2A93C',
+      '#F2A93C',
+      '#FAE663',
+      '#F2A43A',
+      '#F2A43A',
+      '#F2A43A',
+      '#F9DA4A',
+      '#EF9933',
+      '#F2A93C',
+      '#F9DA4D',
+      '#FBEA5B',
+      '#FFB340',
+      '#FAD064',
+      '#FBEA5B',
+      '#FFB340',
+      '#F2A43A',
+      '#F2A43A',
+      '#F2A43A',
+      '#EF9933',
+      '#F2A93C',
+      '#F6CB45',
+      '#F4C44A',
+      '#F9DA4A',
+      '#F2A93C',
+      '#F6CB45',
+      '#FAE272',
+      '#F2A93C',
+      '#F2A840',
+      '#FBEA5B',
+      '#F7CA57',
+      '#F7CA57',
+      '#F2A93C',
+      '#F2A93C',
+      '#FAE663',
+      '#F2A43A',
+      '#F2A43A',
+      '#F2A43A',
+      '#F9DA4A',
+      '#EF9933',
+      '#F2A93C',
+      '#F9DA4D',
+      '#FBEA5B',
+      '#FFB340',
+      '#FAD064',
+      '#FBEA5B',
+      '#FAE272',
+      '#F2A43A',
+      '#F2A43A',
+      '#F2A43A',
+      '#EF9933',
+      '#F2A93C',
+      '#F6CB45',
+      '#F4C44A',
+      '#F9DA4A',
+      '#F2A93C',
+      '#F6CB45',
+      '#FAE272',
+      '#F2A93C',
+      '#F2A840',
+      '#FBEA5B',
+      '#F7CA57',
+      '#F7CA57',
+      '#F2A93C',
+      '#F2A93C',
+      '#FAE663',
+      '#F2A43A',
+      '#F2A43A',
+      '#F2A43A',
+      '#F9DA4A',
+      '#EF9933',
+      '#F2A93C',
+      '#F9DA4D',
+      '#FBEA5B',
+      '#FFB340',
+      '#FAD064',
+      '#FBEA5B',
+      '#FAE272',
+      '#F9DB49',
+      '#F2A43A',
+      '#F2A43A',
+      '#EF9933',
+      '#F2A93C',
+      '#F6CB45',
+      '#F4C44A',
+      '#F9DA4A',
+      '#F2A93C',
+      '#F6CB45',
+      '#FAE272',
+      '#F2A93C',
+      '#F2A840',
+      '#FBEA5B',
+      '#F7CA57',
+      '#F7CA57',
+      '#F2A93C',
+      '#F2A93C',
+      '#FAE663',
+      '#F2A43A',
+      '#F2A43A',
+      '#F2A43A',
+      '#F9DA4A',
+      '#EF9933',
+      '#F2A93C',
+      '#F9DA4D',
+      '#FBEA5B',
+      '#FFB340',
+      '#FAD064',
+      '#FBEA5B',
+      '#FAE272',
+      '#F9DB49',
+      '#F7CA57',
+      '#F2A43A',
+      '#EF9933',
+      '#F2A93C',
+      '#F6CB45',
+      '#F4C44A',
+      '#F9DA4A',
+      '#F2A93C',
+      '#F6CB45',
+      '#FAE272',
+      '#F2A93C',
+      '#F2A840',
+      '#FBEA5B',
+      '#F7CA57',
+      '#F7CA57',
+      '#F2A93C',
+      '#F2A93C',
+      '#FAE663',
+      '#F2A43A',
+      '#F2A43A',
+      '#F2A43A',
+      '#F9DA4A',
+      '#EF9933',
+      '#F2A93C',
+      '#F9DA4D',
+      '#FBEA5B',
+      '#FFB340',
+      '#FAD064',
+      '#FBEA5B',
+      '#FAE272',
+      '#F9DB49',
+      '#F7CA57',
+      '#F9DB49',
+      '#EF9933',
+      '#F2A93C',
+      '#F6CB45',
+      '#F4C44A',
+      '#F9DA4A',
+      '#F2A93C',
+      '#F6CB45',
+      '#FAE272',
+      '#F2A93C',
+      '#F2A840',
+      '#FBEA5B',
+      '#F7CA57',
+      '#F7CA57',
+      '#F2A93C',
+      '#F2A93C',
+      '#FAE663',
+      '#F2A43A',
+      '#F2A43A',
+      '#F2A43A',
+      '#F9DA4A',
+      '#EF9933',
+      '#F2A93C',
+      '#F9DA4D',
+      '#FBEA5B',
+      '#FFB340',
+      '#FAD064',
+      '#FBEA5B',
+      '#FAE272',
+      '#F9DB49',
+      '#F7CA57',
+      '#F9DB49',
       '#F2A43A',
       '#F2A93C',
-      '#A4C8EE',
-      '#B5F13B',
-      '#3EB8A1',
-      '#6AD1DE',
-      '#33758D',
-      '#F18930',
-      '#FAD064',
-      '#3EB8A1',
-      '#DA3321',
-      '#F09837',
-      '#FAE272',
-      '#D5332F',
-      '#5FCD8C',
-      '#F9DA4A',
-      '#C23532',
-      '#9DEFBF',
-      '#FAD064',
-      '#9741DA',
-      '#F9DB49',
-      '#FCDE5B',
-      '#FFB340',
-      '#2E9D9A',
-      '#EF8C37',
-      '#63C23C',
-      '#3EB8A1',
-      '#EC7368',
-      '#9D262F',
-      '#FAE272',
-      '#45B2D3',
-      '#D5332F',
-      '#F7CA57',
-      '#FFB340',
-      '#3EB8A1',
-      '#FFB340',
-      '#9741DA',
-      '#EC7368',
-      '#6C31D7',
-      '#525EAA',
-      '#3D43B3',
-      '#3263D0',
-      '#D41515',
-      '#FAE663',
-      '#F9DB49',
-      '#6AD1DE',
-      '#FF7F8E',
-      '#DE3237',
-      '#E73E85',
-      '#81D1EC',
-      '#9DEFBF',
-      '#FA5B67',
-      '#322F92',
-      '#9741DA',
-      '#F2399D',
-      '#371471',
-      '#DE3237',
-      '#F2A840',
-      '#FF9193',
-      '#F9DA4A',
-      '#FF9193',
-      '#2480BD',
-      '#B5F13B',
-      '#F9A45C',
-      '#A7DDF9',
-      '#9D262F',
-      '#83F1AE',
-      '#ED7C30',
-      '#4A2387',
-      '#EB5A2A',
-      '#FBEA5B',
-      '#4A2387',
-      '#FFAB00',
-      '#3263D0',
-      '#FFAB00',
-      '#F2A93C',
-      '#94E337',
-      '#D41515',
-      '#25438C',
-      '#EB5A2A',
-      '#6C31D7',
-      '#FF8079',
-      '#77E39F',
-      '#F9DB49',
-      '#F2A840',
-      '#FA5B67',
-      '#EC7368',
-      '#E73E85',
-      '#371471',
-      '#525EAA',
-      '#25438C',
-      '#EC7368',
-      '#45B2D3',
-      '#FF9193',
-      '#E84AA9',
-      '#25438C',
-      '#77E39F',
-      '#D5332F',
-      '#F2399D',
-      '#77E39F',
-      '#EA5B33',
-      '#D41515',
-      '#33758D',
-      '#F9A45C',
-      '#81D1EC',
-      '#63C23C',
-      '#3B088C',
-      '#FAE663',
-      '#DE3237',
-      '#DA3321',
-      '#2E4985',
-      '#60B1F4',
-      '#EF9933',
-      '#5ABAD3',
-      '#81D1EC',
-      '#6C31D7',
-      '#FAD064',
-      '#33758D',
-      '#F18930',
-      '#E8424E',
-      '#45B2D3',
-      '#3263D0',
-      '#3D43B3',
-      '#322F92',
-      '#F2A93C',
-      '#F2A840',
-      '#33758D',
-      '#A7DDF9',
-      '#F2399D',
-      '#F9DA4A',
-      '#F2A840',
-      '#DA3321',
-      '#EB4429',
-      '#4576D0',
-      '#A4C8EE',
-      '#A4C8EE',
-      '#25438C',
-      '#ED7C30',
-      '#F09837',
-      '#F9DA4A',
-      '#77D3DE',
-      '#FFB340',
-      '#FF7F8E',
-      '#5FC9BF',
-      '#FF7F8E',
-      '#E2F24A',
-      '#E8424E',
-      '#3263D0',
-      '#5FC9BF',
-      '#3263D0',
-      '#EF8C37',
-      '#FA5B67',
-      '#94E337',
-      '#60B1F4',
-      '#5FC9BF',
-      '#FFB340',
-      '#86E48E',
-      '#3263D0',
-      '#3D43B3',
-      '#63C23C',
+      '#F6CB45',
       '#F4C44A',
-      '#B5F13B',
-      '#A7DDF9',
-      '#D5332F',
-      '#D5332F',
-      '#FAD064',
-      '#FFB340',
-      '#ED7C30',
-      '#9DEFBF',
-      '#3D43B3',
-      '#371471',
-      '#371471',
-      '#63C23C',
-      '#D5332F',
-      '#3263D0',
-      '#EA3A2D',
-      '#3263D0',
-      '#FA5B67',
-      '#371471',
-      '#EA5B33',
-      '#F2B341',
-      '#83F1AE',
-      '#5ABAD3',
-      '#371471',
-      '#F18930',
-      '#33758D',
-      '#63C23C',
-      '#F09837',
-      '#3D43B3',
-      '#EF8C37',
-      '#4291A8',
-      '#4291A8',
-      '#EB4429',
-      '#F7CA57',
+      '#F9DA4A',
+      '#F2A93C',
+      '#F6CB45',
       '#FAE272',
-      '#C23532',
-      '#E8424E',
-      '#3263D0',
-      '#3B088C',
-      '#322F92',
-      '#81D1EC',
-      '#DB2F96',
-      '#3263D0',
-      '#77E39F',
-      '#25438C',
-      '#9741DA',
-      '#F09837',
-      '#60B1F4',
-      '#EC7368',
-      '#2E4985',
-      '#3EB8A1',
-      '#FF9193',
+      '#F2A93C',
+      '#F2A840',
+      '#FBEA5B',
+      '#F7CA57',
+      '#F7CA57',
+      '#F2A93C',
+      '#F2A93C',
+      '#FAE663',
+      '#F2A43A',
+      '#F2A43A',
+      '#F2A43A',
+      '#F9DA4A',
       '#EF9933',
-      '#FF8079',
-      '#F2281C',
-      '#9741DA',
-      '#EA3A2D',
-      '#F09837',
-      '#63C23C',
-      '#E84AA9',
-      '#EA5B33',
-      '#5ABAD3',
-      '#D5332F',
-      '#FF8079',
-      '#3D43B3',
-      '#A7DDF9',
-      '#60B1F4',
-      '#4A2387',
-      '#2E9D9A',
-      '#9D262F',
-      '#F2281C',
-      '#2E9D9A',
-      '#86E48E',
-      '#EA5B33'
+      '#F2A93C',
+      '#F9DA4D',
+      '#FBEA5B',
+      '#FFB340',
+      '#FAD064',
+      '#FBEA5B',
+      '#FAE272',
+      '#F9DB49',
+      '#F7CA57',
+      '#F9DB49',
+      '#F2A43A',
+      '#F2A840'
     ]
 
     setBoard(board)
@@ -507,7 +514,7 @@ const RandomButton = () => {
     let chartBoard = new Array(columns * rows).fill('')
     for (let i = 0; i < chartBoard.length; i++) {
       const color = colors[Math.floor(Math.random() * colors.length)]
-      chartBoard[i] = `#${color}`
+      chartBoard[i] = `${color}`
     }
     setBoard(chartBoard)
   }
@@ -534,7 +541,7 @@ const RandomButton = () => {
             if (randomColors)
               color = colors[Math.floor(Math.random() * colors.length)]
 
-            chartBoard[p] = `#${color}`
+            chartBoard[p] = `${color}`
           }
         }
       }
@@ -544,12 +551,57 @@ const RandomButton = () => {
 
   const horizontalEvenFill = () => {
     let chartBoard = new Array(columns * rows).fill('')
-    let colorIndex = Math.floor(Math.random() * (colors.length - rows))
+    let colorIndex = Math.floor(Math.random() * colors.length)
+    const colorBand = colorBands[Math.floor(Math.random() * colorBands.length)]
+    console.log(colorBand)
     for (let i = 0; i < rows; i++) {
-      const color = colors[colorIndex + i]
+      // indexes[i] = (indexes[0] + (i * gradient * colorBand / checksCount) % colorBand) % 80;
+
+      // const color = colors[(colorIndex + i * colorBand) % colors.length]
+      // good: 72 36 1
+      // ok: 9 |4|
+      // const color = colors[(colorIndex + i * 1) % colors.length]
+
+      // const shift = Math.floor(Math.random() * colorBand)
+      // const color = colors[(colorIndex + shift) % colors.length]
+      // const color = colors[(colorIndex + i) % colors.length]
       for (let j = 0; j < columns; j++) {
+        // const color =
+        //   colors[
+        //     ((Math.floor(Math.random() * 72) % colorBand) + colorIndex) % 72
+        //   ]
+        // const color =
+        //   colors[(Math.floor(Math.random() * 72) * colorBand + colorIndex) % 72]
+        // const color = colors[(Math.floor(Math.random() * 72) * colorBand) % 72]
+
+        // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+        const color =
+          colors[((Math.floor(Math.random() * 72) % 18) + colorIndex) % 72]
+        // const color =
+        //   colors[(Math.floor(Math.random() * 72) * 9 + colorIndex) % 72]
+        // const color = colors[(Math.floor(Math.random() * 72) * 36) % 72]
+
+        // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+        // const color = colors[Math.floor(Math.random() * 36)]
+
+        // const color = colors[Math.floor(Math.random() * 72)]
         const p = columns * i + j
-        chartBoard[p] = `#${color}`
+        chartBoard[p] = `${color}`
+      }
+    }
+    setBoard(chartBoard)
+  }
+
+  const verticalFill = () => {
+    let chartBoard = new Array(columns * rows).fill('')
+    let colorIndex = Math.floor(Math.random() * (colors.length - columns))
+    for (let i = 0; i < rows; i++) {
+      for (let j = 0; j < columns; j++) {
+        const color = colors[colorIndex + j]
+        const p = columns * i + j
+        chartBoard[p] = `${color}`
       }
     }
     setBoard(chartBoard)
@@ -565,7 +617,7 @@ const RandomButton = () => {
     for (let i = 0; i < rows; i++) {
       for (let j = 0; j < columns; j++) {
         const p = columns * i + j
-        chartBoard[p] = `#${color}${op[i]}`
+        chartBoard[p] = `${color}${op[i]}`
       }
     }
 
@@ -584,7 +636,7 @@ const RandomButton = () => {
       if (changeColor) color = colors[Math.floor(Math.random() * colors.length)]
       for (let j = 0; j < rows; j++) {
         const p = columns * j + i
-        chartBoard[p] = `#${color}${op[i % rows]}`
+        chartBoard[p] = `${color}${op[i % rows]}`
       }
     }
 
@@ -624,17 +676,15 @@ const RandomButton = () => {
 
   const saveBoard = () => {
     const algos = [
-      // chart,
-      // filledOneColorChart,
-
-      // randomFill,
+      // chart,                       // -Won't Add
+      // filledOneColorChart,         // -Won't Add
+      // randomFill, // -Added
       // horizontalOrnamentFill,
-      // horizontalGradientEvenFill,
-      // horizontalEvenFill,
-      // verticalOrnamentFill,
-      // horizontalGradientFill
-
-      setArray
+      // horizontalGradientEvenFill, // -Added
+      horizontalEvenFill // -Added
+      // verticalOrnamentFill
+      // horizontalGradientFill       // -Won't Add
+      // verticalFill
     ]
 
     algos[Math.floor(Math.random() * algos.length)]()
@@ -649,17 +699,30 @@ const RandomButton = () => {
   }
 
   return (
-    <button
-      onClick={saveBoard}
-      className={clsx(
-        'rounded-full py-1 px-3 cursor-pointer text-sm transition-all duration-300',
-        'bg-white text-grey w-max hover:bg-black hover:text-white',
-        'dark:bg-black-canvas dark:text-grey dark:hover:bg-white dark:hover:text-black',
-        'shadow-lg sm:shadow-none'
-      )}
-    >
-      Random Chart
-    </button>
+    <div className="flex gap-2">
+      <button
+        onClick={saveBoard}
+        className={clsx(
+          'rounded-full py-1 px-3 cursor-pointer text-sm transition-all duration-300',
+          'bg-white text-grey w-max hover:bg-black hover:text-white',
+          'dark:bg-black-canvas dark:text-grey dark:hover:bg-white dark:hover:text-black',
+          'shadow-lg sm:shadow-none'
+        )}
+      >
+        Random Chart
+      </button>
+      <button
+        onClick={setArray}
+        className={clsx(
+          'rounded-full py-1 px-3 cursor-pointer text-sm transition-all duration-300',
+          'bg-white text-grey w-max hover:bg-black hover:text-white',
+          'dark:bg-black-canvas dark:text-grey dark:hover:bg-white dark:hover:text-black',
+          'shadow-lg sm:shadow-none'
+        )}
+      >
+        Set Checks
+      </button>
+    </div>
   )
 }
 
