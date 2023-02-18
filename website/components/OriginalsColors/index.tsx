@@ -16,7 +16,7 @@ const OriginalsColors = () => {
   return (
     <div
       className={clsx(
-        'mx-8 sm:mx-auto mt-4 grid gap-y-4 w-[550px]',
+        'px-8 sm:mx-auto mt-4 grid gap-y-4 w-full sm:w-[620px]',
         styles.grid
       )}
     >
