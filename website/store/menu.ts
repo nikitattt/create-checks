@@ -15,7 +15,7 @@ interface MenuState {
   showBoardSizePanel: boolean
   addedColors: Array<string>
   setCustomColor: (color: string) => void
-  switchDarkMode: () => void
+  switchDarkMode: (dark?: boolean) => void
   setDirectory: (directory: Directory) => void
   setShowColorPanel: (value: boolean) => void
   setShowBoardSizePanel: (value: boolean) => void
@@ -34,7 +34,8 @@ const useMenuStore = create<MenuState>()(
       showBoardSizePanel: false,
       addedColors: [],
       setCustomColor: (color: string) => set({ customColor: color }),
-      switchDarkMode: () => set({ darkMode: !get().darkMode }),
+      switchDarkMode: (dark?: boolean) =>
+        set({ darkMode: dark ?? !get().darkMode }),
       setDirectory: (directory: Directory) => set({ directory: directory }),
       setShowColorPanel: (value: boolean) => set({ showColorPanel: value }),
       setShowBoardSizePanel: (value: boolean) =>

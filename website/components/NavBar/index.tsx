@@ -11,6 +11,7 @@ const SectionsSwitch = ({ page }: { page: string }) => {
   const pageToName = (page: string) => {
     if (page === '/discover') return 'Discover'
     if (page === '/info') return 'Info'
+    if (page === '/assets') return 'Assets'
     else return 'Create'
   }
 
@@ -35,6 +36,7 @@ const SectionsSwitch = ({ page }: { page: string }) => {
       {button('/')}
       {button('/discover')}
       {button('/info')}
+      {button('/assets')}
     </div>
   )
 }

@@ -40,7 +40,7 @@ export function addAlpha(color: string, opacity: number) {
   return color + _opacity.toString(16).toUpperCase()
 }
 
-export const OriginalsColors = [
+export const originalsColors = [
   '#E84AA9',
   '#F2399D',
   '#DB2F96',
