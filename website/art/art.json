@@ -6659,5 +6659,20 @@
       "address": "0xBb4aEe67138E890ed8E097AE1271471dC46fE0a2",
       "twitter": "sarcastic_songs"
     }
+  },
+  {
+    "name": "Checkgammon",
+    "link": "https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/100109133542759789666119785798643266546138050518702689036391265473388968149072/",
+    "image": "https://i.seadn.io/gcs/files/5af692f983b8632dba59eb415a371805.jpg?auto=format&w=1000",
+    "type": "NFT",
+    "aspectRatio": "square",
+    "contractAddress": "0x495f947276749ce646f68ac8c248420045cb7b5e",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-18T10:49:29.587Z",
+    "author": {
+      "ens": "Amiraphist.eth",
+      "address": "0xdD53c2Fac49719663A75f58110A642e7CFee8514",
+      "twitter": "amiraphist"
+    }
   }
 ]
