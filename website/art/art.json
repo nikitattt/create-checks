@@ -1177,32 +1177,6 @@
     "dateSubmitted": "2023-01-23T23:00:00.000Z"
   },
   {
-    "name": "Check",
-    "type": "Image",
-    "image": "https://pbs.twimg.com/media/Fm8-QMRaMAExhnm?format=jpg&name=large",
-    "link": "https://twitter.com/gid3xn/status/1616579310781108225",
-    "contractAddress": "",
-    "author": {
-      "twitter": "gid3xn",
-      "address": "",
-      "ens": ""
-    },
-    "dateSubmitted": "2023-01-23T23:00:00.000Z"
-  },
-  {
-    "name": "Check Rise",
-    "type": "Image",
-    "image": "https://pbs.twimg.com/media/Fm8-cIEaYAEEg73?format=png&name=900x900",
-    "link": "https://twitter.com/gid3xn/status/1616579581020098561",
-    "contractAddress": "",
-    "author": {
-      "twitter": "gid3xn",
-      "address": "",
-      "ens": ""
-    },
-    "dateSubmitted": "2023-01-23T23:00:00.000Z"
-  },
-  {
     "name": "a doodles checks",
     "type": "Image",
     "image": "https://pbs.twimg.com/media/Fmunz6TWYAgAwka?format=jpg&name=large",
@@ -2122,19 +2096,6 @@
       "twitter": "nickpbaker",
       "address": "",
       "ens": "nicholasbaker.eth"
-    },
-    "dateSubmitted": "2023-01-23T23:00:00.000Z"
-  },
-  {
-    "name": "Gm",
-    "type": "Image",
-    "image": "https://pbs.twimg.com/media/FmkappKXgAIKUBR?format=jpg&name=large",
-    "link": "https://twitter.com/espress0eth/status/1614851246912937984",
-    "contractAddress": "",
-    "author": {
-      "twitter": "espress0eth",
-      "address": "",
-      "ens": ""
     },
     "dateSubmitted": "2023-01-23T23:00:00.000Z"
   },
@@ -3074,19 +3035,6 @@
     "contractAddress": "",
     "author": {
       "twitter": "",
-      "address": "",
-      "ens": ""
-    },
-    "dateSubmitted": "2023-01-23T23:00:00.000Z"
-  },
-  {
-    "name": "decentralized verification",
-    "type": "Image",
-    "image": "https://pbs.twimg.com/media/FnGxJWQXkAAYNMA?format=jpg&name=large",
-    "link": "https://twitter.com/0xTjo/status/1617268943294455808",
-    "contractAddress": "",
-    "author": {
-      "twitter": "0xTjo",
       "address": "",
       "ens": ""
     },
@@ -6577,22 +6525,8 @@
     }
   },
   {
-    "name": "CheckSum",
-    "link": "https://app.manifold.xyz/c/checksum",
-    "image": "https://ipfs.io/ipfs/bafybeibniasxzlwxaihj6rr7ffrumxzh7g6nk2okd7bl23nj747incjeia",
-    "type": "NFT-Video",
-    "aspectRatio": "vertical",
-    "contractAddress": "0x5b988bc2215ebed15d79a1ca4df9b36ef44370b1",
-    "createdOnCreateChecksArt": false,
-    "dateSubmitted": "2023-02-15T02:48:20.063Z",
-    "author": {
-      "ens": "",
-      "address": "0x1b8f002FDe02809Eb8d8117aC47B70e0607Bf949",
-      "twitter": "checken_man"
-    }
-  },
-  {
     "name": "Check the Ladies",
+    "type": "NFT-Video",
     "image": "https://storage.googleapis.com/tally-response-assets/BMxE11/7fdab01e-00dd-4e83-a1ec-8ae62776442f/TinyTroubles_Check_1080.mp4",
     "aspectRatio": "square",
     "link": "https://twitter.com/tinytroublesnft/status/1625802850625355777?s=20&t=ZgOXSks66CIyNs0cFhE3Zg",
