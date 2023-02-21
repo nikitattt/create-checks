@@ -6608,5 +6608,23 @@
       "address": "0xdD53c2Fac49719663A75f58110A642e7CFee8514",
       "twitter": "amiraphist"
     }
+  },
+  {
+    "name": "Coin Check.",
+    "platform": "Zora",
+    "link": "https://zora.co/collections/0x4137dcd2dc6cf71e61f709d32a68659c2cb16646",
+    "image": "https://ipfs.io/ipfs/bafybeid2ykgx67vyhzcvf2vewloksymssyb64sh372u7wqochb7jrpnx6y",
+    "type": "NFT",
+    "aspectRatio": "square",
+    "endTime": "2023-02-22T18:30:00-08:00",
+    "cost": 0.0033,
+    "contractAddress": "0x4137Dcd2DC6CF71E61F709D32A68659C2CB16646",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-20T03:11:45.901Z",
+    "author": {
+      "ens": "blankspace.eth",
+      "address": "0x5d2B7f517EA0C3a68E58C32f97b2B2c080ea3d6F",
+      "twitter": "blankspac_e"
+    }
   }
 ]
