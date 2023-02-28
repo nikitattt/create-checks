@@ -6626,5 +6626,68 @@
       "address": "0x5d2B7f517EA0C3a68E58C32f97b2B2c080ea3d6F",
       "twitter": "blankspac_e"
     }
+  },
+  {
+    "name": "Believv - Checks Edition",
+    "platform": "Zora",
+    "link": "https://zora.co/collections/0x4d5646c4b9bff9c27484f5495328e4e0d2221317",
+    "image": "https://ipfs.zora.co/ipfs/bafkreif7mggijrwcoalglsibnt55h6kewut3qiqyipqei2ik4nn54klza4",
+    "type": "NFT",
+    "aspectRatio": "square",
+    "endTime": "2023-03-02T07:45:00.000Z",
+    "cost": 0.003,
+    "contractAddress": "0x4d5646c4b9bff9c27484f5495328e4e0d2221317",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-24T00:20:15.156Z",
+    "author": {
+      "ens": "robeee.eth",
+      "address": "0x64e1dd2405066335c38c38806e8e793c4ff932b2",
+      "twitter": "artofnext"
+    }
+  },
+  {
+    "name": "Checks Head",
+    "link": "https://fair.xyz/collection/checksheads",
+    "image": "https://ipfs.io/ipfs/QmaCZWqUm9LwxbF389wfUaPo5QR5EkJ7QfRXLygZhh9PxH",
+    "type": "NFT",
+    "aspectRatio": "square",
+    "contractAddress": "0xc75eD9771a4144Ab1f371f373F86B66e0c94D953",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-24T13:33:24.413Z",
+    "author": {
+      "ens": "Eccard_art",
+      "address": "0xd5dce8E20d3aC54998531eFb806E5718DbAa65bE",
+      "twitter": "checkheads_nft"
+    }
+  },
+  {
+    "name": "Fingerpaint Checks",
+    "link": "https://app.manifold.xyz/c/fingerpaint-checks",
+    "image": "https://yzwa46rpyvs7prgnf3ut2uhjk6wgivk4jy2pausie2skov5fa5jq.arweave.net/xmwOei_FZffEzS7pPVDpV6xkVVxONPBSSCakp1elB1M",
+    "type": "NFT",
+    "aspectRatio": "square",
+    "contractAddress": "0x2381bBD7869bA3ED9635298ae9Be89AF2EC20ED2",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-25T23:50:33.301Z",
+    "author": {
+      "ens": "Draigon.eth",
+      "address": "0xBb4aEe67138E890ed8E097AE1271471dC46fE0a2",
+      "twitter": "sarcastic_songs"
+    }
+  },
+  {
+    "name": "Not(able) Financial Advice",
+    "link": "https://showtime.xyz/nft/polygon/0x7Cb82730a8c8DdCB7Aa40954eF38768b29d80171/0",
+    "image": "https://storage.googleapis.com/showtime-cdn/cdnv2/polygon/0x7Cb82730a8c8DdCB7Aa40954eF38768b29d80171/0",
+    "type": "NFT",
+    "aspectRatio": "square",
+    "contractAddress": "https://polygonscan.com/address/0x7cb82730a8c8ddcb7aa40954ef38768b29d80171",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-02-27T04:46:07.139Z",
+    "author": {
+      "ens": "logonaut.eth",
+      "address": "0xB0CCf43adA6CBaA26dcf4907117b496d49f74242",
+      "twitter": "logonaut"
+    }
   }
 ]
