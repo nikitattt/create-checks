@@ -6689,5 +6689,23 @@
       "address": "0xB0CCf43adA6CBaA26dcf4907117b496d49f74242",
       "twitter": "logonaut"
     }
+  },
+  {
+    "name": "GM prompt",
+    "platform": "Zora",
+    "link": "https://zora.co/collections/0x8166cec6cff848d5473f912d8bb39bb2933e629d",
+    "image": "https://ipfs.decentralized-content.com/ipfs/bafkreievlmof2zew5mmv7hehxxze5lobhekke2w3pz4sz6fnthrrykmkye",
+    "type": "NFT",
+    "aspectRatio": "square",
+    "endTime": "2023-07-30T00:00:00-04:00",
+    "cost": 0.0045,
+    "contractAddress": "0x8166CEC6cfF848d5473f912D8Bb39bb2933e629d ",
+    "createdOnCreateChecksArt": false,
+    "dateSubmitted": "2023-04-06T23:35:20.798Z",
+    "author": {
+      "ens": "memenbrothers.eth",
+      "address": "0x2f059371297852181bB3565f0D07378359F76690",
+      "twitter": "hughmungusfinch"
+    }
   }
 ]
