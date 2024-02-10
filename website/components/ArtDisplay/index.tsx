@@ -55,7 +55,19 @@ const JPG = (data: any) => {
         )}
       >
         {['NFT-Video', 'Video'].includes(data.data.type) ? (
-          <video src={data.data.image} autoPlay muted className="rounded-xl" />
+          <div>
+            <video
+              src={data.data.image}
+              autoPlay
+              muted
+              className="rounded-xl hidden lg:flex"
+            />
+            <video
+              src={data.data.image}
+              muted
+              className="rounded-xl flex lg:hidden"
+            />
+          </div>
         ) : (
           <img
             src={data.data.image}
@@ -149,7 +161,7 @@ const ArtDisplay = ({ art, mintingNow }: { art: any[]; mintingNow: any[] }) => {
         </div>
         <p>Artworks</p>
       </div>
-      <MintingNow data={mintingNow} />
+      {/* <MintingNow data={mintingNow} /> */}
       <div className="mt-6 mb-2 flex flex-col-reverse md:flex-row justify-between items:start md:items-center gap-2">
         <select
           onChange={sortArt}
