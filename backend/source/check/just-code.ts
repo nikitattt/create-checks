@@ -1,6 +1,6 @@
 import fs from 'fs'
 import axios from 'axios'
-import data from '../../backend/source/data.json'
+import data from './data.json'
 const path = require('path')
 
 let working: any[] = []
@@ -33,7 +33,7 @@ const checkImages = async () => {
   }
 
   try {
-    const workingFilePath = path.resolve('source/working.json')
+    const workingFilePath = path.resolve('source/check/working.json')
     fs.writeFileSync(workingFilePath, JSON.stringify(working, null, 4))
     console.log(`Working images saved successfully at ${workingFilePath}`)
   } catch (error) {
@@ -41,7 +41,7 @@ const checkImages = async () => {
   }
 
   try {
-    const noWorkingFilePath = path.resolve('source/notWorking.json')
+    const noWorkingFilePath = path.resolve('source/check/notWorking.json')
     fs.writeFileSync(noWorkingFilePath, JSON.stringify(noWorking, null, 4))
     console.log(`Non-working images saved successfully at ${noWorkingFilePath}`)
   } catch (error) {
