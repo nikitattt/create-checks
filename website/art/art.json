@@ -5896,5 +5896,59 @@
             "address": "0x2f059371297852181bB3565f0D07378359F76690",
             "twitter": "hughmungusfinch"
         }
-    }
+    },
+      {
+        "name": "My Beautiful Dark Checks Fantasy",
+        "image": "https://pbs.twimg.com/media/GuxoOiQWsAABgYu?format=png",
+        "aspectRatio": "square",
+        "link": "https://x.com/BubbleBullQ/status/1940040145379418450",
+        "createdOnCreateChecksArt": true,
+        "dateSubmitted": "2025-06-03T16:28:51.850Z",
+        "author": { "twitter": "BubbleBullQ" }
+      },
+      {
+        "name": "8✅8",
+        "image": "https://pbs.twimg.com/media/Gu2mq6wWEAAKecv?format=jpg",
+        "aspectRatio": "square",
+        "link": "https://x.com/BubbleBullQ/status/1940390277333885290",
+        "createdOnCreateChecksArt": true,
+        "dateSubmitted": "2025-06-03T16:28:52.850Z",
+        "author": { "twitter": "BubbleBullQ" }
+      },
+      {
+        "name": "Check Yourself",
+        "platform": "OpenSea",
+        "link": "https://opensea.io/item/base/0x392af3925a806ff0d1035b6150be42069ae350d3/84",
+        "image": "https://raw2.seadn.io/base/0x392af3925a806ff0d1035b6150be42069ae350d3/6d736ff4b2cc66800df9abe738deff/c36d736ff4b2cc66800df9abe738deff.jpeg",
+        "type": "NFT",
+        "aspectRatio": "square",
+        "endTime": "2025-08-8T00:00:00-04:00",
+        "cost": 0.0001,
+        "contractAddress": "0x392af3925a806ff0d1035b6150be42069ae350d3",
+        "createdOnCreateChecksArt": false,
+        "dateSubmitted": "2025-06-03T16:28:54.850Z",
+        "author": {
+          "ens": "pierre⌐◨-◨.eth",
+          "address": "0x41e8dfb7840CcCd0FB36fae86b34Dc59F1627E04",
+          "twitter": "Pierre_Remixes"
+        }
+      },
+      {
+        "name": "Opepen Eyes",
+        "platform": "OpenSea",
+        "link": "https://opensea.io/item/ethereum/0x857928e523391a9b75f0b4e355cbe98dfd07de73/1",
+        "image": "https://i2.seadn.io/ethereum/0x857928e523391a9b75f0b4e355cbe98dfd07de73/05d9752b8626eb5b28882fff5f5334db.jpeg?w=1000",
+        "type": "NFT",
+        "aspectRatio": "vertical",
+        "endTime": "2025-08-8T00:00:00-04:00",
+        "cost": 0.0001,
+        "contractAddress": "0x857928E523391a9b75f0B4E355CbE98DFD07DE73",
+        "createdOnCreateChecksArt": false,
+        "dateSubmitted": "2025-06-03T16:28:54.850Z",
+        "author": {
+          "ens": "matriona.eth",
+          "address": "0xb505270fA2dC96E294b264344154caF4CC1A5D26",
+          "twitter": "matriona_fails"
+        }
+      }
 ]
